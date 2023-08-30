@@ -6,7 +6,6 @@ import {
 	faFolderOpen,
 	faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import { fullpageApi } from "@fullpage/react-fullpage";
 const Sidebar = () => {
 
 	const handleMoveToSection = (index) => {
@@ -21,7 +20,7 @@ const Sidebar = () => {
     return "";
   };
 	return (
-		<div className="fixed z-50 bg-gray-600 h-[50vh] w-14 flex flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
+		<div className="hidden md:flex fixed z-50 bg-gray-600 h-[50vh] w-14  flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
 			<ul className="flex flex-col justify-center items-center h-full space-y-16 text-gray-200">
 				<li>
 					<button onClick={() => handleMoveToSection(1)}>
@@ -29,7 +28,7 @@ const Sidebar = () => {
 					</button>
 				</li>
 				<li>
-					<button  onClick={() => handleMoveToSection(2)}>
+					<button onClick={() => handleMoveToSection(2)}>
 						<FontAwesomeIcon icon={faUser} className="text-xl" />
 					</button>
 				</li>
@@ -42,7 +41,7 @@ const Sidebar = () => {
 					</button>
 				</li>
 				<li>
-					<button  onClick={() => handleMoveToSection(4)}>
+					<button onClick={() => handleMoveToSection(4)}>
 						<FontAwesomeIcon
 							icon={faEnvelope}
 							className="text-xl"

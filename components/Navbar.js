@@ -20,11 +20,10 @@ const Navbar = () => {
 				{/* toggler */}
 				<div className="flex flex-row items-center">
 					<button
-						className="burger button flex flex-col justify-center items-center space-y-2"
+						className="burger button flex flex-col justify-center items-center space-y-1.5"
 						onClick={toggleNav}>
 						<div
-							className={`w-8 h-1 bg-black rounded-full 
-							}`}></div>
+							className={`w-8 h-1 bg-black rounded-full`}></div>
 						<div
 							className={`w-8 h-1 bg-black rounded-full`}></div>
 						<div
@@ -43,18 +42,17 @@ const Navbar = () => {
 };
 export default Navbar;
 
-const NavItems = ({ isNavOpen, navRef, setIsNavOpen }) => {
+const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	const closeNav = () => {
-		navRef.current.classList.remove("bg-gray-700");
 		setIsNavOpen(false);
 	};
 
 	return (
 		<div
-			className={`fixed z-50 w-full h-screen flex m-auto items-center justify-center backdrop-blur-sm ${
+			className={`fixed z-50 w-full h-screen flex items-center justify-center backdrop-blur-sm transition-all ease-out duration-300 ${
 				isNavOpen ? "" : "opacity-0 pointer-events-none"
 			}`}>
-			<div className="relative backdrop-blur-sm opacity-95 m-auto flex flex-col items-center space-x-8 min-h-[80vh] bg-gray-700 min-w-[90vw]  rounded-3xl">
+			<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[80vh] bg-gray-700 min-w-[90vw]  rounded-3xl">
 				{/* close buton */}
 				<div className="absolute top-0 right-0 m-4">
 					<button className=" button" onClick={closeNav}>
@@ -62,7 +60,7 @@ const NavItems = ({ isNavOpen, navRef, setIsNavOpen }) => {
 						<div className="w-8 h-1 bg-white rounded-full -rotate-45 transform  translate-x-[2px]"></div>
 					</button>
 				</div>
-				<div className="flex flex-col items-center space-y-8 m-auto">
+				<div className="flex flex-col items-center space-y-8 my-auto mx-0">
 					{/* title */}
 					<h1 className="text-6xl font-bold text-white">Menu</h1>
 					<a href="#home" className="text-2xl font-bold text-white">
