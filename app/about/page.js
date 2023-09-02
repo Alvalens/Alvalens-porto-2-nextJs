@@ -1,9 +1,15 @@
 "use client";
-import { useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+// images
+import Me1 from "@/public/img/me1.jpg";
+import Me2 from "@/public/img/me2.jpg";
+import Me3 from "@/public/img/me3.jpg";
 export default function Page() {
 	// useEffect(() => {
 	// 	window.scrollTo(0, 0);
@@ -17,7 +23,7 @@ export default function Page() {
 						<motion.div
 							initial={{ opacity: 1, scale: 1 }}
 							animate={{ opacity: 1, scale: 1.6 }}
-							transition={{ duration: 1 }}
+							transition={{ duration: 1, ease: "easeInOut" }}
 							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
@@ -56,37 +62,91 @@ export default function Page() {
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 w-[50%]  aspect-square">
-								<motion.img
-									initial={{ opacity: 0, scale: 0.5 }}
-									animate={{ opacity: 1, scale: 1 }}
+							<div className="absolute top-28 left-10 w-[50%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+								<motion.div
+									initial={{ opacity: 0, scale: 0.5, x: 100 }}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
 									transition={{ duration: 1 }}
-									className="w-full h-full object-cover object-center"
-									src="/images/me.jpg"
-									placeholder="blur"
-								/>
+									className="w-full h-full">
+									<Image
+										src={Me1}
+										alt="Alvalens"
+										layout="fill"
+										objectFit="cover"
+										placeholder="blur"
+									/>
+								</motion.div>
 							</div>
-							<div className="absolute top-16 right-28 w-[30%]  aspect-square">
-								<motion.img
-									initial={{ opacity: 0, scale: 0.5 }}
-									animate={{ opacity: 1, scale: 1 }}
-									transition={{ duration: 1 }}
-									className="w-full h-full object-cover object-center"
-									src="/images/me.jpg"
-								/>
+							<div className="absolute top-16 right-28 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{ delay: 0.3, duration: 1 }}
+									className="w-full h-full">
+									<Image
+										src={Me2}
+										alt="Alvalens"
+										layout="fill"
+										objectFit="cover"
+										placeholder="blur"
+									/>
+								</motion.div>
 							</div>
-							<div className="absolute bottom-16 right-20 w-[40%]  aspect-square">
-								<motion.img
-									initial={{ opacity: 0, scale: 0.5 }}
-									animate={{ opacity: 1, scale: 1 }}
-									transition={{ duration: 1 }}
-									className="w-full h-full object-cover object-center"
-									src="/images/me.jpg"
-								/>
+							<div className="absolute bottom-16 right-20 w-[40%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+								<motion.div
+									initial={{
+										opacity: 0,
+										scale: 0.5,
+										x: -100,
+									}}
+									whileInView={{
+										opacity: 1,
+										scale: 1,
+										x: 0,
+									}}
+									transition={{
+										delay: 0.5,
+										duration: 1,
+									}}
+									className="w-full h-full">
+									<Image
+										src={Me3}
+										alt="Alvalens"
+										layout="fill"
+										objectFit="cover"
+										placeholder="blur"
+									/>
+								</motion.div>
 							</div>
 						</div>
 					</div>
-					<div className="flex justify-center items-start flex-col mb-5 md:px-10">
+					<motion.div
+						className="flex justify-center items-start flex-col mb-5 md:px-10"
+						initial={{
+							opacity: 0,
+							x: 200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+							duration: 1,
+							type: "spring",
+						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
 							Alvalen Shafelbilyunazra
 						</h2>
@@ -101,7 +161,7 @@ export default function Page() {
 							tenetur ut accusantium officiis itaque qui eum quas
 							harum? Nemo, ducimus quisquam.
 						</p>
-					</div>
+					</motion.div>
 				</div>
 				{/* <div className="mt-16 flex flex-col justify-start items-center w-full pl-12 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
@@ -111,7 +171,21 @@ export default function Page() {
 					</div>
 				</div> */}
 				<div className=" w-screen mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 mt-10 mb-24">
-					<div className="flex justify-center items-center flex-col mb-5 ">
+					<motion.div
+						className="flex justify-center items-center flex-col mb-5 "
+						initial={{
+							opacity: 0,
+							x: -200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+							duration: 1,
+							type: "spring",
+						}}>
 						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.5rem] uppercase ">
 							Language & Framework
 						</h2>
@@ -167,8 +241,22 @@ export default function Page() {
 								Python
 							</span>
 						</p>
-					</div>
-					<div className="flex justify-start items-center flex-col mb-5 ">
+					</motion.div>
+					<motion.div
+						className="flex justify-start items-center flex-col mb-5 "
+						initial={{
+							opacity: 0,
+							x: 200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.6,
+							duration: 1,
+							type: "spring",
+						}}>
 						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.5rem] uppercase">
 							Tools
 						</h2>
@@ -201,19 +289,75 @@ export default function Page() {
 							</span>{" "}
 							|{" "}
 						</p>
-					</div>
+					</motion.div>
 				</div>
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
-						<div className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"></div>
-						<div className="bg-gray-700 w-28 h-1 rounded-full -translate-x-12"></div>
-						<h1 className="text-3xl font-bold mt-3">
+						<motion.div
+							className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"
+							initial={{
+								opacity: 0,
+								x: -200,
+							}}
+							whileInView={{
+								opacity: 1,
+								x: 0,
+							}}
+							transition={{
+								delay: 0.5,
+								duration: 1,
+								type: "spring",
+							}}></motion.div>
+						<motion.div
+							className="bg-gray-700 w-28 h-1 rounded-full"
+							initial={{
+								opacity: 0,
+								x: 200,
+							}}
+							whileInView={{
+								opacity: 1,
+								x: -50,
+							}}
+							transition={{
+								delay: 0.5,
+								duration: 1,
+								type: "spring",
+							}}></motion.div>
+						<motion.h1
+							className="text-3xl font-bold mt-3"
+							initial={{
+								opacity: 0,
+								x: -200,
+							}}
+							whileInView={{
+								opacity: 1,
+								x: 0,
+							}}
+							transition={{
+								delay: 0.7,
+								duration: 1,
+								type: "spring",
+							}}>
 							Education & Experience
-						</h1>
+						</motion.h1>
 					</div>
 				</div>
 				<div className="w-screen mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 my-10">
-					<div className="flex justify-center items-start flex-col mb-5 ">
+					<motion.div
+						className="flex justify-center items-start flex-col mb-5 "
+						initial={{
+							opacity: 0,
+							x: -200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+							duration: 1,
+							type: "spring",
+						}}>
 						<h2 className="text-2xl font-bold mb-3">
 							Education | Universitas Negeri Malang
 						</h2>
@@ -228,8 +372,22 @@ export default function Page() {
 							reiciendis corrupti quibusdam architecto, labore
 							cupiditate non autem aliquid?
 						</p>
-					</div>
-					<div className="flex justify-center items-start flex-col mb-5 ">
+					</motion.div>
+					<motion.div
+						className="flex justify-center items-start flex-col mb-5 "
+						initial={{
+							opacity: 0,
+							x: 200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+							duration: 1,
+							type: "spring",
+						}}>
 						<h2 className="text-2xl font-bold mb-3">
 							Experience | Freelance Web Developer
 						</h2>
@@ -244,8 +402,31 @@ export default function Page() {
 							reiciendis corrupti quibusdam architecto, labore
 							cupiditate non autem aliquid?
 						</p>
-					</div>
+					</motion.div>
 				</div>
+
+				<div className="flex justify-center items-center flex-col mt-5 self-start min-h-[50vh] bg-gray-200">
+					<Link href="/#contact">
+					<motion.h1
+						className="text-5xl font-bold mt-3 tracking-widest hover:underline"
+						initial={{
+							opacity: 0,
+							y: -200,
+						}}
+						whileInView={{
+							opacity: 1,
+							y: 0,
+						}}
+						transition={{
+							delay: 0.7,
+							duration: 1,
+							type: "spring",
+						}}>
+						Get In Touch <FontAwesomeIcon icon={faArrowRight} className="text-5xl ml-2" />
+					</motion.h1>
+					</Link>
+				</div>
+				
 			</main>
 		</>
 	);

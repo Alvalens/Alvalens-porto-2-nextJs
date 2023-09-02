@@ -6,11 +6,11 @@ const NavItems = ({ isNavOpen }) => {
 const [isMobile, setIsMobile] = useState(false);
 	const navVariant = {
 		open: (height = 1000) => ({
-			clipPath: `circle(${height * 2 + 200}px at calc(100% - 40px) 40px)`,
+			clipPath: `circle(${height + 400}px at calc(100% - 40px) 40px)`,
 			transition: {
 				type: "spring",
-				stiffness: 20,
-				restDelta: 2,
+				stiffness: 400,
+				damping: 30,
 			},
 		}),
 		closed: {
@@ -19,7 +19,7 @@ const [isMobile, setIsMobile] = useState(false);
 				delay: 0.5,
 				type: "spring",
 				stiffness: 400,
-				damping: 40,
+				damping: 30,
 			},
 		},
 	};

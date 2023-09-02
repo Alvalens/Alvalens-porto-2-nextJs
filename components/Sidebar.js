@@ -22,18 +22,20 @@ const Sidebar = () => {
 	};
 	return (
 		<div className="hidden md:flex fixed z-40 bg-gray-600 h-[50vh] w-14  flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
-			<ul className="flex flex-col justify-center items-center h-full space-y-16 text-gray-200">
-				<li>
+			<ul
+				id="sidebar"
+				className="flex flex-col justify-center items-center h-full space-y-16 text-gray-200">
+				<li data-menuanchor="home" className="active">
 					<button onClick={() => handleMoveToSection(1)}>
 						<FontAwesomeIcon icon={faHome} className="text-xl" />
 					</button>
 				</li>
-				<li>
+				<li data-menuanchor="about">
 					<button onClick={() => handleMoveToSection(2)}>
 						<FontAwesomeIcon icon={faUser} className="text-xl" />
 					</button>
 				</li>
-				<li>
+				<li data-menuanchor="projects">
 					<button onClick={() => handleMoveToSection(3)}>
 						<FontAwesomeIcon
 							icon={faFolderOpen}
@@ -41,7 +43,7 @@ const Sidebar = () => {
 						/>
 					</button>
 				</li>
-				<li>
+				<li data-menuanchor="contact">
 					<button onClick={() => handleMoveToSection(4)}>
 						<FontAwesomeIcon
 							icon={faEnvelope}

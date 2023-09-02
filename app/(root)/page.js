@@ -17,9 +17,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const MyPage = () => {
 	const fullpageOptions = {
-		lockAnchors: true,
+		// only define last anchor as contact
+		anchors: ["home", "about", "projects", "contact"],
 		scrollingSpeed: 1000,
 		licenseKey: "gplv3-license",
+		menu: "#sidebar",
 	};
 
 	return (
@@ -46,7 +48,7 @@ const MyPage = () => {
 									<h3 className="uppercase text-xl mb-3 font-normal text tracking-[.5rem] text-gray-500">
 										Alvalen Shafel
 									</h3>
-									<h1 className="text-5xl md:text-8xl font-bold my-2 md:my-5">
+									<h1 className="text-black text-5xl md:text-8xl font-bold my-2 md:my-5">
 										Full Stack Developer
 									</h1>
 									<p className="title text-md  md:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]">
@@ -90,7 +92,7 @@ const MyPage = () => {
 										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
 								</div>
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
-									<h1 className="text-5xl md:text-8xl font-bold">
+									<h1 className="text-black text-5xl md:text-8xl font-bold">
 										About Me
 									</h1>
 									<div className="flex justify-center items-center flex-col my-5 ">
@@ -102,9 +104,10 @@ const MyPage = () => {
 										interest.
 									</p>
 									<Link href="/about">
-									<Button variation="primary">
-										Learn More
-									</Button></Link>
+										<Button variation="primary">
+											Learn More
+										</Button>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -114,7 +117,7 @@ const MyPage = () => {
 									<div className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></div>
 								</div>
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
-									<h1 className="text-5xl md:text-8xl font-bold">
+									<h1 className="text-black text-5xl md:text-8xl font-bold">
 										My Projects
 									</h1>
 									<div className="flex justify-center items-center flex-col my-5 ">
@@ -137,7 +140,7 @@ const MyPage = () => {
 									<div className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></div>
 								</div>
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
-									<h1 className="text-5xl md:text-8xl font-bold">
+									<h1 className="text-black text-5xl md:text-8xl font-bold">
 										Get In Touch
 									</h1>
 									<div className="flex justify-center items-center flex-col my-5 ">
