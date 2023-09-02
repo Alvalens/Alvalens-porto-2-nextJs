@@ -150,16 +150,40 @@ export default function Page() {
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
 							Alvalen Shafelbilyunazra
 						</h2>
-						<p className="text-gray-600 text-justify">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Laborum, laudantium ad vel suscipit optio
-							nesciunt accusantium nulla! Similique sapiente,
-							tempora id laudantium eveniet adipisci perferendis
-							ad numquam sit hic fugiat? Lorem ipsum dolor sit
-							amet consectetur adipisicing elit. Iste assumenda
-							provident deserunt quos id, minus tempora atque eos
-							tenetur ut accusantium officiis itaque qui eum quas
-							harum? Nemo, ducimus quisquam.
+						<p className="text-gray-600 text-justify title text-lg">
+							Hey there, I&rsquo;m Alvalen Shafelbilyunazra, a
+							<span className="text-black font-medium">
+								{" "}
+								tech enthusiast
+							</span>{" "}
+							and
+							<span className="text-black font-medium">
+								{" "}
+								aspiring Web Developer.
+							</span>{" "}
+							Originating from Pasuruan, East Java, Indonesia,
+							I&rsquo;m currently embarking on a fascinating
+							journey at{" "}
+							<span className="text-black font-medium">
+								Universitas Negeri Malang,
+							</span>{" "}
+							where I&rsquo;m pursuing my degree in{" "}
+							<span className="text-black font-medium">
+								Informatics Engineering.
+							</span>{" "}
+							My passion for technology and coding knows no
+							bounds. Beyond the world of coding, I find myself
+							deeply immersed in the realms of design, Game
+							Development, and the fascinating universe of AI. I
+							believe that in today&rsquo;s fast-paced digital
+							landscape, being a
+							<span className="text-black font-medium">
+								{" "}
+								lifelong learner
+							</span>{" "}
+							is not just a choice, but a necessity. Let&rsquo;s
+							connect and explore this ever-evolving world of tech
+							together!
 						</p>
 					</motion.div>
 				</div>
@@ -231,7 +255,8 @@ export default function Page() {
 							<span className="text-black font-medium">
 								Firebase
 							</span>{" "}
-							|<span className="text-black font-medium">PHP</span>{" "}
+							|{" "}
+							<span className="text-black font-medium">PHP</span>{" "}
 							|{" "}
 							<span className="text-black font-bold">
 								Laravel
@@ -338,11 +363,11 @@ export default function Page() {
 								duration: 1,
 								type: "spring",
 							}}>
-							Education & Experience
+							Education &amp; Experience
 						</motion.h1>
 					</div>
 				</div>
-				<div className="w-screen mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 my-10">
+				<div className="w-screen mx-auto container gap-10 p-10 grid grid-cols-1 md:grid-cols-2 my-10 ">
 					<motion.div
 						className="flex justify-center items-start flex-col mb-5 "
 						initial={{
@@ -364,13 +389,18 @@ export default function Page() {
 						<h3 className="text-md font-medium mb-3 text-gray-500">
 							Teknik Informatika | 2022 - Now
 						</h3>
-						<p className="pl-3 text-gray-500 text-start relative">
-							<span className="before:border-s-2 before:absolute before:left-0 before:top-0 before:h-full before:border-gray-400 before:block before:w-2 before:content-'' text-justify"></span>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Vero voluptatibus tenetur dolor laudantium et
-							ipsum temporibus atque illo suscipit, quam iusto
-							reiciendis corrupti quibusdam architecto, labore
-							cupiditate non autem aliquid?
+						<p className="pl-3 text-gray-500  relative text-justify">
+							<span className="before:border-s-2 before:absolute before:left-0 before:top-0 before:h-full before:border-gray-400 before:block before:w-2 before:content-'' "></span>
+							I&rsquo;m currently in my third semester at
+							Universitas Negeri Malang, majoring in Informatics
+							Engineering. This journey has been nothing short of
+							exhilarating, filled with countless opportunities to
+							learn and grow. With a steadfast dedication to my
+							studies, I&rsquo;ve achieved a commendable GPA of
+							3.93. Throughout my academic journey, I&rsquo;ve
+							delved into various facets of computer science,
+							honing my skills in web development, programming,
+							and problem-solving.
 						</p>
 					</motion.div>
 					<motion.div
@@ -394,39 +424,46 @@ export default function Page() {
 						<h3 className="text-md font-medium mb-3 text-gray-500">
 							Fullstack Web Developer | 2023 - Now
 						</h3>
-						<p className="pl-3 text-gray-500 text-start relative">
-							<span className="before:border-s-2 before:absolute before:left-0 before:top-0 before:h-full before:border-gray-400 before:block before:w-2 before:content-'' text-justify"></span>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Vero voluptatibus tenetur dolor laudantium et
-							ipsum temporibus atque illo suscipit, quam iusto
-							reiciendis corrupti quibusdam architecto, labore
-							cupiditate non autem aliquid?
+						<p className="pl-3 text-gray-500 relative text-justify">
+							<span className="before:border-s-2 before:absolute before:left-0 before:top-0 before:h-full before:border-gray-400 before:block before:w-2 before:content-'' "></span>
+							My experience extends across various technologies,
+							with a primary focus on Next.js and Laravel.
+							I&rsquo;ve successfully completed three projects
+							using Next.js and Laravel. What sets me apart is my
+							ability to adapt to different project requirements.
+							Whether working collaboratively as part of a team or
+							independently, I ensure that each project I
+							undertake meets high-quality standards and fulfills
+							the unique needs of clients.
 						</p>
 					</motion.div>
 				</div>
 
 				<div className="flex justify-center items-center flex-col mt-5 self-start min-h-[50vh] bg-gray-200">
 					<Link href="/#contact">
-					<motion.h1
-						className="text-5xl font-bold mt-3 tracking-widest hover:underline"
-						initial={{
-							opacity: 0,
-							y: -200,
-						}}
-						whileInView={{
-							opacity: 1,
-							y: 0,
-						}}
-						transition={{
-							delay: 0.7,
-							duration: 1,
-							type: "spring",
-						}}>
-						Get In Touch <FontAwesomeIcon icon={faArrowRight} className="text-5xl ml-2" />
-					</motion.h1>
+						<motion.h1
+							className="text-5xl font-bold mt-3 tracking-widest hover:underline"
+							initial={{
+								opacity: 0,
+								y: -200,
+							}}
+							whileInView={{
+								opacity: 1,
+								y: 0,
+							}}
+							transition={{
+								delay: 0.7,
+								duration: 1,
+								type: "spring",
+							}}>
+							Get In Touch{" "}
+							<FontAwesomeIcon
+								icon={faArrowRight}
+								className="text-5xl ml-2"
+							/>
+						</motion.h1>
 					</Link>
 				</div>
-				
 			</main>
 		</>
 	);

@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const NavItems = ({ isNavOpen }) => {
 const [isMobile, setIsMobile] = useState(false);
@@ -84,69 +85,45 @@ if (isMobile) {
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
 				<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
-					<div className="flex flex-col items-center space-y-8 my-auto mx-0">
-						{/* title */}
-						<motion.h1
-							animate={{ opacity: 1 }}
-							initial={{ opacity: 0 }}
-							transition={{ delay: 0.5, duration: 1 }}
-							className="text-6xl font-bold text-white">
-							Menu
-						</motion.h1>
-						<motion.a
-							href="#home"
-							className="text-2xl font-bold text-white"
-							variants={itemVariants}
-							animate={isNavOpen ? "open" : "closed"}
-							delay={1}>
-							<motion.h2
-								className="text-white"
-								variants={itemVariants}
-								animate={isNavOpen ? "open" : "closed"}>
-								Home
-							</motion.h2>
-						</motion.a>
-						<motion.a
-							href="#about"
-							className="text-2xl font-bold text-white"
-							variants={itemVariants}
-							animate={isNavOpen ? "open" : "closed"}
-							delay={1.2}>
-							<motion.h2
-								className="text-white"
-								variants={itemVariants}
-								animate={isNavOpen ? "open" : "closed"}>
-								About
-							</motion.h2>
-						</motion.a>
-						<motion.a
-							href="#project"
-							className="text-2xl font-bold text-white"
-							variants={itemVariants}
-							animate={isNavOpen ? "open" : "closed"}
-							delay={1.3}>
-							<motion.h2
-								className="text-white"
-								variants={itemVariants}
-								animate={isNavOpen ? "open" : "closed"}>
-								Projects
-							</motion.h2>
-						</motion.a>
-						<motion.a
-							href="#contact"
-							className="text-2xl font-bold text-white"
-							variants={itemVariants}
-							animate={isNavOpen ? "open" : "closed"}
-							delay={1.4}>
-							<motion.h2
-								className="text-white"
-								variants={itemVariants}
-								animate={isNavOpen ? "open" : "closed"}>
-								Contact
-							</motion.h2>
-						</motion.a>
-					</div>
-				</div>
+  <div className="flex flex-col items-center space-y-8 my-auto mx-0">
+    {/* title */}
+    <motion.h1
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{ delay: 0.5, duration: 1 }}
+      className="text-6xl font-bold text-white">
+      Menu
+    </motion.h1>
+    <Link href="/"> 
+      <div className="text-2xl font-bold text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"} delay={1}>
+        <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"}>
+          Home
+        </motion.h2>
+      </div>
+    </Link>
+    <Link href="/about"> 
+      <div className="text-2xl font-bold text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"} delay={1.2}>
+        <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"}>
+          About
+        </motion.h2>
+      </div>
+    </Link>
+    <Link href="/project"> 
+      <div className="text-2xl font-bold text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"} delay={1.3}>
+        <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"}>
+          Projects
+        </motion.h2>
+      </div>
+    </Link>
+    <Link href="/contact"> 
+      <div className="text-2xl font-bold text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"} delay={1.4}>
+        <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"}>
+          Contact
+        </motion.h2>
+      </div>
+    </Link>
+  </div>
+</div>
 			</motion.div>
 		</>
 	);
