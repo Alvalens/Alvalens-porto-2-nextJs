@@ -48,3 +48,12 @@ h1, h2, h3, h4, h5, h6 {
 .fp-watermark {
 	display: none !important;
 }
+
+
+h2, h3, h4, h5, h6 {
+	@apply text-gray-600;
+}
+
+span {
+	font-family: "Jost", sans-serif;
+}

@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Image from "next/image";
-import "./globals.css";
+import "../globals.css";
+import {motion} from "framer-motion";
+import Link from "next/link";
 // components
 import Button from "@/components/Button";
+import Me from "../../public/img/me.jpg";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -32,12 +34,12 @@ const MyPage = () => {
 									<div className="block md:hidden col-span-1 mx-auto my-10">
 										<div className="bg-slate-500 rounded-full h-60 w-60">
 											<Image
-												src="/img/me.jpg"
-												layout="intrinsic"
+												src={Me}
 												width={500}
 												height={500}
 												className="rounded-full w-full h-full object-cover "
 												alt="Alvalens"
+												placeholder="blur"
 											/>
 										</div>
 									</div>
@@ -79,9 +81,13 @@ const MyPage = () => {
 							</div>
 						</div>
 						<div className="section">
-							<div className="relative h-screen w-screen mx-auto container gap-4 p-10 flex justify-center items-center flex-col">
+							<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col">
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
-									<div className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></div>
+									<motion.div
+										initial={{ opacity: 0, scale: 0.5 }}
+										animate={{ opacity: 1, scale: 1 }}
+										transition={{ duration: 1 }}
+										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
 								</div>
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
 									<h1 className="text-5xl md:text-8xl font-bold">
@@ -95,14 +101,15 @@ const MyPage = () => {
 										A brief introduction about me and my
 										interest.
 									</p>
+									<Link href="/about">
 									<Button variation="primary">
 										Learn More
-									</Button>
+									</Button></Link>
 								</div>
 							</div>
 						</div>
 						<div className="section">
-							<div className="relative h-screen w-screen mx-auto container gap-4 p-10 flex justify-center items-center flex-col">
+							<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col">
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<div className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></div>
 								</div>
@@ -125,7 +132,7 @@ const MyPage = () => {
 							</div>
 						</div>
 						<div className="section">
-							<div className="relative h-screen w-screen mx-auto container gap-4 p-10 flex justify-center items-center flex-col">
+							<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col">
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<div className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></div>
 								</div>
@@ -137,7 +144,7 @@ const MyPage = () => {
 										<div className="bg-gray-700 w-20 h-1 rounded-full mb-2"></div>
 										<div className="bg-gray-700 w-20 h-1 rounded-full translate-x-14"></div>
 									</div>
-									<p className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5">
+									<p className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5">
 										Feel free to contact me if you have any
 										questions or just want to say hi.
 									</p>
@@ -151,7 +158,7 @@ const MyPage = () => {
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
 											<FontAwesomeIcon
 												icon={faEnvelope}
-												className="text-4xl"
+												className="text-3xl"
 											/>
 										</a>
 
@@ -160,7 +167,7 @@ const MyPage = () => {
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
 											<FontAwesomeIcon
 												icon={faGithub}
-												className="text-4xl"
+												className="text-3xl"
 											/>
 										</a>
 										<a
@@ -168,7 +175,7 @@ const MyPage = () => {
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
 											<FontAwesomeIcon
 												icon={faInstagram}
-												className="text-4xl"
+												className="text-3xl"
 											/>
 										</a>
 										<a
@@ -176,7 +183,7 @@ const MyPage = () => {
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
 											<FontAwesomeIcon
 												icon={faLinkedin}
-												className="text-4xl"
+												className="text-3xl"
 											/>
 										</a>
 										<a
@@ -184,7 +191,7 @@ const MyPage = () => {
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
 											<FontAwesomeIcon
 												icon={faDiscord}
-												className="text-4xl"
+												className="text-3xl"
 											/>
 										</a>
 									</div>

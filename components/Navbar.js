@@ -1,5 +1,156 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+const NavItems = ({ isNavOpen }) => {
+const [isMobile, setIsMobile] = useState(false);
+	const navVariant = {
+		open: (height = 1000) => ({
+			clipPath: `circle(${height * 2 + 200}px at calc(100% - 40px) 40px)`,
+			transition: {
+				type: "spring",
+				stiffness: 20,
+				restDelta: 2,
+			},
+		}),
+		closed: {
+			clipPath: "circle(0px at calc(100% - 120px) 35px)",
+			transition: {
+				delay: 0.5,
+				type: "spring",
+				stiffness: 400,
+				damping: 40,
+			},
+		},
+	};
+useEffect(() => {
+	const updateScreenWidth = () => {
+		setIsMobile(window.innerWidth <= 768);
+	};
+
+	// Initial check and event listener
+	updateScreenWidth();
+	window.addEventListener("resize", updateScreenWidth);
+
+	// Clean up the event listener on unmount
+	return () => {
+		window.removeEventListener("resize", updateScreenWidth);
+	};
+}, []);
+
+// Check screen width and adjust clipPath for smaller screens
+if (isMobile) {
+	navVariant.closed = {
+		clipPath: "circle(0px at calc(100% - 35px) 35px)", // Adjusted value for mobile screens
+		transition: {
+			delay: 0.5,
+			type: "spring",
+			stiffness: 400,
+			damping: 40,
+		},
+	};
+} else {
+	navVariant.closed = {
+		clipPath: "circle(0px at calc(100% - 120px) 35px)",
+		transition: {
+			delay: 0.5,
+			type: "spring",
+			stiffness: 400,
+			damping: 40,
+		},
+	};
+}
+	const itemVariants = {
+		open: {
+			opacity: 1,
+			y: 0,
+			rotate: 0,
+		},
+		closed: {
+			opacity: 0,
+			y: -40,
+			rotate: 0,
+		},
+	};
+
+
+
+
+	return (
+		<>
+			<motion.div
+				className={`fixed z-[45] w-full h-screen flex items-center justify-center backdrop-blur-sm transition-all ease duration-700`}
+				variants={navVariant}
+				animate={isNavOpen ? "open" : "closed"}
+				initial={false}>
+				<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
+					<div className="flex flex-col items-center space-y-8 my-auto mx-0">
+						{/* title */}
+						<motion.h1
+							animate={{ opacity: 1 }}
+							initial={{ opacity: 0 }}
+							transition={{ delay: 0.5, duration: 1 }}
+							className="text-6xl font-bold text-white">
+							Menu
+						</motion.h1>
+						<motion.a
+							href="#home"
+							className="text-2xl font-bold text-white"
+							variants={itemVariants}
+							animate={isNavOpen ? "open" : "closed"}
+							delay={1}>
+							<motion.h2
+								className="text-white"
+								variants={itemVariants}
+								animate={isNavOpen ? "open" : "closed"}>
+								Home
+							</motion.h2>
+						</motion.a>
+						<motion.a
+							href="#about"
+							className="text-2xl font-bold text-white"
+							variants={itemVariants}
+							animate={isNavOpen ? "open" : "closed"}
+							delay={1.2}>
+							<motion.h2
+								className="text-white"
+								variants={itemVariants}
+								animate={isNavOpen ? "open" : "closed"}>
+								About
+							</motion.h2>
+						</motion.a>
+						<motion.a
+							href="#project"
+							className="text-2xl font-bold text-white"
+							variants={itemVariants}
+							animate={isNavOpen ? "open" : "closed"}
+							delay={1.3}>
+							<motion.h2
+								className="text-white"
+								variants={itemVariants}
+								animate={isNavOpen ? "open" : "closed"}>
+								Projects
+							</motion.h2>
+						</motion.a>
+						<motion.a
+							href="#contact"
+							className="text-2xl font-bold text-white"
+							variants={itemVariants}
+							animate={isNavOpen ? "open" : "closed"}
+							delay={1.4}>
+							<motion.h2
+								className="text-white"
+								variants={itemVariants}
+								animate={isNavOpen ? "open" : "closed"}>
+								Contact
+							</motion.h2>
+						</motion.a>
+					</div>
+				</div>
+			</motion.div>
+		</>
+	);
+};
 
 const Navbar = () => {
 	const navRef = useRef(null);
@@ -20,67 +171,30 @@ const Navbar = () => {
 				{/* toggler */}
 				<div className="flex flex-row items-center">
 					<button
-						className="burger button flex flex-col justify-center items-center space-y-1.5"
+						className="burger button flex flex-col justify-center items-center space-y-1.5 z-50"
 						onClick={toggleNav}>
 						<div
-							className={`w-8 h-1 bg-black rounded-full`}></div>
+							className={`w-8 h-1 bg-black rounded-full transition-all ease-in duration-300 ${
+								isNavOpen
+									? "rotate-45  translate-y-2 bg-white"
+									: ""
+							}`}></div>
 						<div
-							className={`w-8 h-1 bg-black rounded-full`}></div>
+							className={`w-8 h-1 bg-black rounded-full transition-all ease-in duration-300 ${
+								isNavOpen ? "opacity-0" : ""
+							}`}></div>
 						<div
-							className={`w-8 h-1 bg-black rounded-full`}></div>
+							className={`w-8 h-1 bg-black rounded-full transition-all ease-in duration-300 ${
+								isNavOpen
+									? "-rotate-45 -translate-y-3 bg-white"
+									: ""
+							}`}></div>
 					</button>
 				</div>
 			</nav>
 			{/* items */}
-			<NavItems
-				isNavOpen={isNavOpen}
-				navRef={navRef}
-				setIsNavOpen={setIsNavOpen}
-			/>
+			<NavItems isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
 		</>
 	);
 };
 export default Navbar;
-
-const NavItems = ({ isNavOpen, setIsNavOpen }) => {
-	const closeNav = () => {
-		setIsNavOpen(false);
-	};
-
-	return (
-		<div
-			className={`fixed z-50 w-full h-screen flex items-center justify-center backdrop-blur-sm transition-all ease-out duration-300 ${
-				isNavOpen ? "" : "opacity-0 pointer-events-none"
-			}`}>
-			<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[80vh] bg-gray-700 min-w-[90vw]  rounded-3xl">
-				{/* close buton */}
-				<div className="absolute top-0 right-0 m-4">
-					<button className=" button" onClick={closeNav}>
-						<div className="w-8 h-1 bg-white rounded-full rotate-45 transform translate-x-[2px] translate-y-1 "></div>
-						<div className="w-8 h-1 bg-white rounded-full -rotate-45 transform  translate-x-[2px]"></div>
-					</button>
-				</div>
-				<div className="flex flex-col items-center space-y-8 my-auto mx-0">
-					{/* title */}
-					<h1 className="text-6xl font-bold text-white">Menu</h1>
-					<a href="#home" className="text-2xl font-bold text-white">
-						<h2>Home</h2>
-					</a>
-					<a href="#about" className="text-2xl font-bold text-white">
-						<h2>About</h2>
-					</a>
-					<a
-						href="#project"
-						className="text-2xl font-bold text-white">
-						<h2>Projects</h2>
-					</a>
-					<a
-						href="#contact"
-						className="text-2xl font-bold text-white">
-						<h2>Contact</h2>
-					</a>
-				</div>
-			</div>
-		</div>
-	);
-};

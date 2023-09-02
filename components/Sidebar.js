@@ -6,21 +6,22 @@ import {
 	faFolderOpen,
 	faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-const Sidebar = () => {
 
+
+const Sidebar = () => {
 	const handleMoveToSection = (index) => {
-			fullpage_api.moveTo(index);
-			fullpage_api.getActiveSection();
+		fullpage_api.moveTo(index);
+		fullpage_api.getActiveSection();
 	};
 
-  const containIsActive = (index) => {
-    if (fullpage_api.getActiveSection().index === index) {
-      return "bg-gray-500";
-    }
-    return "";
-  };
+	const containIsActive = (index) => {
+		if (fullpage_api.getActiveSection().index === index) {
+			return "bg-gray-500";
+		}
+		return "";
+	};
 	return (
-		<div className="hidden md:flex fixed z-50 bg-gray-600 h-[50vh] w-14  flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
+		<div className="hidden md:flex fixed z-40 bg-gray-600 h-[50vh] w-14  flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
 			<ul className="flex flex-col justify-center items-center h-full space-y-16 text-gray-200">
 				<li>
 					<button onClick={() => handleMoveToSection(1)}>
