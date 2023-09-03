@@ -45,10 +45,11 @@ const MyPage = () => {
 										type: "spring",
 									}}>
 									<div className="block md:hidden col-span-1 mx-auto my-10">
-										<div className="bg-slate-500 rounded-full h-full">
+										<div className="bg-slate-500 rounded-full h-60 w-60">
 											<Image
 												src={Me}
-												layout="fill"
+												width={500}
+												height={500}
 												className="rounded-full w-full h-full object-cover "
 												alt="Alvalens"
 												placeholder="blur"
@@ -114,15 +115,17 @@ const MyPage = () => {
 										delay: 0.7,
 										type: "spring",
 									}}>
-									<div className=" rounded-full h-auto w-auto aspect-square md:px-12">
-										<Image
-											src="/img/me.jpg"
-											layout="intrinsic"
-											width={500}
-											height={500}
-											className="rounded-full w-full h-full object-cover grayscale hover:grayscale-0"
-											alt="Alvalens"
-										/>
+									<div className=" rounded-full h-auto w-auto  md:px-12">
+										<div className="h-[300px] w-auto">
+											<Image
+												src={Me}
+												layout="fill"
+												objectFit="cover"
+												placeholder="blur"
+												className="grayscale hover:grayscale-0"
+												alt="Alvalens"
+											/>
+										</div>
 									</div>
 								</motion.div>
 							</div>
@@ -146,14 +149,14 @@ const MyPage = () => {
 											type: "spring",
 										}}
 										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
-											<Image 
-												src={MeAbout}
-												layout="fill"
-												className="object-cover"
-												alt="Alvalens"
-												placeholder="blur"
-											/>
-										</motion.div>
+										<Image
+											src={MeAbout}
+											layout="fill"
+											className="object-cover"
+											alt="Alvalens"
+											placeholder="blur"
+										/>
+									</motion.div>
 								</div>
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
 									<motion.h1
