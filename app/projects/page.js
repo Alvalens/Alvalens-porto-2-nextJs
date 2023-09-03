@@ -8,6 +8,11 @@ import Image from "next/image";
 import Me1 from "@/public/img/me1.jpg";
 import Me2 from "@/public/img/me2.jpg";
 import Me3 from "@/public/img/me3.jpg";
+
+const projects = () => {
+	[{ title: "React Chat WebApp"}]
+};
+
 export default function Page() {
 	// useEffect(() => {
 	// 	window.scrollTo(0, 0);
@@ -21,7 +26,7 @@ export default function Page() {
 						<motion.div
 							initial={{ opacity: 1, scale: 1 }}
 							animate={{ opacity: 1, scale: 1.6 }}
-							transition={{ duration: 1, ease: "easeInOut" }}
+							transition={{  ease: "easeInOut" }}
 							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
@@ -117,7 +122,7 @@ export default function Page() {
 									}}
 									transition={{
 										delay: 0.5,
-										duration: 1,
+										
 									}}
 									className="w-full h-full">
 									<Image
@@ -143,7 +148,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							duration: 1,
+							
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
@@ -179,7 +184,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.5,
-								duration: 1,
+								
 								type: "spring",
 							}}></motion.div>
 						<motion.div
@@ -194,7 +199,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.5,
-								duration: 1,
+								
 								type: "spring",
 							}}></motion.div>
 						<motion.h1
@@ -209,7 +214,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.7,
-								duration: 1,
+								
 								type: "spring",
 							}}>
 							Other Note Worthy Projects

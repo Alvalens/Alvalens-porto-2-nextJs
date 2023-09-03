@@ -23,7 +23,7 @@ export default function Page() {
 						<motion.div
 							initial={{ opacity: 1, scale: 1 }}
 							animate={{ opacity: 1, scale: 1.6 }}
-							transition={{ duration: 1, ease: "easeInOut" }}
+							transition={{  ease: "easeInOut" }}
 							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
@@ -70,7 +70,6 @@ export default function Page() {
 										scale: 1,
 										x: 0,
 									}}
-									transition={{ duration: 1 }}
 									className="w-full h-full">
 									<Image
 										src={Me1}
@@ -93,7 +92,7 @@ export default function Page() {
 										scale: 1,
 										x: 0,
 									}}
-									transition={{ delay: 0.3, duration: 1 }}
+									transition={{ delay: 0.3}}
 									className="w-full h-full">
 									<Image
 										src={Me2}
@@ -118,7 +117,7 @@ export default function Page() {
 									}}
 									transition={{
 										delay: 0.5,
-										duration: 1,
+										
 									}}
 									className="w-full h-full">
 									<Image
@@ -144,7 +143,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							duration: 1,
+							
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
@@ -207,7 +206,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							duration: 1,
+							
 							type: "spring",
 						}}>
 						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.5rem] uppercase ">
@@ -279,7 +278,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.6,
-							duration: 1,
+							
 							type: "spring",
 						}}>
 						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.5rem] uppercase">
@@ -322,7 +321,7 @@ export default function Page() {
 							className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"
 							initial={{
 								opacity: 0,
-								x: -200,
+								x: -100,
 							}}
 							whileInView={{
 								opacity: 1,
@@ -330,7 +329,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.5,
-								duration: 1,
+								
 								type: "spring",
 							}}></motion.div>
 						<motion.div
@@ -345,7 +344,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.5,
-								duration: 1,
+								
 								type: "spring",
 							}}></motion.div>
 						<motion.h1
@@ -360,7 +359,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.7,
-								duration: 1,
+								
 								type: "spring",
 							}}>
 							Education &amp; Experience
@@ -380,7 +379,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							duration: 1,
+							
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold mb-3">
@@ -415,7 +414,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							duration: 1,
+							
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold mb-3">
@@ -453,7 +452,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.7,
-								duration: 1,
+								
 								type: "spring",
 							}}>
 							Get In Touch{" "}

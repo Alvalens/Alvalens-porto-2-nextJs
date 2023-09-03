@@ -2,11 +2,12 @@
 import ReactFullpage from "@fullpage/react-fullpage";
 import Image from "next/image";
 import "../globals.css";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 // components
 import Button from "@/components/Button";
 import Me from "../../public/img/me.jpg";
+import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -31,8 +32,14 @@ const MyPage = () => {
 				render={({ state, fullpageApi }) => (
 					<ReactFullpage.Wrapper>
 						<div className="section">
-							<div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10">
-								<div className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start">
+							<div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden">
+								<motion.div
+									className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start"
+									initial={{ x: -100, opacity: 0 }}
+									whileInView={{ x: 0, opacity: 1 }}
+									transition={{
+										type: "spring",
+									}}>
 									<div className="block md:hidden col-span-1 mx-auto my-10">
 										<div className="bg-slate-500 rounded-full h-60 w-60">
 											<Image
@@ -45,30 +52,65 @@ const MyPage = () => {
 											/>
 										</div>
 									</div>
-									<h3 className="uppercase text-xl mb-3 font-normal text tracking-[.5rem] text-gray-500">
+									<motion.h3
+										className="uppercase text-xl mb-3 font-normal text tracking-[.5rem] text-gray-500"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											type: "spring",
+										}}>
 										Alvalen Shafel
-									</h3>
-									<h1 className="text-black text-5xl md:text-8xl font-bold my-2 md:my-5">
+									</motion.h3>
+									<motion.h1
+										className="text-black text-5xl md:text-8xl font-bold my-2 md:my-5"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.3,
+											type: "spring",
+										}}>
 										Full Stack Developer
-									</h1>
-									<p className="title text-md  md:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]">
+									</motion.h1>
+									<motion.p
+										className="title text-md  md:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.4,
+											type: "spring",
+										}}>
 										A junior fullstack developer who
 										currently focused on Web Development.
 										Other than that, I also interested in
 										UX/UI Design, Mobile and AI Development.
 										I love to learn new things and always
 										open to new opportunities.
-									</p>
-									<div className="buttons flex flex-row justify-center items-center space-x-4 mt-10">
+									</motion.p>
+									<motion.div
+										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.5,
+											type: "spring",
+										}}>
 										<Button variation="primary">
 											Download CV
 										</Button>
 										<Button variation="secondary">
 											Contact Me
 										</Button>
-									</div>
-								</div>
-								<div className="hidden md:flex col-span-1 mx-auto justify-center items-center ">
+									</motion.div>
+								</motion.div>
+								<motion.div
+									className="hidden md:flex col-span-1 mx-auto justify-center items-center "
+									initial={{ x: 100, opacity: 0 }}
+									whileInView={{ x: 0, opacity: 1 }}
+									transition={{
+										delay: 0.7,
+										type: "spring",
+									}}>
 									<div className=" rounded-full h-auto w-auto aspect-square md:px-12">
 										<Image
 											src="/img/me.jpg"
@@ -79,60 +121,124 @@ const MyPage = () => {
 											alt="Alvalens"
 										/>
 									</div>
-								</div>
+								</motion.div>
 							</div>
 						</div>
 						<div className="section">
-							<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col">
+							<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<motion.div
-										initial={{ opacity: 0, scale: 0.5 }}
-										animate={{ opacity: 1, scale: 1 }}
-										transition={{ duration: 1 }}
+										initial={{
+											x: 300,
+											opacity: 0,
+											z: -100,
+										}}
+										whileInView={{
+											x: 0,
+											opacity: 1,
+											z: 0,
+										}}
+										transition={{
+											delay: 0.5,
+											type: "spring",
+										}}
 										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
 								</div>
-								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
-									<h1 className="text-black text-5xl md:text-8xl font-bold">
+								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
+									<motion.h1
+										className="text-black text-5xl md:text-8xl font-bold"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.1,
+											type: "spring",
+										}}>
 										About Me
-									</h1>
-									<div className="flex justify-center items-center flex-col my-5 ">
-										<div className="bg-gray-700 w-20 h-1 rounded-full mb-2"></div>
-										<div className="bg-gray-700 w-20 h-1 rounded-full translate-x-14"></div>
-									</div>
-									<p className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5">
+									</motion.h1>
+									<Hr />
+									<motion.p
+										className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											type: "spring",
+										}}>
 										A brief introduction about me and my
 										interest.
-									</p>
-									<Link href="/about">
+									</motion.p>
+									<motion.div
+										initial={{ y: 50, opacity: 0 }}
+										whileInView={{ y: 0, opacity: 1 }}
+										transition={{
+											delay: 0.3,
+											type: "spring",
+										}}>
 										<Button variation="primary">
-											Learn More
+											<Link href="/about">
+												Learn More
+											</Link>
 										</Button>
-									</Link>
+									</motion.div>
 								</div>
 							</div>
 						</div>
 						<div className="section">
-							<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col">
+							<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
-									<div className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></div>
+									<motion.div
+										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] "
+										initial={{
+											x: 300,
+											opacity: 0,
+											z: -100,
+										}}
+										whileInView={{
+											x: 0,
+											opacity: 1,
+											z: 0,
+										}}
+										transition={{
+											delay: 0.5,
+											type: "spring",
+										}}></motion.div>
 								</div>
-								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
-									<h1 className="text-black text-5xl md:text-8xl font-bold">
+								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden py-5">
+									<motion.h1
+										className="text-black text-5xl md:text-8xl font-bold"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.1,
+											type: "spring",
+										}}>
 										My Projects
-									</h1>
-									<div className="flex justify-center items-center flex-col my-5 ">
-										<div className="bg-gray-700 w-20 h-1 rounded-full mb-2"></div>
-										<div className="bg-gray-700 w-20 h-1 rounded-full translate-x-14"></div>
-									</div>
-									<p className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5">
+									</motion.h1>
+									<Hr />
+									<motion.p
+										className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											type: "spring",
+										}}>
 										This is some of my projects that I have
 										done and currently working on.
-									</p>
-									<Button variation="primary">
-										<Link href="/projects">
-										Learn More
-										</Link>
-									</Button>
+									</motion.p>
+									<motion.div
+										initial={{ y: 50, opacity: 0 }}
+										whileInView={{ y: 0, opacity: 1 }}
+										transition={{
+											delay: 0.3,
+											type: "spring",
+										}}>
+										<Button variation="primary">
+											<Link href="/projects">
+												Learn More
+											</Link>
+										</Button>
+									</motion.div>
 								</div>
 							</div>
 						</div>
@@ -142,70 +248,118 @@ const MyPage = () => {
 									<div className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></div>
 								</div>
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
-									<h1 className="text-black text-5xl md:text-8xl font-bold">
+									<motion.h1
+										className="text-black text-5xl md:text-8xl font-bold"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.1,
+											type: "spring",
+										}}>
 										Get In Touch
-									</h1>
-									<div className="flex justify-center items-center flex-col my-5 ">
-										<div className="bg-gray-700 w-20 h-1 rounded-full mb-2"></div>
-										<div className="bg-gray-700 w-20 h-1 rounded-full translate-x-14"></div>
-									</div>
-									<p className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5">
+									</motion.h1>
+									<Hr />
+									<motion.p
+										className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											type: "spring",
+										}}>
 										Feel free to contact me if you have any
 										questions or just want to say hi.
-									</p>
-									<p className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5">
+									</motion.p>
+									<motion.p
+										className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.3,
+											type: "spring",
+										}}>
 										alvalen.shafel04@gmail.com
-									</p>
+									</motion.p>
 									{/* icons */}
 									<div className="flex justify-center items-center space-x-4">
-										<a
+										<motion.a
 											href="#"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
+											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											initial={{ y: 50, opacity: 0 }}
+											whileInView={{ y: 0, opacity: 1 }}
+											transition={{
+												y: { delay: 0.1 },
+												opacity: { delay: 0.2 },
+											}}>
 											<FontAwesomeIcon
 												icon={faEnvelope}
 												className="text-3xl"
 											/>
-										</a>
+										</motion.a>
 
-										<a
+										<motion.a
 											href="#"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
+											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											initial={{ opacity: 0, y: 50 }}
+											whileInView={{ opacity: 1, y: 0 }}
+											transition={{
+												y: { delay: 0.2 },
+												opacity: { delay: 0.3 },
+											}}>
 											<FontAwesomeIcon
 												icon={faGithub}
 												className="text-3xl"
 											/>
-										</a>
-										<a
+										</motion.a>
+										<motion.a
 											href="#"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
+											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											initial={{ opacity: 0, y: 50 }}
+											whileInView={{ opacity: 1, y: 0 }}
+											transition={{
+												y: { delay: 0.3 },
+												opacity: { delay: 0.4 },
+											}}>
 											<FontAwesomeIcon
 												icon={faInstagram}
 												className="text-3xl"
 											/>
-										</a>
-										<a
+										</motion.a>
+										<motion.a
 											href="#"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
+											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											initial={{ opacity: 0, y: 50 }}
+											whileInView={{ opacity: 1, y: 0 }}
+											transition={{
+												y: { delay: 0.4 },
+												opacity: { delay: 0.5 },
+											}}>
 											<FontAwesomeIcon
 												icon={faLinkedin}
 												className="text-3xl"
 											/>
-										</a>
-										<a
+										</motion.a>
+										<motion.a
 											href="#"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300">
+											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											initial={{ opacity: 0, y: 50 }}
+											whileInView={{ opacity: 1, y: 0 }}
+											transition={{
+												y: { delay: 0.5 },
+												opacity: { delay: 0.6 },
+											}}>
 											<FontAwesomeIcon
 												icon={faDiscord}
 												className="text-3xl"
 											/>
-										</a>
+										</motion.a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</ReactFullpage.Wrapper>
 				)}
-				{...fullpageOptions} // Pass fullpage options to the component
+				{...fullpageOptions}
 			/>
 		</div>
 	);
