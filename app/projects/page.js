@@ -6,12 +6,15 @@ import Button from "@/components/Button";
 import Image from "next/legacy/image";
 
 // images
-import Me1 from "@/public/img/me1.jpg";
-import Me2 from "@/public/img/me2.jpg";
-import Me3 from "@/public/img/me3.jpg";
+import ReactChat1 from "@/public/projects/react-chat.png";
+import ReactChat2 from "@/public/projects/react-chat2.png";
+import ReactChat3 from "@/public/projects/react-chat3.png";
+import ProjectAll from "@/public/img/projects-all.jpg";
+
+import Hr from "@/components/Hr";
 
 const projects = () => {
-	[{ title: "React Chat WebApp"}]
+	[{ title: "React Chat WebApp" }];
 };
 
 export default function Page() {
@@ -28,16 +31,21 @@ export default function Page() {
 							initial={{ scale: 1 }}
 							animate={{ scale: 1.6 }}
 							transition={{ duration: 1, ease: "circOut" }}
-							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
+							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0">
+							<Image
+								src={ProjectAll}
+								alt="Alvalens"
+								layout="fill"
+								objectFit="cover"
+								placeholder="blur"
+							/>
+						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
+					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
 						<h1 className="text-5xl md:text-8xl font-bold">
 							My Projects
 						</h1>
-						<div className="flex justify-center items-center flex-col my-5 ">
-							<div className="bg-gray-700 w-20 h-1 rounded-full mb-2"></div>
-							<div className="bg-gray-700 w-20 h-1 rounded-full translate-x-14"></div>
-						</div>
+						<Hr />
 						<p className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5">
 							List of my projects that I have done and currently
 							working on.
@@ -67,7 +75,7 @@ export default function Page() {
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 w-[50%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+							<div className="absolute top-28 left-10 w-[50%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -75,10 +83,9 @@ export default function Page() {
 										scale: 1,
 										x: 0,
 									}}
-									transition={{ duration: 1 }}
-									className="w-full h-full">
+									className="w-full h-full shadow-lg">
 									<Image
-										src={Me1}
+										src={ReactChat1}
 										alt="Alvalens"
 										layout="fill"
 										objectFit="cover"
@@ -86,7 +93,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute top-16 right-28 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+							<div className="absolute top-16 right-28 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -98,18 +105,19 @@ export default function Page() {
 										scale: 1,
 										x: 0,
 									}}
-									transition={{ delay: 0.3, duration: 1 }}
-									className="w-full h-full">
+									transition={{ delay: 0.3 }}
+									className="w-full h-full shadow-lg ">
 									<Image
-										src={Me2}
+										src={ReactChat3}
 										alt="Alvalens"
 										layout="fill"
 										objectFit="cover"
 										placeholder="blur"
+										objectPosition="0% 0%"
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute bottom-16 right-20 w-[40%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+							<div className="absolute bottom-16 right-20 w-[40%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -124,9 +132,9 @@ export default function Page() {
 									transition={{
 										delay: 0.5,
 									}}
-									className="w-full h-full">
+									className="w-full h-full shadow-lg">
 									<Image
-										src={Me3}
+										src={ReactChat2}
 										alt="Alvalens"
 										layout="fill"
 										objectFit="cover"
@@ -167,7 +175,15 @@ export default function Page() {
 							firebase storage. You can see the source code of
 							this project on my github account or preview the
 							project by clicking the button below.
-						</p>
+						</p>{" "}
+						<div className="mt-3">
+							<Button variation="primary">
+								<Link href="projects/react-chat ">More</Link>
+							</Button>
+							<Button variation="secondary">
+								<Link href="projects/react-chat">Preview</Link>
+							</Button>
+						</div>
 					</motion.div>
 				</div>
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">

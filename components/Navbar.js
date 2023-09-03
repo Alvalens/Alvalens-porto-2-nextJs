@@ -175,8 +175,8 @@ const Navbar = () => {
 			<nav
 				ref={navRef}
 				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${
-					isNavOpen ? "bg-transparent" : "bg-gray-50"
-				} inset-0 backdrop-blur-md opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
+					isNavOpen ? "bg-transparent" : "backdrop-filter backdrop-blur-xl"
+				} inset-0  opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
 				<div className="">
 					<h1 className="text-2xl">Alvalens</h1>
 				</div>

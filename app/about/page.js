@@ -4,13 +4,12 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import Image from "next/legacy/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
 import Me2 from "@/public/img/me2.jpg";
 import Me3 from "@/public/img/me3.jpg";
+import Hr from "@/components/Hr";
 export default function Page() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -35,15 +34,12 @@ export default function Page() {
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
+					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
 						<h1 className="text-5xl md:text-8xl font-bold">
 							About Me
 						</h1>
-						<div className="flex justify-center items-center flex-col my-5 ">
-							<div className="bg-gray-700 w-20 h-1 rounded-full mb-2"></div>
-							<div className="bg-gray-700 w-20 h-1 rounded-full translate-x-14"></div>
-						</div>
-						<p className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5">
+						<Hr />
+						<p className="title  text-xl mt-4 tracking-wider text-gray-700 leading-[1.7rem] mb-5 ">
 							A brief introduction about me and my interest.
 						</p>
 						<motion.div
@@ -194,13 +190,6 @@ export default function Page() {
 						</p>
 					</motion.div>
 				</div>
-				{/* <div className="mt-16 flex flex-col justify-start items-center w-full pl-12 md:pl-32">
-					<div className="flex justify-center items-center flex-col my-5 self-start ">
-						<div className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"></div>
-						<div className="bg-gray-700 w-28 h-1 rounded-full translate-x-12"></div>
-						<h1 className="text-3xl font-bold mt-3">Tech Stack</h1>
-					</div>
-				</div> */}
 				<div className=" w-screen mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 mt-10 mb-24">
 					<motion.div
 						className="flex justify-center items-center flex-col mb-5 "
@@ -444,32 +433,6 @@ export default function Page() {
 							the unique needs of clients.
 						</p>
 					</motion.div>
-				</div>
-
-				<div className="flex justify-center items-center flex-col mt-5 self-start min-h-[50vh] bg-gray-200">
-					<Link href="/#contact">
-						<motion.h1
-							className="text-5xl font-bold mt-3 tracking-widest hover:underline"
-							initial={{
-								opacity: 0,
-								y: -200,
-							}}
-							whileInView={{
-								opacity: 1,
-								y: 0,
-							}}
-							transition={{
-								delay: 0.7,
-
-								type: "spring",
-							}}>
-							Get In Touch{" "}
-							<FontAwesomeIcon
-								icon={faArrowRight}
-								className="text-5xl ml-2"
-							/>
-						</motion.h1>
-					</Link>
 				</div>
 			</main>
 		</>
