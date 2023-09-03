@@ -8,6 +8,7 @@ import Link from "next/link";
 // components
 import Button from "@/components/Button";
 import Me from "../../public/img/me.jpg";
+import MeAbout from "@/public/img/me2.jpg";
 import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -145,7 +146,15 @@ const MyPage = () => {
 											delay: 0.5,
 											type: "spring",
 										}}
-										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
+										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
+											<Image 
+												src={MeAbout}
+												layout="fill"
+												className="object-cover"
+												alt="Alvalens"
+												placeholder="blur"
+											/>
+										</motion.div>
 								</div>
 								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
 									<motion.h1

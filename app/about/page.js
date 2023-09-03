@@ -22,10 +22,18 @@ export default function Page() {
 				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10">
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 						<motion.div
-							initial={{  scale: 1 }}
+							initial={{ scale: 1 }}
 							animate={{ scale: 1.6 }}
-							transition={{  ease: "circOut", duration: 1}}
-							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
+							transition={{ ease: "circOut", duration: 1 }}
+							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0">
+							<Image
+								src={Me2}
+								alt="Alvalens"
+								layout="fill"
+								objectFit="cover"
+								placeholder="blur"
+							/>
+						</motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
 						<h1 className="text-5xl md:text-8xl font-bold">
@@ -39,8 +47,8 @@ export default function Page() {
 							A brief introduction about me and my interest.
 						</p>
 						<motion.div
-							initial={{ opacity: 0,  }}
-							animate={{ opacity: 1, }}
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
 							transition={{ duration: 0.5, ease: "circOut" }}
 							onClick={() => {
 								window.scrollTo({
@@ -93,7 +101,7 @@ export default function Page() {
 										scale: 1,
 										x: 0,
 									}}
-									transition={{ delay: 0.3}}
+									transition={{ delay: 0.3 }}
 									className="w-full h-full">
 									<Image
 										src={Me2}
@@ -118,7 +126,6 @@ export default function Page() {
 									}}
 									transition={{
 										delay: 0.5,
-										
 									}}
 									className="w-full h-full">
 									<Image
@@ -144,7 +151,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							
+
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
@@ -207,7 +214,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							
+
 							type: "spring",
 						}}>
 						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.5rem] uppercase ">
@@ -279,7 +286,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.6,
-							
+
 							type: "spring",
 						}}>
 						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.5rem] uppercase">
@@ -330,7 +337,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.5,
-								
+
 								type: "spring",
 							}}></motion.div>
 						<motion.div
@@ -345,7 +352,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.5,
-								
+
 								type: "spring",
 							}}></motion.div>
 						<motion.h1
@@ -360,7 +367,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.7,
-								
+
 								type: "spring",
 							}}>
 							Education &amp; Experience
@@ -380,7 +387,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							
+
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold mb-3">
@@ -415,7 +422,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							
+
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold mb-3">
@@ -453,7 +460,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.7,
-								
+
 								type: "spring",
 							}}>
 							Get In Touch{" "}
