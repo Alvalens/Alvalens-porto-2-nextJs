@@ -16,6 +16,7 @@ html {
 		font-size: 14px !important;
 	}
 }
+
 @media (max-width: 768px) {
 	html {
 		font-size: 13px !important;
@@ -61,4 +62,29 @@ span {
 
 .active {
 	color: rgb(255, 235, 87);
+}
+
+td, th {
+	@apply py-2 px-3;
+}
+
+
+[title]:hover:after {
+	margin-left: 10px;
+	position: absolute;
+	content: attr(title);
+	padding: 0.5rem;
+	white-space: nowrap;
+	z-index: 1;
+	background-color: #333333;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+}
+
+[title]:hover:after {
+	opacity: 1;
+	transform: translateY(0);
+
 }

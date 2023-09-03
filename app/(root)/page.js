@@ -129,7 +129,9 @@ const MyPage = () => {
 										done and currently working on.
 									</p>
 									<Button variation="primary">
+										<Link href="/projects">
 										Learn More
+										</Link>
 									</Button>
 								</div>
 							</div>

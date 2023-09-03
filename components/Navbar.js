@@ -108,7 +108,7 @@ if (isMobile) {
         </motion.h2>
       </div>
     </Link>
-    <Link href="/project"> 
+    <Link href="/projects"> 
       <div className="text-2xl font-bold text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"} delay={1.3}>
         <motion.h2 className="text-white" variants={itemVariants} animate={isNavOpen ? "open" : "closed"}>
           Projects
@@ -141,14 +141,14 @@ const Navbar = () => {
 		<>
 			<nav
 				ref={navRef}
-				className={`navbar px-5 md:px-24 w-screen fixed inset-0 backdrop-blur-sm opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
+				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${isNavOpen ? "bg-transparent" : "bg-gray-50"} inset-0 backdrop-blur-md opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
 				<div className="">
 					<h1 className="text-2xl">Alvalens</h1>
 				</div>
 				{/* toggler */}
 				<div className="flex flex-row items-center">
 					<button
-						className="burger button flex flex-col justify-center items-center space-y-1.5 z-50"
+						className="burger button flex flex-col justify-center items-center space-y-1.5 "
 						onClick={toggleNav}>
 						<div
 							className={`w-8 h-1 bg-black rounded-full transition-all ease-in duration-300 ${
