@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
@@ -14,9 +15,9 @@ const projects = () => {
 };
 
 export default function Page() {
-	// useEffect(() => {
-	// 	window.scrollTo(0, 0);
-	// }, []);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>
@@ -24,9 +25,9 @@ export default function Page() {
 				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10">
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 						<motion.div
-							initial={{ opacity: 1, scale: 1 }}
-							animate={{ opacity: 1, scale: 1.6 }}
-							transition={{  ease: "easeInOut" }}
+							initial={{ scale: 1 }}
+							animate={{ scale: 1.6 }}
+							transition={{ duration: 1, ease: "circOut" }}
 							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
@@ -44,7 +45,7 @@ export default function Page() {
 						<motion.div
 							initial={{ opacity: 0, y: 100 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 1 }}
+							transition={{ duration: 0.5, ease: "circOut" }}
 							onClick={() => {
 								window.scrollTo({
 									top: 1000,
@@ -122,7 +123,6 @@ export default function Page() {
 									}}
 									transition={{
 										delay: 0.5,
-										
 									}}
 									className="w-full h-full">
 									<Image
@@ -148,7 +148,7 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-							
+
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
@@ -184,7 +184,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.5,
-								
+
 								type: "spring",
 							}}></motion.div>
 						<motion.div
@@ -199,7 +199,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.5,
-								
+
 								type: "spring",
 							}}></motion.div>
 						<motion.h1
@@ -214,7 +214,7 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.7,
-								
+
 								type: "spring",
 							}}>
 							Other Note Worthy Projects
@@ -283,13 +283,10 @@ export default function Page() {
 				</div>
 				{/* view in archive btn */}
 				<div className="flex justify-center items-center flex-col my-5 self-start ">
-				<Button variation="primary">
-					<Link href="projects/archive">
-					View In Archive
-					</Link>
-				</Button>
+					<Button variation="primary">
+						<Link href="projects/archive">View In Archive</Link>
+					</Button>
 				</div>
-
 			</main>
 		</>
 	);

@@ -7,7 +7,7 @@ export default function Hr() {
 				className="bg-gray-700 w-20 h-1 rounded-full mb-2"
 				initial={{
 					opacity: 0,
-					x: -100,
+					x: -50,
 				}}
 				whileInView={{
 					opacity: 1,

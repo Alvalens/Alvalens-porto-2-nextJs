@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
@@ -11,9 +12,9 @@ import Me1 from "@/public/img/me1.jpg";
 import Me2 from "@/public/img/me2.jpg";
 import Me3 from "@/public/img/me3.jpg";
 export default function Page() {
-	// useEffect(() => {
-	// 	window.scrollTo(0, 0);
-	// }, []);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>
@@ -21,9 +22,9 @@ export default function Page() {
 				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10">
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 						<motion.div
-							initial={{ opacity: 1, scale: 1 }}
-							animate={{ opacity: 1, scale: 1.6 }}
-							transition={{  ease: "easeInOut" }}
+							initial={{  scale: 1 }}
+							animate={{ scale: 1.6 }}
+							transition={{  ease: "circOut", duration: 1}}
 							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
@@ -38,9 +39,9 @@ export default function Page() {
 							A brief introduction about me and my interest.
 						</p>
 						<motion.div
-							initial={{ opacity: 0, y: 100 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 1 }}
+							initial={{ opacity: 0,  }}
+							animate={{ opacity: 1, }}
+							transition={{ duration: 0.5, ease: "circOut" }}
 							onClick={() => {
 								window.scrollTo({
 									top: 1000,

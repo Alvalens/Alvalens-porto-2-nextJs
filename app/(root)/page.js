@@ -4,6 +4,7 @@ import Image from "next/image";
 import "../globals.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
+
 // components
 import Button from "@/components/Button";
 import Me from "../../public/img/me.jpg";
@@ -23,6 +24,8 @@ const MyPage = () => {
 		scrollingSpeed: 1000,
 		licenseKey: "gplv3-license",
 		menu: "#sidebar",
+		lockAnchors: false,
+		
 	};
 
 	return (
@@ -168,7 +171,7 @@ const MyPage = () => {
 										interest.
 									</motion.p>
 									<motion.div
-										initial={{ y: 50, opacity: 0 }}
+										initial={{ y: 40, opacity: 0 }}
 										whileInView={{ y: 0, opacity: 1 }}
 										transition={{
 											delay: 0.3,
@@ -203,7 +206,7 @@ const MyPage = () => {
 											type: "spring",
 										}}></motion.div>
 								</div>
-								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden py-5">
+								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
 									<motion.h1
 										className="text-black text-5xl md:text-8xl font-bold"
 										initial={{ x: -100, opacity: 0 }}
@@ -227,7 +230,7 @@ const MyPage = () => {
 										done and currently working on.
 									</motion.p>
 									<motion.div
-										initial={{ y: 50, opacity: 0 }}
+										initial={{ y: 40, opacity: 0 }}
 										whileInView={{ y: 0, opacity: 1 }}
 										transition={{
 											delay: 0.3,
@@ -247,7 +250,7 @@ const MyPage = () => {
 								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<div className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]"></div>
 								</div>
-								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10">
+								<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
 									<motion.h1
 										className="text-black text-5xl md:text-8xl font-bold"
 										initial={{ x: -100, opacity: 0 }}
@@ -285,7 +288,7 @@ const MyPage = () => {
 										<motion.a
 											href="#"
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-											initial={{ y: 50, opacity: 0 }}
+											initial={{ y: 40, opacity: 0 }}
 											whileInView={{ y: 0, opacity: 1 }}
 											transition={{
 												y: { delay: 0.1 },
@@ -300,7 +303,7 @@ const MyPage = () => {
 										<motion.a
 											href="#"
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-											initial={{ opacity: 0, y: 50 }}
+											initial={{ opacity: 0, y: 40 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											transition={{
 												y: { delay: 0.2 },
@@ -314,7 +317,7 @@ const MyPage = () => {
 										<motion.a
 											href="#"
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-											initial={{ opacity: 0, y: 50 }}
+											initial={{ opacity: 0, y: 40 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											transition={{
 												y: { delay: 0.3 },
@@ -328,7 +331,7 @@ const MyPage = () => {
 										<motion.a
 											href="#"
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-											initial={{ opacity: 0, y: 50 }}
+											initial={{ opacity: 0, y: 40 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											transition={{
 												y: { delay: 0.4 },
@@ -342,7 +345,7 @@ const MyPage = () => {
 										<motion.a
 											href="#"
 											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
-											initial={{ opacity: 0, y: 50 }}
+											initial={{ opacity: 0, y: 40 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											transition={{
 												y: { delay: 0.5 },

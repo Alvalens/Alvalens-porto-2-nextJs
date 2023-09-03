@@ -26,6 +26,7 @@ html {
 body {
 	font-family: 'Poppins', sans-serif !important;
 	color: black;
+	background-color: #f6f6f6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,5 +83,6 @@ a[title]:hover:after {
 	border-radius: 4px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	font-size: 0.8rem;
-	
+
 }
+
