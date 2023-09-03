@@ -1,6 +1,6 @@
 "use client";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import "../globals.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -45,11 +45,10 @@ const MyPage = () => {
 										type: "spring",
 									}}>
 									<div className="block md:hidden col-span-1 mx-auto my-10">
-										<div className="bg-slate-500 rounded-full h-60 w-60">
+										<div className="bg-slate-500 rounded-full h-full">
 											<Image
 												src={Me}
-												width={500}
-												height={500}
+												layout="fill"
 												className="rounded-full w-full h-full object-cover "
 												alt="Alvalens"
 												placeholder="blur"

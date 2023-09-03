@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
