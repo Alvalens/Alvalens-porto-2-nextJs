@@ -1,14 +1,122 @@
 {
   "Projects": [
     {
-      "title": "Project 1",
+      "title": "React Realtime Chat",
       "desc": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl quis ultricies ultricies, nunc nisl ultricies elit, qu",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl quis ultricies ultricies, nunc nisl ultricies elit, qu"
+        "My ambitious project that delves into the world of interactive web development using React. This project is a realtime chat application that allows users to create chat rooms and chat with other users in realtime. The application is built using React, Firebase, and Daisy UI.",
+        "This project is my second react project and my first project using Firebase. I learned a lot about how to use Firebase and how to use React to create a realtime application. I also learned how to use Daisy UI, a CSS framework that is built on top of Tailwind CSS. "
       ],
-      "year": "2015",
+      "year": "2023",
       "preview": "http://www.google.com",
       "code": "http://www.google.com",
+      "images": [
+        "/projects/lms.png",
+        "/projects/lms.png",
+        "/projects/lms.png"
+      ],
+      "tech": [
+        "React",
+        "Firebase",
+        "Daisy UI"
+      ],
+      "slug": "react-chat"
+    },
+    {
+      "title": "React Tools",
+      "desc": [
+        "React Tools is a groundbreaking and user-friendly project that brings together a comprehensive collection of tools and components crafted with cutting-edge technologies, including React, React Router, and TailwindCSS. What sets this project apart is that it's not just a suite of powerful features, but it's also a significant milestone as it marks my very first venture into the world of React development.",
+
+        "Unlike traditional web applications, React Tools cleverly utilizes browser local storage, eliminating the need for external databases. This not only ensures seamless performance but also prioritizes user data privacy. ",
+
+        "The Todo List keeps tasks in check with intuitive task management capabilities, ensuring you never miss a beat. The note-taking feature provides a hassle-free way to jot down ideas and crucial information, accessible whenever inspiration strikes. Additionally, our robust expense tracker simplifies financial management by recording and categorizing expenses, delivering insightful spending analysis."
+      ],
+      "year": "2023",
+      "preview": "http://www.google.com",
+      "code": "http://www.google.com",
+      "images": [
+        "/projects/lms.png",
+        "/projects/lms.png",
+        "/projects/lms.png"
+      ],
+      "tech": [
+        "React",
+        "React Router",
+        "TailwindCSS"
+      ],
+      "slug": "react-tools"
+    },
+    {
+      "title": "Aleph Discord Bot",
+      "desc": [
+        "Aleph is a Discord bot that I created for my dircord server to use. The bot is built using Python and the discord.py library. The bot has image grabber feauture that takes argument (keywords) and returns an image from the internet.", "Other than that this bot has a few other features such as utility command to delete a messages, and a command to get the server's ping. This bot is still in development and I plan to add more features in the future."],
+      "year": "2023",
+      "preview": "http://www.google.com",
+      "code": "http://www.google.com",
+      "images": [
+        "/projects/lms.png",
+        "/projects/lms.png",
+        "/projects/lms.png"
+      ],
+      "tech": [
+        "Python",
+        "Discord.py"
+      ],
+      "slug": "aleph-discord-bot"
+    }, 
+    {
+      "title": "LPTK Cup 2023 Website",
+      "desc": [
+        "LPTK Cup UM is a website that I created for a competition held by  the Universitas Negeri Malang. The website is mainly built using Laravel and Bootstrap. The website has a few features such as a registration form, a login system, article system, file upload,  and a dashboard for the admin to manage the contents.",
+        "This project is my second freelance project, this project is not as big as my first freelance project but I learned a lot from this project. I learn how to manage a project and how to work with a team."
+      ],
+      "year": "2023",
+      "preview": "",
+      "code": "",
+      "images": [
+        "/projects/lms.png",
+        "/projects/lms.png",
+        "/projects/lms.png"
+      ],
+      "tech": [
+        "Laravel",
+        "Bootstrap",
+        "MySQL",
+        "jQuery",
+        "DataTables"
+      ],
+      "slug": "lptk-cup-website"
+    }, 
+    {
+      "title": "NU INO Website",
+      "desc": [
+        "My first freelance project. This project is a website for a School based on a JALAKAR curriculum. The website is built mainly using Laravel and Bootstrap.", "This website is LMS like system, have a user management, user auth, quiz and material for student and FAQ",  "In this project I learned how to work with a team and how to manage a project. I also learned new library such as livewire and alpine.js."],
+      "year": "2023",
+      "preview": "",
+      "code": "",
+      "images": [
+        "/projects/lms.png",
+        "/projects/lms.png",
+        "/projects/lms.png"
+      ],
+      "tech": [
+        "Laravel",
+        "Bootstrap",
+        "Livewire",
+        "MySQL",
+        "jQuery",
+        "DataTables"
+      ],
+      "slug": "nu-ino-website"
+    },
+    {
+      "title": "Unmuh Jember Landing Page",
+      "desc": [
+        "Unmuh Jember landing page is a website that I created for a competition held by Universitas Muhammadiyah Jember. The website is built natively using HTML, CSS, and JavaScript. The website has a few features such as a registration form, a login system, and a dashboard for the admin to manage the contents.",
+        "This project is my first freelance project and my first project using JavaScript. I learned a lot about how to use JavaScript and how to use it to create a website. I also learned how to work with a team and how to manage a project."
+      ],
+      "year": "2023",
+      "preview": "https://alvalens.github.io/unmuh-jember-landing-page/",
+      "code": "https://github.com/Alvalens/unmuh-jember-landing-page",
       "images": [
         "/projects/lms.png",
         "/projects/lms.png",
@@ -19,7 +127,29 @@
         "CSS",
         "JavaScript"
       ],
-      "slug": "project-1"
+      "slug": "unmuh-jember-landing-page"
+    },
+    {
+      "title": "My First Portofolio Website",
+      "desc": [
+        "This Project is my first portfolio website. This website is built using HTML, CSS, and JavaScript. First project that I deployed to the internet. Also my first time using Bootstrap.",
+        "I learned a lot about web developement in this project. I Also learn how to use Git and Github. This project is the reason why I started to learn web development."
+      ],
+      "year": "2022",
+      "preview": "",
+      "code": "",
+      "images": [
+        "/projects/lms.png",
+        "/projects/lms.png",
+        "/projects/lms.png"
+      ],
+      "tech": [
+        "HTML",
+        "Bootstrap",
+        "CSS",
+        "JavaScript"
+      ],
+      "slug": "my-first-portfolio-website"
     }
   ]
 }
