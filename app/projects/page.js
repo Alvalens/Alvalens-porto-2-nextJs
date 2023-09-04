@@ -13,9 +13,64 @@ import ProjectAll from "@/public/img/projects-all.jpg";
 
 import Hr from "@/components/Hr";
 
-const projects = () => {
-	[{ title: "React Chat WebApp" }];
-};
+const projects = [
+	{
+		title: "React Chat WebApp",
+		desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+		year: "2023",
+		tech: "Javascript, React Js, Firebase, Daisy UI",
+		bg: { ReactChat3 },
+		slug: "react-chat",
+	},
+	{
+		title: "React Tools",
+		desc: "My first React project. contain three main tools: Todo List, Note, and Expense Tracker that usefull for daily activity",
+		year: "2023",
+		tech: "Javascript, React Js, TailwindCSS",
+		bg: { ReactChat3 },
+		slug: "react-tools",
+	},
+	{
+		title: "Aleph Discord Bot",
+		desc: "Discord bot that can search images on google and send the result to discord channel, with this bot you can search images on google without leaving discord.",
+		year: "2023",
+		tech: "Python, Serp API, Discord.py",
+		bg: { ReactChat3 },
+		slug: "aleph-discord-bot",
+	},
+	{
+		title: "LPTK Cup 2023 Website",
+		desc: "LPTK Cup 2023 is a website for a competition that held by Universitas Negeri Malang. This is my second freelance project using Laravel.",
+		year: "2023",
+		tech: "PHP, Laravel, Bootstrap, JQuery, MySQL",
+		bg: { ReactChat3 },
+		slug: "lptk-cup-2023",
+	},
+	{
+		title: "NU INO Website",
+		desc: "My first freelance project. This project is a website for a School based on a JALAKAR curriculum. The website is built mainly using Laravel and Bootstrap.",
+		year: "2023",
+		tech: "PHP, Laravel, Livewire, Bootstrap, JQuery, MySQL",
+		bg: { ReactChat3 },
+		slug: "nu-ino-website",
+	},
+	{
+		title: "Unmuh Jember Landing Page",
+		desc: "Landing page for Universitas Muhammadiyah Jember. This is my first freelance project using HTML, CSS, and Javascript.",
+		year: "2023",
+		tech: "HTML, CSS, Javascript",
+		bg: { ReactChat3 },
+		slug: "unmuh-jember-landing-page",
+	},
+	{
+		title: "My First Portofolio Website",
+		desc: "My first portofolio website that i created using HTML, CSS, and Javascript. This website is my first project that i created using HTML, CSS, and Javascript.",
+		year: "2022",
+		tech: "HTML, CSS, Javascript, Bootstrap",
+		bg: { ReactChat3 },
+		slug: "my-first-portofolio-website",
+	},
+];
 
 export default function Page() {
 	useEffect(() => {
@@ -181,7 +236,12 @@ export default function Page() {
 								<Link href="projects/react-chat ">More</Link>
 							</Button>
 							<Button variation="secondary">
-								<Link href="projects/react-chat">Preview</Link>
+								<a
+									href="https://react-chat-rouge.vercel.app/"
+									target="_blank"
+									rel="noopener noreferrer">
+									Preview
+								</a>
 							</Button>
 						</div>
 					</motion.div>
@@ -230,7 +290,6 @@ export default function Page() {
 							}}
 							transition={{
 								delay: 0.7,
-
 								type: "spring",
 							}}>
 							Other Note Worthy Projects
@@ -238,64 +297,47 @@ export default function Page() {
 					</div>
 				</div>
 				<div className="w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10 cursor-pointer">
-					<div className="relative flex justify-center items-start flex-col mb-5 md:px-10 w-full h-[400px] bg-gray-400 group/tes ">
-						<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
-							<h4 className="text-white">2023</h4>
-						</div>
-						<div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0">
-							<h1 className="text-3xl font-bold mb-3">
-								React Tools
-							</h1>
-							<p>
-								React Tools is my first project using ReactJS,
-								this project contain 3 main tools: Todo List,
-								Note, and Expense tracker.
-							</p>
-							<div className="flex justify-center items-center flex-row mt-5 flex-wrap">
-								<span className="m-1 px-4 py-2 bg-gray-600 text-white ">
-									Javascript
-								</span>
-								<span className="m-1 px-4 py-2 bg-gray-600 text-white ">
-									React Js
-								</span>
-								<span className="m-1 px-4 py-2 bg-gray-600 text-white ">
-									Firebase
-								</span>
-								<span className="m-1 px-4 py-2 bg-gray-600 text-white ">
-									Tailwind CSS
-								</span>
-							</div>
-						</div>
-					</div>
-					<div className="relative flex justify-center items-start flex-col mb-5 md:px-10 w-full h-[400px] bg-gray-400 group/tes ">
-						<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
-							<h4 className="text-white">2023</h4>
-						</div>
-						<div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0">
-							<h1 className="text-3xl font-bold mb-3">
-								React Tools
-							</h1>
-							<p>
-								React Tools is my first project using ReactJS,
-								this project contain 3 main tools: Todo List,
-								Note, and Expense tracker.
-							</p>
-							<div className="flex justify-center items-center flex-row mt-5 flex-wrap">
-								<span className="m-1 px-4 py-2 bg-gray-600 text-white ">
-									Javascript
-								</span>
-								<span className="m-1 px-4 py-2 bg-gray-600 text-white ">
-									React Js
-								</span>
-								<span className="m-1 px-4 py-2 bg-gray-600 text-white ">
-									Firebase
-								</span>
-								<span className="m-1 px-4 py-2 bg-gray-600 text-white ">
-									Tailwind CSS
-								</span>
-							</div>
-						</div>
-					</div>
+					{/* loop projeects data */}
+					{projects.map((project, index) => (
+						<Link href={"projects/" + project.slug} key={index}>
+							<motion.div
+								className="relative flex justify-center items-start flex-col mb-5 md:px-10 w-full h-auto bg-gray-400 group/tes py-20 px-5 md:py-2 aspect-video"
+								initial={{
+									opacity: 0,
+									x: -200,
+								}}
+								whileInView={{
+									opacity: 1,
+									x: 0,
+								}}
+								transition={{
+									type: "spring",
+								}}>
+								<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
+									<h4 className="text-white">
+										{project.year}
+									</h4>
+								</div>
+								<div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0">
+									<h1 className="text-3xl font-bold mb-3">
+										{project.title}
+									</h1>
+									<p>{project.desc}</p>
+									<div className="flex justify-center items-center flex-row mt-5 flex-wrap">
+										{project.tech
+											.split(",")
+											.map((t, index) => (
+												<span
+													key={index}
+													className="m-1 px-4 py-2 bg-gray-600 text-white ">
+													{t}
+												</span>
+											))}
+									</div>
+								</div>
+							</motion.div>
+						</Link>
+					))}
 				</div>
 				{/* view in archive btn */}
 				<div className="flex justify-center items-center flex-col my-5 self-start ">

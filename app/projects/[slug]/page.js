@@ -70,7 +70,7 @@ function Page({ params }) {
 		<div className="relative min-h-screen w-full  gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
 			<div className="min-h-screen flex justify-center items-center">
 				<div className="mx-auto grid grid-cols-1 md:grid-cols-2  mt-10 md:mt-0">
-					<div className="flex justify-center items-start flex-col mb-5 space-y-10">
+					<div className="flex justify-center items-start flex-col mb-5 space-y-10 mx-auto">
 						<div>
 							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
 								Project

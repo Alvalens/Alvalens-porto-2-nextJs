@@ -15,7 +15,9 @@
         "/projects/lms.png"
       ],
       "tech": [
+        "JavaScript",
         "React",
+        "React Router",
         "Firebase",
         "Daisy UI"
       ],
@@ -39,6 +41,7 @@
         "/projects/lms.png"
       ],
       "tech": [
+        "Javascript",
         "React",
         "React Router",
         "TailwindCSS"
@@ -59,7 +62,8 @@
       ],
       "tech": [
         "Python",
-        "Discord.py"
+        "Discord.py",
+        "Serp  API"
       ],
       "slug": "aleph-discord-bot"
     }, 
@@ -78,13 +82,14 @@
         "/projects/lms.png"
       ],
       "tech": [
+        "PHP",
         "Laravel",
         "Bootstrap",
         "MySQL",
         "jQuery",
         "DataTables"
       ],
-      "slug": "lptk-cup-website"
+      "slug": "lptk-cup-2023"
     }, 
     {
       "title": "NU INO Website",
@@ -99,6 +104,7 @@
         "/projects/lms.png"
       ],
       "tech": [
+        "PHP",
         "Laravel",
         "Bootstrap",
         "Livewire",
