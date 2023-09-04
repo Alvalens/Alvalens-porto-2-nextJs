@@ -39,7 +39,7 @@ export default function Page() {
 							About Me
 						</h1>
 						<Hr />
-						<p className="title  text-xl mt-4 tracking-wider text-gray-700 leading-[1.7rem] mb-5 ">
+						<p className="title  text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5 ">
 							A brief introduction about me and my interest.
 						</p>
 						<motion.div

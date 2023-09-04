@@ -86,3 +86,7 @@ a[title]:hover:after {
 
 }
 
+::selection {
+	background: #333333;
+	color: #fff;
+}

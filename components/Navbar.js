@@ -185,19 +185,15 @@ const Navbar = () => {
 						className="burger button flex flex-col justify-center items-center space-y-1.5 "
 						onClick={toggleNav}>
 						<div
-							className={`w-8 h-1 bg-black rounded-full transition-all ease-in duration-300 ${
+							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
 								isNavOpen
-									? "rotate-45  translate-y-2 bg-white"
+									? "rotate-45   bg-white"
 									: ""
 							}`}></div>
 						<div
-							className={`w-8 h-1 bg-black rounded-full transition-all ease-in duration-300 ${
-								isNavOpen ? "opacity-0" : ""
-							}`}></div>
-						<div
-							className={`w-8 h-1 bg-black rounded-full transition-all ease-in duration-300 ${
+							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
 								isNavOpen
-									? "-rotate-45 -translate-y-3 bg-white"
+									? "-rotate-45 -translate-y-2 bg-white"
 									: ""
 							}`}></div>
 					</button>
