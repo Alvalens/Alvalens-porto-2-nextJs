@@ -18,7 +18,7 @@ export const metadata = {
 	
 };
 
-const TopProgressBar = dynamic(() => import("@/components/TopProgressBar"), {
+const TopProgressBar = dynamic(() => import("@/components/TopProgressbar"), {
 	ssr: false,
 });
 
