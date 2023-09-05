@@ -10,6 +10,14 @@ import ReactChat1 from "@/public/projects/react-chat.png";
 import ReactChat2 from "@/public/projects/react-chat2.png";
 import ReactChat3 from "@/public/projects/react-chat3.png";
 import ProjectAll from "@/public/img/projects-all.jpg";
+// main project image
+import ReactChatMain from "@/public/projects/main-project/react-chat.png";
+import ReactTools from "@/public/projects/main-project/react-tools.png";
+import AlephBot from "@/public/projects/main-project/aleph-bot.png";
+import LPTK from "@/public/projects/lptk/lptk1.png";
+import NUINO from "@/public/projects/ino/ino1.png";
+import UnmuhJember from "@/public/projects/unmuh/unmuh1.png";
+import Porto from "@/public/projects/porto/porto1.png";
 
 import Hr from "@/components/Hr";
 
@@ -19,7 +27,7 @@ const projects = [
 		desc: "My second React project. This project is a realtime chat webapp that I created using ReactJS, Firebase, and TailwindCSS.",
 		year: "2023",
 		tech: "Javascript, React Js, Firebase, Daisy UI",
-		bg: ReactChat3,
+		bg: ReactChatMain,
 		slug: "react-chat",
 	},
 	{
@@ -27,7 +35,7 @@ const projects = [
 		desc: "My first React project. contain three main tools: Todo List, Note, and Expense Tracker that usefull for daily activity",
 		year: "2023",
 		tech: "Javascript, React Js, TailwindCSS",
-		bg: ReactChat3,
+		bg: ReactTools,
 		slug: "react-tools",
 	},
 	{
@@ -35,7 +43,7 @@ const projects = [
 		desc: "Discord bot that can search images on google and send the result to discord channel, with this bot you can search images on google without leaving discord.",
 		year: "2023",
 		tech: "Python, Serp API, Discord.py",
-		bg: ReactChat3,
+		bg: AlephBot,
 		slug: "aleph-discord-bot",
 	},
 	{
@@ -43,7 +51,7 @@ const projects = [
 		desc: "LPTK Cup 2023 is a website for a competition that held by Universitas Negeri Malang. This is my second freelance project using Laravel.",
 		year: "2023",
 		tech: "PHP, Laravel, Bootstrap, JQuery, MySQL",
-		bg: ReactChat3,
+		bg: LPTK,
 		slug: "lptk-cup-2023",
 	},
 	{
@@ -51,7 +59,7 @@ const projects = [
 		desc: "My first freelance project. This project is a website for a School based on a JALAKAR curriculum. The website is built mainly using Laravel and Bootstrap.",
 		year: "2023",
 		tech: "PHP, Laravel, Livewire, Bootstrap, JQuery, MySQL",
-		bg: ReactChat3,
+		bg: NUINO,
 		slug: "nu-ino-website",
 	},
 	{
@@ -59,7 +67,7 @@ const projects = [
 		desc: "Landing page for Universitas Muhammadiyah Jember. This web is made for competition held by Universitas Muhammadiyah Jember.",
 		year: "2023",
 		tech: "HTML, CSS, Javascript",
-		bg: ReactChat3,
+		bg: UnmuhJember,
 		slug: "unmuh-jember-landing-page",
 	},
 	{
@@ -67,12 +75,13 @@ const projects = [
 		desc: "My first portofolio website that i created using HTML, CSS, and Javascript. This website is the reason why i learn web development.",
 		year: "2022",
 		tech: "HTML, CSS, Javascript, Bootstrap",
-		bg: ReactChat3,
+		bg: Porto,
 		slug: "my-first-portofolio-website",
 	},
 ];
 
 export default function Page() {
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -320,8 +329,9 @@ export default function Page() {
 									alt="Alvalens"
 									layout="fill"
 									objectFit="cover"
-									placeholder="empty"
+									placeholder="blur"
 									className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500"
+									blurDataURL={project.bg.blurDataURL}
 								/>
 								<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
 									<h4 className="text-white">

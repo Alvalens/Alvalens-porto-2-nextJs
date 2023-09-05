@@ -86,13 +86,13 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
 				<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
-					<div className="flex flex-col items-center space-y-8 my-auto mx-0">
+					<div className="lg:ml-64 flex flex-col items-center space-y-8 my-auto mx-0">
 						{/* title */}
 						<motion.h1
 							animate={{ opacity: 1 }}
 							initial={{ opacity: 0 }}
 							transition={{ delay: 0.5, duration: 1 }}
-							className="text-6xl font-bold text-white">
+							className="text-6xl font-bold text-white ">
 							Menu
 						</motion.h1>
 						<a href="/#home">
@@ -175,8 +175,8 @@ const Navbar = () => {
 			<nav
 				ref={navRef}
 				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${
-					isNavOpen ? "bg-transparent" : "backdrop-filter backdrop-blur-xl"
-				} inset-0  opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
+					isNavOpen ? "bg-transparent" : "backdrop-filter backdrop-blur-md"
+				} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
 				<div className="">
 					<h1 className="text-2xl">Alvalens</h1>
 				</div>
@@ -187,7 +187,7 @@ const Navbar = () => {
 						<div
 							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
 								isNavOpen
-									? "rotate-45   bg-white"
+									? "rotate-45   bg-white translate-y-[2px]"
 									: ""
 							}`}></div>
 						<div

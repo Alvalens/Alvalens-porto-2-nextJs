@@ -10,9 +10,10 @@
       "preview": "http://www.google.com",
       "code": "http://www.google.com",
       "images": [
-        "/projects/lms.png",
-        "/projects/lms.png",
-        "/projects/lms.png"
+        "/projects/chat/chat1.png",
+        "/projects/chat/chat2.png",
+        "/projects/chat/chat3.png",
+        "/projects/chat/chat4.png"
       ],
       "tech": [
         "JavaScript",
@@ -36,9 +37,10 @@
       "preview": "http://www.google.com",
       "code": "http://www.google.com",
       "images": [
-        "/projects/lms.png",
-        "/projects/lms.png",
-        "/projects/lms.png"
+        "/projects/tools/tools.png",
+        "/projects/tools/tools1.png",
+        "/projects/tools/tools2.png",
+        "/projects/tools/tools3.png"
       ],
       "tech": [
         "Javascript",
@@ -56,14 +58,13 @@
       "preview": "http://www.google.com",
       "code": "http://www.google.com",
       "images": [
-        "/projects/lms.png",
-        "/projects/lms.png",
-        "/projects/lms.png"
+        "/projects/bot/bot1.png",
+        "/projects/bot/bot2.png"
       ],
       "tech": [
         "Python",
         "Discord.py",
-        "Serp  API"
+        "Google Serp API"
       ],
       "slug": "aleph-discord-bot"
     }, 
@@ -77,9 +78,10 @@
       "preview": "",
       "code": "",
       "images": [
-        "/projects/lms.png",
-        "/projects/lms.png",
-        "/projects/lms.png"
+        "/projects/lptk/lptk1.png",
+        "/projects/lptk/lptk2.png",
+        "/projects/lptk/lptk3.png",
+        "/projects/lptk/lptk3.png"
       ],
       "tech": [
         "PHP",
@@ -99,9 +101,9 @@
       "preview": "",
       "code": "",
       "images": [
-        "/projects/lms.png",
-        "/projects/lms.png",
-        "/projects/lms.png"
+        "/projects/ino/ino1.png",
+        "/projects/ino/ino2.png",
+        "/projects/ino/ino3.png"
       ],
       "tech": [
         "PHP",
@@ -124,9 +126,9 @@
       "preview": "https://alvalens.github.io/unmuh-jember-landing-page/",
       "code": "https://github.com/Alvalens/unmuh-jember-landing-page",
       "images": [
-        "/projects/lms.png",
-        "/projects/lms.png",
-        "/projects/lms.png"
+        "/projects/unmuh/unmuh1.png",
+        "/projects/unmuh/unmuh2.png",
+        "/projects/unmuh/unmuh3.png"
       ],
       "tech": [
         "HTML",
@@ -145,17 +147,18 @@
       "preview": "",
       "code": "",
       "images": [
-        "/projects/lms.png",
-        "/projects/lms.png",
-        "/projects/lms.png"
+        "/projects/porto/porto1.png",
+        "/projects/porto/porto2.png",
+        "/projects/porto/porto3.png"
       ],
       "tech": [
         "HTML",
         "Bootstrap",
         "CSS",
+        "AOS",
         "JavaScript"
       ],
-      "slug": "my-first-portfolio-website"
+      "slug": "my-first-portofolio-website"
     }
   ]
 }
