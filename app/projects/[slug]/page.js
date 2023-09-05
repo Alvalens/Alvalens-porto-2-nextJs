@@ -5,6 +5,8 @@ import jsonData from "../../../json/data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import NotFound from "@/app/not-found";
+import Image from "next/image";
 
 function Page({ params }) {
 	const [data, setData] = useState(null);
@@ -21,22 +23,9 @@ function Page({ params }) {
 
 	if (data === "404") {
 		return (
-			<div className="relative min-h-screen w-full  gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
-				<div className="min-h-screen flex justify-center items-center">
-					<div className="mx-auto grid grid-cols-1   ">
-						<div className="flex justify-center items-center flex-col mb-5 space-y-10">
-							<div>
-								<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400 text-center">
-									Page not found
-								</h2>
-								<h1 className="text-4xl font-medium text-neutral-900 text-center">
-									404
-								</h1>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<>
+				<NotFound />
+			</>
 		);
 	} else if (!data) {
 		// skleton loading
@@ -152,11 +141,13 @@ function Page({ params }) {
 			<div className="mx-auto grid grid-cols-1 p-5 md:p-20  w-full h-auto">
 				<div className="w-full h-auto aspect-video">
 					{data.images.map((image, index) => (
-						<img
+						<Image
 							key={index}
 							src={image}
 							alt={`Project Image ${index + 1}`}
 							className="w-full h-full mb-5"
+							width={1920}
+							height={1080}
 						/>
 					))}
 				</div>

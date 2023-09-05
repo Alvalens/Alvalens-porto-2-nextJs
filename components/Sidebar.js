@@ -21,10 +21,10 @@ const Sidebar = () => {
 		return "";
 	};
 	return (
-		<div className="hidden md:flex fixed z-40 bg-gray-600 h-[50vh] w-14  flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
+		<div className="hidden md:flex fixed z-40 bg-gray-700 h-[50vh] w-14  flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
 			<ul
 				id="sidebar"
-				className="flex flex-col justify-center items-center h-full space-y-16 text-gray-200">
+				className="flex flex-col justify-center items-center h-full space-y-16 text-gray-50">
 				<li data-menuanchor="home" className="active">
 					<button onClick={() => handleMoveToSection(1)}>
 						<FontAwesomeIcon icon={faHome} className="text-xl" />

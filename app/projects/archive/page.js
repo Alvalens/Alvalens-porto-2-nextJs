@@ -6,39 +6,88 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
-  {
-    year: "2023",
-    title: "React Realtime Chat",
-    tech: "Javascript, React Js, Firebase, Daisy UI",
-    github: "https://github.com/Alvalens/react-realtime-chat",
-    preview: "https://react-chat-rouge.vercel.app",
-  },
-  {
-    year: "2023",
-    title: "React Tools",
-    tech: "Javascript, React Js, TailwindCSS",
-    github: "https://github.com/Alvalens/react-tools",
-    preview: "react-tools-flax.vercel.app",
-  },
-  {
-    year: "2023",
-    title: "Aleph Discord Bot",
-    tech: "Python, Serp API, Discord.py",
-    github: "https://github.com/Alvalens/aleph-discord-bot",
-  },
-  {
-    year: "2023",
-    title: "Unmuh Jember Landing Page",
-    tech: "HTML, CSS, Javascript",
-    github: "https://github.com/Alvalens/unmuh-jember-landing-page",
-    preview: "https://alvalens.github.io/unmuh-jember-landing-page/",
-  },
+	{
+		year: "2023",
+		title: "React Realtime Chat",
+		tech: "Javascript, React Js, Firebase, Daisy UI",
+		github: "https://github.com/Alvalens/react-realtime-chat",
+		preview: "https://react-chat-rouge.vercel.app",
+	},
+	{
+		year: "2023",
+		title: "React Tools",
+		tech: "Javascript, React Js, TailwindCSS",
+		github: "https://github.com/Alvalens/react-tools",
+		preview: "react-tools-flax.vercel.app",
+	},
+	{
+		year: "2023",
+		title: "Aleph Discord Bot",
+		tech: "Python, Serp API, Discord.py",
+		github: "https://github.com/Alvalens/aleph-discord-bot",
+	},
+	{
+		year: "2023",
+		title: "LPTK CUP UM 2023",
+		tech: "PHP, Laravel, Bootstrap, MySQL, jQuery, DataTables",
+		github: "",
+		preview: "",
+	},
+	{
+		year: "2023",
+		title: "NU INO Website",
+		tech: "PHP, Laravel, Livewire Bootstrap, MySQL, jQuery, DataTables",
+		github: "",
+		preview: "",
+	},
+	{
+		year: "2023",
+		title: "Unmuh Jember Landing Page",
+		tech: "HTML, CSS, Javascript",
+		github: "https://github.com/Alvalens/unmuh-jember-landing-page",
+		preview: "https://alvalens.github.io/unmuh-jember-landing-page/",
+	},
+	{
+		year: "2023",
+		title: "Alvalens Website",
+		tech: "Javascript, Next Js, TailwindCSS",
+		github: "",
+		preview: "https://alvalens.my.id",
+	},
+	{
+		year: "2023",
+		title: "Python audio tranlator",
+		tech: "Python, Assembly AI",
+		github: "https://github.com/Alvalens/python-audio-translation",
+		preview: "",
+	},
+	{
+		year: "2023",
+		title: "A4 Education website",
+		tech: "PHP, Laravel, Bootstrap, MySQL, jQuery, DataTables",
+		github: "https://github.com/Alvalens/A4",
+		preview: "",
+	},
+	{
+		year: "2023",
+		title: "Cry Cast crypto forecast",
+		tech: "PHP, Laravel, Bootstrap, MySQL",
+		github: "https://github.com/Alvalens/cry-cast",
+		preview: "",
+	},
+	{
+		year: "2023",
+		title: "Mini Harbor",
+		tech: "Python, Pygame",
+		github: "https://github.com/Alvalens/mini-harbor",
+		preview: "",
+	},
 ];
 export default function Page () {
   return (
 		<>
 			<main className="overflow-hidden">
-				<div className="h-screen w-screen  p-10 flex justify-center items-center flex-col mb-10">
+				<div className="min-h-screen w-screen mt-10 md:mt-0  p-10 flex justify-center items-center flex-col mb-10">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<motion.div
 							className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"
@@ -109,7 +158,7 @@ export default function Page () {
 										<td>{project.title}</td>
 										<td>{project.tech}</td>
 										<td>
-											<div>
+											<div className="flex flex-row justify-center items-center">
 												{project.github && (
 													<a
 														href={project.github}

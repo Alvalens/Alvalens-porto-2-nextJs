@@ -26,7 +26,7 @@ html {
 body {
 	font-family: 'Poppins', sans-serif !important;
 	color: black;
-	background-color: #f6f6f6;
+	background-color: rgb(230, 230, 230);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,8 +61,19 @@ span {
 	font-family: "Jost", sans-serif;
 }
 
-.active {
-	color: rgb(255, 235, 87);
+li {
+	@apply list-none relative;
+}
+li.active:after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #ffffff;
+	
+
 }
 
 td, th {

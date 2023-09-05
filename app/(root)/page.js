@@ -22,7 +22,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const MyPage = () => {
 	const fullpageOptions = {
-		// only define last anchor as contact
 		anchors: ["home", "about", "projects", "contact"],
 		scrollingSpeed: 1000,
 		licenseKey: "gplv3-license",
@@ -33,7 +32,6 @@ const MyPage = () => {
 
 	return (
 		<div>
-			{/* Content with ReactFullpage for interactive behavior */}
 			<ReactFullpage
 				render={({ state, fullpageApi }) => (
 					<ReactFullpage.Wrapper>
@@ -47,7 +45,7 @@ const MyPage = () => {
 										type: "spring",
 									}}>
 									<div className="block md:hidden col-span-1 mx-auto my-10">
-										<div className="bg-slate-500 rounded-full h-60 w-60">
+										<div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0">
 											<Image
 												src={Me}
 												width={500}
@@ -337,7 +335,7 @@ const MyPage = () => {
 									<div className="flex justify-center items-center space-x-4">
 										<motion.a
 											href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 											initial={{ y: 40, opacity: 0 }}
 											whileInView={{ y: 0, opacity: 1 }}
 											transition={{
@@ -354,7 +352,7 @@ const MyPage = () => {
 											href="https://github.com/Alvalens"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 											initial={{ opacity: 0, y: 40 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											transition={{
@@ -370,7 +368,7 @@ const MyPage = () => {
 											href="https://www.instagram.com/alvalens_/"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 											initial={{ opacity: 0, y: 40 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											transition={{
@@ -386,7 +384,7 @@ const MyPage = () => {
 											href="https://www.linkedin.com/in/alvalen-shafel-8a081a254/"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 											initial={{ opacity: 0, y: 40 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											transition={{
@@ -402,7 +400,7 @@ const MyPage = () => {
 											href="https://discordapp.com/users/bloody#6118"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="flex justify-center items-center bg-gray-500 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
+											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 											initial={{ opacity: 0, y: 40 }}
 											whileInView={{ opacity: 1, y: 0 }}
 											transition={{
