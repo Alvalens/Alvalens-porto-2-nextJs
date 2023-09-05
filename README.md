@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Alvalens Porto 2
 
-## Getting Started
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=porto2.visitor-badge)
 
-First, run the development server:
+This is my debut project utilizing Next.js, a portfolio website featuring four primary sections: Home, About, Projects, and Contact. The site is brought to life with animations powered by Framer Motion, enhanced page transitions with Fullpage.js, and styled using elements of Tailwind CSS. This project also read list of project data from a JSON file. It serves as a showcase of my web development skills and represents my initial foray into web development with Next.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* **Smooth Animation:** Smooth page scroll and scroll trigger animation.
+* **Smooth Page Transition:** Smooth page transition with prefetching feature of next js.
+* **Dynamic Data:** Read the project data from JSON file instead of directly implemented the data.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Ensure you have [pnpm](https://pnpm.io/) installed. If not, you can install it using:
 
-To learn more about Next.js, take a look at the following resources:
+   ```shell
+   npm install -g pnpm
+   ```
+2. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```shell
+   git clone https://github.com/Alvalens/Alvalens-porto-2-nextJs.git
+   ```
+3. Navigate to the project directory:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```shell
+   cd Alvalens-porto-2-nextJs
+   ```
+4. Install dependencies:
 
-## Deploy on Vercel
+   ```
+   pnpm install
+   ```
+5. Start the development server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```shell
+   pnpm next dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Usage
+
+There are four main sections and two subpages in this portfolio website:
+
+### Home
+
+The home page serves as an introduction to the portfolio. It provides an overview of your web development skills and passion for the field. Users can explore other sections from here.
+
+### About
+
+The about page offers more detailed information about you as a web developer. It might include your background, education, skills, and interests in the field of web development.
+
+### Projects
+
+The projects section showcases your work as a web developer. Users can explore the projects you've worked on, and you can provide details such as project descriptions, technologies used, and images.
+
+### Contact
+
+The contact page allows users to get in touch with you. You can provide contact information or a contact form for inquiries.
+
+### Subpages
+
+- **Project archive:** list all of your project that dont needed to display at main project page.
+- Project details: See the main project detail by clicking the project image.
+
+Feel free to customize and expand upon these sections and subpages to suit your needs and showcase your unique skills and projects.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the GPL-3.0 License seethe [LICENSE](LICENSE) file for details.

@@ -7,8 +7,8 @@
         "This project is my second react project and my first project using Firebase. I learned a lot about how to use Firebase and how to use React to create a realtime application. I also learned how to use Daisy UI, a CSS framework that is built on top of Tailwind CSS. "
       ],
       "year": "2023",
-      "preview": "http://www.google.com",
-      "code": "http://www.google.com",
+      "preview": "https://react-chat-rouge.vercel.app",
+      "code": "https://github.com/Alvalens/react-realtime-chat",
       "images": [
         "/projects/chat/chat1.png",
         "/projects/chat/chat2.png",
@@ -34,8 +34,8 @@
         "The Todo List keeps tasks in check with intuitive task management capabilities, ensuring you never miss a beat. The note-taking feature provides a hassle-free way to jot down ideas and crucial information, accessible whenever inspiration strikes. Additionally, our robust expense tracker simplifies financial management by recording and categorizing expenses, delivering insightful spending analysis."
       ],
       "year": "2023",
-      "preview": "http://www.google.com",
-      "code": "http://www.google.com",
+      "preview": "https://github.com/Alvalens/react-tools",
+      "code": "react-tools-flax.vercel.app",
       "images": [
         "/projects/tools/tools.png",
         "/projects/tools/tools1.png",
@@ -55,8 +55,8 @@
       "desc": [
         "Aleph is a Discord bot that I created for my dircord server to use. The bot is built using Python and the discord.py library. The bot has image grabber feauture that takes argument (keywords) and returns an image from the internet.", "Other than that this bot has a few other features such as utility command to delete a messages, and a command to get the server's ping. This bot is still in development and I plan to add more features in the future."],
       "year": "2023",
-      "preview": "http://www.google.com",
-      "code": "http://www.google.com",
+      "preview": "",
+      "code": "https://github.com/Alvalens/aleph-discord-bot",
       "images": [
         "/projects/bot/bot1.png",
         "/projects/bot/bot2.png"
