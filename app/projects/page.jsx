@@ -20,6 +20,9 @@ import UnmuhJember from "@/public/projects/unmuh/unmuh1.png";
 import Porto from "@/public/projects/porto/porto1.png";
 
 import Hr from "@/components/Hr";
+import FixedButon from "@/components/FixedButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
 	{
@@ -85,10 +88,18 @@ export default function Page() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-
+	const handleBack = () => {
+		window.history.back();
+	};
 	return (
 		<>
 			<main className="overflow-hidden">
+				<FixedButon onClick={handleBack}>
+					<FontAwesomeIcon
+						icon={faChevronLeft}
+						className="text-black pr-10"
+					/>
+				</FixedButon>
 				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10">
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 						<motion.div

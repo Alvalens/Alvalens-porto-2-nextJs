@@ -178,7 +178,7 @@ const Navbar = () => {
 					isNavOpen ? "bg-transparent" : "backdrop-filter backdrop-blur-md"
 				} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
 				<div className="">
-					<h1 className="text-2xl">Alvalens</h1>
+					<h1 className="text-2xl ml-2 md:ml-0">Alvalens</h1>
 				</div>
 				<div className="flex flex-row items-center">
 					<button
