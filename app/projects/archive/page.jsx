@@ -48,10 +48,10 @@ const projects = [
 		preview: "https://alvalens.github.io/unmuh-jember-landing-page/",
 	},
 	{
-		year: "2023",
+		year: "2022",
 		title: "Alvalens Website",
 		tech: "Javascript, Next Js, TailwindCSS",
-		github: "",
+		github: "https://github.com/Alvalens/Alvalens-porto-1",
 		preview: "https://alvalens.my.id",
 	},
 	{
