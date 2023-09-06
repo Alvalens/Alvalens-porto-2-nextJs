@@ -10,14 +10,14 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 			setIsNavOpen(false);
 		};
 	const navVariant = {
-		open: (height = 1000) => ({
-			clipPath: `circle(${height + 400}px at calc(100% - 40px) 40px)`,
+		open: {
+			clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
 			transition: {
 				type: "spring",
 				stiffness: 400,
-				damping: 30,
+				damping: 20,
 			},
-		}),
+		},
 		closed: {
 			clipPath: "circle(0px at calc(100% - 120px) 35px)",
 			transition: {
@@ -46,7 +46,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	// Check screen width and adjust clipPath for smaller screens
 	if (isMobile) {
 		navVariant.closed = {
-			clipPath: "circle(0px at calc(100% - 35px) 35px)", // Adjusted value for mobile screens
+			clipPath: "circle(0px at calc(100% - 35px) 35px)",
 			transition: {
 				delay: 0.5,
 				type: "spring",
@@ -81,7 +81,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	return (
 		<>
 			<motion.div
-				className={`fixed z-[45] w-full h-screen flex items-center justify-center backdrop-blur-sm transition-all ease duration-700`}
+				className={`fixed z-[45] w-full h-screen flex items-center justify-center backdrop-blur-sm transition-all ease duration-700 overflow-clip`}
 				variants={navVariant}
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
