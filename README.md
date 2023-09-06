@@ -71,6 +71,10 @@ Feel free to customize and expand upon these sections and subpages to suit your 
 
 Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
 
+## Reference (inspiration)
+- https://www.frans.my.id/
+- https://kuon-yagi-portfolio.netlify.app/
+
 ## License
 
 This project is licensed under the GPL-3.0 License seethe [LICENSE](LICENSE) file for details.
