@@ -3,4 +3,17 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 module.exports = withBundleAnalyzer({
 	// your Next.js configuration
+	async headers() {
+		return [
+			{
+				source: "/sitemap.xml.gz",
+				headers: [
+					{
+						key: "Content-Type",
+						value: "application/gzip",
+					},
+				],
+			},
+		];
+	},
 });
