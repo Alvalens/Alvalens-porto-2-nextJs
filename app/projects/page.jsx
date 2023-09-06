@@ -89,7 +89,7 @@ export default function Page() {
 		window.scrollTo(0, 0);
 	}, []);
 	const handleBack = () => {
-		window.history.back();
+		window.location.href = "/";
 	};
 	return (
 		<>

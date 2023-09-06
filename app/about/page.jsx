@@ -22,7 +22,7 @@ export default function Page() {
 
 	
 	const handleBack = () => {
-		window.history.back();
+		window.location.href = "/";
 	};
 	return (
 		<>

@@ -7,6 +7,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import NotFound from "@/app/not-found";
 import Image from "next/image";
+import FixedButon from "@/components/FixedButton";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Page({ params }) {
 	const [data, setData] = useState(null);
@@ -28,7 +30,6 @@ function Page({ params }) {
 			</>
 		);
 	} else if (!data) {
-		// skleton loading
 		return (
 			<div className="relative min-h-screen w-full  gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
 				<div className="min-h-screen flex justify-center items-center w-full">
@@ -54,9 +55,17 @@ function Page({ params }) {
 			</div>
 		);
 	}
-
+			const handleBack = () => {
+				window.history.back();
+			};
 	return (
 		<div className="relative min-h-screen w-full  gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
+			<FixedButon onClick={handleBack}>
+				<FontAwesomeIcon
+					icon={faChevronLeft}
+					className="text-black pr-10"
+				/>
+			</FixedButon>
 			<div className="min-h-screen flex justify-center items-center">
 				<div className="mx-auto grid grid-cols-1 md:grid-cols-2  mt-10 md:mt-0">
 					<div className="flex justify-center items-start flex-col mb-5 space-y-10 mx-auto">

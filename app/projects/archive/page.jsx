@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-
+import FixedButon from "@/components/FixedButton";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 const projects = [
 	{
 		year: "2023",
@@ -84,9 +85,18 @@ const projects = [
 	},
 ];
 export default function Page () {
+		const handleBack = () => {
+			window.history.back();
+		};
   return (
 		<>
 			<main className="overflow-hidden">
+				<FixedButon onClick={handleBack}>
+					<FontAwesomeIcon
+						icon={faChevronLeft}
+						className="text-black pr-10"
+					/>
+				</FixedButon>
 				<div className="min-h-screen w-screen mt-10 md:mt-0  p-10 flex justify-center items-center flex-col mb-10">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<motion.div
@@ -171,9 +181,7 @@ export default function Page () {
 												)}
 												{project.preview && (
 													<a
-														href={
-															project.preview
-														}
+														href={project.preview}
 														title="Link to project preview">
 														<FontAwesomeIcon
 															icon={

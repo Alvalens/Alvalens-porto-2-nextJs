@@ -103,7 +103,9 @@ const MyPage = () => {
 											Download CV
 										</Button>
 										<Button variation="secondary">
-											Contact Me
+											<a href="#contact">
+												Contact Me
+											</a>
 										</Button>
 									</motion.div>
 								</motion.div>
