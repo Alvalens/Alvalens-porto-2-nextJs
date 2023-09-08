@@ -55,7 +55,11 @@ export default function Page() {
 						</h1>
 						<Hr />
 						<p className="title text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5 ">
-							A brief introduction about me and 										<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent"> my interest.</span>
+							A brief introduction about me and{" "}
+							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+								{" "}
+								my interest.
+							</span>
 						</p>
 						<motion.div
 							initial={{ opacity: 0 }}
@@ -221,7 +225,7 @@ export default function Page() {
 
 							type: "spring",
 						}}>
-						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.5rem] uppercase ">
+						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase ">
 							Language & Framework
 						</h2>
 						<p className="text-gray-500 text-center tracking-widest md:px-5">
@@ -293,7 +297,7 @@ export default function Page() {
 
 							type: "spring",
 						}}>
-						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.5rem] uppercase">
+						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase">
 							Tools
 						</h2>
 						<p className="text-gray-500 text-center tracking-wider md:px-">

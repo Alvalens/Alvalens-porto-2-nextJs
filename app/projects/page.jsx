@@ -100,7 +100,7 @@ export default function Page() {
 						className="text-black pr-10"
 					/>
 				</FixedButon>
-				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-y-hidden">
+				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 						<motion.div
 							initial={{ scale: 1 }}
@@ -135,7 +135,7 @@ export default function Page() {
 									behavior: "smooth",
 								});
 							}}
-							className="">
+							className="mb-3">
 							<Button variation="primary">Scroll Down</Button>
 						</motion.div>
 					</div>
@@ -267,37 +267,8 @@ export default function Page() {
 					</motion.div>
 				</div>
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
-					<div className="flex justify-center items-center flex-col my-5 self-start ">
-						<motion.div
-							className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"
-							initial={{
-								opacity: 0,
-								x: -200,
-							}}
-							whileInView={{
-								opacity: 1,
-								x: 0,
-							}}
-							transition={{
-								delay: 0.5,
-
-								type: "spring",
-							}}></motion.div>
-						<motion.div
-							className="bg-gray-700 w-28 h-1 rounded-full"
-							initial={{
-								opacity: 0,
-								x: 200,
-							}}
-							whileInView={{
-								opacity: 1,
-								x: -50,
-							}}
-							transition={{
-								delay: 0.5,
-
-								type: "spring",
-							}}></motion.div>
+					<div className="flex justify-start items-start flex-col my-5 self-start ">
+						<Hr />
 						<motion.h1
 							className="text-3xl font-bold mt-3"
 							initial={{
