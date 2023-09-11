@@ -34,8 +34,8 @@
         "The Todo List keeps tasks in check with intuitive task management capabilities, ensuring you never miss a beat. The note-taking feature provides a hassle-free way to jot down ideas and crucial information, accessible whenever inspiration strikes. Additionally, our robust expense tracker simplifies financial management by recording and categorizing expenses, delivering insightful spending analysis."
       ],
       "year": "2023",
-      "preview": "https://github.com/Alvalens/react-tools",
-      "code": "react-tools-flax.vercel.app",
+      "preview": "https://react-tools-flax.vercel.app",
+      "code": "https://github.com/Alvalens/react-tools",
       "images": [
         "/projects/tools/tools.png",
         "/projects/tools/tools1.png",
