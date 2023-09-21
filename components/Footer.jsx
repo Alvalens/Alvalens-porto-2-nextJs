@@ -7,14 +7,14 @@ import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 
 export default function Footer() {
 	return (
-		<div className="flex justify-center items-center flex-col mt-5 ">
+		<div className="flex justify-center items-center flex-col mt-5 overflow-hidden">
 			<div className="flex justify-center items-center flex-col mt-5 self-center min-h-[50vh] border-b-2 min-w-[80vw] ">
 				<Link href="/#contact">
 					<motion.h2
 						className="text-xl font-medium mt-3 text-center text-gray-400  hover:underline whitespace-nowrap leading-none md:tracking-[0.5rem]"
 						initial={{
 							opacity: 0,
-							x: -200,
+							x: -100,
 						}}
 						whileInView={{
 							opacity: 1,
@@ -29,7 +29,7 @@ export default function Footer() {
 						className="text-5xl md:text-7xl font-medium mt-3  hover:underline whitespace-nowrap leading-none"
 						initial={{
 							opacity: 0,
-							x: 200,
+							x: 100,
 						}}
 						whileInView={{
 							opacity: 1,

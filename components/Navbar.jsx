@@ -13,9 +13,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 		open: {
 			clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
 			transition: {
-				type: "spring",
-				stiffness: 400,
-				damping: 20,
+				type: "tween", // Use a linear or ease transition
 			},
 		},
 		closed: {
@@ -81,7 +79,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	return (
 		<>
 			<motion.div
-				className={`fixed z-[45] w-full h-screen flex items-center justify-center backdrop-blur-sm transition-all ease duration-700 overflow-clip`}
+				className={`fixed z-[45] w-full h-screen flex items-center justify-center backdrop-blur-sm transition-all ease duration-700 overflow-hidden`}
 				variants={navVariant}
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
@@ -175,10 +173,19 @@ const Navbar = () => {
 			<nav
 				ref={navRef}
 				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${
-					isNavOpen ? "bg-transparent" : "backdrop-filter backdrop-blur-md"
+					isNavOpen
+						? "bg-transparent"
+						: "backdrop-filter backdrop-blur-md"
 				} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
-				<div className="">
-					<h1 className="text-2xl ml-2 md:ml-0">Alvalens</h1>
+				<div>
+					<h1
+						className={`text-2xl ml-2 md:ml-0  ${
+							isNavOpen
+								? "text-white"
+								: ""
+						}`}>
+						Alvalens
+					</h1>
 				</div>
 				<div className="flex flex-row items-center">
 					<button
@@ -200,10 +207,7 @@ const Navbar = () => {
 				</div>
 			</nav>
 			{/* items */}
-			<NavItems
-				isNavOpen={isNavOpen}
-				setIsNavOpen={setIsNavOpen}
-			/>
+			<NavItems isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
 		</>
 	);
 };
