@@ -6,14 +6,16 @@ import Link from "next/link";
 const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	const [isMobile, setIsMobile] = useState(false);
 
-	  const handleItemClick = () => {
-			setIsNavOpen(false);
-		};
+	const handleItemClick = () => {
+		setIsNavOpen(false);
+	};
 	const navVariant = {
 		open: {
 			clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
 			transition: {
-				type: "tween", // Use a linear or ease transition
+				type: "spring",
+				stiffness: 400,
+				damping: 40,
 			},
 		},
 		closed: {
@@ -43,25 +45,39 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 
 	// Check screen width and adjust clipPath for smaller screens
 	if (isMobile) {
-		navVariant.closed = {
-			clipPath: "circle(0px at calc(100% - 35px) 35px)",
+		(navVariant.open = {
+			clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
 			transition: {
-				delay: 0.5,
-				type: "spring",
-				stiffness: 400,
-				damping: 40,
+				type: "tween",
 			},
-		};
+		}),
+			(navVariant.closed = {
+				clipPath: "circle(0px at calc(100% - 35px) 35px)",
+				transition: {
+					delay: 0.5,
+					type: "spring",
+					stiffness: 400,
+					damping: 40,
+				},
+			});
 	} else {
-		navVariant.closed = {
-			clipPath: "circle(0px at calc(100% - 120px) 35px)",
+		(navVariant.open = {
+			clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
 			transition: {
-				delay: 0.5,
 				type: "spring",
 				stiffness: 400,
 				damping: 40,
 			},
-		};
+		}),
+			(navVariant.closed = {
+				clipPath: "circle(0px at calc(100% - 120px) 35px)",
+				transition: {
+					delay: 0.5,
+					type: "spring",
+					stiffness: 400,
+					damping: 40,
+				},
+			});
 	}
 	const itemVariants = {
 		open: {
@@ -180,9 +196,7 @@ const Navbar = () => {
 				<div>
 					<h1
 						className={`text-2xl ml-2 md:ml-0  ${
-							isNavOpen
-								? "text-white"
-								: ""
+							isNavOpen ? "text-white" : ""
 						}`}>
 						Alvalens
 					</h1>
