@@ -35,7 +35,9 @@ export const metadata = {
 		image: Icon,
 		siteName: "Alvalens | Portofolio",
 	},
-	canonical: "https://www.alvalens.my.id",
+	alternates: {
+		canoncial: "https://www.alvalens.my.id",
+	},
 };
 
 const TopProgressBar = dynamic(() => import("@/components/TopProgressbar"), {
