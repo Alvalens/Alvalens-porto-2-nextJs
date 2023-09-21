@@ -103,9 +103,7 @@ const MyPage = () => {
 											Download CV
 										</Button>
 										<Button variation="secondary">
-											<a href="#contact">
-												Contact Me
-											</a>
+											<a href="#contact">Contact Me</a>
 										</Button>
 									</motion.div>
 								</motion.div>
@@ -148,6 +146,8 @@ const MyPage = () => {
 										transition={{
 											delay: 0.5,
 											type: "spring",
+											stiffness: 100,
+											damping: 20,
 										}}>
 										<Image
 											src={MeAbout}
@@ -215,6 +215,8 @@ const MyPage = () => {
 										transition={{
 											delay: 0.5,
 											type: "spring",
+											stiffness: 100,
+											damping: 20,
 										}}>
 										<Image
 											src={ProjectAll}
@@ -269,8 +271,8 @@ const MyPage = () => {
 							</div>
 						</div>
 						<div className="section">
-							<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col">
-								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 overflow-x-hidden">
+							<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
+								<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 									<motion.div
 										className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
 										initial={{
@@ -286,6 +288,8 @@ const MyPage = () => {
 										transition={{
 											delay: 0.5,
 											type: "spring",
+											stiffness: 100,
+											damping: 20,
 										}}>
 										<Image
 											src={Setup}

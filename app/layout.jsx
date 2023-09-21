@@ -11,10 +11,8 @@ export const metadata = {
 	title: "Alvalens | Portofolio",
 	description:
 		"My name is Alvalens, I'm a web developer and I'm passionate about it. I'm currently studying at Universitas Negeri Malang.",
-	image: Icon,
 	author: "Alvalens",
 	siteUrl: "https://www.alvalens.my.id",
-	ico: Icon,
 	applicationName: "Alvalens",
 	keywords: [
 		"alvalens",
