@@ -13,9 +13,7 @@ export const metadata = {
 		"My name is Alvalens, I'm a web developer and I'm passionate about it. I'm currently studying at Universitas Negeri Malang.",
 	image: Icon,
 	author: "Alvalens",
-	keywords:
-		"alvalens, alvalen, alvalen shafel, shafel, alvalen shafelbilyunazra, alvalen shafel bilyunazra, bloodfallen, alvalen porto",
-	siteUrl: "https://alvalens.vercel.app",
+	siteUrl: "https://www.alvalens.my.id",
 	ico: Icon,
 	applicationName: "Alvalens",
 	keywords: [
@@ -37,14 +35,9 @@ export const metadata = {
 		title: "Alvalens | Portofolio",
 		description: "My name is Alvalens, This is my portofolio website.",
 		image: Icon,
-		siteName: "Alvalens",
+		siteName: "Alvalens | Portofolio",
 	},
-	icons: {
-		icon: "img/icon.ico",
-		appleIcon: Icon,
-		favicon32: Icon,
-		favicon16: Icon,
-	},
+	canonical: "https://www.alvalens.my.id",
 };
 
 const TopProgressBar = dynamic(() => import("@/components/TopProgressbar"), {
