@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
-import Icon from "@/public/img/icon.ico";
+import Img from "@/public/og-image.png"
 import "./nprogress.css";
 
 export const metadata = {
@@ -32,8 +32,14 @@ export const metadata = {
 		url: "https://www.alvalens.my.id",
 		title: "Alvalens | Portofolio",
 		description: "My name is Alvalens, This is my portofolio website.",
-		image: Icon,
+		images: "/og-image.png",
 		siteName: "Alvalens | Portofolio",
+	},
+	// for whataspp
+	whatsapp: {
+		title: "Alvalens | Portofolio",
+		description: "My name is Alvalens, This is my portofolio website.",
+		images: "/og-image.png",
 	},
 	alternates: {
 		canoncial: "https://www.alvalens.my.id",
