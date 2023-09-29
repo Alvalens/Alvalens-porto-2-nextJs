@@ -10,7 +10,7 @@ export const metadata = {
 	title: "Alvalens | Portofolio",
 	description:
 		"My name is Alvalens, I'm a web developer and I'm passionate about it. I'm currently studying at Universitas Negeri Malang.",
-	author: "Alvalens",
+	author: "Alvalen Shafelbilyunazra",
 	siteUrl: "https://www.alvalens.my.id",
 	applicationName: "Alvalens",
 	keywords: [
@@ -24,26 +24,35 @@ export const metadata = {
 		"alvalen porto",
 		"alvalen um",
 	],
-	author: "Alvalen Shafelbilyunazra",
-	authorDescription: "I'm a web developer and I'm passionate about it.",
 	openGraph: {
 		type: "website",
 		url: "https://www.alvalens.my.id",
 		title: "Alvalens | Portofolio",
 		description: "My name is Alvalens, This is my portofolio website.",
-		images: "/og-image.png",
-		siteName: "Alvalens | Portofolio",
+		images: [
+			{
+				url: "/og-image.png",
+				alt: "Alvalens Portofolio",
+			},
+		],
+		site_name: "Alvalens | Portofolio",
 	},
-	// for whataspp
+	// For WhatsApp
 	whatsapp: {
 		title: "Alvalens | Portofolio",
 		description: "My name is Alvalens, This is my portofolio website.",
-		images: "/og-image.png",
+		images: [
+			{
+				url: "/og-image-square.png",
+				alt: "Alvalens Portofolio",
+			},
+		],
 	},
 	alternates: {
-		canoncial: "https://www.alvalens.my.id",
+		canonical: "https://www.alvalens.my.id",
 	},
 };
+
 
 import Chat from "@/components/Chat";
 
