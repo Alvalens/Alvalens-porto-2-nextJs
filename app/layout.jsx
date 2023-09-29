@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
-import Img from "@/public/og-image.png"
 import "./nprogress.css";
 
 export const metadata = {
