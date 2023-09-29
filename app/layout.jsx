@@ -40,6 +40,8 @@ export const metadata = {
 	},
 };
 
+import Chat from "@/components/Chat";
+
 const TopProgressBar = dynamic(() => import("@/components/TopProgressbar"), {
 	ssr: false,
 });
@@ -54,6 +56,7 @@ export default function RootLayout({ children }) {
 				<TopProgressBar />
 				<Navbar />
 				{children}
+				<Chat />
 			</body>
 		</html>
 	);
