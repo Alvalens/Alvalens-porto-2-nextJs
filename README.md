@@ -43,21 +43,20 @@ This is my debut project utilizing Next.js, a portfolio website featuring four p
 6. Update the Intelliticks chat widget script in components/Chat.jsx, with your own
 
    ```javascript
-   // components/Intelliticks.js
-"use client"
-import { useEffect } from "react";
-
-// Component for Intelliticks chat widget
-const Chat = () => {
-	useEffect(() => {
-		// Replace the Intelliticks script here
-         
-	}, []);
-
-	return null;
-};
-
-export default Chat;
+	"use client"
+	import { useEffect } from "react";
+	
+	// Component for Intelliticks chat widget
+	const Chat = () => {
+		useEffect(() => {
+			// Replace the Intelliticks script here
+	         
+		}, []);
+	
+		return null;
+	};
+	
+	export default Chat;
    ```
 
 ## Usage
