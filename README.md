@@ -11,6 +11,7 @@ This is my debut project utilizing Next.js, a portfolio website featuring four p
 * **Smooth Animation:** Smooth page scroll and scroll trigger animation.
 * **Smooth Page Transition:** Smooth page transition with prefetching feature of next js.
 * **Dynamic Data:** Read the project data from JSON file instead of directly implemented the data.
+* **Intelliticks chat widget:** Chat with owner of the web realtime
 
 ## Installation
 
@@ -72,6 +73,7 @@ Feel free to customize and expand upon these sections and subpages to suit your 
 Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
 
 ## Reference (inspiration)
+
 - https://www.frans.my.id/
 - https://kuon-yagi-portfolio.netlify.app/
 
