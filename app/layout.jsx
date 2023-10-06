@@ -40,7 +40,6 @@ export const metadata = {
 		],
 		site_name: "Alvalens | Portofolio",
 	},
-
 };
 
 
