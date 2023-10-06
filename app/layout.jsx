@@ -30,28 +30,17 @@ export const metadata = {
 		url: "https://www.alvalens.my.id",
 		title: "Alvalens | Portofolio",
 		description: "My name is Alvalens, This is my portofolio website.",
+		width: 1200,
+		height: 630,
 		images: [
 			{
-				url: "/og-image.png",
+				url: "/og-image-rev.png",
 				alt: "Alvalens Portofolio",
 			},
 		],
 		site_name: "Alvalens | Portofolio",
 	},
-	// For WhatsApp
-	whatsapp: {
-		title: "Alvalens | Portofolio",
-		description: "My name is Alvalens, This is my portofolio website.",
-		images: [
-			{
-				url: "/og-image-square.png",
-				alt: "Alvalens Portofolio",
-			},
-		],
-	},
-	alternates: {
-		canonical: "https://www.alvalens.my.id",
-	},
+
 };
 
 
