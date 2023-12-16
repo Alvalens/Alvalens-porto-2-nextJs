@@ -10,6 +10,9 @@ import Image from "next/image";
 import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
+// function ScrollDownButton() {
+// 	render
+
 function Page({ params }) {
 	const [data, setData] = useState(null);
 	useEffect(() => {
@@ -35,21 +38,21 @@ function Page({ params }) {
 				<div className="min-h-screen flex justify-center items-center w-full">
 					<div className="mx-auto grid grid-cols-1 md:grid-cols-2  w-full">
 						<div className="flex justify-center items-start flex-col mb-5 space-y-10 w-ful p-4">
-							<div className="animate-pulse bg-neutral-200 h-20 w-full rounded"></div>
-							<div className="animate-pulse bg-neutral-200 h-20 w-full rounded"></div>
-							<div className="animate-pulse bg-neutral-200 h-20 w-full rounded"></div>
-							<div className="animate-pulse bg-neutral-200 h-20 w-full rounded"></div>
-							<div className="animate-pulse bg-neutral-200 h-20 w-full rounded"></div>
+							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
+							<div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
 						</div>
 						<div className="flex justify-start items-start flex-col mb-5 w-full p-4">
-							<div className="animate-pulse duration-500 shadow-lg bg-neutral-200 rounded  w-full h-full "></div>
+							<div className="animate-pulse duration-500 shadow-lg bg-neutral-400 rounded  w-full h-full "></div>
 						</div>
 					</div>
 				</div>
 				{/* images */}
 				<div className="mx-auto grid grid-cols-1 p-5 md:p-20  w-full h-auto">
 					<div className="w-full h-auto aspect-video">
-						<div className="animate-pulse duration-500 shadow-lg bg-neutral-200 h-full w-full rounded"></div>
+						<div className="animate-pulse duration-500 shadow-lg bg-neutral-400 h-full w-full rounded"></div>
 					</div>
 				</div>
 			</div>
@@ -154,10 +157,11 @@ function Page({ params }) {
 							key={index}
 							src={image}
 							alt={`Project Image ${index + 1}`}
-							className="mb-5 max-h-screen w-auto"
-							layout="responsive"
+							className="mb-5 h-auto max-h-screen max-w-7xl mx-auto"
 							width={1920}
 							height={1080}
+							layout="responsive"
+							objectFit="contain"
 						/>
 					))}
 				</div>
