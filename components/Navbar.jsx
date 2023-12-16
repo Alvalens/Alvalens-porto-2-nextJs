@@ -62,7 +62,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 			});
 	} else {
 		(navVariant.open = {
-			clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
+			clipPath: `circle(2444px at calc(100% - 40px) 40px)`,
 			transition: {
 				type: "spring",
 				stiffness: 400,
@@ -100,7 +100,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
 				<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
-					<div className="lg:ml-64 flex flex-col items-center space-y-8 my-auto mx-0">
+					<div className="flex flex-col items-center space-y-8 my-auto mx-0">
 						{/* title */}
 						<motion.h1
 							animate={{ opacity: 1 }}
