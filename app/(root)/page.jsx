@@ -36,7 +36,7 @@ const MyPage = () => {
 				render={({ state, fullpageApi }) => (
 					<ReactFullpage.Wrapper>
 						<div className="section">
-							<div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden">
+							<div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden md:px-20">
 								<motion.div
 									className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start"
 									initial={{ x: -100, opacity: 0 }}
@@ -67,7 +67,7 @@ const MyPage = () => {
 										Alvalen Shafel
 									</motion.h3>
 									<motion.h1
-										className="text-black text-5xl md:text-8xl font-bold my-2 md:my-5"
+										className="text-black text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold my-2 md:my-5"
 										initial={{ x: -100, opacity: 0 }}
 										whileInView={{ x: 0, opacity: 1 }}
 										transition={{
@@ -77,7 +77,7 @@ const MyPage = () => {
 										Full Stack Developer
 									</motion.h1>
 									<motion.p
-										className="title text-md  md:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
+										className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
 										initial={{ x: -100, opacity: 0 }}
 										whileInView={{ x: 0, opacity: 1 }}
 										transition={{
