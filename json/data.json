@@ -1,6 +1,27 @@
 {
   "Projects": [
     {
+      "title": "LUDOang",
+      "desc": [
+        "LUDOang is a game that my team and I created for a final project in my university. The game is built python, pygame, and OpenGL. The game is a 2D game that is inspired by a Ludo game. The game has a few features such randomZone, and a 3D dice.",
+        "RandomZone is a feature that allows the player to get a random number of steps. The 3D dice is a feature that allows the player to roll a 3D dice. The game also has a few other features menuy screen and also loading screen.", "Beside that the game also has a audio theme that will play when the game is started. The game also has a few sound effects such as dice roll sound, and a sound when the player win the game."
+      ],
+      "year": "2023",
+      "preview": "https://github.com/Alvalens/ludo-game/releases/tag/pre-release",
+      "code": "https://github.com/Alvalens/ludo-game",
+      "images": [
+        "/projects/LUDOang/ludo1.png",
+        "/projects/LUDOang/ludo2.png",
+        "/projects/LUDOang/ludo3.png"
+      ],
+      "tech": [
+        "Python",
+        "Pygame",
+        "OpenGL"
+      ], 
+      "slug": "ludoang"
+    },
+    {
       "title": "React Realtime Chat",
       "desc": [
         "My ambitious project that delves into the world of interactive web development using React. This project is a realtime chat application that allows users to create chat rooms and chat with other users in realtime. The application is built using React, Firebase, and Daisy UI.",

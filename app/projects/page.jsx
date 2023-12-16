@@ -11,6 +11,7 @@ import ReactChat2 from "@/public/projects/react-chat2.png";
 import ReactChat3 from "@/public/projects/react-chat3.png";
 import ProjectAll from "@/public/img/projects-all.jpg";
 // main project image
+import LUDOang from "@/public/projects/main-project/ludo.png";
 import ReactChatMain from "@/public/projects/main-project/react-chat.png";
 import ReactTools from "@/public/projects/main-project/react-tools.png";
 import AlephBot from "@/public/projects/main-project/aleph-bot.png";
@@ -25,6 +26,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
+	{
+		title: "LUDOang",
+		desc: "LUDOang is a game created using python and pygame. This game is inspired by LUDO game.",
+		year: "2023",
+		tech: "Python, Pygame, OpenGL",
+		bg: LUDOang,
+		slug: "ludoang",
+	},
 	{
 		title: "React Chat WebApp",
 		desc: "My second React project. This project is a realtime chat webapp that I created using ReactJS, Firebase, and TailwindCSS.",
@@ -84,7 +93,6 @@ const projects = [
 ];
 
 export default function Page() {
-
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -122,8 +130,11 @@ export default function Page() {
 						</h1>
 						<Hr />
 						<p className="title  text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5">
-							List of my projects that I have done and 								<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent"> currently
-							working on.</span>
+							List of my projects that I have done and{" "}
+							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+								{" "}
+								currently working on.
+							</span>
 						</p>
 						<motion.div
 							initial={{ opacity: 0, y: 100 }}

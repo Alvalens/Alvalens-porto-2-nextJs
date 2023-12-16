@@ -59,7 +59,7 @@ function Page({ params }) {
 				window.history.back();
 			};
 	return (
-		<div className="relative min-h-screen w-full  gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
+		<div className="relative min-h-screen w-full gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
 			<FixedButon onClick={handleBack}>
 				<FontAwesomeIcon
 					icon={faChevronLeft}
@@ -68,7 +68,7 @@ function Page({ params }) {
 			</FixedButon>
 			<div className="min-h-screen flex justify-center items-center">
 				<div className="mx-auto grid grid-cols-1 md:grid-cols-2  mt-10 md:mt-0">
-					<div className="flex justify-center items-start flex-col mb-5 space-y-10 mx-auto">
+					<div className="min-h-screen sm:min-h-0 flex justify-center items-start flex-col mb-5 space-y-10 mx-auto">
 						<div>
 							<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
 								Project
@@ -147,14 +147,15 @@ function Page({ params }) {
 				</div>
 			</div>
 			{/* images */}
-			<div className="mx-auto grid grid-cols-1 p-5 md:p-20  w-full h-auto">
-				<div className="w-full h-auto aspect-video">
+			<div className="mx-auto grid grid-cols-1 p-5 md:p-20 w-full">
+				<div className="w-full h-auto text-center flex flex-col justify-center ">
 					{data.images.map((image, index) => (
 						<Image
 							key={index}
 							src={image}
 							alt={`Project Image ${index + 1}`}
-							className="w-full h-full mb-5"
+							className="mb-5 max-h-screen w-auto"
+							layout="responsive"
 							width={1920}
 							height={1080}
 						/>

@@ -9,6 +9,13 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 const projects = [
 	{
 		year: "2023",
+		title: "LUDOang",
+		tech: "Python, Pygame, OpenGL",
+		github: "https://github.com/Alvalens/ludo-game",
+		preview: "https://github.com/Alvalens/ludo-game/releases/tag/pre-release"
+	},
+	{
+		year: "2023",
 		title: "React Realtime Chat",
 		tech: "Javascript, React Js, Firebase, Daisy UI",
 		github: "https://github.com/Alvalens/react-realtime-chat",
