@@ -3,6 +3,14 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 module.exports = withBundleAnalyzer({
 	// your Next.js configuration
+	webpack: (config, options) => {
+		config.module.rules.push({
+			test: /\.pdf$/i,
+			type: "asset/source",
+		});
+
+		return config;
+	},
 	async headers() {
 		return [
 			{

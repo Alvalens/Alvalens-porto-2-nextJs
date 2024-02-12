@@ -100,7 +100,7 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											Download CV
+											<Link href={"/docs/cv.pdf"}>Download CV</Link>
 										</Button>
 										<Button variation="secondary">
 											<a href="#contact">Contact Me</a>
