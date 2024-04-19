@@ -80,15 +80,26 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 			});
 	}
 	const itemVariants = {
-		open: {
+		open: (custom) => ({
 			opacity: 1,
-			y: 0,
+			x: 0,
 			rotate: 0,
-		},
+			transition: {
+				delay: custom,
+				type: "spring",
+				stiffness: 400,
+				damping: 40,
+			},
+		}),
 		closed: {
 			opacity: 0,
-			y: -40,
+			x: -80,
 			rotate: 0,
+			transition: {
+				type: "spring",
+				stiffness: 400,
+				damping: 40,
+		},
 		},
 	};
 
@@ -103,23 +114,20 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 					<div className="flex flex-col items-center space-y-8 my-auto mx-0">
 						{/* title */}
 						<motion.h1
-							animate={{ opacity: 1 }}
-							initial={{ opacity: 0 }}
-							transition={{ delay: 0.5, duration: 1 }}
+							variants={itemVariants}
+							animate={isNavOpen ? "open" : "closed"}
 							className="text-6xl font-bold text-white ">
 							Menu
 						</motion.h1>
 						<a href="/#home">
 							<div
-								onClick={handleItemClick}
 								className="text-2xl font-bold text-white"
-								variants={itemVariants}
-								animate={isNavOpen ? "open" : "closed"}
-								delay={1}>
+								onClick={handleItemClick}>
 								<motion.h2
 									className="text-white"
 									variants={itemVariants}
-									animate={isNavOpen ? "open" : "closed"}>
+									animate={isNavOpen ? "open" : "closed"}
+									custom={0.1}>
 									Home
 								</motion.h2>
 							</div>
@@ -127,14 +135,12 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 						<Link href="/about">
 							<div
 								onClick={handleItemClick}
-								className="text-2xl font-bold text-white"
-								variants={itemVariants}
-								animate={isNavOpen ? "open" : "closed"}
-								delay={1.2}>
+								className="text-2xl font-bold text-white">
 								<motion.h2
 									className="text-white"
 									variants={itemVariants}
-									animate={isNavOpen ? "open" : "closed"}>
+									animate={isNavOpen ? "open" : "closed"}
+									custom={0.2}>
 									About
 								</motion.h2>
 							</div>
@@ -142,14 +148,12 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 						<Link href="/projects">
 							<div
 								onClick={handleItemClick}
-								className="text-2xl font-bold text-white"
-								variants={itemVariants}
-								animate={isNavOpen ? "open" : "closed"}
-								delay={1.3}>
+								className="text-2xl font-bold text-white">
 								<motion.h2
 									className="text-white"
 									variants={itemVariants}
-									animate={isNavOpen ? "open" : "closed"}>
+									animate={isNavOpen ? "open" : "closed"}
+									custom={0.3}>
 									Projects
 								</motion.h2>
 							</div>
@@ -157,14 +161,12 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 						<a href="/#contact">
 							<div
 								onClick={handleItemClick}
-								className="text-2xl font-bold text-white"
-								variants={itemVariants}
-								animate={isNavOpen ? "open" : "closed"}
-								delay={1.4}>
+								className="text-2xl font-bold text-white">
 								<motion.h2
 									className="text-white"
 									variants={itemVariants}
-									animate={isNavOpen ? "open" : "closed"}>
+									animate={isNavOpen ? "open" : "closed"}
+									custom={0.4}>
 									Contact
 								</motion.h2>
 							</div>
@@ -190,12 +192,12 @@ const Navbar = () => {
 				ref={navRef}
 				className={`navbar px-5 md:px-24 w-screen fixed transition-colors ease duration-500 ${
 					isNavOpen
-						? "bg-transparent"
+						? "backdrop-filter backdrop-blur-md bg-gray-700 bg-opacity-50"
 						: "backdrop-filter backdrop-blur-md"
 				} inset-0  bg-opacity-50 flex flex-row justify-between items-center h-16 z-50 `}>
 				<div>
 					<h1
-						className={`text-2xl ml-2 md:ml-0  ${
+						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${
 							isNavOpen ? "text-white" : ""
 						}`}>
 						Alvalens
