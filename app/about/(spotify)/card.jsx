@@ -32,6 +32,7 @@ useEffect(() => {
 				</div>
 			) : (
 				<div className="relative w-full mb-8 grid grid-cols-2  gap-2 border-2 border-gray-500 p-4 rounded-lg backdrop-filter backdrop-blur-lg bg-white bg-opacity-30">
+					{result.isPlaying && (
 					<Image
 						src={result.albumImageUrl}
 						alt="backgroundImage"
@@ -39,6 +40,7 @@ useEffect(() => {
 						objectFit="cover"
 						className="z-0 opacity-20 absolute"
 					/>
+					)}
 					<div className="z-10  flex items-center">
 						<FontAwesomeIcon
 							icon={faSpotify}
