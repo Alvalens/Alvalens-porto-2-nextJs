@@ -1,6 +1,5 @@
 "use client";
 import { useEffect } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import Image from "next/legacy/image";
@@ -8,19 +7,19 @@ import FixedButon from "@/components/FixedButton";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-
+import Card from "./(spotify)/card.jsx";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
 import Me2 from "@/public/img/me2.jpg";
 import Me3 from "@/public/img/me3.jpg";
 import Hr from "@/components/Hr";
+
 export default function Page() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	
 	const handleBack = () => {
 		window.location.href = "/";
 	};
@@ -207,6 +206,7 @@ export default function Page() {
 							connect and explore this ever-evolving world of tech
 							together!
 						</p>
+						<Card />
 					</motion.div>
 				</div>
 				<div className=" w-screen mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 mt-10 mb-24">

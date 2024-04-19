@@ -3,6 +3,9 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 module.exports = withBundleAnalyzer({
 	// your Next.js configuration
+	images: {
+		domains: ["i.scdn.co"],
+	},
 	webpack: (config, options) => {
 		config.module.rules.push({
 			test: /\.pdf$/i,
