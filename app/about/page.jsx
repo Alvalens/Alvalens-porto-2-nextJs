@@ -8,6 +8,7 @@ import FixedButon from "@/components/FixedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Card from "./(spotify)/card.jsx";
+import Quote from "./(quote)/quote.jsx";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
@@ -451,6 +452,26 @@ export default function Page() {
 							undertake meets high-quality standards and fulfills
 							the unique needs of clients.
 						</p>
+					</motion.div>
+				</div>
+
+				<div className="min-h-[80vh] w-screen mx-auto container  p-10 grid grid-cols-1 mt-10 ">
+					<motion.div
+						className="flex justify-center items-center flex-col mb-5 "
+						initial={{
+							opacity: 0,
+							scale: 0.9,
+						}}
+						whileInView={{
+							opacity: 1,
+							scale: 1,
+						}}
+						transition={{
+							delay: 0.6,
+							duration: 2,
+							ease: [0.22, 1, 0.36, 1],
+						}}>
+						<Quote />
 					</motion.div>
 				</div>
 			</main>
