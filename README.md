@@ -62,9 +62,9 @@ This is my debut project utilizing Next.js, a portfolio website featuring four p
 7. Set env.local by copying env.example and fill the variable
 
    ```
-   SPOTIFY_CLIENT_ID=
-   SPOTIFY_CLIENT_SECRET=
-   SPOTIFY_REFRESH_TOKEN=
+   NEXT_PUBLIC_SPOTIFY_CLIENT_ID=
+   NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET=
+   NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN=
    ```
 
    for further reference on how to setup spotify api you can check this [link ](https://leerob.io/blog/spotify-api-nextjs "leerob blog")
