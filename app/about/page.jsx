@@ -10,6 +10,8 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Card from "./(spotify)/card.jsx";
 import Quote from "./(quote)/quote.jsx";
 import Skills from "./(skills)/skills.jsx";
+import Tools from "./(skills)/tools.jsx";
+import Stack from "./(skills)/stack.jsx";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
@@ -249,62 +251,7 @@ export default function Page() {
 
 							type: "spring",
 						}}>
-						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase ">
-							Language & Framework
-						</h2>
-						<p className="text-gray-500 text-center tracking-widest md:px-5">
-							<span className="text-black font-bold">HTML</span> |{" "}
-							<span className="text-black font-bold">CSS</span> |{" "}
-							<span className="text-black font-bold">
-								Javascript
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								Typescript
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-bold">React</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								NextJS
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-bold">
-								TailwindCSS
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-bold">
-								Bootstrap
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								NodeJS
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								ExpressJS
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								MongoDB
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-bold">MySQL</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								Firebase
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">PHP</span>{" "}
-							|{" "}
-							<span className="text-black font-bold">
-								Laravel
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								Python
-							</span>
-						</p>
+						<Stack/>
 					</motion.div>
 					<motion.div
 						className="flex justify-start items-center flex-col mb-5 "
@@ -321,38 +268,7 @@ export default function Page() {
 
 							type: "spring",
 						}}>
-						<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase">
-							Tools
-						</h2>
-						<p className="text-gray-500 text-center tracking-wider md:px-">
-							<span className="text-black font-bold">
-								Visual Studio Code
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								Jet Brains
-							</span>{" "}
-							| <span className="text-black font-bold">Git</span>{" "}
-							|{" "}
-							<span className="text-black font-bold">Github</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								Figma
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								Adobe Photoshop
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								Adobe Premiere Pro
-							</span>{" "}
-							|{" "}
-							<span className="text-black font-medium">
-								Adobe After Effect
-							</span>{" "}
-							|{" "}
-						</p>
+						<Tools/>
 					</motion.div>
 				</div>
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
