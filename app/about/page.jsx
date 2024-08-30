@@ -12,6 +12,7 @@ import Quote from "./(quote)/quote.jsx";
 import Skills from "./(skills)/skills.jsx";
 import Tools from "./(skills)/tools.jsx";
 import Stack from "./(skills)/stack.jsx";
+import Experience from "./(experience)/experience.jsx";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
@@ -231,8 +232,8 @@ export default function Page() {
 
 							type: "spring",
 						}}>
-							<Skills/>
-						</motion.div>
+						<Skills />
+					</motion.div>
 				</div>
 
 				<div className=" w-screen mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 mt-10 mb-24">
@@ -251,7 +252,7 @@ export default function Page() {
 
 							type: "spring",
 						}}>
-						<Stack/>
+						<Stack />
 					</motion.div>
 					<motion.div
 						className="flex justify-start items-center flex-col mb-5 "
@@ -268,7 +269,7 @@ export default function Page() {
 
 							type: "spring",
 						}}>
-						<Tools/>
+						<Tools />
 					</motion.div>
 				</div>
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
@@ -303,6 +304,8 @@ export default function Page() {
 
 								type: "spring",
 							}}></motion.div>
+
+						{/* experience */}
 						<motion.h1
 							className="text-3xl font-bold mt-3"
 							initial={{
@@ -318,11 +321,12 @@ export default function Page() {
 
 								type: "spring",
 							}}>
-							Education &amp; Experience
+							Experience
 						</motion.h1>
 					</div>
 				</div>
-				<div className="w-screen mx-auto container gap-10 p-10 grid grid-cols-1 md:grid-cols-2 my-10 ">
+
+				<div className="w-screen mx-auto container gap-10 p-10 grid grid-cols-1  my-10 ">
 					<motion.div
 						className="flex justify-center items-start flex-col mb-5 "
 						initial={{
@@ -338,59 +342,7 @@ export default function Page() {
 
 							type: "spring",
 						}}>
-						<h2 className="text-2xl font-bold mb-3">
-							Education | Universitas Negeri Malang
-						</h2>
-						<h3 className="text-md font-medium mb-3 text-gray-500">
-							Teknik Informatika | 2022 - Now
-						</h3>
-						<p className="pl-3 text-gray-500  relative text-justify">
-							<span className="before:border-s-2 before:absolute before:left-0 before:top-0 before:h-full before:border-gray-400 before:block before:w-2 before:content-'' "></span>
-							I&rsquo;m currently in my third semester at
-							Universitas Negeri Malang, majoring in Informatics
-							Engineering. This journey has been nothing short of
-							exhilarating, filled with countless opportunities to
-							learn and grow. With a steadfast dedication to my
-							studies, I&rsquo;ve achieved a commendable GPA of
-							3.93. Throughout my academic journey, I&rsquo;ve
-							delved into various facets of computer science,
-							honing my skills in web development, programming,
-							and problem-solving.
-						</p>
-					</motion.div>
-					<motion.div
-						className="flex justify-center items-start flex-col mb-5 "
-						initial={{
-							opacity: 0,
-							x: 200,
-						}}
-						whileInView={{
-							opacity: 1,
-							x: 0,
-						}}
-						transition={{
-							delay: 0.5,
-
-							type: "spring",
-						}}>
-						<h2 className="text-2xl font-bold mb-3">
-							Experience | Freelance Web Developer
-						</h2>
-						<h3 className="text-md font-medium mb-3 text-gray-500">
-							Fullstack Web Developer | 2023 - Now
-						</h3>
-						<p className="pl-3 text-gray-500 relative text-justify">
-							<span className="before:border-s-2 before:absolute before:left-0 before:top-0 before:h-full before:border-gray-400 before:block before:w-2 before:content-'' "></span>
-							My experience extends across various technologies,
-							with a primary focus on Next.js and Laravel.
-							I&rsquo;ve successfully completed three projects
-							using Next.js and Laravel. What sets me apart is my
-							ability to adapt to different project requirements.
-							Whether working collaboratively as part of a team or
-							independently, I ensure that each project I
-							undertake meets high-quality standards and fulfills
-							the unique needs of clients.
-						</p>
+						<Experience />
 					</motion.div>
 				</div>
 
