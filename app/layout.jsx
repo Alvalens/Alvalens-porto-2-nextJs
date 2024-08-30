@@ -29,6 +29,7 @@ export const metadata = {
 		type: "website",
 		url: "https://www.alvalens.my.id",
 		title: "Alvalens | Portofolio",
+		site_name: "Alvalens | Portofolio",
 		description: "My name is Alvalens, This is my portofolio website.",
 		width: 1200,
 		height: 630,
