@@ -8,11 +8,19 @@ import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 const projects = [
 	{
+		year: "2024",
+		title: "Generative Trivia",
+		tech: "NextJS, Gemini AI, TailwindCSS, ShadcnUI, Firebase",
+		github: "https://github.com/Alvalens/generative-trivia",
+		preview: "https://generative-trivia.vercel.app/",
+	},
+	{
 		year: "2023",
 		title: "LUDOang",
 		tech: "Python, Pygame, OpenGL",
 		github: "https://github.com/Alvalens/ludo-game",
-		preview: "https://github.com/Alvalens/ludo-game/releases/tag/pre-release"
+		preview:
+			"https://github.com/Alvalens/ludo-game/releases/tag/pre-release",
 	},
 	{
 		year: "2023",

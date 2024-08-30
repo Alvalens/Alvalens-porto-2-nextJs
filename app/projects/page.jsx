@@ -6,18 +6,18 @@ import Button from "@/components/Button";
 import Image from "next/legacy/image";
 
 // images
-import ReactChat1 from "@/public/projects/react-chat.png";
-import ReactChat2 from "@/public/projects/react-chat2.png";
-import ReactChat3 from "@/public/projects/react-chat3.png";
+import ReactChat1 from "@/public/projects/trivia/trivia1.png";
+import ReactChat2 from "@/public/projects/trivia/trivia2.png";
+import ReactChat3 from "@/public/projects/trivia/trivia3.png";
 import ProjectAll from "@/public/img/projects-all.jpg";
 // main project image
+import Trivia from "@/public/projects/main-project/trivia.png";
 import LUDOang from "@/public/projects/main-project/ludo.png";
 import ReactChatMain from "@/public/projects/main-project/react-chat.png";
 import ReactTools from "@/public/projects/main-project/react-tools.png";
 import AlephBot from "@/public/projects/main-project/aleph-bot.png";
 import LPTK from "@/public/projects/lptk/lptk1.png";
 import NUINO from "@/public/projects/ino/ino1.png";
-import UnmuhJember from "@/public/projects/unmuh/unmuh1.png";
 import Porto from "@/public/projects/porto/porto1.png";
 
 import Hr from "@/components/Hr";
@@ -26,6 +26,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
+	{
+		title: "Generative Trivia",
+		desc: "Generative Trivia is a web application that I created using Gemini AI API to generate trivia questions and answers.",
+		year: "2024",
+		tech: "NextJS, Gemini AI API, Tailwind CSS, Shadcn UI, Firebase",
+		bg: Trivia,
+		slug: "trivia",
+	},
 	{
 		title: "LUDOang",
 		desc: "LUDOang is a game created using python and pygame. This game is inspired by LUDO game.",
@@ -73,14 +81,6 @@ const projects = [
 		tech: "PHP, Laravel, Livewire, Bootstrap, JQuery, MySQL",
 		bg: NUINO,
 		slug: "nu-ino-website",
-	},
-	{
-		title: "Unmuh Jember Landing Page",
-		desc: "Landing page for Universitas Muhammadiyah Jember. This web is made for competition held by Universitas Muhammadiyah Jember.",
-		year: "2023",
-		tech: "HTML, CSS, Javascript",
-		bg: UnmuhJember,
-		slug: "unmuh-jember-landing-page",
 	},
 	{
 		title: "My First Portofolio Website",
@@ -161,7 +161,7 @@ export default function Page() {
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 w-[50%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute top-28 left-10 h-[40%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -176,10 +176,11 @@ export default function Page() {
 										layout="fill"
 										objectFit="cover"
 										placeholder="blur"
+										className="rat"
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute top-16 right-28 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute top-16 right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -203,7 +204,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute bottom-16 right-20 w-[40%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute bottom-16 right-20 h-[35%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -246,29 +247,26 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							React Chat WebApp
+							Generative Trivia
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							React Chat WebApp is a chat application that I
-							created using ReactJS, Firebase, and TailwindCSS.
-							This is my second project using ReactJS and
-							Firebase. I created this project to learn more about
-							ReactJS and Firebase. I also use TailwindCSS to make
-							the UI more beautiful and responsive. In this
-							project i learn many things about react and
-							firebase, such as react hooks, react router,
-							firebase authentication, firebase firestore, and
-							firebase storage. You can see the source code of
-							this project on my github account or preview the
-							project by clicking the button below.
+							A generative trivia website built with Next.js,
+							Firebase, NextAuth, Google OAuth, and TypeScript.
+							Users can generate trivia questions for predefined
+							school subjects and answer them with a unique
+							interactive input style. The application supports
+							user authentication with Google and stores data in
+							Firestore. You can see the source code of this
+							project on my github account or preview the project
+							by clicking the button below.
 						</p>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/react-chat ">More</Link>
+								<Link href="projects/trivia">More</Link>
 							</Button>
 							<Button variation="secondary">
 								<a
-									href="https://react-chat-rouge.vercel.app/"
+									href="https://generative-trivia.vercel.app/"
 									target="_blank"
 									rel="noopener noreferrer">
 									Preview

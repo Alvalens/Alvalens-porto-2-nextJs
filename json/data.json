@@ -1,6 +1,29 @@
 {
   "Projects": [
     {
+      "title": "Generative Trivia",
+      "desc": [
+        "A generative trivia website built with Next.js, Firebase, NextAuth, Google OAuth, and TypeScript. Users can generate trivia questions for predefined school subjects and answer them with a unique interactive input style. The application supports user authentication with Google and stores data in Firestore.",
+        "The project is a culmination of my passion for web development and my desire to create a fun and interactive learning platform. The website is designed to be user-friendly and engaging, with a clean and modern interface that appeals to a wide audience. The trivia questions are generated using the Gemini API, which provides a diverse range of questions for users to answer."
+      ],
+      "year": "2023",
+      "preview": "https://generative-trivia.vercel.app/",
+      "code": "https://github.com/Alvalens/generative-trivia",
+      "images": [
+        "/projects/trivia/trivia1.png",
+        "/projects/trivia/trivia2.png",
+        "/projects/trivia/trivia3.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "Firebase",
+        "Gemini API"
+      ], 
+      "slug": "trivia"
+    },
+    {
       "title": "LUDOang",
       "desc": [
         "LUDOang is a game that my team and I created for a final project in my university. The game is built python, pygame, and OpenGL. The game is a 2D game that is inspired by a Ludo game. The game has a few features such randomZone, and a 3D dice.",
@@ -136,27 +159,6 @@
         "DataTables"
       ],
       "slug": "nu-ino-website"
-    },
-    {
-      "title": "Unmuh Jember Landing Page",
-      "desc": [
-        "Unmuh Jember landing page is a website that I created for a competition held by Universitas Muhammadiyah Jember. The website is built natively using HTML, CSS, and JavaScript. The website has a few features such as a registration form, a login system, and a dashboard for the admin to manage the contents.",
-        "This project is my first freelance project and my first project using JavaScript. I learned a lot about how to use JavaScript and how to use it to create a website. I also learned how to work with a team and how to manage a project."
-      ],
-      "year": "2023",
-      "preview": "https://alvalens.github.io/unmuh-jember-landing-page/",
-      "code": "https://github.com/Alvalens/unmuh-jember-landing-page",
-      "images": [
-        "/projects/unmuh/unmuh1.png",
-        "/projects/unmuh/unmuh2.png",
-        "/projects/unmuh/unmuh3.png"
-      ],
-      "tech": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "slug": "unmuh-jember-landing-page"
     },
     {
       "title": "My First Portofolio Website",
