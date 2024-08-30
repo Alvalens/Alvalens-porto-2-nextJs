@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Card from "./(spotify)/card.jsx";
 import Quote from "./(quote)/quote.jsx";
+import Skills from "./(skills)/skills.jsx";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
@@ -210,6 +211,28 @@ export default function Page() {
 						<Card />
 					</motion.div>
 				</div>
+
+				{/* skills */}
+				<div className=" w-screen mx-auto container gap-4 p-10 grid grid-cols-1 mt-10">
+					<motion.div
+						className="flex justify-center items-center flex-col mb-5 "
+						initial={{
+							opacity: 0,
+							x: -200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+
+							type: "spring",
+						}}>
+							<Skills/>
+						</motion.div>
+				</div>
+
 				<div className=" w-screen mx-auto container gap-4 p-10 grid grid-cols-1 md:grid-cols-2 mt-10 mb-24">
 					<motion.div
 						className="flex justify-center items-center flex-col mb-5 "
