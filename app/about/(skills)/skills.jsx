@@ -6,8 +6,7 @@ export default function Skills() {
 					Skills and Expertise
 				</h2>
 				<p className="text-muted-foreground max-w-[800px] mx-auto">
-					Explore the web development, AI development, and design
-					skills I&apos;m proficient in to deliver high-quality
+					Explore some skills I&apos;m proficient in to deliver high-quality
 					solutions.
 				</p>
 			</div>
@@ -144,26 +143,6 @@ function ComputerIcon(props) {
 			<rect width="20" height="8" x="2" y="14" rx="2" />
 			<path d="M6 18h2" />
 			<path d="M12 18h6" />
-		</svg>
-	);
-}
-
-function GraduationCapIcon(props) {
-	return (
-		<svg
-			{...props}
-			xmlns="http://www.w3.org/2000/svg"
-			width="24"
-			height="24"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round">
-			<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
-			<path d="M22 10v6" />
-			<path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
 		</svg>
 	);
 }

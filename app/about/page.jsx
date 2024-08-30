@@ -13,6 +13,7 @@ import Skills from "./(skills)/skills.jsx";
 import Tools from "./(skills)/tools.jsx";
 import Stack from "./(skills)/stack.jsx";
 import Experience from "./(experience)/experience.jsx";
+import Education from "./(education)/education.jsx";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
@@ -272,6 +273,8 @@ export default function Page() {
 						<Tools />
 					</motion.div>
 				</div>
+
+				{/* experience */}
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<motion.div
@@ -304,8 +307,6 @@ export default function Page() {
 
 								type: "spring",
 							}}></motion.div>
-
-						{/* experience */}
 						<motion.h1
 							className="text-3xl font-bold mt-3"
 							initial={{
@@ -321,7 +322,7 @@ export default function Page() {
 
 								type: "spring",
 							}}>
-							Experience
+							Profesional Experience
 						</motion.h1>
 					</div>
 				</div>
@@ -343,6 +344,27 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<Experience />
+					</motion.div>
+				</div>
+
+				{/* Education */}
+				<div className="w-screen mx-auto container gap-10 p-10 grid grid-cols-1  my-10 ">
+					<motion.div
+						className="flex justify-center items-start flex-col mb-5 "
+						initial={{
+							opacity: 0,
+							x: -200,
+						}}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+						}}
+						transition={{
+							delay: 0.5,
+
+							type: "spring",
+						}}>
+						<Education />
 					</motion.div>
 				</div>
 
