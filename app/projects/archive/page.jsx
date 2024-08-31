@@ -15,6 +15,11 @@ const projects = [
 		preview: "https://generative-trivia.vercel.app/",
 	},
 	{
+		year: "2024",
+		title: "Saku Senyum",
+		tech: "NextJS, TypeScript, TailwindCSS, ShadcnUI, Prisma, MySQL",
+	},
+	{
 		year: "2023",
 		title: "LUDOang",
 		tech: "Python, Pygame, OpenGL",

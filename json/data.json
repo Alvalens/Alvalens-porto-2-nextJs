@@ -24,6 +24,29 @@
       "slug": "trivia"
     },
     {
+      "title": "Saku Senyum",
+      "desc": [
+        "Saku Senyum is a website that I created as a Fullstack Developer in PT Hafdzahmedia based on client request. The website is a sales management for UMKM or small business. The website is built using Next.js, TypeScript, Tailwind CSS, ShadCN UI, Prisma, and MySQL.",
+        "The website has a few features such as a dashboard for the user to manage their business sales, a statistic page, and a sales report page. User can see their sales performance in a fancy chart to make it easier to understand. The user also can export their sales report to a PDF file which can be printed or saved to their device."
+      ],
+      "year": "2024",
+      "images": [
+        "/projects/saku-senyum/saku-senyum1.png",
+        "/projects/saku-senyum/saku-senyum2.png",
+        "/projects/saku-senyum/saku-senyum3.png",
+        "/projects/saku-senyum/saku-senyum4.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "Prisma",
+        "MySQL"
+      ], 
+      "slug": "saku-senyum"
+    },
+    {
       "title": "LUDOang",
       "desc": [
         "LUDOang is a game that my team and I created for a final project in my university. The game is built python, pygame, and OpenGL. The game is a 2D game that is inspired by a Ludo game. The game has a few features such randomZone, and a 3D dice.",
@@ -159,29 +182,6 @@
         "DataTables"
       ],
       "slug": "nu-ino-website"
-    },
-    {
-      "title": "My First Portofolio Website",
-      "desc": [
-        "This Project is my first portfolio website. This website is built using HTML, CSS, and JavaScript. First project that I deployed to the internet. Also my first time using Bootstrap.",
-        "I learned a lot about web developement in this project. I Also learn how to use Git and Github. This project is the reason why I started to learn web development."
-      ],
-      "year": "2022",
-      "preview": "https://alvalens.my.id",
-      "code": "https://github.com/Alvalens/Alvalens-porto-1",
-      "images": [
-        "/projects/porto/porto1.png",
-        "/projects/porto/porto2.png",
-        "/projects/porto/porto3.png"
-      ],
-      "tech": [
-        "HTML",
-        "Bootstrap",
-        "CSS",
-        "AOS",
-        "JavaScript"
-      ],
-      "slug": "my-first-portofolio-website"
     }
   ]
 }

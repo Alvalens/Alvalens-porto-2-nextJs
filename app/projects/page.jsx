@@ -12,13 +12,14 @@ import ReactChat3 from "@/public/projects/trivia/trivia3.png";
 import ProjectAll from "@/public/img/projects-all.jpg";
 // main project image
 import Trivia from "@/public/projects/main-project/trivia.png";
+import SakuSenyum from "@/public/projects/main-project/saku-senyum.png";
 import LUDOang from "@/public/projects/main-project/ludo.png";
 import ReactChatMain from "@/public/projects/main-project/react-chat.png";
 import ReactTools from "@/public/projects/main-project/react-tools.png";
 import AlephBot from "@/public/projects/main-project/aleph-bot.png";
 import LPTK from "@/public/projects/lptk/lptk1.png";
 import NUINO from "@/public/projects/ino/ino1.png";
-import Porto from "@/public/projects/porto/porto1.png";
+
 
 import Hr from "@/components/Hr";
 import FixedButon from "@/components/FixedButton";
@@ -30,9 +31,17 @@ const projects = [
 		title: "Generative Trivia",
 		desc: "Generative Trivia is a web application that I created using Gemini AI API to generate trivia questions and answers.",
 		year: "2024",
-		tech: "NextJS, Gemini AI API, Tailwind CSS, Shadcn UI, Firebase",
+		tech: "NextJS, Typescript, Gemini AI API, Tailwind CSS, Shadcn UI, Firebase",
 		bg: Trivia,
 		slug: "trivia",
+	},
+	{
+		title: "Saku Senyum",
+		desc: "A website for UMKM sales management. This project is a client project that I created as a Fullstack Developer.",
+		year: "2024",
+		tech: "NextJS, Typescript, Tailwind CSS, Shadcn UI, Prisma, MySQL",
+		bg: SakuSenyum,
+		slug: "saku-senyum",
 	},
 	{
 		title: "LUDOang",
@@ -81,14 +90,6 @@ const projects = [
 		tech: "PHP, Laravel, Livewire, Bootstrap, JQuery, MySQL",
 		bg: NUINO,
 		slug: "nu-ino-website",
-	},
-	{
-		title: "My First Portofolio Website",
-		desc: "My first portofolio website that i created using HTML, CSS, and Javascript. This website is the reason why i learn web development.",
-		year: "2022",
-		tech: "HTML, CSS, Javascript, Bootstrap",
-		bg: Porto,
-		slug: "my-first-portofolio-website",
 	},
 ];
 
