@@ -9,7 +9,7 @@ import Image from "next/legacy/image";
 import ReactChat1 from "@/public/projects/trivia/trivia1.png";
 import ReactChat2 from "@/public/projects/trivia/trivia2.png";
 import ReactChat3 from "@/public/projects/trivia/trivia3.png";
-import ProjectAll from "@/public/img/projects-all.jpg";
+import ProjectAll from "@/public/img/projects.png";
 // main project image
 import Trivia from "@/public/projects/main-project/trivia.png";
 import SakuSenyum from "@/public/projects/main-project/saku-senyum.png";

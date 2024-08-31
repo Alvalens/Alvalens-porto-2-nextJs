@@ -10,7 +10,7 @@ import Button from "@/components/Button";
 import Me from "../../public/img/me.jpg";
 import MeAbout from "@/public/img/me2.jpg";
 import Setup from "@/public/img/setup.jpg";
-import ProjectAll from "@/public/img/projects-all.jpg";
+import ProjectAll from "@/public/img/projects.png";
 import Hr from "@/components/Hr";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
