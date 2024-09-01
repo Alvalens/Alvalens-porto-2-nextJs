@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
@@ -20,11 +20,12 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const category = {
 	1: "Web Development",
-	2: "Mobile Development",
-	3: "Other",
+	9: "Other",
 }
 
 export default function Page() {
+	const [activeCategory, setActiveCategory] = useState(1);
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -175,7 +176,6 @@ export default function Page() {
 						}}
 						transition={{
 							delay: 0.5,
-
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
@@ -228,10 +228,36 @@ export default function Page() {
 						</motion.h1>
 					</div>
 				</div>
+
+				{/* choose category */}
+				<div className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5">
+					{Object.keys(category).map((key, index) => (
+						<div
+							key={index}
+							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 ${
+								activeCategory === key
+									? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
+									: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
+							}`}
+							onClick={() =>
+								setActiveCategory(
+									key,
+									console.log(key, activeCategory)
+								)
+							}>
+							{category[key]}
+						</div>
+					))}
+				</div>
+
+				{/* projects */}
 				<div className="w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10 cursor-pointer">
-					{/* loop projeects data */}
 					{projects.map((project, index) => (
-						<ProjectCard project={project} key={index} />
+						<ProjectCard
+							project={project}
+							key={index}
+							activeCategory={activeCategory}
+						/>
 					))}
 				</div>
 				{/* view in archive btn */}

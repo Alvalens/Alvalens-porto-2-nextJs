@@ -16,6 +16,7 @@ export const projects = [
 		tech: "NextJS, Typescript, Gemini AI API, Tailwind CSS, Shadcn UI, Firebase",
 		bg: Trivia,
 		slug: "trivia",
+		category: 1,
 	},
 	{
 		title: "Saku Senyum",
@@ -24,6 +25,7 @@ export const projects = [
 		tech: "NextJS, Typescript, Tailwind CSS, Shadcn UI, Prisma, MySQL",
 		bg: SakuSenyum,
 		slug: "saku-senyum",
+		category: 1,
 	},
 	{
 		title: "LUDOang",
@@ -32,6 +34,7 @@ export const projects = [
 		tech: "Python, Pygame, OpenGL",
 		bg: LUDOang,
 		slug: "ludoang",
+		category: 9,
 	},
 	{
 		title: "React Chat WebApp",
@@ -40,6 +43,7 @@ export const projects = [
 		tech: "Javascript, React Js, Firebase, Daisy UI",
 		bg: ReactChatMain,
 		slug: "react-chat",
+		category: 1,
 	},
 	{
 		title: "React Tools",
@@ -48,6 +52,7 @@ export const projects = [
 		tech: "Javascript, React Js, TailwindCSS",
 		bg: ReactTools,
 		slug: "react-tools",
+		category: 1,
 	},
 	{
 		title: "Aleph Discord Bot",
@@ -56,6 +61,7 @@ export const projects = [
 		tech: "Python, Serp API, Discord.py",
 		bg: AlephBot,
 		slug: "aleph-discord-bot",
+		category: 9,
 	},
 	{
 		title: "LPTK Cup 2023 Website",
@@ -64,6 +70,7 @@ export const projects = [
 		tech: "PHP, Laravel, Bootstrap, JQuery, MySQL",
 		bg: LPTK,
 		slug: "lptk-cup-2023",
+		category: 1,
 	},
 	{
 		title: "NU INO Website",
@@ -72,5 +79,6 @@ export const projects = [
 		tech: "PHP, Laravel, Livewire, Bootstrap, JQuery, MySQL",
 		bg: NUINO,
 		slug: "nu-ino-website",
+		category: 1,
 	},
 ];
