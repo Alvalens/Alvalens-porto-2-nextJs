@@ -32,12 +32,12 @@ export default function Page() {
 	return (
 		<>
 			<main className="overflow-hidden">
-					<FixedButon href="/#projects">
-						<FontAwesomeIcon
-							icon={faChevronLeft}
-							className="text-black pr-10"
-						/>
-					</FixedButon>
+				<FixedButon href="/#projects">
+					<FontAwesomeIcon
+						icon={faChevronLeft}
+						className="text-black pr-10"
+					/>
+				</FixedButon>
 				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
 						<motion.div
@@ -227,7 +227,19 @@ export default function Page() {
 				</div>
 
 				{/* choose category */}
-				<div className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5">
+				<motion.div
+					initial={{
+						opacity: 0,
+						x: 200,
+					}}
+					whileInView={{
+						opacity: 1,
+						x: 0,
+					}}
+					transition={{
+						type: "spring",
+					}}
+					className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5">
 					{Object.keys(category).map((key, index) => (
 						<div
 							key={index}
@@ -236,16 +248,11 @@ export default function Page() {
 									? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
 									: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
 							}`}
-							onClick={() =>
-								setActiveCategory(
-									key,
-									console.log(key, activeCategory)
-								)
-							}>
+							onClick={() => setActiveCategory(key)}>
 							{category[key]}
 						</div>
 					))}
-				</div>
+				</motion.div>
 
 				{/* projects */}
 				<div className="w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10 cursor-pointer">
@@ -258,11 +265,18 @@ export default function Page() {
 					))}
 				</div>
 				{/* view in archive btn */}
-				<div className="flex justify-center items-center flex-col my-5 self-start ">
+				<motion.div
+					initial={{
+						opacity: 0,
+					}}
+					whileInView={{
+						opacity: 1,
+					}}
+					className="flex justify-center items-center flex-col my-5 self-start ">
 					<Button variation="primary">
 						<Link href="projects/archive">View In Archive</Link>
 					</Button>
-				</div>
+				</motion.div>
 			</main>
 		</>
 	);
