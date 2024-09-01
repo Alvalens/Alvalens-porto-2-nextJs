@@ -105,13 +105,10 @@ const projects = [
 	},
 ];
 export default function Page () {
-		const handleBack = () => {
-			window.history.back();
-		};
   return (
 		<>
 			<main className="overflow-hidden">
-				<FixedButon onClick={handleBack}>
+				<FixedButon href="/projects">
 					<FontAwesomeIcon
 						icon={faChevronLeft}
 						className="text-black pr-10"

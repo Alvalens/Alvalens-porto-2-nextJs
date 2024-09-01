@@ -98,12 +98,9 @@ function Page({ params }) {
 			</div>
 		);
 	}
-			const handleBack = () => {
-				window.history.back();
-			};
 	return (
 		<div className="relative min-h-screen w-full gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
-			<FixedButon onClick={handleBack}>
+			<FixedButon href="/projects">
 				<FontAwesomeIcon
 					icon={faChevronLeft}
 					className="text-black pr-10"

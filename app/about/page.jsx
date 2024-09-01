@@ -26,13 +26,10 @@ export default function Page() {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const handleBack = () => {
-		window.location.href = "/";
-	};
 	return (
 		<>
 			<main className="overflow-hidden">
-				<FixedButon onClick={handleBack}>
+				<FixedButon href="/#about">
 					<FontAwesomeIcon
 						icon={faChevronLeft}
 						className="text-black pr-10"
