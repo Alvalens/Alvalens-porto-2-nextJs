@@ -239,18 +239,18 @@ export default function Page() {
 					transition={{
 						type: "spring",
 					}}
-					className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5">
+					className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5 ">
 					{Object.keys(category).map((key, index) => (
-						<div
+						<button
 							key={index}
-							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 ${
+							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-gray-300 focus:text-black focus:ring focus:ring-slate-500 ${
 								activeCategory === key
 									? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
 									: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
 							}`}
 							onClick={() => setActiveCategory(key)}>
 							{category[key]}
-						</div>
+						</button>
 					))}
 				</motion.div>
 
