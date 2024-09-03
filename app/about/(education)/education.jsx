@@ -76,10 +76,27 @@ export default function Education() {
 							</div>
 							<div>
 								<h3 className="font-medium">
+									Special Award | Gold Medal | Incubation Opportunity
+								</h3>
+								<p className="text-sm">
+									Indonesia Inventor Day 2024 (IID) | Aug
+									2024
+								</p>
+							</div>
+						</div>
+						<div className="flex items-center gap-4 mb-4">
+							<div className="aspect-square w-10 rounded-full bg-black flex items-center justify-center text-primary-foreground">
+								<FontAwesomeIcon
+									icon={faMedal}
+									className="text-white h-5 w-5"
+								/>
+							</div>
+							<div>
+								<h3 className="font-medium">
 									3rd place (Bronze Medal)
 								</h3>
 								<p className="text-sm">
-									Student Digital Innovation Competition | Jun
+									Student Digital Innovation Competition (LIDM) | Jun
 									2024
 								</p>
 							</div>
@@ -111,7 +128,7 @@ export default function Education() {
 							<div>
 								<h3 className="font-medium">Finalist</h3>
 								<p className="text-sm">
-									National Student Science Week | Nov 2023
+									36th National Student Science Week (PIMNAS) | Nov 2023
 								</p>
 							</div>
 						</div>
