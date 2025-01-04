@@ -47,6 +47,32 @@
       "slug": "saku-senyum"
     },
     {
+      "title": "Simadun",
+      "desc": [
+        "Simadun is an Exam Management System developed for doctoral students in the Department of Electrical Engineering and Informatics Universitas Negeri Malang. The system facilitates the management of five different types of examinations, allowing students to apply for exams with ease. Professors and program heads can efficiently oversee the exam processes.",
+        
+        "With Simadun, students can submit their exam applications online, track their application status, and receive timely notifications regarding their exam schedules. Program heads and relevant lecturers have access to comprehensive dashboards where they can manage exam requests, allocate resources, and monitor overall exam logistics. "
+      ],
+      "year": "2024",
+      "images": [
+        "/projects/simadun/simadun1.png",
+        "/projects/simadun/simadun2.png",
+        "/projects/simadun/simadun3.png",
+        "/projects/simadun/simadun4.png",
+        "/projects/simadun/simadun5.png"
+      ],
+      "tech": [
+        "PHP",
+        "Laravel",
+        "Bootstrap",
+        "MySQL",
+        "jQuery",
+        "DataTables"
+
+      ], 
+      "slug": "simadun"
+    },
+    {
       "title": "LUDOang",
       "desc": [
         "LUDOang is a game that my team and I created for a final project in my university. The game is built python, pygame, and OpenGL. The game is a 2D game that is inspired by a Ludo game. The game has a few features such randomZone, and a 3D dice.",

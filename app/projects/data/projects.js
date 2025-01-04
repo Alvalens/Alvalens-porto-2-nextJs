@@ -1,4 +1,4 @@
-
+import Simadun from "@/public/projects/main-project/simadun.png";
 import Trivia from "@/public/projects/main-project/trivia.png";
 import SakuSenyum from "@/public/projects/main-project/saku-senyum.png";
 import LUDOang from "@/public/projects/main-project/ludo.png";
@@ -25,6 +25,15 @@ export const projects = [
 		tech: "NextJS, Typescript, Tailwind CSS, Shadcn UI, Prisma, MySQL",
 		bg: SakuSenyum,
 		slug: "saku-senyum",
+		category: 1,
+	},
+	{
+		title: "Simadun",
+		desc: "Simadun is a exam management system for doctoral that I created as a Fullstack Developer. This project created using Laravel, Bootstrap, and JQuery.",
+		year: "2024",
+		tech: "PHP, Laravel, Bootstrap, JQuery, MySQL, Datatables",
+		bg: Simadun,
+		slug: "simadun",
 		category: 1,
 	},
 	{
