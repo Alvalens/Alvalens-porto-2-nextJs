@@ -6,13 +6,13 @@
         "A generative trivia website built with Next.js, Firebase, NextAuth, Google OAuth, and TypeScript. Users can generate trivia questions for predefined school subjects and answer them with a unique interactive input style. The application supports user authentication with Google and stores data in Firestore.",
         "The project is a culmination of my passion for web development and my desire to create a fun and interactive learning platform. The website is designed to be user-friendly and engaging, with a clean and modern interface that appeals to a wide audience. The trivia questions are generated using the Gemini API, which provides a diverse range of questions for users to answer."
       ],
-      "year": "2023",
+      "year": "2024",
       "preview": "https://generative-trivia.vercel.app/",
       "code": "https://github.com/Alvalens/generative-trivia",
       "images": [
-        "/projects/trivia/trivia1.png",
-        "/projects/trivia/trivia2.png",
-        "/projects/trivia/trivia3.png"
+        "/image/projects/web/trivia/trivia1.png",
+        "/image/projects/web/trivia/trivia2.png",
+        "/image/projects/web/trivia/trivia3.png"
       ],
       "tech": [
         "NextJS",
@@ -31,10 +31,10 @@
       ],
       "year": "2024",
       "images": [
-        "/projects/saku-senyum/saku-senyum1.png",
-        "/projects/saku-senyum/saku-senyum2.png",
-        "/projects/saku-senyum/saku-senyum3.png",
-        "/projects/saku-senyum/saku-senyum4.png"
+        "/image/projects/web/saku-senyum/saku-senyum1.png",
+        "/image/projects/web/saku-senyum/saku-senyum2.png",
+        "/image/projects/web/saku-senyum/saku-senyum3.png",
+        "/image/projects/web/saku-senyum/saku-senyum4.png"
       ],
       "tech": [
         "NextJS",
@@ -55,11 +55,11 @@
       ],
       "year": "2024",
       "images": [
-        "/projects/simadun/simadun1.png",
-        "/projects/simadun/simadun2.png",
-        "/projects/simadun/simadun3.png",
-        "/projects/simadun/simadun4.png",
-        "/projects/simadun/simadun5.png"
+        "/image/projects/web/simadun/simadun1.png",
+        "/image/projects/web/simadun/simadun2.png",
+        "/image/projects/web/simadun/simadun3.png",
+        "/image/projects/web/simadun/simadun4.png",
+        "/image/projects/web/simadun/simadun5.png"
       ],
       "tech": [
         "PHP",
@@ -82,9 +82,9 @@
       "preview": "https://github.com/Alvalens/ludo-game/releases/tag/pre-release",
       "code": "https://github.com/Alvalens/ludo-game",
       "images": [
-        "/projects/LUDOang/ludo1.png",
-        "/projects/LUDOang/ludo2.png",
-        "/projects/LUDOang/ludo3.png"
+        "/image/projects/other/LUDOang/ludo1.png",
+        "/image/projects/other/LUDOang/ludo2.png",
+        "/image/projects/other/LUDOang/ludo3.png"
       ],
       "tech": [
         "Python",
@@ -103,10 +103,10 @@
       "preview": "https://react-chat-rouge.vercel.app",
       "code": "https://github.com/Alvalens/react-realtime-chat",
       "images": [
-        "/projects/chat/chat1.png",
-        "/projects/chat/chat2.png",
-        "/projects/chat/chat3.png",
-        "/projects/chat/chat4.png"
+        "/image/projects/web/react-chat/chat1.png",
+        "/image/projects/web/react-chat/chat2.png",
+        "/image/projects/web/react-chat/chat3.png",
+        "/image/projects/web/react-chat/chat4.png"
       ],
       "tech": [
         "JavaScript",
@@ -130,10 +130,10 @@
       "preview": "https://react-tools-flax.vercel.app",
       "code": "https://github.com/Alvalens/react-tools",
       "images": [
-        "/projects/tools/tools.png",
-        "/projects/tools/tools1.png",
-        "/projects/tools/tools2.png",
-        "/projects/tools/tools3.png"
+        "/image/projects/web/tools/tools.png",
+        "/image/projects/web/tools/tools1.png",
+        "/image/projects/web/tools/tools2.png",
+        "/image/projects/web/tools/tools3.png"
       ],
       "tech": [
         "Javascript",
@@ -151,8 +151,8 @@
       "preview": "",
       "code": "https://github.com/Alvalens/aleph-discord-bot",
       "images": [
-        "/projects/bot/bot1.png",
-        "/projects/bot/bot2.png"
+        "/image/projects/other/bot/bot1.png",
+        "/image/projects/other/bot/bot2.png"
       ],
       "tech": [
         "Python",
@@ -171,10 +171,10 @@
       "preview": "",
       "code": "",
       "images": [
-        "/projects/lptk/lptk1.png",
-        "/projects/lptk/lptk2.png",
-        "/projects/lptk/lptk3.png",
-        "/projects/lptk/lptk4.png"
+        "/image/projects/web/lptk/lptk1.png",
+        "/image/projects/web/lptk/lptk2.png",
+        "/image/projects/web/lptk/lptk3.png",
+        "/image/projects/web/lptk/lptk4.png"
       ],
       "tech": [
         "PHP",
@@ -194,9 +194,9 @@
       "preview": "",
       "code": "",
       "images": [
-        "/projects/ino/ino1.png",
-        "/projects/ino/ino2.png",
-        "/projects/ino/ino3.png"
+        "/image/projects/web/ino/ino1.png",
+        "/image/projects/web/ino/ino2.png",
+        "/image/projects/web/ino/ino3.png"
       ],
       "tech": [
         "PHP",

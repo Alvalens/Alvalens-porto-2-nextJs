@@ -9,7 +9,7 @@ import Image from "next/legacy/image";
 import ReactChat1 from "@/public/projects/trivia/trivia1.png";
 import ReactChat2 from "@/public/projects/trivia/trivia2.png";
 import ReactChat3 from "@/public/projects/trivia/trivia3.png";
-import ProjectAll from "@/public/img/projects.png";
+import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
 import ProjectCard from "./(project-card)";

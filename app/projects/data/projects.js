@@ -1,12 +1,12 @@
-import Simadun from "@/public/projects/main-project/simadun.png";
-import Trivia from "@/public/projects/main-project/trivia.png";
-import SakuSenyum from "@/public/projects/main-project/saku-senyum.png";
-import LUDOang from "@/public/projects/main-project/ludo.png";
-import ReactChatMain from "@/public/projects/main-project/react-chat.png";
-import ReactTools from "@/public/projects/main-project/react-tools.png";
-import AlephBot from "@/public/projects/main-project/aleph-bot.png";
-import LPTK from "@/public/projects/lptk/lptk1.png";
-import NUINO from "@/public/projects/ino/ino1.png";
+import Simadun from "@/public/image/projects/main-project/simadun.png";
+import Trivia from "@/public/image/projects/main-project/trivia.png";
+import SakuSenyum from "@/public/image/projects/main-project/saku-senyum.png";
+import LUDOang from "@/public/image/projects/main-project/ludo.png";
+import ReactChatMain from "@/public/image/projects/main-project/react-chat.png";
+import ReactTools from "@/public/image/projects/main-project/react-tools.png";
+import AlephBot from "@/public/image/projects/main-project/aleph-bot.png";
+import LPTK from "@/public/image/projects/web/lptk/lptk1.png";
+import NUINO from "@/public/image/projects/web/ino/ino1.png";
 
 export const projects = [
 	{
