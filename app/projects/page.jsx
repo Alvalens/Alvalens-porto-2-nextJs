@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 // images
-import ReactChat1 from "@/public/projects/trivia/trivia1.png";
-import ReactChat2 from "@/public/projects/trivia/trivia2.png";
-import ReactChat3 from "@/public/projects/trivia/trivia3.png";
+import ReactChat1 from "@/public/image/projects/web/trivia/trivia1.png";
+import ReactChat2 from "@/public/image/projects/web/trivia/trivia2.png";
+import ReactChat3 from "@/public/image/projects/web/trivia/trivia3.png";
 import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
 import ProjectCard from "./(project-card)";
-import { projects } from "./data/projects";
+import Projects from "@/json/data.json";
 import FixedButon from "@/components/FixedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -26,6 +26,8 @@ const category = {
 
 export default function Page() {
 	const [activeCategory, setActiveCategory] = useState(1);
+	const projects = Projects.Projects.filter	((item) => item.show === true
+	);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -205,7 +207,7 @@ export default function Page() {
 					</motion.div>
 				</div>
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
-					<div className="flex justify-start items-start flex-col my-5 self-start ">
+					<div className="flex justify-center items-center flex-col my-5 self-start">
 						<Hr variant="long"></Hr>
 						<motion.h1
 							className="text-3xl font-bold mt-3"
@@ -264,6 +266,7 @@ export default function Page() {
 						/>
 					))}
 				</div>
+
 				{/* view in archive btn */}
 				<motion.div
 					initial={{

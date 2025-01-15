@@ -198,6 +198,7 @@ function Page({ params }) {
 							className="mb-5 h-auto max-h-screen max-w-7xl mx-auto"
 							width={1920}
 							height={1080}
+							blurDataURL={image}
 							layout="responsive"
 							objectFit="contain"
 						/>

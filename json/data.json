@@ -1,6 +1,33 @@
 {
   "Projects": [
     {
+      "show": true,
+      "title": "Javanese Translation Website",
+      "desc": [
+        "A Javanese ngoko - krama translation website that I created as a collaborative project with my friends. The website is built using the original Transformer architecture by Vaswani et al. (2017). Built with Python, TensorFlow, Flask, HTML, and CSS, the website allows users to input text in Javanese krama and receive the corresponding ngoko translation.", 
+        "The website is designed to be simple to use, with a clean and modern interface that appeals to a wide audience. Users can input text in Javanese krama and receive the corresponding ngoko translation. The Project also provide ipynb file for the model training and the model itself."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "https://github.com/Alvalens/web-javanese-translation",
+      "thumbnail": "/image/projects/ai/javanese-translation/javanese-translation-thumbnail.jpg",
+      "images": [
+        "/image/projects/ai/javanese-translation/javanese-translation1.png",
+        "/image/projects/ai/javanese-translation/javanese-translation2.png"
+      ],
+      "tech": [
+        "Transformers",
+        "Python",
+        "Tensorflow",
+        "Flask",
+        "HTML",
+        "CSS"
+      ], 
+      "slug": "trivia",
+      "category": 2
+    },
+    {
+      "show": true,
       "title": "Generative Trivia",
       "desc": [
         "A generative trivia website built with Next.js, Firebase, NextAuth, Google OAuth, and TypeScript. Users can generate trivia questions for predefined school subjects and answer them with a unique interactive input style. The application supports user authentication with Google and stores data in Firestore.",
@@ -9,6 +36,7 @@
       "year": "2024",
       "preview": "https://generative-trivia.vercel.app/",
       "code": "https://github.com/Alvalens/generative-trivia",
+      "thumbnail": "/image/projects/web/trivia/trivia-thumbnail.png",
       "images": [
         "/image/projects/web/trivia/trivia1.png",
         "/image/projects/web/trivia/trivia2.png",
@@ -21,15 +49,18 @@
         "Firebase",
         "Gemini API"
       ], 
-      "slug": "trivia"
+      "slug": "trivia",
+      "category": 1
     },
     {
+      "show": true,
       "title": "Saku Senyum",
       "desc": [
         "Saku Senyum is a website that I created as a Fullstack Developer in PT Hafdzahmedia based on client request. The website is a sales management for UMKM or small business. The website is built using Next.js, TypeScript, Tailwind CSS, ShadCN UI, Prisma, and MySQL.",
         "The website has a few features such as a dashboard for the user to manage their business sales, a statistic page, and a sales report page. User can see their sales performance in a fancy chart to make it easier to understand. The user also can export their sales report to a PDF file which can be printed or saved to their device."
       ],
       "year": "2024",
+      "thumbnail": "/image/projects/web/saku-senyum/saku-senyum-thumbnail.png",
       "images": [
         "/image/projects/web/saku-senyum/saku-senyum1.png",
         "/image/projects/web/saku-senyum/saku-senyum2.png",
@@ -44,9 +75,11 @@
         "Prisma",
         "MySQL"
       ], 
-      "slug": "saku-senyum"
+      "slug": "saku-senyum",
+      "category": 1
     },
     {
+      "show": true,
       "title": "Simadun",
       "desc": [
         "Simadun is an Exam Management System developed for doctoral students in the Department of Electrical Engineering and Informatics Universitas Negeri Malang. The system facilitates the management of five different types of examinations, allowing students to apply for exams with ease. Professors and program heads can efficiently oversee the exam processes.",
@@ -54,6 +87,7 @@
         "With Simadun, students can submit their exam applications online, track their application status, and receive timely notifications regarding their exam schedules. Program heads and relevant lecturers have access to comprehensive dashboards where they can manage exam requests, allocate resources, and monitor overall exam logistics. "
       ],
       "year": "2024",
+      "thumbnail": "/image/projects/web/simadun/simadun-thumbnail.png",
       "images": [
         "/image/projects/web/simadun/simadun1.png",
         "/image/projects/web/simadun/simadun2.png",
@@ -70,9 +104,11 @@
         "DataTables"
 
       ], 
-      "slug": "simadun"
+      "slug": "simadun",
+      "category": 1
     },
     {
+      "show": true,
       "title": "LUDOang",
       "desc": [
         "LUDOang is a game that my team and I created for a final project in my university. The game is built python, pygame, and OpenGL. The game is a 2D game that is inspired by a Ludo game. The game has a few features such randomZone, and a 3D dice.",
@@ -81,6 +117,7 @@
       "year": "2023",
       "preview": "https://github.com/Alvalens/ludo-game/releases/tag/pre-release",
       "code": "https://github.com/Alvalens/ludo-game",
+      "thumbnail": "/image/projects/other/LUDOang/ludo-thumbnail.png",
       "images": [
         "/image/projects/other/LUDOang/ludo1.png",
         "/image/projects/other/LUDOang/ludo2.png",
@@ -91,9 +128,33 @@
         "Pygame",
         "OpenGL"
       ], 
-      "slug": "ludoang"
+      "slug": "ludoang",
+      "category": 9
     },
     {
+      "show": true,
+      "title": "VICC Landing Page",
+      "desc": [
+        "This project is one of my freelance projects. This project is a landing page for Vocational Inter-cultural Camp event held by Vocational Faculty of Universitas Negeri Malang. The website is built using Next.js, Javascript, and Tailwind CSS.", "The website is mainly frontend project, which is already using responsive design. The website has a few features such carousel, and a few animations. The website also has a few pages such as home, topic, and speaker page."
+      ],
+      "year": "2023",
+      "preview": "https://inter-cultural-camp.vercel.app",
+      "thumbnail": "/image/projects/web/vicc/vicc-thumbnail.jpg",
+      "images": [
+        "/image/projects/web/vicc/vicc1.png",
+        "/image/projects/web/vicc/vicc2.png",
+        "/image/projects/web/vicc/vicc3.png"
+      ],
+      "tech": [
+        "JavaScript",
+        "NextJS",
+        "Tailwind CSS"
+      ],
+      "slug": "vicc",
+      "category": 1
+    },
+    {
+      "show": true,
       "title": "React Realtime Chat",
       "desc": [
         "My ambitious project that delves into the world of interactive web development using React. This project is a realtime chat application that allows users to create chat rooms and chat with other users in realtime. The application is built using React, Firebase, and Daisy UI.",
@@ -102,6 +163,7 @@
       "year": "2023",
       "preview": "https://react-chat-rouge.vercel.app",
       "code": "https://github.com/Alvalens/react-realtime-chat",
+      "thumbnail": "/image/projects/web/react-chat/chat-thumbnail.png",
       "images": [
         "/image/projects/web/react-chat/chat1.png",
         "/image/projects/web/react-chat/chat2.png",
@@ -115,9 +177,11 @@
         "Firebase",
         "Daisy UI"
       ],
-      "slug": "react-chat"
+      "slug": "react-chat",
+      "category": 1
     },
     {
+      "show": true,
       "title": "React Tools",
       "desc": [
         "React Tools is a groundbreaking and user-friendly project that brings together a comprehensive collection of tools and components crafted with cutting-edge technologies, including React, React Router, and TailwindCSS. What sets this project apart is that it's not just a suite of powerful features, but it's also a significant milestone as it marks my very first venture into the world of React development.",
@@ -129,6 +193,7 @@
       "year": "2023",
       "preview": "https://react-tools-flax.vercel.app",
       "code": "https://github.com/Alvalens/react-tools",
+      "thumbnail": "/image/projects/web/tools/tools-thumbnail.png",
       "images": [
         "/image/projects/web/tools/tools.png",
         "/image/projects/web/tools/tools1.png",
@@ -141,15 +206,18 @@
         "React Router",
         "TailwindCSS"
       ],
-      "slug": "react-tools"
+      "slug": "react-tools",
+      "category": 1
     },
     {
+      "show": true,
       "title": "Aleph Discord Bot",
       "desc": [
         "Aleph is a Discord bot that I created for my dircord server to use. The bot is built using Python and the discord.py library. The bot has image grabber feauture that takes argument (keywords) and returns an image from the internet.", "Other than that this bot has a few other features such as utility command to delete a messages, and a command to get the server's ping. This bot is still in development and I plan to add more features in the future."],
       "year": "2023",
       "preview": "",
       "code": "https://github.com/Alvalens/aleph-discord-bot",
+      "thumbnail": "/image/projects/other/bot/bot-thumbnail.png",
       "images": [
         "/image/projects/other/bot/bot1.png",
         "/image/projects/other/bot/bot2.png"
@@ -159,9 +227,11 @@
         "Discord.py",
         "Google Serp API"
       ],
-      "slug": "aleph-discord-bot"
+      "slug": "aleph-discord-bot",
+      "category": 9
     }, 
     {
+      "show": true,
       "title": "LPTK Cup 2023 Website",
       "desc": [
         "LPTK Cup UM is a website that I created for a competition held by  the Universitas Negeri Malang. The website is mainly built using Laravel and Bootstrap. The website has a few features such as a registration form, a login system, article system, file upload,  and a dashboard for the admin to manage the contents.",
@@ -170,6 +240,7 @@
       "year": "2023",
       "preview": "",
       "code": "",
+      "thumbnail": "/image/projects/web/lptk/lptk1.png",
       "images": [
         "/image/projects/web/lptk/lptk1.png",
         "/image/projects/web/lptk/lptk2.png",
@@ -184,15 +255,18 @@
         "jQuery",
         "DataTables"
       ],
-      "slug": "lptk-cup-2023"
+      "slug": "lptk-cup-2023",
+      "category": 1
     }, 
     {
+      "show": true,
       "title": "NU INO Website",
       "desc": [
         "My first freelance project. This project is a website for a School based on a JALAKAR curriculum. The website is built mainly using Laravel and Bootstrap.", "This website is LMS like system, have a user management, user auth, quiz and material for student and FAQ",  "In this project I learned how to work with a team and how to manage a project. I also learned new library such as livewire and alpine.js."],
       "year": "2023",
       "preview": "",
       "code": "",
+      "thumbnail": "/image/projects/web/ino/ino1.png",
       "images": [
         "/image/projects/web/ino/ino1.png",
         "/image/projects/web/ino/ino2.png",
@@ -207,7 +281,8 @@
         "jQuery",
         "DataTables"
       ],
-      "slug": "nu-ino-website"
+      "slug": "nu-ino-website",
+      "category": 1
     }
   ]
 }
