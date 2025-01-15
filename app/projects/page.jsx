@@ -84,8 +84,7 @@ export default function Page() {
 				</div>
 				<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
-						<div className="bg-gray-700 w-28 h-1 rounded-full mb-3 self-start"></div>
-						<div className="bg-gray-700 w-28 h-1 rounded-full translate-x-12"></div>
+						<Hr variant="long"></Hr>
 						<h1 className="text-3xl font-bold mt-3">Hightlight</h1>
 					</div>
 				</div>
@@ -207,7 +206,7 @@ export default function Page() {
 				</div>
 				<div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-start items-start flex-col my-5 self-start ">
-						<Hr />
+						<Hr variant="long"></Hr>
 						<motion.h1
 							className="text-3xl font-bold mt-3"
 							initial={{
