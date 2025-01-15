@@ -23,7 +23,36 @@
         "HTML",
         "CSS"
       ], 
-      "slug": "trivia",
+      "slug": "javanese-translation",
+      "category": 2
+    },
+    {
+      "show": true,
+      "title": "SIPETI: Heart Prediction Website",
+      "desc": [
+        "This is a Machine Learning based website that I created as a collage project. The website is built using Decision Tree algorithm and Flask. The website is a heart attack prediction website that can predict whether a person will get a heart attack or not based on their health condition.",
+        "In this website user can predict, customize dataset, customize model, and see the model performance. The website also has a few features such as a dashboard for the user to see the model performance, and a few charts to visualize the decision tree model."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "https://github.com/Alvalens/heart-attack-prediction",
+      "thumbnail": "/image/projects/ai/heart-attack-prediction/heart-attack-prediction-thumbnail.jpg",
+      "images": [
+        "/image/projects/ai/heart-attack-prediction/heart-attack1.png",
+        "/image/projects/ai/heart-attack-prediction/heart-attack2.png",
+        "/image/projects/ai/heart-attack-prediction/heart-attack3.png",
+        "/image/projects/ai/heart-attack-prediction/heart-attack4.png",
+        "/image/projects/ai/heart-attack-prediction/heart-attack5.png"
+      ],
+      "tech": [
+        "Decision Tree",
+        "Python",
+        "Sklearn",
+        "Flask",
+        "HTML",
+        "CSS"
+      ], 
+      "slug": "heart-attack",
       "category": 2
     },
     {
