@@ -7,13 +7,13 @@ import FixedButon from "@/components/FixedButton";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import Card from "./(spotify)/card.jsx";
-import Quote from "./(quote)/quote.jsx";
-import Skills from "./(skills)/skills.jsx";
-import Tools from "./(skills)/tools.jsx";
-import Stack from "./(skills)/stack.jsx";
-import Experience from "./(experience)/experience.jsx";
-import Education from "./(education)/education.jsx";
+import Card from "./components/spotify/card.jsx";
+import Quote from "./components/quote/quote.jsx";
+import Skills from "./components/skills/skills.jsx";
+import Tools from "./components/skills/tools.jsx";
+import Stack from "./components/skills/stack.jsx";
+import Experience from "./components/experience.jsx";
+import Education from "./components/education.jsx";
 
 // images
 import Me1 from "@/public/img/me1.jpg";
