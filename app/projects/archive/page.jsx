@@ -20,6 +20,11 @@ const projects = [
 		tech: "NextJS, TypeScript, TailwindCSS, ShadcnUI, Prisma, MySQL",
 	},
 	{
+		year: "2024",
+		title: "SIMADUN",
+		tech: "Laravel, Bootstrap, JQuery, MySQL, DataTables",
+	},
+	{
 		year: "2023",
 		title: "LUDOang",
 		tech: "Python, Pygame, OpenGL",

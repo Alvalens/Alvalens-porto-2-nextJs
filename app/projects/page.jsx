@@ -20,6 +20,7 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const category = {
 	1: "Web Development",
+	2: "AI & Machine Learning",
 	9: "Other",
 }
 
