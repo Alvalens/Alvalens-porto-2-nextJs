@@ -2,6 +2,63 @@
   "Projects": [
     {
       "show": true,
+      "title": "Client Personal Protfolio Website",
+      "desc": [
+        "A personal portfolio website that I created for a client. The website is built using two main tech, native (HTML, CSSS, JS) and react based (ReactJs, TailwindCSS, Typescript). The website also created based on the client design, and improved and sliced by me. The website has a few features such as a about page, a project page, resume page, and a contact page.",
+        "The website is created using a modern design and a clean interface that appeals to a wide audience. The website also has a responsive design that makes it easy to use on any device. The website also has a few animations that make the website more interactive and engaging."
+      ],
+      "year": "2025",
+      "preview": "",
+      "code": "",
+      "thumbnail": "/image/projects/web/apii-portfolio/porto-thumbnail.jpg",
+      "images": [
+        "/image/projects/web/apii-portfolio/porto1.png",
+        "/image/projects/web/apii-portfolio/porto2.png",
+        "/image/projects/web/apii-portfolio/porto3.png"
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JS",
+        "ReactJS",
+        "TailwindCSS",
+        "Typescript"
+      ], 
+      "slug": "apii-porto",
+      "category": [1]
+    },
+    {
+      "show": true,
+      "title": "Mind Mirror",
+      "desc": [
+        "LMS website that integrated Generative AI feauture to track studnet various keys like mood, behavior, and cognitive ability when learning. The website is built using Laravel as a fullstack framework. In this website teacher can track student mood and other metrics data based on the material students accessed.",
+        "The website also has a few features such as a dashboard for the teacher to see the student's data, a material page, and a quiz page. The website also has a few charts to visualize the student's data. The website provided the student captured data that can be downloaded by the teacher.",
+        "The website also has a features to export the lecture data such as the mood, behaviour, and cognitive score to a xlxs file that can be downloaded by the teacher."
+      ],
+      "year": "2024",
+      "preview": "",
+      "code": "",
+      "thumbnail": "/image/projects/web/mind-mirror/mind-thumbnail.jpg",
+      "images": [
+        "/image/projects/web/mind-mirror/mind1.png",
+        "/image/projects/web/mind-mirror/mind2.png",
+        "/image/projects/web/mind-mirror/mind3.png",
+        "/image/projects/web/mind-mirror/mind4.png",
+        "/image/projects/web/mind-mirror/mind5.png"
+      ],
+      "tech": [
+        "PHP",
+        "Laravel",
+        "Bootstrap",
+        "MySQL",
+        "jQuery",
+        "DataTables"
+      ], 
+      "slug": "mind-mirror",
+      "category": [1, 2]
+    },
+    {
+      "show": true,
       "title": "Javanese Translation Website",
       "desc": [
         "A Javanese ngoko - krama translation website that I created as a collaborative project with my friends. The website is built using the original Transformer architecture by Vaswani et al. (2017). Built with Python, TensorFlow, Flask, HTML, and CSS, the website allows users to input text in Javanese krama and receive the corresponding ngoko translation.", 
@@ -24,7 +81,7 @@
         "CSS"
       ], 
       "slug": "javanese-translation",
-      "category": 2
+      "category": [2]
     },
     {
       "show": true,
@@ -53,7 +110,7 @@
         "CSS"
       ], 
       "slug": "heart-attack",
-      "category": 2
+      "category": [2]
     },
     {
       "show": true,
@@ -79,7 +136,7 @@
         "Gemini API"
       ], 
       "slug": "trivia",
-      "category": 1
+      "category": [1, 2]
     },
     {
       "show": true,
@@ -105,7 +162,7 @@
         "MySQL"
       ], 
       "slug": "saku-senyum",
-      "category": 1
+      "category": [1]
     },
     {
       "show": true,
@@ -134,7 +191,7 @@
 
       ], 
       "slug": "simadun",
-      "category": 1
+      "category": [1]
     },
     {
       "show": true,
@@ -158,7 +215,7 @@
         "OpenGL"
       ], 
       "slug": "ludoang",
-      "category": 9
+      "category": [9]
     },
     {
       "show": true,
@@ -180,7 +237,7 @@
         "Tailwind CSS"
       ],
       "slug": "vicc",
-      "category": 1
+      "category": [1]
     },
     {
       "show": true,
@@ -207,7 +264,7 @@
         "Daisy UI"
       ],
       "slug": "react-chat",
-      "category": 1
+      "category": [1]
     },
     {
       "show": true,
@@ -236,7 +293,7 @@
         "TailwindCSS"
       ],
       "slug": "react-tools",
-      "category": 1
+      "category": [1]
     },
     {
       "show": true,
@@ -257,7 +314,7 @@
         "Google Serp API"
       ],
       "slug": "aleph-discord-bot",
-      "category": 9
+      "category": [9]
     }, 
     {
       "show": true,
@@ -285,7 +342,7 @@
         "DataTables"
       ],
       "slug": "lptk-cup-2023",
-      "category": 1
+      "category": [1]
     }, 
     {
       "show": true,
@@ -311,7 +368,7 @@
         "DataTables"
       ],
       "slug": "nu-ino-website",
-      "category": 1
+      "category": [1]
     }
   ]
 }
