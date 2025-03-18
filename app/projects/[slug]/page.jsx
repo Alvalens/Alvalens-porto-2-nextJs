@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { motion } from "framer-motion";
 import jsonData from "@/json/data.json";
 
@@ -53,9 +53,10 @@ function ScrollDownButton() {
 }
 
 
-function Page({ params }) {
-	const [data, setData] = useState(null);
-	useEffect(() => {
+function Page(props) {
+    const params = use(props.params);
+    const [data, setData] = useState(null);
+    useEffect(() => {
 		const selectedData = jsonData.Projects.find(
 			(item) => item.slug === params.slug
 		);
@@ -66,7 +67,7 @@ function Page({ params }) {
 		}
 	}, [params.slug]);
 
-	if (data === "404") {
+    if (data === "404") {
 		return (
 			<>
 				<NotFound />
@@ -98,7 +99,7 @@ function Page({ params }) {
 			</div>
 		);
 	}
-	return (
+    return (
 		<div className="relative min-h-screen w-full gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
 			<FixedButon href="/projects">
 				<FontAwesomeIcon
