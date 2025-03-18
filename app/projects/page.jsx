@@ -12,7 +12,7 @@ import ReactChat3 from "@/public/image/projects/web/trivia/trivia3.png";
 import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
-import ProjectCard from "./(project-card)";
+import ProjectCard from "./components/ProjectCard";
 import Projects from "@/json/data.json";
 import FixedButon from "@/components/FixedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,12 +22,11 @@ const category = {
 	1: "Web Development",
 	2: "AI & Machine Learning",
 	9: "Other",
-}
+};
 
 export default function Page() {
 	const [activeCategory, setActiveCategory] = useState(1);
-	const projects = Projects.Projects.filter	((item) => item.show === true
-	);
+	const projects = Projects.Projects.filter((item) => item.show === true);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -36,10 +35,7 @@ export default function Page() {
 		<>
 			<main className="overflow-hidden">
 				<FixedButon href="/#projects">
-					<FontAwesomeIcon
-						icon={faChevronLeft}
-						className="text-black pr-10"
-					/>
+					<FontAwesomeIcon icon={faChevronLeft} className="text-black pr-10" />
 				</FixedButon>
 				<div className="relative h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col mb-10 overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
@@ -181,15 +177,13 @@ export default function Page() {
 							Generative Trivia
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							A generative trivia website built with Next.js,
-							Firebase, NextAuth, Google OAuth, and TypeScript.
-							Users can generate trivia questions for predefined
-							school subjects and answer them with a unique
-							interactive input style. The application supports
-							user authentication with Google and stores data in
-							Firestore. You can see the source code of this
-							project on my github account or preview the project
-							by clicking the button below.
+							A generative trivia website built with Next.js, Firebase,
+							NextAuth, Google OAuth, and TypeScript. Users can generate trivia
+							questions for predefined school subjects and answer them with a
+							unique interactive input style. The application supports user
+							authentication with Google and stores data in Firestore. You can
+							see the source code of this project on my github account or
+							preview the project by clicking the button below.
 						</p>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
