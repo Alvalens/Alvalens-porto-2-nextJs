@@ -7,8 +7,12 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			// ...existing code...
 		},
 	},
 	plugins: [],
+	// Add this to reduce CSS file size in production
+	future: {
+		removeDeprecatedGapUtilities: true,
+		purgeLayersByDefault: true,
+	},
 };
