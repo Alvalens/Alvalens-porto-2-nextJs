@@ -99,7 +99,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 				type: "spring",
 				stiffness: 400,
 				damping: 40,
-		},
+			},
 		},
 	};
 
@@ -111,7 +111,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
 				<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
-					<div className="flex flex-col items-center space-y-8 my-auto mx-0">
+					<div className="flex flex-col items-center space-y-8 my-auto mx-0 z-50">
 						{/* title */}
 						<motion.h1
 							variants={itemVariants}
@@ -119,7 +119,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 							className="text-6xl font-bold text-white ">
 							Menu
 						</motion.h1>
-						<a href="/#home">
+						<Link href="/#home">
 							<div
 								className="text-2xl font-bold text-white"
 								onClick={handleItemClick}>
@@ -131,7 +131,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									Home
 								</motion.h2>
 							</div>
-						</a>
+						</Link>
 						<Link href="/about">
 							<div
 								onClick={handleItemClick}
@@ -158,7 +158,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 								</motion.h2>
 							</div>
 						</Link>
-						<a href="/#contact">
+						<Link href="/#contact">
 							<div
 								onClick={handleItemClick}
 								className="text-2xl font-bold text-white">
@@ -170,7 +170,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									Contact
 								</motion.h2>
 							</div>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</motion.div>
@@ -209,15 +209,11 @@ const Navbar = () => {
 						onClick={toggleNav}>
 						<div
 							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
-								isNavOpen
-									? "rotate-45   bg-white translate-y-[2px]"
-									: ""
+								isNavOpen ? "rotate-45   bg-white translate-y-[2px]" : ""
 							}`}></div>
 						<div
 							className={`w-10 h-1 bg-black rounded-full transition-all ease duration-300 ${
-								isNavOpen
-									? "-rotate-45 -translate-y-2 bg-white"
-									: ""
+								isNavOpen ? "-rotate-45 -translate-y-2 bg-white" : ""
 							}`}></div>
 					</button>
 				</div>
