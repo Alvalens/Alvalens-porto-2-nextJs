@@ -1,3 +1,7 @@
+// Copyright (C) 2025 Alvalen Bilyunazra
+// This file is part of Alvalens-porto-2-nextJs.
+// Licensed under the GNU GPL v3.0. See LICENSE for details.
+
 "use client";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Image from "next/legacy/image";
@@ -27,7 +31,6 @@ const MyPage = () => {
 		licenseKey: "gplv3-license",
 		menu: "#sidebar",
 		lockAnchors: false,
-		
 	};
 
 	return (
@@ -84,12 +87,10 @@ const MyPage = () => {
 											delay: 0.4,
 											type: "spring",
 										}}>
-										A junior fullstack developer who
-										currently focused on Web Development.
-										Other than that, I also interested in
-										UX/UI Design, Mobile and AI Development.
-										I love to learn new things and always
-										open to new opportunities.
+										A junior fullstack developer who currently focused on Web
+										Development. Other than that, I also interested in UX/UI
+										Design, Mobile and AI Development. I love to learn new
+										things and always open to new opportunities.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
@@ -184,8 +185,7 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										A brief introduction about me and my
-										interest.
+										A brief introduction about me and my interest.
 									</motion.p>
 									<motion.div
 										initial={{ y: 40, opacity: 0 }}
@@ -195,9 +195,7 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											<Link href="/about">
-												Learn More
-											</Link>
+											<Link href="/about">Learn More</Link>
 										</Button>
 									</motion.div>
 								</div>
@@ -253,8 +251,7 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										This is some of my projects that I have
-										done{" "}
+										This is some of my projects that I have done{" "}
 										<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 											{" "}
 											and currently working on.
@@ -268,9 +265,7 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											<Link href="/projects">
-												Learn More
-											</Link>
+											<Link href="/projects">Learn More</Link>
 										</Button>
 									</motion.div>
 								</div>
@@ -354,10 +349,7 @@ const MyPage = () => {
 												y: { delay: 0.1 },
 												opacity: { delay: 0.2 },
 											}}>
-											<FontAwesomeIcon
-												icon={faEnvelope}
-												className="text-3xl"
-											/>
+											<FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
 										</motion.a>
 
 										<motion.a
@@ -371,10 +363,7 @@ const MyPage = () => {
 												y: { delay: 0.2 },
 												opacity: { delay: 0.3 },
 											}}>
-											<FontAwesomeIcon
-												icon={faGithub}
-												className="text-3xl"
-											/>
+											<FontAwesomeIcon icon={faGithub} className="text-3xl" />
 										</motion.a>
 										<motion.a
 											href="https://www.instagram.com/alvalens_/"
@@ -403,10 +392,7 @@ const MyPage = () => {
 												y: { delay: 0.4 },
 												opacity: { delay: 0.5 },
 											}}>
-											<FontAwesomeIcon
-												icon={faLinkedin}
-												className="text-3xl"
-											/>
+											<FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
 										</motion.a>
 										<motion.a
 											href="https://discordapp.com/users/bloody#6118"
@@ -419,10 +405,7 @@ const MyPage = () => {
 												y: { delay: 0.5 },
 												opacity: { delay: 0.6 },
 											}}>
-											<FontAwesomeIcon
-												icon={faDiscord}
-												className="text-3xl"
-											/>
+											<FontAwesomeIcon icon={faDiscord} className="text-3xl" />
 										</motion.a>
 									</div>
 								</div>
