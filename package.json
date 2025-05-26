@@ -3,7 +3,7 @@
   "author": {
     "name": "Alvalen Shafelbilyunazra",
     "email": "alvalen.shafel04@gmail.com",
-    "url": "https://alvalens.my.id" 
+    "url": "https://alvalens.my.id"
   },
   "license": "GPL-3.0",
   "copyright": "Copyright (C) 2025 Alvalen Shafelbilyunazra",
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "15.2.3",
+    "@types/react": "19.1.5",
     "cross-env": "^7.0.3"
   }
 }
