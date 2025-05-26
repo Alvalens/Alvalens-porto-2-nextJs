@@ -87,10 +87,11 @@ const MyPage = () => {
 											delay: 0.4,
 											type: "spring",
 										}}>
-										A junior fullstack developer who currently focused on Web
-										Development. Other than that, I also interested in UX/UI
-										Design, Mobile and AI Development. I love to learn new
-										things and always open to new opportunities.
+										A junior fullstack developer specializing in modern Web
+										Development with a growing focus on Artificial Intelligence.
+										Passionate about building scalable, user-friendly web
+										applications and exploring AI technologies such as
+										generative models and LLM integration.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
