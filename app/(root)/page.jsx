@@ -87,11 +87,11 @@ const MyPage = () => {
 											delay: 0.4,
 											type: "spring",
 										}}>
-										A junior fullstack developer specializing in modern Web
-										Development with a growing focus on Artificial Intelligence.
-										Passionate about building scalable, user-friendly web
-										applications and exploring AI technologies such as
-										generative models and LLM integration.
+										Hi! I&rsquo;am Alvalen, A junior fullstack developer specializing in
+										modern Web Development with a growing focus on Artificial
+										Intelligence. Passionate about building scalable,
+										user-friendly web applications and exploring AI technologies
+										such as generative models and LLM integration.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
