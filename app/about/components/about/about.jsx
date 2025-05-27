@@ -114,35 +114,30 @@ export default function About() {
 						Hey there, I&rsquo;m Alvalen Shafelbilyunazra, a
 						<span className="text-black font-medium">
 							{" "}
-							tech enthusiast
+							passionate Web Developer
 						</span>{" "}
-						and
+						with a growing expertise in
 						<span className="text-black font-medium">
 							{" "}
-							aspiring Web Developer.
+							Artificial Intelligence.
 						</span>{" "}
-						Originating from Pasuruan, East Java, Indonesia,
-						I&rsquo;m currently embarking on a fascinating journey
+						Hailing from Pasuruan, East Java, Indonesia, I&rsquo;m currently
+						pursuing my degree in{" "}
+						<span className="text-black font-medium">
+							Computer Science
+						</span>{" "}
 						at{" "}
 						<span className="text-black font-medium">
-							Universitas Negeri Malang,
+							Universitas Negeri Malang.
 						</span>{" "}
-						where I&rsquo;m pursuing my degree in{" "}
-						<span className="text-black font-medium">
-							Informatics Engineering.
-						</span>{" "}
-						My passion for technology and coding knows no bounds.
-						Beyond the world of coding, I find myself deeply
-						immersed in the realms of design, Game Development, and
-						the fascinating universe of AI. I believe that in
-						today&rsquo;s fast-paced digital landscape, being a
-						<span className="text-black font-medium">
-							{" "}
-							lifelong learner
-						</span>{" "}
-						is not just a choice, but a necessity. Let&rsquo;s
-						connect and explore this ever-evolving world of tech
-						together!
+						My work bridges modern web technologies and intelligent systems—from
+						building responsive, scalable websites to exploring generative AI
+						and LLM-based solutions. Beyond development, I stay curious about
+						design and emerging technologies. In today&rsquo;s ever-changing
+						digital landscape, I believe being a
+						<span className="text-black font-medium"> lifelong learner</span> is
+						essential. Let&rsquo;s connect and explore the evolving intersection
+						of web and AI together!
 					</p>
 					<Card />
 				</motion.div>

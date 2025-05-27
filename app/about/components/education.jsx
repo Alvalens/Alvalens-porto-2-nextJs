@@ -46,6 +46,13 @@ export default function Education() {
 				icon: faMedal,
 				title: "1st place (Gold Medal)",
 				subtitle: "Fesmaro IT Business Competition",
+				date: "Mar 2025",
+				color: "from-yellow-400 to-orange-500",
+			},
+			{
+				icon: faAward,
+				title: "Finalist",
+				subtitle: "Hackfest Build to Billion 2025",
 				date: "Apr 2025",
 				color: "from-yellow-400 to-orange-500",
 			},
@@ -57,6 +64,13 @@ export default function Education() {
 				subtitle: "Indonesia Inventor Day 2024 (IID)",
 				date: "Aug 2024",
 				color: "from-yellow-400 to-orange-500",
+			},
+			{
+				icon: faAward,
+				title: "Finalist",
+				subtitle: "37th National Student Science Week (PIMNAS)",
+				date: "Oct 2024",
+				color: "from-blue-500 to-purple-600",
 			},
 			{
 				icon: faMedal,
@@ -100,8 +114,8 @@ export default function Education() {
 
 	const visibleAchievements = isExpanded
 		? allAchievements
-		: allAchievements.slice(0, 4);
-	const hasMoreAchievements = allAchievements.length > 4;
+		: allAchievements.slice(0, 6);
+	const hasMoreAchievements = allAchievements.length > 6;
 
 	return (
 		<Wrapper>
@@ -166,11 +180,50 @@ export default function Education() {
 								</div>
 							</div>
 							<div className="flex items-center gap-2">
-								<p className="text-justify">
-									Aspiring to be a software engineer, I am currently pursuing a
-									bachelor's degree in computer science at Universitas Negeri
-									Malang. Fascinated by the world of technology, I am eager to
-									learn and explore new things in the field of computer science.
+								<p className="text-gray-600 text-justify title text-lg">
+									Aspiring to become a professional Software Engineer, I'm
+									currently pursuing my Bachelor's degree in{" "}
+									<span className="text-black font-medium">
+										Computer Science
+									</span>{" "}
+									at{" "}
+									<span className="text-black font-medium">
+										Universitas Negeri Malang
+									</span>
+									. My journey in tech is driven by curiosity and
+									creativity—combining web development with cutting-edge AI
+									research and implementation.
+									<br />
+									<br />
+									As the{" "}
+									<span className="text-black font-medium">
+										Co-Lead of Google Developer Group on Campus (GDGoC)
+									</span>{" "}
+									at my university, I've led technical initiatives, mentored
+									peers, and helped build impactful digital solutions. I've
+									actively participated in various{" "}
+									<span className="text-black font-medium">
+										national or international technology competitions
+									</span>
+									, earning recognition through awards such as{" "}
+									<span className="text-black font-medium">
+										PIMNAS Finalist, Indonesia Inventor Day Gold Medalist,
+										Top 3 at LIDM 2024
+									</span>
+									, and more.
+									<br />
+									<br />I am passionate about solving real-world problems
+									through code, especially at the intersection of{" "}
+									<span className="text-black font-medium">
+										Web Development
+									</span>{" "}
+									and{" "}
+									<span className="text-black font-medium">
+										Artificial Intelligence
+									</span>
+									. Constantly learning, building, and collaborating—I'm excited
+									to keep growing and contributing to the evolving tech
+									landscape.
 								</p>
 							</div>
 							<div className="flex flex-wrap gap-2 mt-4 text-sm">

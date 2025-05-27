@@ -14,7 +14,7 @@ const experiences = [
 		location: "Malang, Indonesia",
 		description:
 			"Assisted in teaching and mentoring students in algorithms and data structures, focusing on practical applications and problem-solving techniques. Developed course materials and provided support in lab sessions.",
-		skills: ["Python", "C", "Algorithms", "Data Structures"],
+		skills: ["Python", "C", "Algorithms", "Data Structures", "Mentoring"],
 	},
 	{
 		id: 2,
@@ -72,7 +72,6 @@ const experiences = [
 			"JavaScript",
 			"TypeScript",
 			"Gemini AI",
-			"Teamwork",
 		],
 	},
 	{
