@@ -6,65 +6,120 @@ import { useState } from "react";
 const experiences = [
 	{
 		id: 1,
-		period: "2023 - Present",
-		startDate: "Jan 2023",
+		startDate: "Sep 2023",
+		endDate: "Jan 2024",
+		company: "Universitas Negeri Malang",
+		position: "Assistant Lecturer",
+		type: "Seasonal",
+		location: "Malang, Indonesia",
+		description:
+			"Assisted in teaching and mentoring students in algorithms and data structures, focusing on practical applications and problem-solving techniques. Developed course materials and provided support in lab sessions.",
+		skills: ["Python", "C", "Algorithms", "Data Structures"],
+	},
+	{
+		id: 2,
+		startDate: "Jul 2024",
+		endDate: "Jan 2025",
+		company: "Outlier AI",
+		position: "AI Trainer",
+		type: "Freelance (Remote)",
+		location: "Oakland, California",
+		description:
+			"Trained LLM models using RLFH, focusing on enhancing their understanding of human language and improving their response accuracy. Collaborated with a team of AI specialists to refine model performance and ensure high-quality outputs.",
+		skills: ["Generative AI", "RLFH", "LLM", "Prompt Engineering", "Teamwork"],
+	},
+	{
+		id: 3,
+		startDate: "Jun 2023",
+		endDate: "Feb 2025",
+		company: "PUI-PT DLI",
+		position: "Fullstack Developer",
+		type: "Freelance",
+		location: "Malang, Indonesia",
+		description:
+			"Crafted and maintained web applications using Laravel, ensuring high performance and responsiveness. Collaborated with designers and other  developers to create seamless user experiences.",
+		skills: ["Laravel", "MySQL", "PHP", "JavaScript", "Teamwork"],
+	},
+	{
+		id: 4,
+		startDate: "Apr 2025",
+		endDate: "Jul 2025",
+		company: "Vektorian Labophase",
+		position: "Front-end Developer",
+		type: "Freelance",
+		location: "Malang, Indonesia",
+		description:
+			"Developed and maintained web applications using Next.js. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality. Collaborated with backend and designers to implement modern UI/UX principles.",
+		skills: ["Next.js", "Typescript", "Teamwork"],
+	},
+	{
+		id: 5,
+		startDate: "Apr 2023",
+		endDate: "Present",
+		company: "Self-Employed",
+		position: "Web Developer & AI Consultant",
+		type: "Freelance",
+		location: "Malang, Indonesia",
+		description:
+			"Developed 15+ web applications using Next.js, React, and Laravel. Provided AI consulting services, including creating custom LLMs. Focused on delivering high-quality, user-friendly applications and AI solutions.",
+		skills: [
+			"Next.js",
+			"React",
+			"Laravel",
+			"MySQL",
+			"PostgreSQL",
+			"MongoDB",
+			"JavaScript",
+			"TypeScript",
+			"Gemini AI",
+			"Teamwork",
+		],
+	},
+	{
+		id: 6,
+		startDate: "Aug 2023",
 		endDate: "Present",
 		company: "PT Hafdzamedia Teknologi Aplikasi",
 		position: "Fullstack Web Developer",
 		type: "Part-time",
+		location: "Malang, Indonesia",
 		description:
-			"Responsible for building and maintaining scalable web applications using the latest technologies. Collaborated with cross-functional teams to deliver high-quality solutions that meet business requirements.",
-		skills: ["React", "Next.js", "Laravel", "MySql"],
+			"Developed and maintained web applications using React, Next.js, and Laravel. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality.",
+		skills: [
+			"React",
+			"Next.js",
+			"Laravel",
+			"MySQL",
+			"JavaScript",
+			"TypeScript",
+			"Teamwork",
+		],
 	},
 	{
-		id: 2,
-		period: "2024 - Present",
-		startDate: "Mar 2024",
+		id: 7,
+		startDate: "Feb 2025",
 		endDate: "Present",
-		company: "Outlier",
-		position: "AI Trainer",
-		type: "Freelance",
+		company: "Joki Proyek",
+		position: "IT Implementation Specialist",
+		type: "Internship (Remote)",
+		location: "Malang, Indonesia",
 		description:
-			"Crafted and refined chatbot prompts using prompt engineering and RLHF techniques to improve the AI responses in English and Indonesian, leading to more accurate and contextually relevant interactions.",
-		skills: ["Generative AI", "Prompt Engineering", "Problem Solving"],
-	},
-	{
-		id: 3,
-		period: "2023 - Present",
-		startDate: "Jun 2023",
-		endDate: "Present",
-		company: "Self-Employed",
-		position: "Web Developer",
-		type: "Freelance",
-		description:
-			"Specialized in crafting innovative solutions using Laravel and Next.js, enhancing client satisfaction and project efficiency. Contributed expertise in both frontend and backend development during collaborative team projects.",
-		skills: ["React", "Next.js", "Laravel", "MySql"],
-	},
-	{
-		id: 4,
-		period: "2022 - 2023",
-		startDate: "Sep 2022",
-		endDate: "Aug 2023",
-		company: "TechStart Solutions",
-		position: "Frontend Developer",
-		type: "Internship",
-		description:
-			"Developed responsive user interfaces using React and TypeScript. Worked closely with UX designers to implement pixel-perfect designs and improved website performance by 40%.",
-		skills: ["React", "TypeScript", "CSS3", "Figma"],
-	},
-	{
-		id: 5,
-		period: "2021 - 2022",
-		startDate: "Oct 2021",
-		endDate: "Sep 2022",
-		company: "Digital Innovation Labs",
-		position: "Junior Developer",
-		type: "Contract",
-		description:
-			"Built REST APIs using Node.js and Express. Implemented database schemas and optimized queries for better performance. Participated in code reviews and agile development processes.",
-		skills: ["Node.js", "Express", "MongoDB", "Git"],
+			"Developed and maintained current internal web applications using Next.js & and Laravel. Fixed bugs and implemented new features to enhance user experience. Collaborated with the team to ensure smooth deployment and functionality of applications.",
+		skills: [
+			"Next.js",
+			"Laravel",
+			"MySQL",
+			"PostgreSQL",
+			"JavaScript",
+			"TypeScript",
+			"MongoDB",
+			"Docker",
+			"Teamwork",
+		],
 	},
 ];
+
+experiences.reverse();
 
 function Title() {
 	return (
@@ -98,10 +153,10 @@ function TimelineCard({ experience, index, isEven }) {
 			initial={{ opacity: 0, y: -20 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ delay: index * 0.15, duration: 0.5 }}
-			className={`flex ps-5 md:ps-0 ${
+			className={`flex ps-10 md:ps-0 ${
 				isEven
-					? "md:justify-center md:translate-x-60"
-					: "md:justify-center md:-translate-x-60"
+					? "md:justify-center md:translate-x-68"
+					: "md:justify-center md:-translate-x-68"
 			} justify-center mb-4`}>
 			<div className="bg-gradient-to-r from-black to-gray-800 text-white px-12 py-3 rounded-xl shadow-lg border border-gray-600 min-w-max">
 				<div className="flex items-center justify-center gap-6">
@@ -113,13 +168,12 @@ function TimelineCard({ experience, index, isEven }) {
 					<div className="text-center">
 						<div className="text-sm font-bold">{experience.endDate}</div>
 						<div className="text-xs text-gray-300">End</div>
-					</div>
-					<div className="w-px h-8 bg-gray-500"></div>
+					</div>					<div className="w-px h-8 bg-gray-500"></div>
 					<div className="text-center">
 						<div className="text-sm font-medium text-gray-400">
-							{experience.type}
+							{experience.location}
 						</div>
-						<div className="text-xs text-gray-300">Type</div>
+						<div className="text-xs text-gray-300">Location</div>
 					</div>
 				</div>
 			</div>
@@ -216,7 +270,7 @@ export default function Experience() {
 									<div
 										className={`absolute w-6 h-6 bg-black rounded-full border-4 border-white shadow-lg z-30
 										md:left-1/2 md:-translate-x-1/2 md:top-4
-										left-0 -translate-x-1/2 top-2`}
+										left-0 -translate-x-1/2 top-5`}
 									/>
 
 									{/* Experience content card */}
