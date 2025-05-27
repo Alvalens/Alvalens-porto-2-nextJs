@@ -11,6 +11,8 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Me4 from "@/public/image/me4.jpeg";
+import Me5 from "@/public/image/me5.jpg";
+import Me6 from "@/public/image/me6.jpg";
 
 function Wrapper({ children }) {
 	return (
@@ -174,7 +176,7 @@ export default function Education() {
 							<div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
 								<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
 									<Image
-										src={Me4}
+										src={Me5}
 										width={400}
 										height={225}
 										alt="University"
@@ -192,7 +194,7 @@ export default function Education() {
 								</div>
 								<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
 									<Image
-										src={Me4}
+										src={Me6}
 										width={400}
 										height={225}
 										alt="University"
