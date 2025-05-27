@@ -202,8 +202,8 @@ export default function Education() {
 							</div>
 							<div className="flex items-center gap-2">
 								<p className="text-gray-600 text-justify title text-lg">
-									Aspiring to become a professional Software Engineer, I'm
-									currently pursuing my Bachelor's degree in{" "}
+									Aspiring to become a professional Software Engineer, I&rsquo;m
+									currently pursuing my Bachelor&rsquo;s degree in{" "}
 									<span className="text-black font-medium">
 										Computer Science
 									</span>{" "}
@@ -220,16 +220,16 @@ export default function Education() {
 									<span className="text-black font-medium">
 										Co-Lead of Google Developer Group on Campus (GDGoC)
 									</span>{" "}
-									at my university, I've led technical initiatives, mentored
-									peers, and helped build impactful digital solutions. I've
-									actively participated in various{" "}
+									at my university, I&rsquo;ve led technical initiatives,
+									mentored peers, and helped build impactful digital solutions.
+									I&rsquo;ve actively participated in various{" "}
 									<span className="text-black font-medium">
 										national or international technology competitions
 									</span>
 									, earning recognition through awards such as{" "}
 									<span className="text-black font-medium">
-										PIMNAS Finalist, Indonesia Inventor Day Gold Medalist,
-										Top 3 at LIDM 2024
+										PIMNAS Finalist, Indonesia Inventor Day Gold Medalist, Top 3
+										at LIDM 2024
 									</span>
 									, and more.
 									<br />
@@ -242,8 +242,8 @@ export default function Education() {
 									<span className="text-black font-medium">
 										Artificial Intelligence
 									</span>
-									. Constantly learning, building, and collaborating—I'm excited
-									to keep growing and contributing to the evolving tech
+									. Constantly learning, building, and collaborating—I&rsquo;m
+									excited to keep growing and contributing to the evolving tech
 									landscape.
 								</p>
 							</div>
