@@ -54,7 +54,14 @@ export default function Education() {
 				title: "Finalist",
 				subtitle: "Hackfest Build to Billion 2025",
 				date: "Apr 2025",
-				color: "from-yellow-400 to-orange-500",
+				color: "from-blue-500 to-purple-600",
+			},
+			{
+				icon: faMedal,
+				title: "3rd place (Bronze Medal)",
+				subtitle: "Faculty of Engineering Most Outstanding Student",
+				date: "Feb 2025",
+				color: "from-amber-600 to-yellow-600",
 			},
 		],
 		2024: [
@@ -64,6 +71,20 @@ export default function Education() {
 				subtitle: "Indonesia Inventor Day 2024 (IID)",
 				date: "Aug 2024",
 				color: "from-yellow-400 to-orange-500",
+			},
+			{
+				icon: faMedal,
+				title: "1st place (Gold Medal)",
+				subtitle: "Tech & Trade Expo 2024",
+				date: "Jul 2024",
+				color: "from-yellow-400 to-orange-500",
+			},
+			{
+				icon: faMedal,
+				title: "2nd place (Silver Medal)",
+				subtitle: "IdeaFest 2024",
+				date: "Jul 2024",
+				color: "from-slate-400 to-slate-500",
 			},
 			{
 				icon: faAward,
