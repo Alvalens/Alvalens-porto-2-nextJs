@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
+import BlurImage from "@/public/image/placeholder/blur.jpg";
 
 export default function ProjectCard({ project, index, activeCategory }) {
 	return (
@@ -28,7 +29,7 @@ export default function ProjectCard({ project, index, activeCategory }) {
 							objectFit="cover"
 							placeholder="blur"
 							className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500"
-							blurDataURL={project.thumbnail}
+							blurDataURL={BlurImage.src}
 						/>
 						<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
 							<h4 className="text-white">{project.year}</h4>

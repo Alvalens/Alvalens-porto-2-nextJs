@@ -8,6 +8,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import NotFound from "@/app/not-found";
 import Image from "next/image";
+import BlurImage from "@/public/image/placeholder/blur.jpg";
 import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -199,7 +200,7 @@ function Page(props) {
 							className="mb-5 h-auto max-h-screen max-w-7xl mx-auto"
 							width={1920}
 							height={1080}
-							blurDataURL={image}
+							blurDataURL={BlurImage.src}
 							layout="responsive"
 							objectFit="contain"
 						/>
