@@ -2,6 +2,39 @@
   "Projects": [
     {
       "show": true,
+      "title": "Invervyou AI",
+      "desc": [
+        "AI Based interview Preparation Website created to help fresh graduates and job seekers prepare for interviews and optimize their CV through AI-powered features. The website is built using Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL (TiDB).",
+        "The website has a few features such as a dashboard for the user to see their interview preparation progress, a CV analysis and optimization feature, and a few AI-powered interview questions that can be answered by the user which will be analyzed by the AI to provide feedback. The analysis contains the answer analysis, the gesture analysis, and a material recommendation to improve the user's performance.",
+        "The website also has a token mechanism that allows the user to purchase tokens to access the AI-powered features. Integrated with Indonesian payment gateway (Midtrans) to allow users to purchase tokens easily."
+      ],
+      "year": "2025",
+      "preview": "https://www.intervyou.me",
+      "code": "",
+      "thumbnail": "/image/projects/web/intervyou/intervyou-thumbnail.jpg",
+      "images": [
+        "/image/projects/web/intervyou/intervyou-1.png",
+        "/image/projects/web/intervyou/intervyou-2.png",
+        "/image/projects/web/intervyou/intervyou-3.png",
+        "/image/projects/web/intervyou/intervyou-4.png",
+        "/image/projects/web/intervyou/intervyou-5.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "Prisma",
+        "MySQL",
+        "Midtrans",
+        "Gemini API",
+        "GCP"
+      ], 
+      "slug": "intervyou",
+      "category": [1, 2]
+    },
+    {
+      "show": false,
       "title": "Client Personal Protfolio Website",
       "desc": [
         "A personal portfolio website that I created for a client. The website is built using two main tech, native (HTML, CSSS, JS) and react based (ReactJs, TailwindCSS, Typescript). The website also created based on the client design, and improved and sliced by me. The website has a few features such as a about page, a project page, resume page, and a contact page.",
