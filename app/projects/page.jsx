@@ -6,9 +6,9 @@ import Button from "@/components/Button";
 import Image from "next/image";
 
 // images
-import ReactChat1 from "@/public/image/projects/web/trivia/trivia1.png";
-import ReactChat2 from "@/public/image/projects/web/trivia/trivia2.png";
-import ReactChat3 from "@/public/image/projects/web/trivia/trivia3.png";
+import Intervyou1 from "@/public/image/projects/web/intervyou/intervyou-1.png";
+import Intervyou2 from "@/public/image/projects/web/intervyou/intervyou-2.png";
+import Intervyou3 from "@/public/image/projects/web/intervyou/intervyou-3.png";
 import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
@@ -99,7 +99,7 @@ export default function Page() {
 									}}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={ReactChat1}
+										src={Intervyou1}
 										alt="Alvalens"
 										layout="fill"
 										objectFit="cover"
@@ -108,7 +108,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute top-16 right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute top-10 right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -123,7 +123,7 @@ export default function Page() {
 									transition={{ delay: 0.3 }}
 									className="w-full h-full shadow-lg ">
 									<Image
-										src={ReactChat3}
+										src={Intervyou3}
 										alt="Alvalens"
 										layout="fill"
 										objectFit="cover"
@@ -132,7 +132,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute bottom-16 right-20 h-[35%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute bottom-10 md:bottom-26 right-20 h-[35%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -149,7 +149,7 @@ export default function Page() {
 									}}
 									className="w-full h-full shadow-lg">
 									<Image
-										src={ReactChat2}
+										src={Intervyou2}
 										alt="Alvalens"
 										layout="fill"
 										objectFit="cover"
@@ -174,24 +174,25 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Generative Trivia
+							Intervyou AI
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							A generative trivia website built with Next.js, Firebase,
-							NextAuth, Google OAuth, and TypeScript. Users can generate trivia
-							questions for predefined school subjects and answer them with a
-							unique interactive input style. The application supports user
-							authentication with Google and stores data in Firestore. You can
-							see the source code of this project on my github account or
-							preview the project by clicking the button below.
+							AI Based interview Preparation Website created to help fresh
+							graduates and job seekers prepare for interviews and optimize
+							their CV through AI-powered features. The website is built using
+							Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL
+							(TiDB). This website can comprehensively analyze the user's
+							interview performance by providing a analysis of the user's
+							answer, gesture, and material recommendation to improve the user's
+							interview skills.
 						</p>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/trivia">More</Link>
+								<Link href="projects/intervyou">More</Link>
 							</Button>
 							<Button variation="secondary">
 								<a
-									href="https://generative-trivia.vercel.app/"
+									href="https://www.intervyou.me"
 									target="_blank"
 									rel="noopener noreferrer">
 									Preview
