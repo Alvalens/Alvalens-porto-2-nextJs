@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,18 +6,16 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import Projects from "@/json/data.json"
+import Projects from "@/json/data.json";
+import Link from "next/link";
 
-export default function Page () {
-	const projects = Projects.Projects
-  return (
+export default function Page() {
+	const projects = Projects.Projects;
+	return (
 		<>
 			<main className="overflow-hidden">
 				<FixedButon href="/projects">
-					<FontAwesomeIcon
-						icon={faChevronLeft}
-						className="text-black pr-10"
-					/>
+					<FontAwesomeIcon icon={faChevronLeft} className="text-black pr-10" />
 				</FixedButon>
 				<div className="min-h-screen w-screen mt-10 md:mt-0  p-10 flex justify-center items-center flex-col mb-10">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
@@ -87,16 +85,16 @@ export default function Page () {
 										key={index}
 										className="hover:shadow-md transition-all ease duration-500">
 										<td>{project.year}</td>
-										<td>{project.title}</td>
 										<td>
-											{project.tech.map((t) => `${t}, `)}
+											<Link href={`/projects/${project.slug}`}>
+												{project.title}
+											</Link>
 										</td>
+										<td>{project.tech.map((t) => `${t}, `)}</td>
 										<td>
 											<div className="flex flex-row justify-center items-center">
 												{project.code && (
-													<a
-														href={project.code}
-														title="Link to GitHub">
+													<a href={project.code} title="Link to GitHub">
 														<FontAwesomeIcon
 															icon={faGithub}
 															className="text-xl mr-2"
@@ -108,9 +106,7 @@ export default function Page () {
 														href={project.preview}
 														title="Link to project preview">
 														<FontAwesomeIcon
-															icon={
-																faArrowUpRightFromSquare
-															}
+															icon={faArrowUpRightFromSquare}
 															className="text-xl"
 														/>
 													</a>
@@ -125,5 +121,5 @@ export default function Page () {
 				</div>
 			</main>
 		</>
-  );
+	);
 }
