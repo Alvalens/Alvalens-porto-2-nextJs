@@ -181,9 +181,9 @@ export default function Page() {
 							graduates and job seekers prepare for interviews and optimize
 							their CV through AI-powered features. The website is built using
 							Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL
-							(TiDB). This website can comprehensively analyze the user's
-							interview performance by providing a analysis of the user's
-							answer, gesture, and material recommendation to improve the user's
+							(TiDB). This website can comprehensively analyze the user&apos;s
+							interview performance by providing a analysis of the user&apos;s
+							answer, gesture, and material recommendation to improve the user&apos;s
 							interview skills.
 						</p>{" "}
 						<div className="mt-3">
