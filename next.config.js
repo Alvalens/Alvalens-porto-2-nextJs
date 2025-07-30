@@ -4,9 +4,14 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 module.exports = withBundleAnalyzer({
 	// your Next.js configuration
 	images: {
-		domains: ["i.scdn.co"],
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "i.scdn.co",
+			},
+		],
 		// Add image optimization settings
-		formats: ['image/avif', 'image/webp'],
+		formats: ["image/avif", "image/webp"],
 		minimumCacheTTL: 60,
 	},
 	webpack: (config, options) => {
@@ -33,19 +38,19 @@ module.exports = withBundleAnalyzer({
 				],
 			},
 			{
-				source: '/:path*',
+				source: "/:path*",
 				headers: [
 					{
-						key: 'X-Content-Type-Options',
-						value: 'nosniff',
+						key: "X-Content-Type-Options",
+						value: "nosniff",
 					},
 					{
-						key: 'X-Frame-Options',
-						value: 'DENY',
+						key: "X-Frame-Options",
+						value: "DENY",
 					},
 					{
-						key: 'X-XSS-Protection',
-						value: '1; mode=block',
+						key: "X-XSS-Protection",
+						value: "1; mode=block",
 					},
 				],
 			},
@@ -54,8 +59,11 @@ module.exports = withBundleAnalyzer({
 	// Add performance optimizations
 	reactStrictMode: true,
 	compiler: {
-		removeConsole: process.env.NODE_ENV === 'production' ? {
-			exclude: ['error', 'warn'],
-		} : false,
+		removeConsole:
+			process.env.NODE_ENV === "production"
+				? {
+						exclude: ["error", "warn"],
+				  }
+				: false,
 	},
 });
