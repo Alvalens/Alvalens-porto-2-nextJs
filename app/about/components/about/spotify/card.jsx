@@ -58,7 +58,7 @@ useEffect(() => {
 							<div className="flex items-center space-x-4">
 								<div className="overflow-hidden">
 									<a
-										href={result.songUrl}
+										href={result.songUrl ? encodeURI(result.songUrl) : "#"}
 										target="_blank"
 										className="block font-semibold w-full truncate text-blue-500">
 										{result.title}
@@ -77,4 +77,3 @@ useEffect(() => {
 };
 
 export default Card;
-
