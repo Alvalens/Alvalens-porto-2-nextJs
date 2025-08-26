@@ -87,11 +87,9 @@ const MyPage = () => {
 											delay: 0.4,
 											type: "spring",
 										}}>
-										Hi! I&rsquo;am Alvalen, A junior fullstack developer specializing in
-										modern Web Development with a growing focus on Artificial
-										Intelligence. Passionate about building scalable,
-										user-friendly web applications and exploring AI technologies
-										such as generative models and LLM integration.
+										Hi! Saya&rsquo;Sandi Hari Sukmana, Software Engineer yang berorientasi pada hasil dengan pengalaman lebih dari 5 tahun
+ dalam merancang dan mengembangkan
+ aplikasi perangkat lunak. Terampil dalam pengkodean, debugging, dan pengujian unit.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
@@ -103,7 +101,7 @@ const MyPage = () => {
 										}}>
 										<Button variation="primary">
 											<Link
-												href={"/docs/cv.pdf"}
+												href={"https://app.enhancv.com/share/bcba783f/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"}
 												target="_blank"
 												rel="noopener noreferrer"
 												download>
@@ -336,7 +334,7 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<a href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,">
-											alvalen.shafel04@gmail.com
+											sandiharisukmana@gmail.com
 										</a>
 									</motion.p>
 									{/* icons */}
