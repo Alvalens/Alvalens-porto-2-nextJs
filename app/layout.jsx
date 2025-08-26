@@ -33,18 +33,18 @@ export const metadata = {
     openGraph: {
 		type: "website",
 		url: "https://www.alvalens.my.id",
-		title: "Alvalens | Portofolio",
-		site_name: "Alvalens | Portofolio",
-		description: "My name is Alvalens, This is my portofolio website.",
+		title: "Sandi Hari Sukmana | Portofolio",
+		site_name: "Sandi | Portofolio",
+		description: "Nama Saya Sandi Hari Sukmana, Ini adalah portofolio saya",
 		width: 1200,
 		height: 630,
 		images: [
 			{
 				url: "/og-image-rev.png",
-				alt: "Alvalens Portofolio",
+				alt: "Sandi Hari Sukmana",
 			},
 		],
-		site_name: "Alvalens | Portofolio",
+		site_name: "Sandi Hari Sukmana | Portofolio",
 	}
 };
 
