@@ -54,7 +54,7 @@ const MyPage = () => {
 												width={500}
 												height={500}
 												className="rounded-full w-full h-full object-cover "
-												alt="Alvalens"
+												alt="sandi"
 												placeholder="blur"
 											/>
 										</div>
@@ -109,7 +109,7 @@ const MyPage = () => {
 											</Link>
 										</Button>
 										<Button variation="secondary">
-											<a href="#contact">Contact Me</a>
+											<a href="#contact">Hubungi Saya</a>
 										</Button>
 									</motion.div>
 								</motion.div>
@@ -184,7 +184,7 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										A brief introduction about me and my interest.
+										Sedikit Perkenalan Tentang Saya
 									</motion.p>
 									<motion.div
 										initial={{ y: 40, opacity: 0 }}
@@ -250,10 +250,10 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										This is some of my projects that I have done{" "}
+										Berikut adalah Personal Project saya{" "}
 										<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 											{" "}
-											and currently working on.
+											and project yang telah saya kerjakan.
 										</span>
 									</motion.p>
 									<motion.div

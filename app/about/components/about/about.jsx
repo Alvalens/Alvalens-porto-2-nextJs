@@ -108,31 +108,29 @@ export default function About() {
 						type: "spring",
 					}}>
 					<h2 className="text-2xl font-bold tracking-wider mb-3">
-						Alvalen Shafelbilyunazra
+						Sandi Hari Sukmana
 					</h2>
 					<p className="text-gray-600 text-justify title text-lg">
-						Hey there, I&rsquo;m Alvalen Shafelbilyunazra, a
+						Hey there, I&rsquo;m Sandi , a
 						<span className="text-black font-medium">
 							{" "}
-							passionate Web Developer
+							Software Engineer
 						</span>{" "}
 						with a growing expertise in
 						<span className="text-black font-medium">
 							{" "}
 							Artificial Intelligence.
 						</span>{" "}
-						Hailing from Pasuruan, East Java, Indonesia, I&rsquo;m currently
-						pursuing my degree in{" "}
+						ive been in this field for more than 4 years and iam still open for any development{" "}
 						<span className="text-black font-medium">
-							Computer Science
+							even though i dont have college qualification
 						</span>{" "}
 						at{" "}
 						<span className="text-black font-medium">
-							Universitas Negeri Malang.
+							 i have been trusted to handle many project and working under big companies, like TELKOM INDONESIA
 						</span>{" "}
-						My work bridges modern web technologies and intelligent systems—from
-						building responsive, scalable websites to exploring generative AI
-						and LLM-based solutions. Beyond development, I stay curious about
+						My work divers from Devops to project manager and building apps from scratch
+						building responsive, scalable apps to production and bussiness ready Beyond development, I stay curious about
 						design and emerging technologies. In today&rsquo;s ever-changing
 						digital landscape, I believe being a
 						<span className="text-black font-medium"> lifelong learner</span> is
