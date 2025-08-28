@@ -36,10 +36,10 @@ export default function About() {
 								<Image
 									src={Me1}
 									alt="Alvalens"
-									layout="fill"
-									objectFit="cover"
+									fill
+									className="object-cover"
 									placeholder="blur"
-								/>
+									/>
 							</motion.div>
 						</div>
 						<div className="absolute top-16 right-28 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
@@ -59,8 +59,8 @@ export default function About() {
 								<Image
 									src={Me2}
 									alt="Alvalens"
-									layout="fill"
-									objectFit="cover"
+									fill
+									className="cover"
 									placeholder="blur"
 								/>
 							</motion.div>
@@ -84,8 +84,8 @@ export default function About() {
 								<Image
 									src={Me3}
 									alt="Alvalens"
-									layout="fill"
-									objectFit="cover"
+									fill
+									className="cover"
 									placeholder="blur"
 								/>
 							</motion.div>
@@ -121,16 +121,16 @@ export default function About() {
 							{" "}
 							Artificial Intelligence.
 						</span>{" "}
-						I've been in this field for more than 4 years, and I am still open to any development opportunities.{" "}
+						 in this field for more than 4 years, and I am still open to any development opportunities.{" "}
 						<span className="text-black font-medium">
-							even though i dont have college qualification
+							even though i lack have college qualifications
 						</span>{" "}
 						at{" "}
 						<span className="text-black font-medium">
 							 i have been trusted to handle many project and working under big companies, like TELKOM INDONESIA
 						</span>{" "}
-						My work divers from Devops to project manager and building apps from scratch
-						building responsive, scalable apps to production and bussiness ready Beyond development, I stay curious about
+						My work divers from Devops to project manager and building apps from scratch,
+						building responsive, scalable apps to production and business ready. Beyond development, I stay curious about
 						design and emerging technologies. In today&rsquo;s ever-changing
 						digital landscape, I believe being a
 						<span className="text-black font-medium"> lifelong learner</span> is
