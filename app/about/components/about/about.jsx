@@ -121,7 +121,7 @@ export default function About() {
 							{" "}
 							Artificial Intelligence.
 						</span>{" "}
-						ive been in this field for more than 4 years and iam still open for any development{" "}
+						I've been in this field for more than 4 years, and I am still open to any development opportunities.{" "}
 						<span className="text-black font-medium">
 							even though i dont have college qualification
 						</span>{" "}
