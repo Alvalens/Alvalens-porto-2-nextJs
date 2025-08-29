@@ -46,23 +46,23 @@ export default function Education() {
 		2025: [
 			{
 				icon: faMedal,
-				title: "1st place (Gold Medal)",
-				subtitle: "Fesmaro IT Business Competition",
-				date: "Mar 2025",
+				title: "Best Participant",
+				subtitle: "Machine Learning digiFest",
+				date: "Mar 2019",
 				color: "from-yellow-400 to-orange-500",
 			},
 			{
 				icon: faAward,
-				title: "Finalist",
-				subtitle: "Hackfest Build to Billion 2025",
-				date: "Apr 2025",
+				title: "Top 20",
+				subtitle: "Google Code Jam ",
+				date: "Des 2020",
 				color: "from-blue-500 to-purple-600",
 			},
 			{
 				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Faculty of Engineering Most Outstanding Student",
-				date: "Feb 2025",
+				title: "Flutter Developer Expert",
+				subtitle: "Flutter Bandung Hackfest",
+				date: "Mar 2018",
 				color: "from-amber-600 to-yellow-600",
 			},
 		],
@@ -168,10 +168,10 @@ export default function Education() {
 						<div className="font-medium text-lg mb-4">2022 - Present</div>
 						<div>
 							<h2 className="font-semibold text-xl">
-								Universitas Negeri Malang
+								Universitas Padjadjaran
 							</h2>
 							<h3 className="text-md font-normal mb-3">
-								S1 Teknik Informatika | Computer Science
+								S1 HUKUM | Ilmu Hukum
 							</h3>
 							<div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
 								<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
