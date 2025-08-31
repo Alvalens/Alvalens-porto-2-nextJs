@@ -14,8 +14,8 @@ export const metadata = {
     description:
 		"My name is Sandi Hari Sukmana, Leadtech Developer, webmaster & android dev ",
 
-    author: "Alvalen Shafelbilyunazra",
-    siteUrl: "https://www.alvalens.my.id",
+    author: "Sandi Hari Sukmana",
+    siteUrl: "https://sandi-porto-hs.vercel.app/about",
     applicationName: "Alvalens",
 
     keywords: [
@@ -32,7 +32,7 @@ export const metadata = {
 
     openGraph: {
 		type: "website",
-		url: "https://www.alvalens.my.id",
+		url: "https://sandi-porto-hs.vercel.app/about",
 		title: "Sandi Hari Sukmana | Portofolio",
 		site_name: "Sandi | Portofolio",
 		description: "Nama Saya Sandi Hari Sukmana, Ini adalah portofolio saya",

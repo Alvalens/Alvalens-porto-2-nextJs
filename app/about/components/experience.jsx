@@ -40,82 +40,9 @@ const experiences = [
 			"Crafted and maintained on-demand service application using native JAVA, ensuring high performance and responsiveness. Collaborated with designers and other  developers to create seamless user experiences.",
 		skills: ["JAVA", "Kotlin", "PHP", "Firebase", "Google Cloud"],
 	},
-	{
-		id: 4,
-		startDate: "Apr 2025",
-		endDate: "Jul 2025",
-		company: "Vektorian Labophase",
-		position: "Front-end Developer",
-		type: "Freelance",
-		location: "Malang, Indonesia",
-		description:
-			"Developed and maintained web applications using Next.js. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality. Collaborated with backend and designers to implement modern UI/UX principles.",
-		skills: ["Next.js", "Typescript", "Teamwork"],
-	},
-	{
-		id: 5,
-		startDate: "Apr 2023",
-		endDate: "Present",
-		company: "Self-Employed",
-		position: "Web Developer & AI Consultant",
-		type: "Freelance",
-		location: "Malang, Indonesia",
-		description:
-			"Developed 15+ web applications using Next.js, React, and Laravel. Provided AI consulting services, including creating custom LLMs. Focused on delivering high-quality, user-friendly applications and AI solutions.",
-		skills: [
-			"Next.js",
-			"React",
-			"Laravel",
-			"MySQL",
-			"PostgreSQL",
-			"MongoDB",
-			"JavaScript",
-			"TypeScript",
-			"Gemini AI",
-		],
-	},
-	{
-		id: 6,
-		startDate: "Aug 2023",
-		endDate: "Present",
-		company: "PT Hafdzamedia Teknologi Aplikasi",
-		position: "Fullstack Web Developer",
-		type: "Part-time",
-		location: "Malang, Indonesia",
-		description:
-			"Developed and maintained web applications using React, Next.js, and Laravel. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality.",
-		skills: [
-			"React",
-			"Next.js",
-			"Laravel",
-			"MySQL",
-			"JavaScript",
-			"TypeScript",
-			"Teamwork",
-		],
-	},
-	{
-		id: 7,
-		startDate: "Feb 2025",
-		endDate: "Present",
-		company: "Joki Proyek",
-		position: "IT Implementation Specialist",
-		type: "Internship (Remote)",
-		location: "Malang, Indonesia",
-		description:
-			"Developed and maintained current internal web applications using Next.js & and Laravel. Fixed bugs and implemented new features to enhance user experience. Collaborated with the team to ensure smooth deployment and functionality of applications.",
-		skills: [
-			"Next.js",
-			"Laravel",
-			"MySQL",
-			"PostgreSQL",
-			"JavaScript",
-			"TypeScript",
-			"MongoDB",
-			"Docker",
-			"Teamwork",
-		],
-	},
+
+
+	
 ];
 
 experiences.reverse();
