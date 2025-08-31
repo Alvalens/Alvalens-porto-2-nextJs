@@ -177,7 +177,7 @@ function Page(props) {
 					</div>
 					<div className="flex justify-start items-start flex-col mb-5 ">
 						<h2 className="uppercase font-normal text-lg tracking-[8px] text-neutral-400">
-							Description
+							Deskripsi
 						</h2>
 						{data.desc.map((desc, index) => (
 							<p

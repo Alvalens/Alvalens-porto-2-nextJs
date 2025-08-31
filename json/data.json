@@ -2,11 +2,9 @@
   "Projects": [
     {
       "show": true,
-      "title": "Invervyou AI",
+      "title": "Gotas-GO",
       "desc": [
-        "AI Based interview Preparation Website created to help fresh graduates and job seekers prepare for interviews and optimize their CV through AI-powered features. The website is built using Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL (TiDB).",
-        "The website has a few features such as a dashboard for the user to see their interview preparation progress, a CV analysis and optimization feature, and a few AI-powered interview questions that can be answered by the user which will be analyzed by the AI to provide feedback. The analysis contains the answer analysis, the gesture analysis, and a material recommendation to improve the user's performance.",
-        "The website also has a token mechanism that allows the user to purchase tokens to access the AI-powered features. Integrated with Indonesian payment gateway (Midtrans) to allow users to purchase tokens easily."
+        "Gotas Description"
       ],
       "year": "2025",
       "preview": "https://www.intervyou.me",
