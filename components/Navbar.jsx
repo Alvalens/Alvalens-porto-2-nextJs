@@ -200,7 +200,7 @@ const Navbar = () => {
 						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${
 							isNavOpen ? "text-white" : ""
 						}`}>
-						Alvalens
+						Sandi
 					</h1>
 				</div>
 				<div className="flex flex-row items-center">

@@ -270,7 +270,7 @@ export default function Page() {
 					}}
 					className="flex justify-center items-center flex-col my-5 self-start ">
 					<Button variation="primary">
-						<Link href="projects/archive">View In Archive</Link>
+						<Link href="">View In Archive</Link>
 					</Button>
 				</motion.div>
 			</main>

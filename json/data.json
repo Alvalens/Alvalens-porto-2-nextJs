@@ -7,7 +7,7 @@
         "Gotas Description"
       ],
       "year": "2025",
-      "preview": "https://www.intervyou.me",
+      "preview": "",
       "code": "",
       "thumbnail": "/image/projects/web/intervyou/intervyou-thumbnail.jpg",
       "images": [
@@ -18,8 +18,8 @@
         "/image/projects/web/intervyou/intervyou-5.png"
       ],
       "tech": [
-        "NextJS",
-        "Typescript",
+        "JAVA",
+        "KOTLIN",
         "Shadcn UI",
         "Tailwind CSS",
         "Prisma",
@@ -33,23 +33,22 @@
     },
     {
       "show": true,
-      "title": "Client Personal Protfolio Website",
+      "title": "Astra Fauzia Rasyid ERP",
       "desc": [
-        "A personal portfolio website that I created for a client. The website is built using two main tech, native (HTML, CSSS, JS) and react based (ReactJs, TailwindCSS, Typescript). The website also created based on the client design, and improved and sliced by me. The website has a few features such as a about page, a project page, resume page, and a contact page.",
-        "The website is created using a modern design and a clean interface that appeals to a wide audience. The website also has a responsive design that makes it easy to use on any device. The website also has a few animations that make the website more interactive and engaging."
+        "ERP system for my client Astra Fauzia Rasyid which cover the needs for distribution, retail and tax control. The website also has a responsive design that makes it easy to use on any device."
       ],
-      "year": "2025",
+      "year": "2022",
       "preview": "",
       "code": "",
       "thumbnail": "/image/projects/nda-projects.png",
       "images": [
-        "/image/projects/web/apii-portfolio/porto1.png",
-        "/image/projects/web/apii-portfolio/porto2.png",
-        "/image/projects/web/apii-portfolio/porto3.png"
+        "public/image/nda-project.png",
+        "public/image/nda-project.png",
+        "public/image/nda-project.png"
       ],
       "tech": [
-        "HTML",
-        "CSS",
+        "C#",
+        "visual basic",
         "JS",
         "ReactJS",
         "TailwindCSS",

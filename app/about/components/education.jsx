@@ -13,6 +13,7 @@ import { useState } from "react";
 import Me4 from "@/public/image/me4.jpeg";
 import Me5 from "@/public/image/me5.jpg";
 import Me6 from "@/public/image/me6.jpg";
+import { faIcons } from "@fortawesome/free-solid-svg-icons";
 
 function Wrapper({ children }) {
 	return (
@@ -43,6 +44,27 @@ export default function Education() {
 	const [isExpanded, setIsExpanded] = useState(false);
 
 	const achievementsByYear = {
+
+		2020: [
+			{
+				title: "Google code jam",
+				faIcons: "faIcons",
+				subtitle: "Top 20 in Google Code Jam 2020",
+				date: "august 2023",
+				icon: faIcons,
+				color: "from-yellow-400 to-yellow-600"
+			}
+		],
+		// Add more years and achievements as needed
+		2021: [
+			{
+				title: "Facebook Hacker Cup",
+				subtitle: "Top 3 in Facebook Hacker Cup 2021",
+				date: "December 2021",
+				icon: faTrophy,
+				color: "from-purple-400 to-purple-600",
+			},
+		],
 		
 	};
 
@@ -104,15 +126,15 @@ export default function Education() {
 							</div>
 							<div className="flex items-center gap-2">
 								<p className="text-gray-600 text-justify title text-lg">
-									 Software Engineer yang berorientasi pada hasil
-									  dengan pengalaman lebih dari 5 tahun dalam merancang dan
-									   mengembangkan aplikasi perangkat lunak. Terampil dalam pengkodean, debugging, dan pengujian unit.{" "}
+									I started my journey as software engineer ever since i was in middle-school.
+									my curiousity driven me to this extent even though i dont have education background
+									but i work as industrial and bussiness ready software engineer{" "}
 									<span className="text-black font-medium">
 
 									</span>{" "}
 									at{" "}
 									<span className="text-black font-medium">
-										Universitas Negeri Malang
+										Universitas Padjadjaran
 									</span>
 									. My journey in tech is driven by curiosity and
 									creativity—combining web development with cutting-edge AI
@@ -163,7 +185,8 @@ export default function Education() {
 						transition={{ duration: 0.8, delay: 0.4 }}>
 						<h2 className="font-semibold text-xl mt-7">Achievements</h2>
 						<p className="text-md font-normal mb-3 md:mb-6">
-							Some of my achievements during my study.
+							Here are some of my notable achievements and recognitions over the
+							years.
 						</p>
 
 						{/* Achievements Container with transparent bottom effect */}
