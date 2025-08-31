@@ -46,7 +46,7 @@ export default function Page() {
 							className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
 							<Image
 								src={ProjectAll}
-								alt="Alvalens"
+								alt="Sandi"
 								layout="fill"
 								objectFit="cover"
 								placeholder="blur"
@@ -100,7 +100,7 @@ export default function Page() {
 									className="w-full h-full shadow-lg">
 									<Image
 										src={Intervyou1}
-										alt="Alvalens"
+										alt="Sandi"
 										layout="fill"
 										objectFit="cover"
 										placeholder="blur"
@@ -124,7 +124,7 @@ export default function Page() {
 									className="w-full h-full shadow-lg ">
 									<Image
 										src={Intervyou3}
-										alt="Alvalens"
+										alt="Sandi"
 										layout="fill"
 										objectFit="cover"
 										placeholder="blur"
@@ -150,7 +150,7 @@ export default function Page() {
 									className="w-full h-full shadow-lg">
 									<Image
 										src={Intervyou2}
-										alt="Alvalens"
+										alt="Sandi"
 										layout="fill"
 										objectFit="cover"
 										placeholder="blur"

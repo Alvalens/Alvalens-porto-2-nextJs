@@ -49,7 +49,7 @@ export default function Footer() {
 			<footer className="flex justify-center items-center flex-col my-5 self-start]">
 				<p className="text-gray-800 text-sm">
 					&copy;{new Date().getFullYear()} -{" "}
-					<span className="text-gray-700 text-lg">Alvalens</span>
+					<span className="text-gray-700 text-lg">Sandi Hari Sukmana</span>
 				</p>
 			</footer>
 		</div>

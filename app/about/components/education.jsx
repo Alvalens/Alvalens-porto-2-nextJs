@@ -43,89 +43,7 @@ export default function Education() {
 	const [isExpanded, setIsExpanded] = useState(false);
 
 	const achievementsByYear = {
-		2025: [
-			{
-				icon: faMedal,
-				title: "Best Participant",
-				subtitle: "Machine Learning digiFest",
-				date: "Mar 2019",
-				color: "from-yellow-400 to-orange-500",
-			},
-			{
-				icon: faAward,
-				title: "Top 20",
-				subtitle: "Google Code Jam ",
-				date: "Des 2020",
-				color: "from-blue-500 to-purple-600",
-			},
-			{
-				icon: faMedal,
-				title: "Flutter Developer Expert",
-				subtitle: "Flutter Bandung Hackfest",
-				date: "Mar 2018",
-				color: "from-amber-600 to-yellow-600",
-			},
-		],
-		2024: [
-			{
-				icon: faTrophy,
-				title: "Special Award | Gold Medal | Incubation Opportunity",
-				subtitle: "Indonesia Inventor Day 2024 (IID)",
-				date: "Aug 2024",
-				color: "from-yellow-400 to-orange-500",
-			},
-			{
-				icon: faMedal,
-				title: "1st place (Gold Medal)",
-				subtitle: "Tech & Trade Expo 2024",
-				date: "Jul 2024",
-				color: "from-yellow-400 to-orange-500",
-			},
-			{
-				icon: faMedal,
-				title: "2nd place (Silver Medal)",
-				subtitle: "IdeaFest 2024",
-				date: "Jul 2024",
-				color: "from-slate-400 to-slate-500",
-			},
-			{
-				icon: faAward,
-				title: "Finalist",
-				subtitle: "37th National Student Science Week (PIMNAS)",
-				date: "Oct 2024",
-				color: "from-blue-500 to-purple-600",
-			},
-			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Student Digital Innovation Competition (LIDM)",
-				date: "Jun 2024",
-				color: "from-amber-600 to-yellow-600",
-			},
-			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Fesmaro UI/UX Design",
-				date: "Jun 2024",
-				color: "from-amber-600 to-yellow-600",
-			},
-		],
-		2023: [
-			{
-				icon: faAward,
-				title: "Finalist",
-				subtitle: "36th National Student Science Week (PIMNAS)",
-				date: "Nov 2023",
-				color: "from-blue-500 to-purple-600",
-			},
-			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "FORKAFEST 3.0 Web Development competition",
-				date: "Jan 2023",
-				color: "from-amber-600 to-yellow-600",
-			},
-		],
+		
 	};
 
 	// Flatten all achievements into a single array for easier limiting
@@ -183,31 +101,14 @@ export default function Education() {
 										className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
 									/>
 								</div>
-								<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
-									<Image
-										src={Me4}
-										width={400}
-										height={225}
-										alt="University"
-										className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
-									/>
-								</div>
-								<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
-									<Image
-										src={Me6}
-										width={400}
-										height={225}
-										alt="University"
-										className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
-									/>
-								</div>
 							</div>
 							<div className="flex items-center gap-2">
 								<p className="text-gray-600 text-justify title text-lg">
-									Aspiring to become a professional Software Engineer, I&rsquo;m
-									currently pursuing my Bachelor&rsquo;s degree in{" "}
+									 Software Engineer yang berorientasi pada hasil
+									  dengan pengalaman lebih dari 5 tahun dalam merancang dan
+									   mengembangkan aplikasi perangkat lunak. Terampil dalam pengkodean, debugging, dan pengujian unit.{" "}
 									<span className="text-black font-medium">
-										Computer Science
+
 									</span>{" "}
 									at{" "}
 									<span className="text-black font-medium">
@@ -220,29 +121,28 @@ export default function Education() {
 									<br />
 									As the{" "}
 									<span className="text-black font-medium">
-										Co-Lead of Google Developer Group on Campus (GDGoC)
+										head of software division of aegisLabs
 									</span>{" "}
-									at my university, I&rsquo;ve led technical initiatives,
-									mentored peers, and helped build impactful digital solutions.
+									at my university, I&rsquo;ve led local organizations ,
+									mentored peers, and helped build impactful solutions.
 									I&rsquo;ve actively participated in various{" "}
 									<span className="text-black font-medium">
-										national or international technology competitions
+										activities, such as google code jam, facebook hacker cup, BRI hackatthon, and more
 									</span>
 									, earning recognition through awards such as{" "}
 									<span className="text-black font-medium">
-										PIMNAS Finalist, Indonesia Inventor Day Gold Medalist, Top 3
-										at LIDM 2024
+										i managed to place top 20 in google code jam 2020 and top 3 in facebook hacker cup 2021
 									</span>
-									, and more.
+									, that in itself was my best achievement so far
 									<br />
 									<br />I am passionate about solving real-world problems
 									through code, especially at the intersection of{" "}
 									<span className="text-black font-medium">
-										Web Development
+										Mobile development
 									</span>{" "}
 									and{" "}
 									<span className="text-black font-medium">
-										Artificial Intelligence
+										web master
 									</span>
 									. Constantly learning, building, and collaborating—I&rsquo;m
 									excited to keep growing and contributing to the evolving tech
@@ -251,7 +151,6 @@ export default function Education() {
 							</div>
 							<div className="flex flex-wrap gap-2 mt-4 text-sm">
 								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-									GPA: 3.9 out of 4
 								</div>
 							</div>
 						</div>

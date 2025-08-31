@@ -5,7 +5,7 @@ const fs = require("fs");
 
 async function generateSitemap() {
 	const sitemap = new SitemapStream({
-		hostname: "https://alvalens.my.id/",
+		hostname: "https://sandi-porto-hs.vercel.app/projects",
 	});
 
 	// Add URLs to your sitemap
