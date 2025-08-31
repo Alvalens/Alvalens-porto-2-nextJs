@@ -61,7 +61,7 @@
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Mind Mirror",
       "desc": [
         "LMS website that integrated Generative AI feauture to track studnet various keys like mood, behavior, and cognitive ability when learning. The website is built using Laravel as a fullstack framework. In this website teacher can track student mood and other metrics data based on the material students accessed.",
@@ -91,7 +91,7 @@
       "category": [1, 2]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Javanese Translation Website",
       "desc": [
         "A Javanese ngoko - krama translation website that I created as a collaborative project with my friends. The website is built using the original Transformer architecture by Vaswani et al. (2017). Built with Python, TensorFlow, Flask, HTML, and CSS, the website allows users to input text in Javanese krama and receive the corresponding ngoko translation.", 
@@ -117,7 +117,7 @@
       "category": [2]
     },
     {
-      "show": true,
+      "show": false,
       "title": "SIPETI: Heart Prediction Website",
       "desc": [
         "This is a Machine Learning based website that I created as a collage project. The website is built using Decision Tree algorithm and Flask. The website is a heart attack prediction website that can predict whether a person will get a heart attack or not based on their health condition.",
@@ -146,7 +146,7 @@
       "category": [2]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Generative Trivia",
       "desc": [
         "A generative trivia website built with Next.js, Firebase, NextAuth, Google OAuth, and TypeScript. Users can generate trivia questions for predefined school subjects and answer them with a unique interactive input style. The application supports user authentication with Google and stores data in Firestore.",
@@ -172,7 +172,7 @@
       "category": [1, 2]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Saku Senyum",
       "desc": [
         "Saku Senyum is a website that I created as a Fullstack Developer in PT Hafdzahmedia based on client request. The website is a sales management for UMKM or small business. The website is built using Next.js, TypeScript, Tailwind CSS, ShadCN UI, Prisma, and MySQL.",
@@ -198,7 +198,7 @@
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Simadun",
       "desc": [
         "Simadun is an Exam Management System developed for doctoral students in the Department of Electrical Engineering and Informatics Universitas Negeri Malang. The system facilitates the management of five different types of examinations, allowing students to apply for exams with ease. Professors and program heads can efficiently oversee the exam processes.",
@@ -227,7 +227,7 @@
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "LUDOang",
       "desc": [
         "LUDOang is a game that my team and I created for a final project in my university. The game is built python, pygame, and OpenGL. The game is a 2D game that is inspired by a Ludo game. The game has a few features such randomZone, and a 3D dice.",
@@ -251,7 +251,7 @@
       "category": [9]
     },
     {
-      "show": true,
+      "show": false,
       "title": "VICC Landing Page",
       "desc": [
         "This project is one of my freelance projects. This project is a landing page for Vocational Inter-cultural Camp event held by Vocational Faculty of Universitas Negeri Malang. The website is built using Next.js, Javascript, and Tailwind CSS.", "The website is mainly frontend project, which is already using responsive design. The website has a few features such carousel, and a few animations. The website also has a few pages such as home, topic, and speaker page."
@@ -273,7 +273,7 @@
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "React Realtime Chat",
       "desc": [
         "My ambitious project that delves into the world of interactive web development using React. This project is a realtime chat application that allows users to create chat rooms and chat with other users in realtime. The application is built using React, Firebase, and Daisy UI.",
@@ -300,7 +300,7 @@
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "React Tools",
       "desc": [
         "React Tools is a groundbreaking and user-friendly project that brings together a comprehensive collection of tools and components crafted with cutting-edge technologies, including React, React Router, and TailwindCSS. What sets this project apart is that it's not just a suite of powerful features, but it's also a significant milestone as it marks my very first venture into the world of React development.",
@@ -329,7 +329,7 @@
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Aleph Discord Bot",
       "desc": [
         "Aleph is a Discord bot that I created for my dircord server to use. The bot is built using Python and the discord.py library. The bot has image grabber feauture that takes argument (keywords) and returns an image from the internet.", "Other than that this bot has a few other features such as utility command to delete a messages, and a command to get the server's ping. This bot is still in development and I plan to add more features in the future."],
@@ -350,7 +350,7 @@
       "category": [9]
     }, 
     {
-      "show": true,
+      "show": false,
       "title": "LPTK Cup 2023 Website",
       "desc": [
         "LPTK Cup UM is a website that I created for a competition held by  the Universitas Negeri Malang. The website is mainly built using Laravel and Bootstrap. The website has a few features such as a registration form, a login system, article system, file upload,  and a dashboard for the admin to manage the contents.",
@@ -378,7 +378,7 @@
       "category": [1]
     }, 
     {
-      "show": true,
+      "show": false,
       "title": "NU INO Website",
       "desc": [
         "My first freelance project. This project is a website for a School based on a JALAKAR curriculum. The website is built mainly using Laravel and Bootstrap.", "This website is LMS like system, have a user management, user auth, quiz and material for student and FAQ",  "In this project I learned how to work with a team and how to manage a project. I also learned new library such as livewire and alpine.js."],

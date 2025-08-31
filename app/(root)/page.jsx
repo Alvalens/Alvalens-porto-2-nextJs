@@ -1,5 +1,5 @@
 // Copyright (C) 2025 Alvalen Bilyunazra
-// This file is part of Alvalens-porto-2-nextJs.
+// This file is part of sandi-porto-2-nextJs.
 // Licensed under the GNU GPL v3.0. See LICENSE for details.
 
 "use client";
@@ -127,7 +127,7 @@ const MyPage = () => {
 											width={400}
 											height={550}
 											placeholder="blur"
-											alt="Alvalens"
+											alt="sandi"
 											className="rounded-full w-full h-full object-cover"
 										/>
 									</div>
@@ -159,7 +159,7 @@ const MyPage = () => {
 											src={MeAbout}
 											layout="fill"
 											className="object-cover"
-											alt="Alvalens"
+											alt="sandi"
 											placeholder="blur"
 										/>
 									</motion.div>
@@ -225,7 +225,7 @@ const MyPage = () => {
 											src={ProjectAll}
 											layout="fill"
 											className="object-cover"
-											alt="Alvalens Setup"
+											alt="sandi Setup"
 											placeholder="blur"
 										/>
 									</motion.div>
@@ -295,7 +295,7 @@ const MyPage = () => {
 											src={Setup}
 											layout="fill"
 											className="object-cover"
-											alt="Alvalens Setup"
+											alt="sandi Setup"
 											placeholder="blur"
 										/>
 									</motion.div>
@@ -333,14 +333,14 @@ const MyPage = () => {
 											delay: 0.3,
 											type: "spring",
 										}}>
-										<a href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,">
+										<a href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello sandi,">
 											sandiharisukmana@gmail.com
 										</a>
 									</motion.p>
 									{/* icons */}
 									<div className="flex justify-center items-center space-x-4">
 										<motion.a
-											href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,"
+											href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello sandi,"
 											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 											initial={{ y: 40, opacity: 0 }}
 											whileInView={{ y: 0, opacity: 1 }}
@@ -352,7 +352,7 @@ const MyPage = () => {
 										</motion.a>
 
 										<motion.a
-											href="https://github.com/Alvalens"
+											href="https://github.com/sandi"
 											target="_blank"
 											rel="noopener noreferrer"
 											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
@@ -365,7 +365,7 @@ const MyPage = () => {
 											<FontAwesomeIcon icon={faGithub} className="text-3xl" />
 										</motion.a>
 										<motion.a
-											href="https://www.instagram.com/alvalens_/"
+											href="https://www.instagram.com/Alvalens_/"
 											target="_blank"
 											rel="noopener noreferrer"
 											className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"

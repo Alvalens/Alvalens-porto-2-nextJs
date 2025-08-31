@@ -190,7 +190,7 @@ export default function Page() {
 							</Button>
 							<Button variation="secondary">
 								<a
-									href="https://www.intervyou.me"
+									href=""
 									target="_blank"
 									rel="noopener noreferrer">
 									Preview

@@ -16,18 +16,18 @@ export const metadata = {
 
     author: "Sandi Hari Sukmana",
     siteUrl: "https://sandi-porto-hs.vercel.app/about",
-    applicationName: "Alvalens",
+    applicationName: "Sandi Hari Sukamana",
 
     keywords: [
-		"alvalens",
-		"alvalen",
-		"alvalen shafel",
+		"Sandi Hari Sukamana",
+		"Sandi",
+		"Sandi shafel",
 		"shafel",
-		"alvalen shafelbilyunazra",
-		"alvalen shafel bilyunazra",
-		"bloodfallen",
-		"alvalen porto",
-		"alvalen um",
+		"Sandi Hari",
+		"Sandi Hari",
+		"Vanilloid",
+		"Sandi porto",
+		"Sandi um",
 	],
 
     openGraph: {
