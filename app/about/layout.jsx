@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Alvalens | About"
+  title: "Sandi Hari Sukmana | About"
 };
 export default function Layout({ children }) {
   return (

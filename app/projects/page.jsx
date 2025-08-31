@@ -174,17 +174,15 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Intervyou AI
+							Gotas-GO
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							AI Based interview Preparation Website created to help fresh
-							graduates and job seekers prepare for interviews and optimize
-							their CV through AI-powered features. The website is built using
-							Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL
-							(TiDB). This website can comprehensively analyze the user&apos;s
-							interview performance by providing a analysis of the user&apos;s
-							answer, gesture, and material recommendation to improve the user&apos;s
-							interview skills.
+							On-demand service platform that connects users with nearby
+							service providers for various services such as transportation,
+							food delivery, and courirer services. Built using Java spring boot,
+							android native, firebase, PHP, Google cloud platform. the platform
+							features real-time tracking, in-app payments, and user-friendly UI.
+							(TiDB). This apps can handle up to 100.000+ users and transactions per day.
 						</p>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
