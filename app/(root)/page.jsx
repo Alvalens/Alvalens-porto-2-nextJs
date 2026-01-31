@@ -11,7 +11,7 @@ import Link from "next/link";
 
 // components
 import Button from "@/components/Button";
-import Me from "@/public/image/me.jpg";
+import Me from "@/public/image/alvalen-front.webp";
 import MeAbout from "@/public/image/me2.jpg";
 import Setup from "@/public/image/setup.jpg";
 import ProjectAll from "@/public/image/projects.png";
@@ -77,7 +77,7 @@ const MyPage = () => {
 											delay: 0.3,
 											type: "spring",
 										}}>
-										Full Stack Developer
+										Full Stack Software Engineer
 									</motion.h1>
 									<motion.p
 										className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
@@ -87,11 +87,13 @@ const MyPage = () => {
 											delay: 0.4,
 											type: "spring",
 										}}>
-										Hi! I&rsquo;am Alvalen, A junior fullstack developer specializing in
-										modern Web Development with a growing focus on Artificial
-										Intelligence. Passionate about building scalable,
-										user-friendly web applications and exploring AI technologies
-										such as generative models and LLM integration.
+										Hi! I&rsquo;am Alvalen, A fullstack
+										software engineer specializing in modern
+										Web Development with a growing focus on
+										Artificial Intelligence. I architect
+										scalable, production-ready engines—from
+										high-traffic Java microservices to
+										RAG-powered SaaS platforms.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
@@ -186,7 +188,7 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										A brief introduction about me and my interest.
+										A brief introduction my journey as a software engineer.
 									</motion.p>
 									<motion.div
 										initial={{ y: 40, opacity: 0 }}
@@ -196,7 +198,9 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											<Link href="/about">Learn More</Link>
+											<Link href="/about">
+												Learn More
+											</Link>
 										</Button>
 									</motion.div>
 								</div>
@@ -252,7 +256,8 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										This is some of my projects that I have done{" "}
+										This is some of my projects that I have
+										done{" "}
 										<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 											{" "}
 											and currently working on.
@@ -266,7 +271,9 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										<Button variation="primary">
-											<Link href="/projects">Learn More</Link>
+											<Link href="/projects">
+												Learn More
+											</Link>
 										</Button>
 									</motion.div>
 								</div>
@@ -350,7 +357,10 @@ const MyPage = () => {
 												y: { delay: 0.1 },
 												opacity: { delay: 0.2 },
 											}}>
-											<FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
+											<FontAwesomeIcon
+												icon={faEnvelope}
+												className="text-3xl"
+											/>
 										</motion.a>
 
 										<motion.a
@@ -364,7 +374,10 @@ const MyPage = () => {
 												y: { delay: 0.2 },
 												opacity: { delay: 0.3 },
 											}}>
-											<FontAwesomeIcon icon={faGithub} className="text-3xl" />
+											<FontAwesomeIcon
+												icon={faGithub}
+												className="text-3xl"
+											/>
 										</motion.a>
 										<motion.a
 											href="https://www.instagram.com/alvalens_/"
@@ -393,7 +406,10 @@ const MyPage = () => {
 												y: { delay: 0.4 },
 												opacity: { delay: 0.5 },
 											}}>
-											<FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
+											<FontAwesomeIcon
+												icon={faLinkedin}
+												className="text-3xl"
+											/>
 										</motion.a>
 										<motion.a
 											href="https://discordapp.com/users/bloody#6118"
@@ -406,7 +422,10 @@ const MyPage = () => {
 												y: { delay: 0.5 },
 												opacity: { delay: 0.6 },
 											}}>
-											<FontAwesomeIcon icon={faDiscord} className="text-3xl" />
+											<FontAwesomeIcon
+												icon={faDiscord}
+												className="text-3xl"
+											/>
 										</motion.a>
 									</div>
 								</div>

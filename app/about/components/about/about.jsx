@@ -110,34 +110,47 @@ export default function About() {
 					<h2 className="text-2xl font-bold tracking-wider mb-3">
 						Alvalen Shafelbilyunazra
 					</h2>
-					<p className="text-gray-600 text-justify title text-lg">
-						Hey there, I&rsquo;m Alvalen Shafelbilyunazra, a
+					<p className="text-gray-600 text-justify title text-lg leading-relaxed">
+						I am a{" "}
 						<span className="text-black font-medium">
-							{" "}
-							passionate Web Developer
-						</span>{" "}
-						with a growing expertise in
+							Product-Minded Software Engineer{" "}
+						</span>
+						specialized in bridging the gap between{" "}
 						<span className="text-black font-medium">
-							{" "}
-							Artificial Intelligence.
-						</span>{" "}
-						Hailing from Pasuruan, East Java, Indonesia, I&rsquo;m currently
-						pursuing my degree in{" "}
+							Modern Web Ecosystems and Enterprise Architectures
+						</span>
+						. A Computer Science graduate from{" "}
 						<span className="text-black font-medium">
-							Computer Science
-						</span>{" "}
-						at{" "}
+							Universitas Negeri Malang
+						</span>
+						, my professional journey is defined by high-stakes
+						projects, ranging from robust government-scale
+						microservices to sophisticated{" "}
 						<span className="text-black font-medium">
-							Universitas Negeri Malang.
-						</span>{" "}
-						My work bridges modern web technologies and intelligent systems—from
-						building responsive, scalable websites to exploring generative AI
-						and LLM-based solutions. Beyond development, I stay curious about
-						design and emerging technologies. In today&rsquo;s ever-changing
-						digital landscape, I believe being a
-						<span className="text-black font-medium"> lifelong learner</span> is
-						essential. Let&rsquo;s connect and explore the evolving intersection
-						of web and AI together!
+							RAG-powered SaaS products{" "}
+						</span>
+						designed to bring the power of Generative AI to
+						end-users.
+						<br />
+						<br />
+						Currently, I engineer large-scale enterprise systems at{" "}
+						<span className="text-black font-medium">
+							MGG Software
+						</span>
+						, ensuring strict data compliance and high availability
+						for international clients. Simultaneously, I lead the
+						technical vision as the{" "}
+						<span className="text-black font-medium">
+							CTO of Intervyou
+						</span>
+						, an AI-driven platform supported by the{" "}
+						<span className="text-black font-medium">
+							Google for Startups Cloud Program and NVIDIA
+							Inception
+						</span>
+						. I remain dedicated to delivering measurable business
+						value at the intersection of web technologies and
+						artificial intelligence.
 					</p>
 					<Card />
 				</motion.div>

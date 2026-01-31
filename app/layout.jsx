@@ -9,16 +9,16 @@ import Chat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
 
 export const metadata = {
-    title: "Alvalens | Portofolio",
+	title: "Alvalens | Portofolio",
 
-    description:
-		"My name is Alvalens, I'm a web developer and I'm passionate about it. I'm currently studying at Universitas Negeri Malang.",
+	description:
+		"Alvalen, Product-Minded Software Engineer specializing in Next.js, Spring Boot, and AI Solutions. Founder & CTO of Intervyou.",
 
-    author: "Alvalen Shafelbilyunazra",
-    siteUrl: "https://www.alvalens.my.id",
-    applicationName: "Alvalens",
+	author: "Alvalen Shafelbilyunazra",
+	siteUrl: "https://www.alvalens.my.id",
+	applicationName: "Alvalens",
 
-    keywords: [
+	keywords: [
 		"alvalens",
 		"alvalen",
 		"alvalen shafel",
@@ -30,7 +30,7 @@ export const metadata = {
 		"alvalen um",
 	],
 
-    openGraph: {
+	openGraph: {
 		type: "website",
 		url: "https://www.alvalens.my.id",
 		title: "Alvalens | Portofolio",
@@ -45,7 +45,7 @@ export const metadata = {
 			},
 		],
 		site_name: "Alvalens | Portofolio",
-	}
+	},
 };
 
 export default function RootLayout({ children }) {

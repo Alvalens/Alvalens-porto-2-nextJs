@@ -26,7 +26,13 @@ const experiences = [
 		location: "Oakland, California",
 		description:
 			"Trained LLM models using RLFH, focusing on enhancing their understanding of human language and improving their response accuracy. Collaborated with a team of AI specialists to refine model performance and ensure high-quality outputs.",
-		skills: ["Generative AI", "RLFH", "LLM", "Prompt Engineering", "Teamwork"],
+		skills: [
+			"Generative AI",
+			"RLHF",
+			"LLM",
+			"Prompt Engineering",
+			"Teamwork",
+		],
 	},
 	{
 		id: 3,
@@ -55,7 +61,7 @@ const experiences = [
 	{
 		id: 5,
 		startDate: "Apr 2023",
-		endDate: "Present",
+		endDate: "Jul 2025",
 		company: "Self-Employed",
 		position: "Web Developer & AI Consultant",
 		type: "Freelance",
@@ -77,7 +83,7 @@ const experiences = [
 	{
 		id: 6,
 		startDate: "Aug 2023",
-		endDate: "Present",
+		endDate: "Feb 2025",
 		company: "PT Hafdzamedia Teknologi Aplikasi",
 		position: "Fullstack Web Developer",
 		type: "Part-time",
@@ -97,13 +103,13 @@ const experiences = [
 	{
 		id: 7,
 		startDate: "Feb 2025",
-		endDate: "Present",
+		endDate: "Aug 2025",
 		company: "Joki Proyek",
 		position: "IT Implementation Specialist",
-		type: "Internship (Remote)",
+		type: "Contract (Remote)",
 		location: "Malang, Indonesia",
 		description:
-			"Developed and maintained current internal web applications using Next.js & and Laravel. Fixed bugs and implemented new features to enhance user experience. Collaborated with the team to ensure smooth deployment and functionality of applications.",
+			"Engineered internal microservices architecture. Refactored legacy monolithic modules and optimized messaging systems using Laravel/Next.js.",
 		skills: [
 			"Next.js",
 			"Laravel",
@@ -114,6 +120,41 @@ const experiences = [
 			"MongoDB",
 			"Docker",
 			"Teamwork",
+		],
+	},
+	{
+		id: 8,
+		startDate: "Jan 2025",
+		endDate: "Present",
+		company: "Intervyou (Google for Startups)",
+		position: "Co-Founder & CTO",
+		type: "Part-time",
+		location: "Remote",
+		description:
+			"Bootstrapped an AI-powered SaaS to 3,000+ users. Architected the core AI assessment engine using Next.js and RAG pipelines.",
+		skills: [
+			"Next.js",
+			"Generative AI",
+			"RAG",
+			"Product Engineering",
+		],
+	},
+	{
+		id: 9, 
+		startDate: "Aug 2025",
+		endDate: "Present",
+		company: "MGG Software",
+		position: "Software Engineer (Enterprise Solutions)",
+		type: "Full-time (Remote)",
+		location: "Malang",
+		description:
+			"Core engineer for a Tier-1 Singaporean Government Agency. Engineered high-availability backend microservices using Java Spring Boot, ensuring 99.9% uptime for nationwide traffic.",
+		skills: [
+			"Java Spring Boot",
+			"Microservices",
+			"Docker",
+			"PostgreSQL",
+			"React.js",
 		],
 	},
 ];
@@ -139,7 +180,7 @@ function Title() {
 						delay: 0.7,
 						type: "spring",
 					}}>
-					Profesional Experience
+					Professional Experience
 				</motion.h1>
 			</div>
 		</div>

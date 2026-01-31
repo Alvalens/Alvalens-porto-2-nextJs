@@ -165,7 +165,9 @@ export default function Education() {
 						initial={{ opacity: 0, x: -50 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}>
-						<div className="font-medium text-lg mb-4">2022 - Present</div>
+						<div className="font-medium text-lg mb-4">
+							2022 - Present
+						</div>
 						<div>
 							<h2 className="font-semibold text-xl">
 								Universitas Negeri Malang
@@ -204,54 +206,57 @@ export default function Education() {
 							</div>
 							<div className="flex items-center gap-2">
 								<p className="text-gray-600 text-justify title text-lg">
-									Aspiring to become a professional Software Engineer, I&rsquo;m
-									currently pursuing my Bachelor&rsquo;s degree in{" "}
+									I graduated as one of the{" "}
 									<span className="text-black font-medium">
-										Computer Science
+										Most Outstanding Students
 									</span>{" "}
-									at{" "}
+									from{" "}
 									<span className="text-black font-medium">
 										Universitas Negeri Malang
 									</span>
-									. My journey in tech is driven by curiosity and
-									creativity—combining web development with cutting-edge AI
-									research and implementation.
+									, completing my Bachelor in{" "}
+									<span className="text-black font-medium">
+										Computer Science
+									</span>{" "}
+									with a perfect GPA. My academic journey
+									was defined by a balance of rigorous
+									technical research and high-stakes
+									execution.
 									<br />
 									<br />
 									As the{" "}
 									<span className="text-black font-medium">
-										Co-Lead of Google Developer Group on Campus (GDGoC)
-									</span>{" "}
-									at my university, I&rsquo;ve led technical initiatives,
-									mentored peers, and helped build impactful digital solutions.
-									I&rsquo;ve actively participated in various{" "}
-									<span className="text-black font-medium">
-										national or international technology competitions
+										Co-Lead of Google Developer Group on
+										Campus (GDGoC)
 									</span>
-									, earning recognition through awards such as{" "}
+									, I spearheaded technical initiatives and
+									mentored a community of developers. Beyond
+									the classroom, I secured multiple national
+									and international honors, including being a{" "}
 									<span className="text-black font-medium">
-										PIMNAS Finalist, Indonesia Inventor Day Gold Medalist, Top 3
-										at LIDM 2024
+										two-time PIMNAS Finalist and an
+										Indonesia Inventor Day Gold Medalist
 									</span>
-									, and more.
+									.
 									<br />
-									<br />I am passionate about solving real-world problems
-									through code, especially at the intersection of{" "}
+									<br />
+									My education served as the engineering
+									foundation for my current work in{" "}
 									<span className="text-black font-medium">
-										Web Development
+										Enterprise Architecture
 									</span>{" "}
 									and{" "}
 									<span className="text-black font-medium">
-										Artificial Intelligence
+										AI Implementation
 									</span>
-									. Constantly learning, building, and collaborating—I&rsquo;m
-									excited to keep growing and contributing to the evolving tech
-									landscape.
+									. I remain committed to bridging academic
+									innovation with production-ready, scalable
+									software solutions.
 								</p>
 							</div>
 							<div className="flex flex-wrap gap-2 mt-4 text-sm">
 								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-									GPA: 3.9 out of 4
+									GPA: 4 out of 4
 								</div>
 							</div>
 						</div>
@@ -262,7 +267,9 @@ export default function Education() {
 						initial={{ opacity: 0, x: 50 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.4 }}>
-						<h2 className="font-semibold text-xl mt-7">Achievements</h2>
+						<h2 className="font-semibold text-xl mt-7">
+							Achievements
+						</h2>
 						<p className="text-md font-normal mb-3 md:mb-6">
 							Some of my achievements during my study.
 						</p>
@@ -272,49 +279,69 @@ export default function Education() {
 							<div className="space-y-4">
 								{/* Show visible achievements */}
 								<AnimatePresence>
-									{visibleAchievements.map((achievement, index) => (
-										<motion.div
-											key={`${achievement.year}-${index}`}
-											className="group"
-											initial={{ opacity: 0, y: 20 }}
-											animate={{ opacity: 1, y: 0 }}
-											exit={{ opacity: 0, y: -20 }}
-											transition={{ duration: 0.5, delay: index * 0.05 }}>
-											{/* Year indicator for first achievement of each year */}
-											{index === 0 ||
-											visibleAchievements[index - 1]?.year !==
-												achievement.year ? (
-												<div className="flex items-center gap-3 mb-3 mt-2">
-													<div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
-														<span className="text-xs font-bold text-gray-600">
-															{achievement.year}
-														</span>
+									{visibleAchievements.map(
+										(achievement, index) => (
+											<motion.div
+												key={`${achievement.year}-${index}`}
+												className="group"
+												initial={{ opacity: 0, y: 20 }}
+												animate={{ opacity: 1, y: 0 }}
+												exit={{ opacity: 0, y: -20 }}
+												transition={{
+													duration: 0.5,
+													delay: index * 0.05,
+												}}>
+												{/* Year indicator for first achievement of each year */}
+												{index === 0 ||
+												visibleAchievements[index - 1]
+													?.year !==
+													achievement.year ? (
+													<div className="flex items-center gap-3 mb-3 mt-2">
+														<div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+															<span className="text-xs font-bold text-gray-600">
+																{
+																	achievement.year
+																}
+															</span>
+														</div>
+														<div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
 													</div>
-													<div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
-												</div>
-											) : null}
+												) : null}
 
-											{/* Glassmorphism achievement card with monochrome to color effect */}
-											<div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-4 shadow-lg hover:bg-white/30 transition-all duration-300 hover:shadow-xl grayscale hover:grayscale-0">
-												<div className="flex items-center gap-4">
-													<div
-														className={`aspect-square w-10 rounded-full bg-gradient-to-r ${achievement.color} flex items-center justify-center text-primary-foreground transition-all duration-300`}>
-														<FontAwesomeIcon
-															icon={achievement.icon}
-															className="text-white h-5 w-5"
-														/>
-													</div>
-													<div>
-														<h3 className="font-medium">{achievement.title}</h3>
-														<p className="text-sm">{achievement.subtitle}</p>
-														<div className="text-xs text-gray-500 mt-1">
-															{achievement.date}
+												{/* Glassmorphism achievement card with monochrome to color effect */}
+												<div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-4 shadow-lg hover:bg-white/30 transition-all duration-300 hover:shadow-xl grayscale hover:grayscale-0">
+													<div className="flex items-center gap-4">
+														<div
+															className={`aspect-square w-10 rounded-full bg-gradient-to-r ${achievement.color} flex items-center justify-center text-primary-foreground transition-all duration-300`}>
+															<FontAwesomeIcon
+																icon={
+																	achievement.icon
+																}
+																className="text-white h-5 w-5"
+															/>
+														</div>
+														<div>
+															<h3 className="font-medium">
+																{
+																	achievement.title
+																}
+															</h3>
+															<p className="text-sm">
+																{
+																	achievement.subtitle
+																}
+															</p>
+															<div className="text-xs text-gray-500 mt-1">
+																{
+																	achievement.date
+																}
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-										</motion.div>
-									))}
+											</motion.div>
+										),
+									)}
 								</AnimatePresence>
 							</div>
 
@@ -331,7 +358,9 @@ export default function Education() {
 									animate={{ opacity: 1 }}
 									transition={{ delay: 0.5 }}>
 									<button
-										onClick={() => setIsExpanded(!isExpanded)}
+										onClick={() =>
+											setIsExpanded(!isExpanded)
+										}
 										className="flex items-center gap-2 px-6 py-3 bg-white/30 backdrop-blur-md border border-white/40 rounded-full hover:bg-white/40 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl">
 										<span>
 											{isExpanded
@@ -339,7 +368,11 @@ export default function Education() {
 												: `Show ${allAchievements.length - 4} More`}
 										</span>
 										<FontAwesomeIcon
-											icon={isExpanded ? faChevronUp : faChevronDown}
+											icon={
+												isExpanded
+													? faChevronUp
+													: faChevronDown
+											}
 											className="h-3 w-3 transition-transform duration-300"
 										/>
 									</button>
