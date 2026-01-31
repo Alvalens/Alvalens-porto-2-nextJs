@@ -4,9 +4,8 @@
       "show": true,
       "title": "Invervyou AI",
       "desc": [
-        "AI Based interview Preparation Website created to help fresh graduates and job seekers prepare for interviews and optimize their CV through AI-powered features. The website is built using Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL (TiDB).",
-        "The website has a few features such as a dashboard for the user to see their interview preparation progress, a CV analysis and optimization feature, and a few AI-powered interview questions that can be answered by the user which will be analyzed by the AI to provide feedback. The analysis contains the answer analysis, the gesture analysis, and a material recommendation to improve the user's performance.",
-        "The website also has a token mechanism that allows the user to purchase tokens to access the AI-powered features. Integrated with Indonesian payment gateway (Midtrans) to allow users to purchase tokens easily."
+        "Intervyou is an AI-driven SaaS platform designed to bridge the gap between education and employment by providing realistic interview simulations. The platform features a Gen AI engine that analyzes user responses and CVs to provide hyper-personalized feedback and material recommendations.",
+        "Built to scale, the system incorporates a gesture analysis module and a secure token-based payment gateway integrated with Midtrans. It currently serves over 3,000 users and is supported by Google for Startups and NVIDIA Inception."
       ],
       "year": "2025",
       "preview": "https://www.intervyou.me",
@@ -32,6 +31,33 @@
       ], 
       "slug": "intervyou",
       "category": [1, 2]
+    },
+    {
+      "show": true,
+      "title": "Exacta Laboratory",
+      "desc": [
+          "A comprehensive corporate landing page developed for PT Kalibrasi Surabaya (Exacta Laboratory) to establish a high-authority digital presence for their calibration and testing services. The platform serves as the primary communication hub between the laboratory and industrial clients across East Java.",
+          "The project focuses on high-performance web vitals and SEO optimization, ensuring that specialized technical services are easily discoverable and accessible. It features a modern, responsive design with clear service categorization and optimized lead generation funnels to streamline client inquiries.",
+          "Engineered with a focus on brand consistency and professional aesthetics, the platform utilizes advanced frontend techniques to provide a seamless user experience that reflects the laboratory's precision and technical excellence."
+        ],
+      "year": "2025",
+      "preview": "https://www.kalibrasisurabaya.co.id/",
+      "code": "",
+      "thumbnail": "/image/projects/web/exacta/exacta-thumbnail.png",
+      "images": [
+        "/image/projects/web/exacta/exacta1.png",
+        "/image/projects/web/exacta/exacta2.png"
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JS",
+        "ReactJS",
+        "TailwindCSS",
+        "Typescript"
+      ], 
+      "slug": "apii-porto",
+      "category": [1]
     },
     {
       "show": false,
@@ -300,7 +326,7 @@
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "React Tools",
       "desc": [
         "React Tools is a groundbreaking and user-friendly project that brings together a comprehensive collection of tools and components crafted with cutting-edge technologies, including React, React Router, and TailwindCSS. What sets this project apart is that it's not just a suite of powerful features, but it's also a significant milestone as it marks my very first venture into the world of React development.",
