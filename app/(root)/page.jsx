@@ -188,7 +188,8 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										A brief introduction my journey as a software engineer.
+										A brief introduction my journey as a
+										software engineer.
 									</motion.p>
 									<motion.div
 										initial={{ y: 40, opacity: 0 }}
@@ -256,7 +257,8 @@ const MyPage = () => {
 											delay: 0.2,
 											type: "spring",
 										}}>
-										Selected works that I've built over the years.
+										Selected works that I&apos;ve built over
+										the years.
 										<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 											{" "}
 											and currently working on.
