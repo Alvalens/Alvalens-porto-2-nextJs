@@ -17,7 +17,7 @@
     "generate-sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
-    "@alvalens/react-fullpage-snap": "^1.0.1",
+    "@alvalens/react-fullpage-snap": "^1.0.2",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
@@ -26,7 +26,7 @@
     "@tailwindcss/postcss": "^4.0.14",
     "@vercel/analytics": "^1.5.0",
     "eslint": "9.22.0",
-    "eslint-config-next": "15.2.3",
+    "eslint-config-next": "15.2.9",
     "framer-motion": "^12.5.0",
     "next": "15.2.8",
     "nprogress": "^0.2.0",
@@ -35,13 +35,22 @@
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "sharp": "^0.33.5",
-    "sitemap": "^8.0.0",
+    "sitemap": "^8.0.1",
     "swr": "^2.3.3",
     "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "15.2.3",
+    "@next/bundle-analyzer": "15.2.9",
     "@types/react": "19.1.5",
     "cross-env": "^7.0.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "@typescript-eslint/parser": "^8.54.0",
+      "@typescript-eslint/eslint-plugin": "^8.54.0",
+      "@typescript-eslint/type-utils": "^8.54.0",
+      "@typescript-eslint/utils": "^8.54.0",
+      "@typescript-eslint/typescript-estree": "^8.54.0"
+    }
   }
 }
