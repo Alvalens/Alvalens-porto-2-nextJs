@@ -6,16 +6,17 @@ import {
 	faFolderOpen,
 	faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { useFullPage } from "@alvalens/react-fullpage-snap";
 
 const Sidebar = () => {
+	const { moveTo, activeIndex } = useFullPage();
+
 	const handleMoveToSection = (index) => {
-		fullpage_api.moveTo(index);
-		fullpage_api.getActiveSection();
+		moveTo(index);
 	};
 
 	const containIsActive = (index) => {
-		if (fullpage_api.getActiveSection().index === index) {
+		if (activeIndex === index) {
 			return "bg-gray-500";
 		}
 		return "";
@@ -26,17 +27,17 @@ const Sidebar = () => {
 				id="sidebar"
 				className="flex flex-col justify-evenly items-center h-full  text-gray-50">
 				<li data-menuanchor="home" className="active">
-					<button onClick={() => handleMoveToSection(1)}>
+					<button onClick={() => handleMoveToSection(0)}>
 						<FontAwesomeIcon icon={faHome} className="text-xl" />
 					</button>
 				</li>
 				<li data-menuanchor="about">
-					<button onClick={() => handleMoveToSection(2)}>
+					<button onClick={() => handleMoveToSection(1)}>
 						<FontAwesomeIcon icon={faUser} className="text-xl" />
 					</button>
 				</li>
 				<li data-menuanchor="projects">
-					<button onClick={() => handleMoveToSection(3)}>
+					<button onClick={() => handleMoveToSection(2)}>
 						<FontAwesomeIcon
 							icon={faFolderOpen}
 							className="text-xl"
@@ -44,7 +45,7 @@ const Sidebar = () => {
 					</button>
 				</li>
 				<li data-menuanchor="contact">
-					<button onClick={() => handleMoveToSection(4)}>
+					<button onClick={() => handleMoveToSection(3)}>
 						<FontAwesomeIcon
 							icon={faEnvelope}
 							className="text-xl"

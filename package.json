@@ -17,12 +17,12 @@
     "generate-sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
+    "@alvalens/react-fullpage-snap": "^1.0.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@fullpage/react-fullpage": "^0.1.48",
     "@tailwindcss/postcss": "^4.0.14",
     "@vercel/analytics": "^1.5.0",
     "eslint": "9.22.0",
