@@ -25,10 +25,9 @@ export default function ProjectCard({ project, index, activeCategory }) {
 						<Image
 							src={project.thumbnail}
 							alt="Alvalens"
-							layout="fill"
-							objectFit="cover"
+							fill
 							placeholder="blur"
-							className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500"
+							className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500 object-cover"
 							blurDataURL={BlurImage.src}
 						/>
 						<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">

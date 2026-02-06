@@ -24,6 +24,7 @@ const jost = Jost({
 });
 
 export const metadata = {
+	metadataBase: new URL("https://www.alvalens.my.id"),
 	title: "Alvalens | Portofolio",
 
 	description:

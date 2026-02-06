@@ -197,12 +197,10 @@ function Page(props) {
 							key={index}
 							src={image}
 							alt={`Project Image ${index + 1}`}
-							className="mb-5 h-auto max-w-7xl mx-auto"
+							className="mb-5 h-auto max-w-7xl mx-auto object-contain"
 							width={1920}
 							height={1080}
 							blurDataURL={BlurImage.src}
-							layout="responsive"
-							objectFit="contain"
 						/>
 					))}
 				</div>
