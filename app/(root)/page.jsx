@@ -3,10 +3,11 @@
 // Licensed under the GNU GPL v3.0. See LICENSE for details.
 
 "use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { FullPageWrapper, Section } from "@alvalens/react-fullpage-snap";
+import { FullPageWrapper, Section, useFullPage } from "@alvalens/react-fullpage-snap";
 
 // components
 import Button from "@/components/Button";
@@ -22,6 +23,44 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
+function ScrollIndicator() {
+	const { activeIndex } = useFullPage();
+	const [dismissed, setDismissed] = useState(false);
+
+	useEffect(() => {
+		if (activeIndex !== 0) setDismissed(true);
+	}, [activeIndex]);
+
+	return (
+		<AnimatePresence>
+			{activeIndex === 0 && !dismissed && (
+				<motion.div
+					className="fixed bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-3"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1, transition: { duration: 0.6, delay: 1.2 } }}
+					exit={{ opacity: 0, transition: { duration: 0.4 } }}>
+					<span className="text-[10px] uppercase tracking-[4px] text-gray-500 font-medium">
+						Scroll
+					</span>
+					<motion.div
+						className="w-[1.5px] h-14 bg-gray-500 origin-top"
+						animate={{
+							scaleY: [0, 1, 1],
+							opacity: [0, 1, 0],
+						}}
+						transition={{
+							duration: 2,
+							repeat: Infinity,
+							ease: "easeInOut",
+							times: [0, 0.5, 1],
+						}}
+					/>
+				</motion.div>
+			)}
+		</AnimatePresence>
+	);
+}
 
 const MyPage = () => {
 	return (
@@ -422,6 +461,7 @@ const MyPage = () => {
 					</div>
 				</div>
 			</Section>
+			<ScrollIndicator />
 		</FullPageWrapper>
 	);
 };
