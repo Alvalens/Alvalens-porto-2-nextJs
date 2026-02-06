@@ -70,6 +70,7 @@ pnpm start
 
 ## Project Structure
 
+```
 app/
 ├── layout.jsx          # Root layout (Navbar, Chat, Analytics, JSON-LD)
 ├── globals.css         # Global styles and Tailwind
@@ -84,6 +85,7 @@ app/
 components/             # Shared UI (Navbar, Sidebar, Footer, Button, etc.)
 json/data.json          # Project data source
 public/image/           # Static images
+```
 
 ## Pages
 
