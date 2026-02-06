@@ -3,7 +3,7 @@
 // Licensed under the GNU GPL v3.0. See LICENSE for details.
 
 "use client";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FullPageWrapper, Section } from "@alvalens/react-fullpage-snap";
@@ -129,7 +129,7 @@ const MyPage = () => {
 				<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
 						<motion.div
-							className="bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
 							initial={{
 								x: 300,
 								opacity: 0,
@@ -148,7 +148,8 @@ const MyPage = () => {
 							}}>
 							<Image
 								src={MeAbout}
-								layout="fill"
+								fill
+								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
 								alt="Alvalens"
 								placeholder="blur"
@@ -196,7 +197,7 @@ const MyPage = () => {
 				<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
 						<motion.div
-							className="bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
+							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
 							initial={{
 								x: 300,
 								opacity: 0,
@@ -215,7 +216,8 @@ const MyPage = () => {
 							}}>
 							<Image
 								src={ProjectAll}
-								layout="fill"
+								fill
+								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
 								alt="Alvalens Setup"
 								placeholder="blur"
@@ -266,7 +268,7 @@ const MyPage = () => {
 				<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
 						<motion.div
-							className="bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
 							initial={{
 								x: 300,
 								opacity: 0,
@@ -285,7 +287,8 @@ const MyPage = () => {
 							}}>
 							<Image
 								src={Setup}
-								layout="fill"
+								fill
+								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
 								alt="Alvalens Setup"
 								placeholder="blur"
@@ -333,6 +336,7 @@ const MyPage = () => {
 						<div className="flex justify-center items-center space-x-4">
 							<motion.a
 								href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,"
+								aria-label="Send email"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ y: 40, opacity: 0 }}
 								whileInView={{ y: 0, opacity: 1 }}
@@ -350,6 +354,7 @@ const MyPage = () => {
 								href="https://github.com/Alvalens"
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="GitHub profile"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
@@ -366,6 +371,7 @@ const MyPage = () => {
 								href="https://www.instagram.com/alvalens_/"
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="Instagram profile"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
@@ -382,6 +388,7 @@ const MyPage = () => {
 								href="https://www.linkedin.com/in/alvalen-shafel-8a081a254/"
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="LinkedIn profile"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}
@@ -398,6 +405,7 @@ const MyPage = () => {
 								href="https://discordapp.com/users/bloody#6118"
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="Discord profile"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ opacity: 0, y: 40 }}
 								whileInView={{ opacity: 1, y: 0 }}

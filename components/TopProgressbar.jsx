@@ -1,6 +1,7 @@
 "use client"
 import Router from "next/router";
 import NProgress from "nprogress";
+import "../app/nprogress.css";
 
 let timer;
 let state;

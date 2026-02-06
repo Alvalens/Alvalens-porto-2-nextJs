@@ -151,6 +151,7 @@ const Navbar = () => {
 				</div>
 				<div className="flex flex-row items-center">
 					<button
+						aria-label={isNavOpen ? "Close menu" : "Open menu"}
 						className="burger button flex flex-col justify-center items-center space-y-1.5 "
 						onClick={toggleNav}>
 						<div

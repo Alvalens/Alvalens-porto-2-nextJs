@@ -1,12 +1,27 @@
 import "./globals.css";
+import { Poppins, Jost } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
-import "./nprogress.css";
 import { Analytics } from "@vercel/analytics/react";
 import Chat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
+
+const poppins = Poppins({
+	subsets: ["latin"],
+	weight: ["300", "400", "500", "600", "700"],
+	style: ["normal", "italic"],
+	display: "swap",
+	variable: "--font-poppins",
+});
+
+const jost = Jost({
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+	display: "swap",
+	variable: "--font-jost",
+});
 
 export const metadata = {
 	title: "Alvalens | Portofolio",
@@ -34,23 +49,22 @@ export const metadata = {
 		type: "website",
 		url: "https://www.alvalens.my.id",
 		title: "Alvalens | Portofolio",
-		site_name: "Alvalens | Portofolio",
+		siteName: "Alvalens | Portofolio",
 		description: "My name is Alvalens, This is my portofolio website.",
-		width: 1200,
-		height: 630,
 		images: [
 			{
 				url: "/og-image-rev.png",
 				alt: "Alvalens Portofolio",
+				width: 1200,
+				height: 630,
 			},
 		],
-		site_name: "Alvalens | Portofolio",
 	},
 };
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html lang="en" className={`${poppins.variable} ${jost.variable}`}>
 			<body>
 				<ClientTopProgressBar />
 				<Navbar />
