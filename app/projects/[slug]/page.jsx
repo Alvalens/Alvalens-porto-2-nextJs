@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, use, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import jsonData from "@/json/data.json";
 
@@ -9,7 +10,6 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import NotFound from "@/app/not-found";
 import Image from "next/image";
 import BlurImage from "@/public/image/placeholder/blur.jpg";
-import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
@@ -50,7 +50,7 @@ function ScrollDownButton() {
         behavior: "smooth",
       });
 				setIsAtBottom(true);
-			
+
     } else {
       window.scrollTo({
         top: 0,
@@ -80,6 +80,7 @@ function ScrollDownButton() {
 
 function Page(props) {
     const params = use(props.params);
+    const router = useRouter();
     const [data, setData] = useState(null);
     useEffect(() => {
 		const selectedData = jsonData.Projects.find(
@@ -126,12 +127,15 @@ function Page(props) {
 	}
     return (
 		<div className="relative min-h-screen w-full gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
-			<FixedButon href="/projects">
+			<button
+				onClick={() => router.back()}
+				className="fixed top-2 -left-2 md:left-10 flex justify-center items-center rounded-full p-4 transition duration-300 ease-in-out z-50"
+				aria-label="Go back">
 				<FontAwesomeIcon
 					icon={faChevronLeft}
 					className="text-black pr-10"
 				/>
-			</FixedButon>
+			</button>
 			<ScrollDownButton />
 			<div className="min-h-screen flex justify-center items-center">
 				<div className="mx-auto grid grid-cols-1 md:grid-cols-2  mt-10 md:mt-0">

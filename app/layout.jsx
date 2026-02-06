@@ -63,10 +63,35 @@ export const metadata = {
 	},
 };
 
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	name: "Alvalen Shafelbilyunazra",
+	url: "https://www.alvalens.my.id",
+	jobTitle: "Full Stack Software Engineer",
+	worksFor: [
+		{ "@type": "Organization", name: "MGG Software" },
+		{ "@type": "Organization", name: "Intervyou" },
+	],
+	alumniOf: {
+		"@type": "CollegeOrUniversity",
+		name: "Universitas Negeri Malang",
+	},
+	sameAs: [
+		"https://github.com/Alvalens",
+		"https://www.linkedin.com/in/alvalen-shafel-8a081a254/",
+		"https://www.instagram.com/alvalens_/",
+	],
+};
+
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={`${poppins.variable} ${jost.variable}`}>
 			<body>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+				/>
 				<ClientTopProgressBar />
 				<Navbar />
 				{children}
