@@ -1,116 +1,62 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const NavItems = ({ isNavOpen, setIsNavOpen }) => {
-	const [isMobile, setIsMobile] = useState(false);
+const navVariant = {
+	open: {
+		clipPath: "circle(2000px at calc(100% - 40px) 40px)",
+		transition: {
+			type: "tween",
+			duration: 0.5,
+			ease: [0.22, 1, 0.36, 1],
+		},
+	},
+	closed: {
+		clipPath: "circle(0px at calc(100% - 40px) 40px)",
+		transition: {
+			delay: 0.3,
+			type: "tween",
+			duration: 0.3,
+			ease: [0.4, 0, 1, 1],
+		},
+	},
+};
 
+const itemVariants = {
+	open: (custom) => ({
+		opacity: 1,
+		x: 0,
+		transition: {
+			delay: custom,
+			type: "tween",
+			duration: 0.3,
+			ease: [0.22, 1, 0.36, 1],
+		},
+	}),
+	closed: {
+		opacity: 0,
+		x: -80,
+		transition: {
+			type: "tween",
+			duration: 0.2,
+		},
+	},
+};
+
+const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	const handleItemClick = () => {
 		setIsNavOpen(false);
-	};
-	const navVariant = {
-		open: {
-			clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
-			transition: {
-				type: "spring",
-				stiffness: 400,
-				damping: 40,
-			},
-		},
-		closed: {
-			clipPath: "circle(0px at calc(100% - 120px) 35px)",
-			transition: {
-				delay: 0.5,
-				type: "spring",
-				stiffness: 400,
-				damping: 30,
-			},
-		},
-	};
-	useEffect(() => {
-		const updateScreenWidth = () => {
-			setIsMobile(window.innerWidth <= 768);
-		};
-
-		// Initial check and event listener
-		updateScreenWidth();
-		window.addEventListener("resize", updateScreenWidth);
-
-		// Clean up the event listener on unmount
-		return () => {
-			window.removeEventListener("resize", updateScreenWidth);
-		};
-	}, []);
-
-	// Check screen width and adjust clipPath for smaller screens
-	if (isMobile) {
-		(navVariant.open = {
-			clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
-			transition: {
-				type: "tween",
-			},
-		}),
-			(navVariant.closed = {
-				clipPath: "circle(0px at calc(100% - 35px) 35px)",
-				transition: {
-					delay: 0.5,
-					type: "spring",
-					stiffness: 400,
-					damping: 40,
-				},
-			});
-	} else {
-		(navVariant.open = {
-			clipPath: `circle(2444px at calc(100% - 40px) 40px)`,
-			transition: {
-				type: "spring",
-				stiffness: 400,
-				damping: 40,
-			},
-		}),
-			(navVariant.closed = {
-				clipPath: "circle(0px at calc(100% - 120px) 35px)",
-				transition: {
-					delay: 0.5,
-					type: "spring",
-					stiffness: 400,
-					damping: 40,
-				},
-			});
-	}
-	const itemVariants = {
-		open: (custom) => ({
-			opacity: 1,
-			x: 0,
-			rotate: 0,
-			transition: {
-				delay: custom,
-				type: "spring",
-				stiffness: 400,
-				damping: 40,
-			},
-		}),
-		closed: {
-			opacity: 0,
-			x: -80,
-			rotate: 0,
-			transition: {
-				type: "spring",
-				stiffness: 400,
-				damping: 40,
-			},
-		},
 	};
 
 	return (
 		<>
 			<motion.div
-				className={`fixed z-[45] w-full h-screen flex items-center justify-center backdrop-blur-sm transition-all ease duration-700 overflow-hidden`}
+				className={`fixed z-[45] w-full h-screen flex items-center justify-center transition-all ease duration-700 overflow-hidden`}
 				variants={navVariant}
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
-				<div className="relative backdrop-blur-sm opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
+				<div className="relative opacity-95 flex flex-col items-center space-x-8 min-h-[100vh] bg-gray-700 min-w-[100vw] ">
 					<div className="flex flex-col items-center space-y-8 my-auto mx-0 z-50">
 						{/* title */}
 						<motion.h1
