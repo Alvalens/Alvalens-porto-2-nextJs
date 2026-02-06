@@ -1,116 +1,129 @@
-# Alvalens Porto 2
+# Alvalens Portfolio
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=aleph-discord-bot.visitor-badge)
 
-This is my debut project utilizing Next.js, a portfolio website featuring four primary sections: Home, About, Projects, and Contact. The site is brought to life with animations powered by Framer Motion, enhanced page transitions with Fullpage.js, and styled using elements of Tailwind CSS. This project also read list of project data from a JSON file. It serves as a showcase of my web development skills and represents my initial foray into web development with Next.js.
+Personal portfolio website built with Next.js 15, featuring fullpage scrolling, Framer Motion animations, and Tailwind CSS. The site showcases projects from a JSON data source and includes Spotify integration, real-time chat, and structured SEO.
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## Features
 
-* **Smooth Animation:** Smooth page scroll and scroll trigger animation.
-* **Smooth Page Transition:** Smooth page transition with prefetching feature of next js.
-* **Dynamic Data:** Read the project data from JSON file instead of directly implemented the data.
-* **Intelliticks chat widget:** Chat with owner of the web realtime.
-* **Spotify realtime widget:** Show what song youre playing in this web.
+- **Fullpage Scrolling** — Section-based navigation on the home page with sidebar active indicator
+- **Smooth Page Transitions** — Fade + scale animation between routes via Framer Motion
+- **Scroll Animations** — Staggered entrance animations on skills, experience, and project sections
+- **Dynamic Project Data** — Projects loaded from a JSON file with category filtering and detail pages
+- **Skeleton & Blur Loading** — Project images load with blur placeholder and skeleton overlay
+- **Spotify Widget** — Real-time "now playing" display on the About page
+- **Chat Widget** — Intelliticks integration with deferred loading for performance
+- **SEO** — Per-page metadata, OpenGraph tags, and JSON-LD Person structured data
+- **Responsive** — Scales smoothly across browser zoom levels (100%–150%)
 
-## Installation
+## Tech Stack
 
-1. Ensure you have [pnpm](https://pnpm.io/) installed. If not, you can install it using:
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Scrolling:** @alvalens/react-fullpage-snap
+- **Fonts:** Poppins, Jost (self-hosted via next/font)
+- **Analytics:** Vercel Analytics
+- **Deployment:** Vercel
 
-   ```shell
-   npm install -g pnpm
-   ```
-2. Clone the repository:
+## Getting Started
 
-   ```shell
-   git clone https://github.com/Alvalens/Alvalens-porto-2-nextJs.git
-   ```
-3. Navigate to the project directory:
+### Prerequisites
 
-   ```shell
-   cd Alvalens-porto-2-nextJs
-   ```
-4. Install dependencies:
+- [Node.js](https://nodejs.org/) 18+
+- [pnpm](https://pnpm.io/)
 
-   ```
-   pnpm install
-   ```
-5. Start the development server
+### Installation
 
-   ```shell
-   pnpm next dev
-   ```
-6. Update the Intelliticks chat widget script in components/Chat.jsx, with your own
+```bash
+git clone https://github.com/Alvalens/Alvalens-porto-2-nextJs.git
+cd Alvalens-porto-2-nextJs
+pnpm install
+```
 
-   ```javascript
-    "use client"
-    import { useEffect } from "react";
+### Environment Variables
 
-    // Component for Intelliticks chat widget
-    const Chat = () => {
-    	useEffect(() => {
-    		// Replace the Intelliticks script here
+Copy `.env.example` to `.env.local` and fill in the values:
 
-    	}, []);
+```
+NEXT_PUBLIC_SPOTIFY_CLIENT_ID=
+NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET=
+NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN=
+```
 
-    	return null;
-    };
+For Spotify API setup, see [leerob.io/blog/spotify-api-nextjs](https://leerob.io/blog/spotify-api-nextjs).
 
-    export default Chat;
-   ```
-7. Set env.local by copying env.example and fill the variable
+### Development
 
-   ```
-   NEXT_PUBLIC_SPOTIFY_CLIENT_ID=
-   NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET=
-   NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN=
-   ```
+```bash
+pnpm dev
+```
 
-   for further reference on how to setup spotify api you can check this [link ](https://leerob.io/blog/spotify-api-nextjs "leerob blog")
+### Production Build
 
-## Usage
+```bash
+pnpm build
+pnpm start
+```
 
-There are four main sections and two subpages in this portfolio website:
+## Project Structure
+
+app/
+├── layout.jsx          # Root layout (Navbar, Chat, Analytics, JSON-LD)
+├── globals.css         # Global styles and Tailwind
+├── (root)/             # Home page with fullpage sections
+│   ├── layout.jsx      # FullPageProvider + Sidebar
+│   └── page.jsx        # Hero, About, Projects, Contact sections
+├── about/              # About page
+│   └── components/     # Skills, Experience, Education, Quote, Spotify
+├── projects/           # Projects listing with filtering
+│   ├── [slug]/         # Dynamic project detail pages
+│   └── archive/        # Full project archive
+components/             # Shared UI (Navbar, Sidebar, Footer, Button, etc.)
+json/data.json          # Project data source
+public/image/           # Static images
+
+## Pages
 
 ### Home
 
-The home page serves as an introduction to the portfolio. It provides an overview of your web development skills and passion for the field. Users can explore other sections from here.
+Introduction with fullpage scroll sections — Hero, About preview, Projects preview, and Contact with social links. Includes a scroll indicator on first load.
 
 ### About
 
-The about page offers more detailed information about you as a web developer. It might include your background, education, skills, and interests in the field of web development.
+Detailed bio, skills with category filtering, work experience timeline, education, and Spotify widget.
 
 ### Projects
 
-The projects section showcases your work as a web developer. Users can explore the projects you've worked on, and you can provide details such as project descriptions, technologies used, and images.
+Filterable project grid (Web, AI/ML, Other). Each project links to a detail page with full description, tech stack, links, and image gallery.
 
 ### Contact
 
-The contact page allows users to get in touch with you. You can provide contact information or a contact form for inquiries.
+Email and social links (GitHub, Instagram, LinkedIn, Discord).
 
-### Subpages
+## Customization
 
-- **Project archive:** list all of your project that dont needed to display at main project page.
-- Project details: See the main project detail by clicking the project image.
+### Chat Widget
 
-Feel free to customize and expand upon these sections and subpages to suit your needs and showcase your unique skills and projects.
+Update the Intelliticks script in `components/Chat.jsx` with your own widget code.
 
-### Intelliticks chat widget
+### Project Data
 
-Enjoy chat realtime with ease using Intelliticks (https://app.intelliticks.com/)
+Edit `json/data.json` to add or modify projects. See [CLAUDE.md](CLAUDE.md) for the data schema.
 
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
 
-## Reference (inspiration)
+## Inspiration
 
-- https://www.frans.my.id/
-- https://kuon-yagi-portfolio.netlify.app/
+- [frans.my.id](https://www.frans.my.id/)
+- [kuon-yagi-portfolio](https://kuon-yagi-portfolio.netlify.app/)
 
 ## License
 
-This project is licensed under the GPL-3.0 License see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3.0 License — see the [LICENSE](LICENSE) file for details.
 
 Copyright (C) 2025 Alvalen Shafelbilyunazra
