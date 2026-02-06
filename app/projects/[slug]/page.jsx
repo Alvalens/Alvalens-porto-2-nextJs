@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, use, useCallback } from "react";
 import { motion } from "framer-motion";
 import jsonData from "@/json/data.json";
 
@@ -13,6 +13,30 @@ import FixedButon from "@/components/FixedButton";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+
+function ProjectImage({ src, alt, index }) {
+	const [loaded, setLoaded] = useState(false);
+	const handleLoad = useCallback(() => setLoaded(true), []);
+
+	return (
+		<div className="relative mb-5 max-w-7xl mx-auto w-full">
+			{!loaded && (
+				<div className="absolute inset-0 animate-pulse bg-neutral-300 rounded" />
+			)}
+			<Image
+				src={src}
+				alt={alt}
+				width={1920}
+				height={1080}
+				className={`h-auto w-full object-contain transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
+				placeholder="blur"
+				blurDataURL={BlurImage.src}
+				loading={index === 0 ? "eager" : "lazy"}
+				onLoad={handleLoad}
+			/>
+		</div>
+	);
+}
 
 function ScrollDownButton() {
   const [isAtBottom, setIsAtBottom] = useState(false);
@@ -193,14 +217,11 @@ function Page(props) {
 			<div className="mx-auto grid grid-cols-1 p-5 md:p-20 w-full">
 				<div className="w-full h-auto text-center flex flex-col justify-center ">
 					{data.images.map((image, index) => (
-						<Image
+						<ProjectImage
 							key={index}
 							src={image}
 							alt={`Project Image ${index + 1}`}
-							className="mb-5 h-auto max-w-7xl mx-auto object-contain"
-							width={1920}
-							height={1080}
-							blurDataURL={BlurImage.src}
+							index={index}
 						/>
 					))}
 				</div>
