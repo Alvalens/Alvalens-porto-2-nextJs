@@ -52,7 +52,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 	return (
 		<>
 			<motion.div
-				className={`fixed z-[45] w-full h-screen flex items-center justify-center transition-all ease duration-700 overflow-hidden`}
+				className={`fixed z-[45] w-full h-screen flex items-center justify-center overflow-hidden`}
 				variants={navVariant}
 				animate={isNavOpen ? "open" : "closed"}
 				initial={false}>
