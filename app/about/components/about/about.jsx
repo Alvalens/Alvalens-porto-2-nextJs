@@ -1,10 +1,15 @@
 import Image from "next/image";
-import Card from "./spotify/card";
+// import Card from "./spotify/card";
+import dynamic from "next/dynamic";
+
 import { motion } from "framer-motion";
-import Me1 from "@/public/image/me1.jpg";
+import Me1 from "@/public/image/me1.png";
 import Me2 from "@/public/image/me2.jpg";
 import Me3 from "@/public/image/me3.jpg";
 import Hr from "@/components/Hr";
+const Card = dynamic(() => import("./spotify/card"), {
+  ssr: false,
+});
 
 function Title() {
 	return (
@@ -24,7 +29,7 @@ export default function About() {
 			<div className="relative mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 				<div className="flex justify-center items-start flex-col mb-5 ">
 					<div className="images relative w-full  aspect-square">
-						<div className="absolute top-28 left-10 w-[50%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+						<div className="absolute top-28 left-10 w-[50%]  aspect-square   transition-all ease duration-300">
 							<motion.div
 								initial={{ opacity: 0, scale: 0.5, x: 100 }}
 								whileInView={{
@@ -35,7 +40,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me1}
-									alt="Alvalens"
+									alt="Harshith"
 									fill
 									sizes="(max-width: 768px) 80vw, 40vw"
 									className="object-cover"
@@ -43,7 +48,7 @@ export default function About() {
 								/>
 							</motion.div>
 						</div>
-						<div className="absolute top-16 right-28 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+						<div className="absolute top-16 right-28 w-[30%]  aspect-square   transition-all ease duration-300">
 							<motion.div
 								initial={{
 									opacity: 0,
@@ -59,7 +64,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me2}
-									alt="Alvalens"
+									alt="Harshith"
 									fill
 									sizes="(max-width: 768px) 60vw, 25vw"
 									className="object-cover"
@@ -67,7 +72,7 @@ export default function About() {
 								/>
 							</motion.div>
 						</div>
-						<div className="absolute bottom-16 right-20 w-[40%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+						<div className="absolute bottom-16 right-20 w-[40%]  aspect-square   transition-all ease duration-300">
 							<motion.div
 								initial={{
 									opacity: 0,
@@ -85,7 +90,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me3}
-									alt="Alvalens"
+									alt="Harshith"
 									fill
 									sizes="(max-width: 768px) 80vw, 35vw"
 									className="object-cover"
@@ -111,51 +116,60 @@ export default function About() {
 						type: "spring",
 					}}>
 					<h2 className="text-2xl font-bold tracking-wider mb-3">
-						Alvalen Shafelbilyunazra
+						Harshith Gowda Shakaladevanapura Maregowda
 					</h2>
 					<p className="text-gray-600 text-justify title text-lg leading-relaxed">
 						I am a{" "}
 						<span className="text-black font-medium">
-							Product-Minded Software Engineer{" "}
+							Mechatronics graduate student{" "}
 						</span>
-						specialized in bridging the gap between{" "}
+						specializing in{" "}
 						<span className="text-black font-medium">
-							Modern Web Ecosystems and Enterprise Architectures
+							control systems, robotics, and optimization-based control
 						</span>
-						. A Computer Science graduate from{" "}
+						. I did my masters in mechatronics at{" "}
 						<span className="text-black font-medium">
-							Universitas Negeri Malang
+							Hamburg University of Technology
 						</span>
-						, my professional journey is defined by high-stakes
-						projects, ranging from robust government-scale
-						microservices to sophisticated{" "}
+						, specialization in{" "}
 						<span className="text-black font-medium">
-							RAG-powered SaaS products{" "}
+							Robotics and Intelligent Systems
 						</span>
-						designed to bring the power of Generative AI to
-						end-users.
+						.
 						<br />
 						<br />
-						Currently, I engineer large-scale enterprise systems at{" "}
+						My work focuses on designing and implementing{" "}
 						<span className="text-black font-medium">
-							MGG Software
+							real-time Model Predictive Control (MPC) algorithms
 						</span>
-						, ensuring strict data compliance and high availability
-						for international clients. Simultaneously, I lead the
-						technical vision as the{" "}
+						for complex mechatronic systems. I have experience in system identification using tensor-based methods, data-driven control approaches, and deploying controllers on real hardware platforms such as Qube Servo and MiniSegway.
+						<br />
+						<br />
+						I have also worked on robotics systems involving {" "}
 						<span className="text-black font-medium">
-							CTO of Intervyou
+							reinforcement learning for locomotion and path planning
 						</span>
-						, an AI-driven platform supported by the{" "}
+						, combining model-based control with learning-based methods.
+						<br />
+						<br />
+						Currently, I am working as a{" "}
 						<span className="text-black font-medium">
-							Google for Startups Cloud Program and NVIDIA
-							Inception
+							Research Assistant at HAW Hamburg, {" "}
 						</span>
-						. I remain dedicated to delivering measurable business
-						value at the intersection of web technologies and
-						artificial intelligence.
+						focusing on tensor-based system identification and hierarchical MPC for energy-efficient building control systems. I am particularly interested in bridging theoretical control methods with practical real-world implementations.
+						
 					</p>
-					<Card />
+					<div className="mt-6 p-5 border border-gray-200 rounded-xl bg-gray-50 w-full max-w-[600px]">
+						<h3 className="text-lg font-semibold mb-3">Research & Focus Areas</h3>
+
+						<ul className="text-gray-600 space-y-2 text-sm">
+							<li>• Real-time Model Predictive Control (MPC)</li>
+							<li>• Optimization-based control for mechatronic systems</li>
+							<li>• System identification (Tensor methods, Gaussian Processes)</li>
+							<li>• Robotics control and stabilization</li>
+							<li>• Data-driven control and learning-based methods</li>
+						</ul>
+					</div>
 				</motion.div>
 			</div>
 		</>

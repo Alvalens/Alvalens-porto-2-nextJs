@@ -19,9 +19,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const category = {
-	1: "Web Development",
-	2: "AI & Machine Learning",
-	9: "Other",
+	1: "Control Systems",
+	2: "Robotics",
+	3: "Machine Learning",
+	4: "Research & MPC",
 };
 
 export default function Page() {
@@ -43,7 +44,7 @@ export default function Page() {
 							initial={{ scale: 1 }}
 							animate={{ scale: 1.6 }}
 							transition={{ duration: 1, ease: "circOut" }}
-							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
+							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]   ">
 							<Image
 								src={ProjectAll}
 								alt="Alvalens"
@@ -54,17 +55,18 @@ export default function Page() {
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
+					<div className="z-10 absolute md:left-[10%] top-[60%] md:top-1/3 px-10 max-w-[700px]">
 						<h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-black text-5xl md:text-8xl font-bold">
 							My Projects
 						</h1>
 						<Hr />
 						<p className="title  text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5">
-							List of my projects that I have done and{" "}
+							Portfolio of control systems, robotics, and machine learning projects {" "}
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 								{" "}
-								currently working on.
+								with a focus on real-time implementation, optimization-based control,
 							</span>
+							and experimental validation on physical systems.
 						</p>
 						<motion.div
 							initial={{ opacity: 0, y: 100 }}
@@ -90,7 +92,7 @@ export default function Page() {
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 h-[40%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
+							<div className="absolute top-28 left-10 h-[40%]  aspect-video   transition-all ease duration-300 hover:scale-150 z-10">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -109,7 +111,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute top-10 right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute top-10 right-28 h-[30%]  aspect-video   transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -134,7 +136,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute bottom-10 md:bottom-26 right-20 h-[35%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+							<div className="absolute bottom-10 md:bottom-26 right-20 h-[35%]  aspect-video   transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -177,30 +179,34 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Intervyou AI
+						Real-Time MPC for Unstable Systems
 						</h2>
+
 						<p className="text-gray-600 text-justify title text-lg">
-							AI Based interview Preparation Website created to help fresh
-							graduates and job seekers prepare for interviews and optimize
-							their CV through AI-powered features. The website is built using
-							Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL
-							(TiDB). This website can comprehensively analyze the user&apos;s
-							interview performance by providing a analysis of the user&apos;s
-							answer, gesture, and material recommendation to improve the user&apos;s
-							interview skills.
-						</p>{" "}
+						Designed and implemented real-time Model Predictive Control (MPC) 
+						for unstable systems including an inverted pendulum (Qube-Servo 3) 
+						and a two-wheeled self-balancing robot. 
+
+						The controller was deployed using Simulink Real-Time with embedded 
+						hardware, enabling constraint handling, disturbance rejection, 
+						and high-frequency control execution.
+
+						Compared against PID baseline and experimentally validated 
+						improved stabilization and robustness.
+						</p>
+
 						<div className="mt-3">
-							<Button variation="primary">
-								<Link href="projects/intervyou">More</Link>
-							</Button>
-							<Button variation="secondary">
-								<a
-									href="https://www.intervyou.me"
-									target="_blank"
-									rel="noopener noreferrer">
-									Preview
-								</a>
-							</Button>
+						<Button variation="primary">
+							<Link href="projects/mpc-qube">More</Link>
+						</Button>
+						<Button variation="secondary">
+							<a
+							href="https://github.com/Harshithgowdasm/iMTI_qube.git"
+							target="_blank"
+							rel="noopener noreferrer">
+							GitHub
+							</a>
+						</Button>
 						</div>
 					</motion.div>
 				</div>

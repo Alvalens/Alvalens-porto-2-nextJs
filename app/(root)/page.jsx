@@ -11,7 +11,7 @@ import { FullPageWrapper, Section, useFullPage } from "@alvalens/react-fullpage-
 
 // components
 import Button from "@/components/Button";
-import Me from "@/public/image/alvalen-front.webp";
+import Me from "@/public/image/alvalen-front.jpg"; // replace later with your image
 import MeAbout from "@/public/image/me2.jpg";
 import Setup from "@/public/image/setup.jpg";
 import ProjectAll from "@/public/image/projects.png";
@@ -74,15 +74,27 @@ const MyPage = () => {
 						transition={{
 							type: "spring",
 						}}>
-						<div className="block md:hidden col-span-1 mx-auto my-10">
+						{/* <div className="block md:hidden col-span-1 mx-auto my-10">
 							<div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
 								<Image
 									src={Me}
 									width={500}
 									height={500}
 									className="rounded-full w-full h-full object-cover "
-									alt="Alvalens"
+									alt="Harshith"
 									placeholder="blur"
+								/>
+							</div>
+						</div> */}
+						<div className="block md:hidden col-span-1 mx-auto my-10">
+							<div className="bg-slate-500 rounded-full h-70 w-70 overflow-hidden">
+								<Image
+								src={Me}
+								width={800}
+								height={800}
+								className="w-full h-full object-cover filter-none"
+								alt="Harshith"
+								placeholder="blur"
 								/>
 							</div>
 						</div>
@@ -94,7 +106,7 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Alvalen Shafel
+							Harshith Gowda S M
 						</motion.h3>
 						<motion.h1
 							className="text-black text-4xl md:text-6xl lg:text-6xl 2xl:text-8xl font-bold my-2 md:my-5"
@@ -104,7 +116,7 @@ const MyPage = () => {
 								delay: 0.3,
 								type: "spring",
 							}}>
-							Full Stack Software Engineer
+							Control × Robotics × ML Engineer 
 						</motion.h1>
 						<motion.p
 							className="title text-md 2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
@@ -114,12 +126,9 @@ const MyPage = () => {
 								delay: 0.4,
 								type: "spring",
 							}}>
-							Hi! I&rsquo;am Alvalen, A fullstack software
-							engineer specializing in modern Web Development with
-							a growing focus on Artificial Intelligence. I
-							architect scalable, production-ready engines—from
-							high-traffic Java microservices to RAG-powered SaaS
-							platforms.
+							Hi! I&rsquo;am Harshith, I design and implement real-time Model Predictive Controllers for complex
+							mechatronic systems. My work focuses on optimization-based control,
+							data-driven modeling, and deploying controllers on real hardware systems.
 						</motion.p>
 						<motion.div
 							className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
@@ -131,7 +140,7 @@ const MyPage = () => {
 							}}>
 							<Button variation="primary">
 								<Link
-									href={"/docs/cv.pdf"}
+									href={"/docs/CV.pdf"}
 									target="_blank"
 									rel="noopener noreferrer"
 									download>
@@ -147,28 +156,29 @@ const MyPage = () => {
 						className="hidden md:flex col-span-1 mx-auto justify-center items-center "
 						initial={{ x: 100, opacity: 0 }}
 						whileInView={{ x: 0, opacity: 1 }}
-						transition={{
+						transition={{ 
 							delay: 0.7,
 							type: "spring",
 						}}>
-						<div className="rounded-full h-auto w-auto max-w-[26vw] lg:px-12 grayscale hover:grayscale-0 transition-all ease duration-300">
+						<div className="rounded-full h-130 w-140 max-w-[26vw] lg:px-12 transition-all ease duration-300">
 							<Image
 								src={Me}
-								width={400}
-								height={550}
+								width={800}
+								height={950}
 								placeholder="blur"
-								alt="Alvalens"
+								alt="Harshith"
 								className="rounded-full w-full h-full object-cover"
 							/>
 						</div>
 					</motion.div>
 				</div>
 			</Section>
+			{/* 🔥 ABOUT PREVIEW */}
 			<Section>
 				<div className="relative md:h-screen w-screen gap-4 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
 						<motion.div
-							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[60vh] w-[80vw] md:w-[24vw]"
 							initial={{
 								x: 300,
 								opacity: 0,
@@ -185,14 +195,13 @@ const MyPage = () => {
 								stiffness: 100,
 								damping: 20,
 							}}>
-							<Image
-								src={MeAbout}
-								fill
-								sizes="(max-width: 768px) 80vw, 30vw"
-								className="object-cover"
-								alt="Alvalens"
-								placeholder="blur"
-							/>
+						<Image
+							src={MeAbout}
+							fill
+							className="object-contain"
+							alt="Harshith"
+							placeholder="blur"
+						/>
 						</motion.div>
 					</div>
 					<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
@@ -215,8 +224,11 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							A brief introduction my journey as a software
-							engineer.
+							Mechatronics graduate student specializing in control systems and robotics
+							
+							{/* , robotics,
+						and optimization-based control. Experienced in real-time MPC,
+						system identification, and deploying controllers on physical platforms. */}
 						</motion.p>
 						<motion.div
 							initial={{ y: 40, opacity: 0 }}
@@ -232,6 +244,7 @@ const MyPage = () => {
 					</div>
 				</div>
 			</Section>
+			{/* 🔥 PROJECTS PREVIEW */}
 			<Section>
 				<div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
@@ -258,12 +271,13 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens Setup"
+								alt="Harshith Setup"
 								placeholder="blur"
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5">
+					{/* <div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 py-5"> */}
+					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 flex flex-col justify-center items-start text-start px-10 py-5 max-w-[900px]">
 						<motion.h1
 							className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold"
 							initial={{ x: -100, opacity: 0 }}
@@ -283,10 +297,10 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Selected works that I&apos;ve built over the years.
+							Selected work including real-time MPC implementations,
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 								{" "}
-								and currently working on.
+								robotics control systems, and data-driven control approaches.
 							</span>
 						</motion.p>
 						<motion.div
@@ -297,12 +311,13 @@ const MyPage = () => {
 								type: "spring",
 							}}>
 							<Button variation="primary">
-								<Link href="/projects">Learn More</Link>
+								<Link href="/projects">View Projects</Link>
 							</Button>
 						</motion.div>
 					</div>
 				</div>
 			</Section>
+			{/* 🔥 CONTACT */}
 			<Section>
 				<div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
 					<div className="z-0 mb-48 md:mb-0  md:absolute md:top-1/2  md:right-[10%] md:-translate-y-1/2">
@@ -329,12 +344,12 @@ const MyPage = () => {
 								fill
 								sizes="(max-width: 768px) 80vw, 30vw"
 								className="object-cover"
-								alt="Alvalens Setup"
+								alt="Harshith Setup"
 								placeholder="blur"
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
+					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 flex flex-col justify-center items-start text-start px-10 py-5 max-w-[900px]">
 						<motion.h1
 							className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold mb-3"
 							initial={{ x: -100, opacity: 0 }}
@@ -354,11 +369,19 @@ const MyPage = () => {
 								delay: 0.2,
 								type: "spring",
 							}}>
-							Feel free to contact me if you have any{" "}
-							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-								questions or just want to say hi.
-							</span>
+							Open to opportunities in control systems, robotics, and research roles.{" "}
+							Feel free to contact me if you have any{" "} questions or just want to say hi.
 						</motion.p>
+						{/* <motion.p
+							className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5"
+							initial={{ x: -100, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 1 }}
+							transition={{
+								delay: 0.2,
+								type: "spring",
+							}}>
+							Feel free to contact me if you have any{" "} questions or just want to say hi.
+						</motion.p> */}
 						<motion.p
 							className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
 							initial={{ x: -100, opacity: 0 }}
@@ -367,14 +390,14 @@ const MyPage = () => {
 								delay: 0.3,
 								type: "spring",
 							}}>
-							<a href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,">
-								alvalen.shafel04@gmail.com
+							<a href="mailto:harshith.shakaladevanapura.maregowda@tuhh.de?subject=Hello&body=Hello Harshith,">
+								harshith.shakaladevanapura.maregowda@tuhh.de
 							</a>
 						</motion.p>
 						{/* icons */}
 						<div className="flex justify-center items-center space-x-4">
 							<motion.a
-								href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,"
+								href="mailto:harshith.shakaladevanapura.maregowda@tuhh.de?subject=Hello&body=Hello Harshith,"
 								aria-label="Send email"
 								className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
 								initial={{ y: 40, opacity: 0 }}
@@ -390,7 +413,7 @@ const MyPage = () => {
 							</motion.a>
 
 							<motion.a
-								href="https://github.com/Alvalens"
+								href="https://github.com/Harshithgowdasm"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="GitHub profile"
@@ -406,7 +429,7 @@ const MyPage = () => {
 									className="text-3xl"
 								/>
 							</motion.a>
-							<motion.a
+							{/* <motion.a
 								href="https://www.instagram.com/alvalens_/"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -422,9 +445,9 @@ const MyPage = () => {
 									icon={faInstagram}
 									className="text-3xl"
 								/>
-							</motion.a>
+							</motion.a> */}
 							<motion.a
-								href="https://www.linkedin.com/in/alvalen-shafel-8a081a254/"
+								href="https://www.linkedin.com/in/harshithgowdasm/"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="LinkedIn profile"
@@ -441,7 +464,7 @@ const MyPage = () => {
 								/>
 							</motion.a>
 							<motion.a
-								href="https://discordapp.com/users/bloody#6118"
+								href="https://discordapp.com/users/harshith#6912"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Discord profile"

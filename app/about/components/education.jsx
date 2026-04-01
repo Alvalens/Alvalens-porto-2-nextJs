@@ -42,91 +42,48 @@ function Wrapper({ children }) {
 export default function Education() {
 	const [isExpanded, setIsExpanded] = useState(false);
 
+	// 
 	const achievementsByYear = {
-		2025: [
-			{
-				icon: faMedal,
-				title: "1st place (Gold Medal)",
-				subtitle: "Fesmaro IT Business Competition",
-				date: "Mar 2025",
-				color: "from-yellow-400 to-orange-500",
-			},
-			{
-				icon: faAward,
-				title: "Finalist",
-				subtitle: "Hackfest Build to Billion 2025",
-				date: "Apr 2025",
-				color: "from-blue-500 to-purple-600",
-			},
-			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Faculty of Engineering Most Outstanding Student",
-				date: "Feb 2025",
-				color: "from-amber-600 to-yellow-600",
-			},
-		],
-		2024: [
-			{
-				icon: faTrophy,
-				title: "Special Award | Gold Medal | Incubation Opportunity",
-				subtitle: "Indonesia Inventor Day 2024 (IID)",
-				date: "Aug 2024",
-				color: "from-yellow-400 to-orange-500",
-			},
-			{
-				icon: faMedal,
-				title: "1st place (Gold Medal)",
-				subtitle: "Tech & Trade Expo 2024",
-				date: "Jul 2024",
-				color: "from-yellow-400 to-orange-500",
-			},
-			{
-				icon: faMedal,
-				title: "2nd place (Silver Medal)",
-				subtitle: "IdeaFest 2024",
-				date: "Jul 2024",
-				color: "from-slate-400 to-slate-500",
-			},
-			{
-				icon: faAward,
-				title: "Finalist",
-				subtitle: "37th National Student Science Week (PIMNAS)",
-				date: "Oct 2024",
-				color: "from-blue-500 to-purple-600",
-			},
-			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Student Digital Innovation Competition (LIDM)",
-				date: "Jun 2024",
-				color: "from-amber-600 to-yellow-600",
-			},
-			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Fesmaro UI/UX Design",
-				date: "Jun 2024",
-				color: "from-amber-600 to-yellow-600",
-			},
-		],
-		2023: [
-			{
-				icon: faAward,
-				title: "Finalist",
-				subtitle: "36th National Student Science Week (PIMNAS)",
-				date: "Nov 2023",
-				color: "from-blue-500 to-purple-600",
-			},
-			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "FORKAFEST 3.0 Web Development competition",
-				date: "Jan 2023",
-				color: "from-amber-600 to-yellow-600",
-			},
-		],
-	};
+  Certifications: [
+    {
+      icon: faAward,
+      title: "SolidWorks Associate Certification",
+      subtitle: "Dassault Systèmes",
+      date: "Aug 2018",
+      color: "from-gray-500 to-gray-700",
+    },
+    {
+      icon: faAward,
+      title: "Ready Engineer Certification",
+      subtitle: "Tata Technologies",
+      date: "",
+      color: "from-gray-500 to-gray-700",
+    },
+    {
+      icon: faGraduationCap,
+      title: "NPTEL Certifications",
+      subtitle:
+        "Mechatronics, Dynamic Systems, FEA, Manufacturing, Product Design",
+      date: "",
+      color: "from-gray-500 to-gray-700",
+    },
+    {
+      icon: faAward,
+      title: "Workshops",
+      subtitle:
+        "MATLAB & Simulink, Machine Learning, ANSYS, Computational Modelling",
+      date: "",
+      color: "from-gray-500 to-gray-700",
+    },
+    {
+      icon: faTrophy,
+      title: "IPTSE National Exam Rank",
+      subtitle: "Rank 290 (India), Rank 71 (State)",
+      date: "2018-19",
+      color: "from-gray-500 to-gray-700",
+    },
+  ],
+};
 
 	// Flatten all achievements into a single array for easier limiting
 	const allAchievements = Object.entries(achievementsByYear)
@@ -165,17 +122,33 @@ export default function Education() {
 						initial={{ opacity: 0, x: -50 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}>
-						<div className="font-medium text-lg mb-4">
+						{/* <div className="font-medium text-lg mb-4">
 							2022 - Present
+						</div> */}
+						<div className="mt-6">
+							<h2 className="font-semibold text-xl">
+								R.V. College of Engineering (RVCE)
+							</h2>
+							<h3 className="text-md font-normal mb-2">
+								B.E. Mechanical Engineering
+							</h3>
+							<div className="text-sm text-gray-600">
+								2016 – 2020
+							</div>
+							<div className="flex flex-wrap gap-2 mt-2 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								GPA: 8.36 / 10
+								</div>
+							</div>
 						</div>
 						<div>
-							<h2 className="font-semibold text-xl">
-								Universitas Negeri Malang
+							{/* <h2 className="font-semibold text-xl">
+								 Hamburg University of Technology (TUHH)
 							</h2>
 							<h3 className="text-md font-normal mb-3">
-								S1 Teknik Informatika | Computer Science
-							</h3>
-							<div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
+								M.Sc. Mechatronics | Control Systems & Robotics
+							</h3> */}
+							{/* <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
 								<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
 									<Image
 										src={Me5}
@@ -203,8 +176,8 @@ export default function Education() {
 										className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
 									/>
 								</div>
-							</div>
-							<div className="flex items-center gap-2">
+							</div> */}
+							{/* <div className="flex items-center gap-2">
 								<p className="text-gray-600 text-justify title text-lg">
 									I graduated as one of the{" "}
 									<span className="text-black font-medium">
@@ -253,13 +226,68 @@ export default function Education() {
 									innovation with production-ready, scalable
 									software solutions.
 								</p>
-							</div>
-							<div className="flex flex-wrap gap-2 mt-4 text-sm">
+							</div> */}
+							{/* <div className="flex flex-wrap gap-2 mt-4 text-sm">
 								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-									GPA: 4 out of 4
+									Grade: 1.8 (German Scale)
+								</div>
+							</div> */}
+						</div>
+						<div className="mt-6">
+							<h2 className="font-semibold text-xl">
+								R.V. College of Engineering (RVCE)
+							</h2>
+							<h3 className="text-md font-normal mb-2">
+								B.E. Mechanical Engineering
+							</h3>
+							<div className="text-sm text-gray-600">
+								2016 – 2020
+							</div>
+							<div className="flex flex-wrap gap-2 mt-2 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								GPA: 8.36 / 10
 								</div>
 							</div>
 						</div>
+						<div className="mt-6">
+							<h2 className="font-semibold text-xl">
+								Sheshadripuram PU (Main) college 
+							</h2>
+							<h3 className="text-md font-normal mb-2">
+								Pre-University (PUC): Physics | Chemistry | Mathematics | Biology
+							</h3>
+							<div className="text-sm text-gray-600">
+								2014 – 2016
+							</div>
+							<div className="flex flex-wrap gap-2 mt-2 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Grade: 92.33%
+								</div>
+							</div>
+						</div>
+						<div className="mt-6">
+							<h2 className="font-semibold text-xl">
+								Indian National High School 
+							</h2>
+							<h3 className="text-md font-normal mb-2">
+								Secondary School (SSLC)
+							</h3>
+							<div className="text-sm text-gray-600">
+								 2016
+							</div>
+							<div className="flex flex-wrap gap-2 mt-2 text-sm">
+								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
+								Grade: 88.16%
+								</div>
+							</div>
+						</div>
+						{/* <p className="text-gray-600 title text-lg leading-relaxed max-w-[600px]">
+My academic background combines mechanical engineering fundamentals with advanced control systems and robotics.
+
+During my Master's in Mechatronics at TUHH, I specialized in Model Predictive Control, system identification, and real-time control implementation. My work focuses on bridging theoretical control concepts with practical deployment on real systems.
+
+Previously, during my Bachelor's in Mechanical Engineering at RVCE, I built a strong foundation in dynamics, manufacturing systems, and engineering design, which now supports my work in complex mechatronic system modeling and control.
+</p> */}
 					</motion.div>{" "}
 					{/* Achievements Section - Right */}
 					<motion.div
@@ -309,7 +337,7 @@ export default function Education() {
 												) : null}
 
 												{/* Glassmorphism achievement card with monochrome to color effect */}
-												<div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-4 shadow-lg hover:bg-white/30 transition-all duration-300 hover:shadow-xl grayscale hover:grayscale-0">
+												<div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-4 shadow-lg hover:bg-white/30 transition-all duration-300 hover:shadow-xl  ">
 													<div className="flex items-center gap-4">
 														<div
 															className={`aspect-square w-10 rounded-full bg-gradient-to-r ${achievement.color} flex items-center justify-center text-primary-foreground transition-all duration-300`}>

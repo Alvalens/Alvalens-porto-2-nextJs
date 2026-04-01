@@ -64,7 +64,7 @@ export default function Page() {
 								duration: 1,
 								type: "spring",
 							}}>
-							Archive
+							Selected Projects & Research Work
 						</motion.h1>
 					</div>
 

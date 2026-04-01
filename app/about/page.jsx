@@ -39,7 +39,7 @@ export default function Page() {
 							initial={{ scale: 1 }}
 							animate={{ scale: 1.6 }}
 							transition={{ ease: "circOut", duration: 1 }}
-							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
+							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw]   ">
 							<Image
 								src={Hero}
 								alt="Alvalen Shafel"
@@ -58,7 +58,7 @@ export default function Page() {
 						<p className="title text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5 ">
 							A brief introduction my journey as a{" "}
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
-								software engineer.
+								mechatronics engineer.
 							</span>
 						</p>
 						<motion.div

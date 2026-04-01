@@ -24,7 +24,7 @@ export default function ProjectCard({ project, index, activeCategory }) {
 						}}>
 						<Image
 							src={project.thumbnail}
-							alt="Alvalens"
+							alt="Harshith"
 							fill
 							placeholder="blur"
 							className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500 object-cover"
@@ -36,9 +36,9 @@ export default function ProjectCard({ project, index, activeCategory }) {
 						<div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0 z-10">
 							<h1 className="text-3xl font-bold mb-3">{project.title}</h1>
 							<p>
-								{project.desc[0].length > 125
-									? `${project.desc[0].slice(0, 125)}...`
-									: project.desc[0]}
+								{project.desc.length > 140
+								? `${project.desc.slice(0, 140)}...`
+								: project.desc}
 							</p>
 							<div className="flex justify-center items-center flex-row mt-5 flex-wrap">
 								{project.tech.map((t, index) => (

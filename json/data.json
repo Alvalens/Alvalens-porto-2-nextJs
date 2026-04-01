@@ -2,432 +2,111 @@
   "Projects": [
     {
       "show": true,
-      "title": "Invervyou AI",
+      "title": "Real-Time MPC for Unstable Systems",
       "desc": [
-        "Intervyou is an AI-driven SaaS platform designed to bridge the gap between education and employment by providing realistic interview simulations. The platform features a Gen AI engine that analyzes user responses and CVs to provide hyper-personalized feedback and material recommendations.",
-        "Built to scale, the system incorporates a gesture analysis module and a secure token-based payment gateway integrated with Midtrans. It currently serves over 3,000 users and is supported by Google for Startups and NVIDIA Inception."
-      ],
-      "year": "2025",
-      "preview": "https://www.intervyou.me",
-      "code": "",
-      "thumbnail": "/image/projects/web/intervyou/intervyou-thumbnail.jpg",
-      "images": [
-        "/image/projects/web/intervyou/intervyou-1.png",
-        "/image/projects/web/intervyou/intervyou-2.png",
-        "/image/projects/web/intervyou/intervyou-3.png",
-        "/image/projects/web/intervyou/intervyou-4.png",
-        "/image/projects/web/intervyou/intervyou-5.png"
-      ],
-      "tech": [
-        "NextJS",
-        "Typescript",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "Prisma",
-        "MySQL",
-        "Midtrans",
-        "Gemini API",
-        "GCP"
-      ], 
-      "slug": "intervyou",
-      "category": [1, 2]
-    },
-    {
-      "show": true,
-      "title": "Exacta Laboratory",
-      "desc": [
-          "A comprehensive corporate landing page developed for PT Kalibrasi Surabaya (Exacta Laboratory) to establish a high-authority digital presence for their calibration and testing services. The platform serves as the primary communication hub between the laboratory and industrial clients across East Java.",
-          "The project focuses on high-performance web vitals and SEO optimization, ensuring that specialized technical services are easily discoverable and accessible. It features a modern, responsive design with clear service categorization and optimized lead generation funnels to streamline client inquiries.",
-          "Engineered with a focus on brand consistency and professional aesthetics, the platform utilizes advanced frontend techniques to provide a seamless user experience that reflects the laboratory's precision and technical excellence."
-        ],
-      "year": "2025",
-      "preview": "https://www.kalibrasisurabaya.co.id/",
-      "code": "",
-      "thumbnail": "/image/projects/web/exacta/exacta-thumbnail.png",
-      "images": [
-        "/image/projects/web/exacta/exacta1.png",
-        "/image/projects/web/exacta/exacta2.png"
-      ],
-      "tech": [
-        "HTML",
-        "CSS",
-        "JS",
-        "ReactJS",
-        "TailwindCSS",
-        "Typescript"
-      ], 
-      "slug": "exacta-laboratory",
-      "category": [1]
-    },
-    {
-      "show": false,
-      "title": "Client Personal Protfolio Website",
-      "desc": [
-        "A personal portfolio website that I created for a client. The website is built using two main tech, native (HTML, CSSS, JS) and react based (ReactJs, TailwindCSS, Typescript). The website also created based on the client design, and improved and sliced by me. The website has a few features such as a about page, a project page, resume page, and a contact page.",
-        "The website is created using a modern design and a clean interface that appeals to a wide audience. The website also has a responsive design that makes it easy to use on any device. The website also has a few animations that make the website more interactive and engaging."
+        "Designed and implemented real-time Model Predictive Control (MPC) for unstable systems including an inverted pendulum (Qube-Servo 3) and a two-wheeled self-balancing robot.",
+        "Deployed controllers using Simulink Real-Time with embedded hardware, enabling constraint handling, disturbance rejection, and high-frequency control execution. Benchmarked against PID for performance evaluation."
       ],
       "year": "2025",
       "preview": "",
-      "code": "",
-      "thumbnail": "/image/projects/web/apii-portfolio/porto-thumbnail.jpg",
-      "images": [
-        "/image/projects/web/apii-portfolio/porto1.png",
-        "/image/projects/web/apii-portfolio/porto2.png",
-        "/image/projects/web/apii-portfolio/porto3.png"
-      ],
+      "code": "https://github.com/Harshithgowdasm/iMTI_qube.git",
+      "thumbnail": "/image/projects/control/mpc.jpg",
+      "images": [],
       "tech": [
-        "HTML",
-        "CSS",
-        "JS",
-        "ReactJS",
-        "TailwindCSS",
-        "Typescript"
-      ], 
-      "slug": "apii-porto",
-      "category": [1]
+        "MPC",
+        "MATLAB",
+        "Simulink",
+        "Real-Time Control",
+        "Embedded Systems"
+      ],
+      "slug": "mpc-qube",
+      "category": [1, 4]
     },
     {
       "show": true,
-      "title": "Mind Mirror",
+      "title": "Reinforcement Learning for Quadruped Locomotion",
       "desc": [
-        "LMS website that integrated Generative AI feauture to track studnet various keys like mood, behavior, and cognitive ability when learning. The website is built using Laravel as a fullstack framework. In this website teacher can track student mood and other metrics data based on the material students accessed.",
-        "The website also has a few features such as a dashboard for the teacher to see the student's data, a material page, and a quiz page. The website also has a few charts to visualize the student's data. The website provided the student captured data that can be downloaded by the teacher.",
-        "The website also has a features to export the lecture data such as the mood, behaviour, and cognitive score to a xlxs file that can be downloaded by the teacher."
+        "Developed learning-based locomotion controller using PPO, TD3, and DDPG for quadruped robot (Petoi Bittle).",
+        "Built simulation pipeline in PyBullet and OpenAI Gym, and implemented sim-to-real transfer strategies for deployment."
       ],
-      "year": "2024",
+      "year": "2025",
       "preview": "",
-      "code": "",
-      "thumbnail": "/image/projects/web/mind-mirror/mind-thumbnail.jpg",
-      "images": [
-        "/image/projects/web/mind-mirror/mind1.png",
-        "/image/projects/web/mind-mirror/mind2.png",
-        "/image/projects/web/mind-mirror/mind3.png",
-        "/image/projects/web/mind-mirror/mind4.png",
-        "/image/projects/web/mind-mirror/mind5.png"
-      ],
+      "code": "https://github.com/Harshithgowdasm/opencat-gym",
+      "thumbnail": "/image/projects/robotics/quadruped.jpg",
+      "images": [],
       "tech": [
-        "PHP",
-        "Laravel",
-        "Bootstrap",
-        "MySQL",
-        "jQuery",
-        "DataTables"
-      ], 
-      "slug": "mind-mirror",
-      "category": [1, 2]
+        "Reinforcement Learning",
+        "PPO",
+        "TD3",
+        "PyBullet",
+        "Python"
+      ],
+      "slug": "quadruped-rl",
+      "category": [2, 3]
     },
     {
       "show": true,
-      "title": "Javanese Translation Website",
+      "title": "Vision-Guided Robotic Needle Placement",
       "desc": [
-        "A Javanese ngoko - krama translation website that I created as a collaborative project with my friends. The website is built using the original Transformer architecture by Vaswani et al. (2017). Built with Python, TensorFlow, Flask, HTML, and CSS, the website allows users to input text in Javanese krama and receive the corresponding ngoko translation.", 
-        "The website is designed to be simple to use, with a clean and modern interface that appeals to a wide audience. Users can input text in Javanese krama and receive the corresponding ngoko translation. The Project also provide ipynb file for the model training and the model itself."
+        "Developed ROS-based pipeline for 3D perception and motion planning for a 7-DoF Franka Emika Panda robot.",
+        "Implemented point cloud processing and trajectory planning using PRM and LSPB for collision-free motion."
       ],
-      "year": "2024",
+      "year": "2023",
       "preview": "",
-      "code": "https://github.com/Alvalens/web-javanese-translation",
-      "thumbnail": "/image/projects/ai/javanese-translation/javanese-translation-thumbnail.jpg",
-      "images": [
-        "/image/projects/ai/javanese-translation/javanese-translation1.png",
-        "/image/projects/ai/javanese-translation/javanese-translation2.png"
-      ],
+      "code": "",
+      "thumbnail": "/image/projects/robotics/needle.jpg",
+      "images": [],
       "tech": [
-        "Transformers",
-        "Python",
-        "Tensorflow",
-        "Flask",
-        "HTML",
-        "CSS"
-      ], 
-      "slug": "javanese-translation",
+        "ROS",
+        "Point Cloud",
+        "PRM",
+        "LSPB",
+        "Robotics"
+      ],
+      "slug": "robotic-needle",
       "category": [2]
     },
     {
       "show": true,
-      "title": "SIPETI: Heart Prediction Website",
+      "title": "Gaussian Process MPC",
       "desc": [
-        "This is a Machine Learning based website that I created as a collage project. The website is built using Decision Tree algorithm and Flask. The website is a heart attack prediction website that can predict whether a person will get a heart attack or not based on their health condition.",
-        "In this website user can predict, customize dataset, customize model, and see the model performance. The website also has a few features such as a dashboard for the user to see the model performance, and a few charts to visualize the decision tree model."
+        "Developed data-driven Model Predictive Control using Gaussian Processes for uncertainty-aware control.",
+        "Integrated learned models into predictive control framework for nonlinear systems."
       ],
       "year": "2024",
       "preview": "",
-      "code": "https://github.com/Alvalens/heart-attack-prediction",
-      "thumbnail": "/image/projects/ai/heart-attack-prediction/heart-attack-prediction-thumbnail.jpg",
-      "images": [
-        "/image/projects/ai/heart-attack-prediction/heart-attack1.png",
-        "/image/projects/ai/heart-attack-prediction/heart-attack2.png",
-        "/image/projects/ai/heart-attack-prediction/heart-attack3.png",
-        "/image/projects/ai/heart-attack-prediction/heart-attack4.png",
-        "/image/projects/ai/heart-attack-prediction/heart-attack5.png"
-      ],
+      "code": "https://github.com/Harshithgowdasm/GP_MPC",
+      "thumbnail": "/image/projects/control/gp-mpc.jpg",
+      "images": [],
       "tech": [
-        "Decision Tree",
+        "Gaussian Processes",
+        "MPC",
         "Python",
-        "Sklearn",
-        "Flask",
-        "HTML",
-        "CSS"
-      ], 
-      "slug": "heart-attack",
-      "category": [2]
+        "Optimization"
+      ],
+      "slug": "gp-mpc",
+      "category": [1, 3, 4]
     },
     {
       "show": true,
-      "title": "Generative Trivia",
+      "title": "Bremen Big Data Challenge",
       "desc": [
-        "A generative trivia website built with Next.js, Firebase, NextAuth, Google OAuth, and TypeScript. Users can generate trivia questions for predefined school subjects and answer them with a unique interactive input style. The application supports user authentication with Google and stores data in Firestore.",
-        "The project is a culmination of my passion for web development and my desire to create a fun and interactive learning platform. The website is designed to be user-friendly and engaging, with a clean and modern interface that appeals to a wide audience. The trivia questions are generated using the Gemini API, which provides a diverse range of questions for users to answer."
+        "Developed machine learning models for biosignal classification and fraud detection using real-world datasets.",
+        "Applied Random Forest, LSTM, and CNN models with preprocessing and data augmentation."
       ],
-      "year": "2024",
-      "preview": "https://generative-trivia.vercel.app/",
-      "code": "https://github.com/Alvalens/generative-trivia",
-      "thumbnail": "/image/projects/web/trivia/trivia-thumbnail.png",
-      "images": [
-        "/image/projects/web/trivia/trivia1.png",
-        "/image/projects/web/trivia/trivia2.png",
-        "/image/projects/web/trivia/trivia3.png"
-      ],
-      "tech": [
-        "NextJS",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "Firebase",
-        "Gemini API"
-      ], 
-      "slug": "trivia",
-      "category": [1, 2]
-    },
-    {
-      "show": true,
-      "title": "Saku Senyum",
-      "desc": [
-        "Saku Senyum is a website that I created as a Fullstack Developer in PT Hafdzahmedia based on client request. The website is a sales management for UMKM or small business. The website is built using Next.js, TypeScript, Tailwind CSS, ShadCN UI, Prisma, and MySQL.",
-        "The website has a few features such as a dashboard for the user to manage their business sales, a statistic page, and a sales report page. User can see their sales performance in a fancy chart to make it easier to understand. The user also can export their sales report to a PDF file which can be printed or saved to their device."
-      ],
-      "year": "2024",
-      "thumbnail": "/image/projects/web/saku-senyum/saku-senyum-thumbnail.png",
-      "images": [
-        "/image/projects/web/saku-senyum/saku-senyum1.png",
-        "/image/projects/web/saku-senyum/saku-senyum2.png",
-        "/image/projects/web/saku-senyum/saku-senyum3.png",
-        "/image/projects/web/saku-senyum/saku-senyum4.png"
-      ],
-      "tech": [
-        "NextJS",
-        "Typescript",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "Prisma",
-        "MySQL"
-      ], 
-      "slug": "saku-senyum",
-      "category": [1]
-    },
-    {
-      "show": true,
-      "title": "Simadun",
-      "desc": [
-        "Simadun is an Exam Management System developed for doctoral students in the Department of Electrical Engineering and Informatics Universitas Negeri Malang. The system facilitates the management of five different types of examinations, allowing students to apply for exams with ease. Professors and program heads can efficiently oversee the exam processes.",
-        
-        "With Simadun, students can submit their exam applications online, track their application status, and receive timely notifications regarding their exam schedules. Program heads and relevant lecturers have access to comprehensive dashboards where they can manage exam requests, allocate resources, and monitor overall exam logistics. "
-      ],
-      "year": "2024",
-      "thumbnail": "/image/projects/web/simadun/simadun-thumbnail.png",
-      "images": [
-        "/image/projects/web/simadun/simadun1.png",
-        "/image/projects/web/simadun/simadun2.png",
-        "/image/projects/web/simadun/simadun3.png",
-        "/image/projects/web/simadun/simadun4.png",
-        "/image/projects/web/simadun/simadun5.png"
-      ],
-      "tech": [
-        "PHP",
-        "Laravel",
-        "Bootstrap",
-        "MySQL",
-        "jQuery",
-        "DataTables"
-
-      ], 
-      "slug": "simadun",
-      "category": [1]
-    },
-    {
-      "show": true,
-      "title": "LUDOang",
-      "desc": [
-        "LUDOang is a game that my team and I created for a final project in my university. The game is built python, pygame, and OpenGL. The game is a 2D game that is inspired by a Ludo game. The game has a few features such randomZone, and a 3D dice.",
-        "RandomZone is a feature that allows the player to get a random number of steps. The 3D dice is a feature that allows the player to roll a 3D dice. The game also has a few other features menuy screen and also loading screen.", "Beside that the game also has a audio theme that will play when the game is started. The game also has a few sound effects such as dice roll sound, and a sound when the player win the game."
-      ],
-      "year": "2023",
-      "preview": "https://github.com/Alvalens/ludo-game/releases/tag/pre-release",
-      "code": "https://github.com/Alvalens/ludo-game",
-      "thumbnail": "/image/projects/other/LUDOang/ludo-thumbnail.png",
-      "images": [
-        "/image/projects/other/LUDOang/ludo1.png",
-        "/image/projects/other/LUDOang/ludo2.png",
-        "/image/projects/other/LUDOang/ludo3.png"
-      ],
-      "tech": [
-        "Python",
-        "Pygame",
-        "OpenGL"
-      ], 
-      "slug": "ludoang",
-      "category": [9]
-    },
-    {
-      "show": true,
-      "title": "VICC Landing Page",
-      "desc": [
-        "This project is one of my freelance projects. This project is a landing page for Vocational Inter-cultural Camp event held by Vocational Faculty of Universitas Negeri Malang. The website is built using Next.js, Javascript, and Tailwind CSS.", "The website is mainly frontend project, which is already using responsive design. The website has a few features such carousel, and a few animations. The website also has a few pages such as home, topic, and speaker page."
-      ],
-      "year": "2023",
-      "preview": "https://inter-cultural-camp.vercel.app",
-      "thumbnail": "/image/projects/web/vicc/vicc-thumbnail.jpg",
-      "images": [
-        "/image/projects/web/vicc/vicc1.png",
-        "/image/projects/web/vicc/vicc2.png",
-        "/image/projects/web/vicc/vicc3.png"
-      ],
-      "tech": [
-        "JavaScript",
-        "NextJS",
-        "Tailwind CSS"
-      ],
-      "slug": "vicc",
-      "category": [1]
-    },
-    {
-      "show": true,
-      "title": "React Realtime Chat",
-      "desc": [
-        "My ambitious project that delves into the world of interactive web development using React. This project is a realtime chat application that allows users to create chat rooms and chat with other users in realtime. The application is built using React, Firebase, and Daisy UI.",
-        "This project is my second react project and my first project using Firebase. I learned a lot about how to use Firebase and how to use React to create a realtime application. I also learned how to use Daisy UI, a CSS framework that is built on top of Tailwind CSS. "
-      ],
-      "year": "2023",
-      "preview": "https://react-chat-rouge.vercel.app",
-      "code": "https://github.com/Alvalens/react-realtime-chat",
-      "thumbnail": "/image/projects/web/react-chat/chat-thumbnail.png",
-      "images": [
-        "/image/projects/web/react-chat/chat1.png",
-        "/image/projects/web/react-chat/chat2.png",
-        "/image/projects/web/react-chat/chat3.png",
-        "/image/projects/web/react-chat/chat4.png"
-      ],
-      "tech": [
-        "JavaScript",
-        "React",
-        "React Router",
-        "Firebase",
-        "Daisy UI"
-      ],
-      "slug": "react-chat",
-      "category": [1]
-    },
-    {
-      "show": false,
-      "title": "React Tools",
-      "desc": [
-        "React Tools is a groundbreaking and user-friendly project that brings together a comprehensive collection of tools and components crafted with cutting-edge technologies, including React, React Router, and TailwindCSS. What sets this project apart is that it's not just a suite of powerful features, but it's also a significant milestone as it marks my very first venture into the world of React development.",
-
-        "Unlike traditional web applications, React Tools cleverly utilizes browser local storage, eliminating the need for external databases. This not only ensures seamless performance but also prioritizes user data privacy. ",
-
-        "The Todo List keeps tasks in check with intuitive task management capabilities, ensuring you never miss a beat. The note-taking feature provides a hassle-free way to jot down ideas and crucial information, accessible whenever inspiration strikes. Additionally, our robust expense tracker simplifies financial management by recording and categorizing expenses, delivering insightful spending analysis."
-      ],
-      "year": "2023",
-      "preview": "https://react-tools-flax.vercel.app",
-      "code": "https://github.com/Alvalens/react-tools",
-      "thumbnail": "/image/projects/web/tools/tools-thumbnail.png",
-      "images": [
-        "/image/projects/web/tools/tools.png",
-        "/image/projects/web/tools/tools1.png",
-        "/image/projects/web/tools/tools2.png",
-        "/image/projects/web/tools/tools3.png"
-      ],
-      "tech": [
-        "Javascript",
-        "React",
-        "React Router",
-        "TailwindCSS"
-      ],
-      "slug": "react-tools",
-      "category": [1]
-    },
-    {
-      "show": true,
-      "title": "Aleph Discord Bot",
-      "desc": [
-        "Aleph is a Discord bot that I created for my dircord server to use. The bot is built using Python and the discord.py library. The bot has image grabber feauture that takes argument (keywords) and returns an image from the internet.", "Other than that this bot has a few other features such as utility command to delete a messages, and a command to get the server's ping. This bot is still in development and I plan to add more features in the future."],
-      "year": "2023",
+      "year": "2025",
       "preview": "",
-      "code": "https://github.com/Alvalens/aleph-discord-bot",
-      "thumbnail": "/image/projects/other/bot/bot-thumbnail.png",
-      "images": [
-        "/image/projects/other/bot/bot1.png",
-        "/image/projects/other/bot/bot2.png"
-      ],
+      "code": "https://github.com/Harshithgowdasm/bbdc2025-SSH_ML",
+      "thumbnail": "/image/projects/ml/bbdc.jpg",
+      "images": [],
       "tech": [
-        "Python",
-        "Discord.py",
-        "Google Serp API"
+        "TensorFlow",
+        "LSTM",
+        "CNN",
+        "Machine Learning"
       ],
-      "slug": "aleph-discord-bot",
-      "category": [9]
-    }, 
-    {
-      "show": true,
-      "title": "LPTK Cup 2023 Website",
-      "desc": [
-        "LPTK Cup UM is a website that I created for a competition held by  the Universitas Negeri Malang. The website is mainly built using Laravel and Bootstrap. The website has a few features such as a registration form, a login system, article system, file upload,  and a dashboard for the admin to manage the contents.",
-        "This project is my second freelance project, this project is not as big as my first freelance project but I learned a lot from this project. I learn how to manage a project and how to work with a team."
-      ],
-      "year": "2023",
-      "preview": "",
-      "code": "",
-      "thumbnail": "/image/projects/web/lptk/lptk1.png",
-      "images": [
-        "/image/projects/web/lptk/lptk1.png",
-        "/image/projects/web/lptk/lptk2.png",
-        "/image/projects/web/lptk/lptk3.png",
-        "/image/projects/web/lptk/lptk4.png"
-      ],
-      "tech": [
-        "PHP",
-        "Laravel",
-        "Bootstrap",
-        "MySQL",
-        "jQuery",
-        "DataTables"
-      ],
-      "slug": "lptk-cup-2023",
-      "category": [1]
-    }, 
-    {
-      "show": true,
-      "title": "NU INO Website",
-      "desc": [
-        "My first freelance project. This project is a website for a School based on a JALAKAR curriculum. The website is built mainly using Laravel and Bootstrap.", "This website is LMS like system, have a user management, user auth, quiz and material for student and FAQ",  "In this project I learned how to work with a team and how to manage a project. I also learned new library such as livewire and alpine.js."],
-      "year": "2023",
-      "preview": "",
-      "code": "",
-      "thumbnail": "/image/projects/web/ino/ino1.png",
-      "images": [
-        "/image/projects/web/ino/ino1.png",
-        "/image/projects/web/ino/ino2.png",
-        "/image/projects/web/ino/ino3.png"
-      ],
-      "tech": [
-        "PHP",
-        "Laravel",
-        "Bootstrap",
-        "Livewire",
-        "MySQL",
-        "jQuery",
-        "DataTables"
-      ],
-      "slug": "nu-ino-website",
-      "category": [1]
+      "slug": "bbdc",
+      "category": [3]
     }
   ]
 }

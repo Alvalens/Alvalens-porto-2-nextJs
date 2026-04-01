@@ -1,10 +1,11 @@
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "About | Alvalens",
+  title: "About | Harshith",
   description:
-    "Product-Minded Software Engineer specializing in Next.js, Spring Boot, and AI Solutions. Founder & CTO of Intervyou. Computer Science graduate from Universitas Negeri Malang.",
+    "Mechatronics engineer specializing in control systems, robotics, and Model Predictive Control (MPC). Focused on real-time control, system identification, and data-driven control for complex physical systems.",
 };
+
 export default function Layout({ children }) {
   return (
     <>

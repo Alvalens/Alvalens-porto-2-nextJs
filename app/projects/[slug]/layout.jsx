@@ -5,11 +5,11 @@ export async function generateMetadata({ params }) {
 	const project = jsonData.Projects.find((item) => item.slug === slug);
 
 	if (!project) {
-		return { title: "Not Found | Alvalens" };
+		return { title: "Not Found | Harshith" };
 	}
 
 	return {
-		title: `${project.title} | Alvalens`,
+		title: `${project.title} | Harshith`,
 		description: project.desc[0]?.slice(0, 160),
 	};
 }

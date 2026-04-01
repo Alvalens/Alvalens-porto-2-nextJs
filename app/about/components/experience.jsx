@@ -3,163 +3,278 @@ import Hr from "@/components/Hr";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
+// const experiences = [
+// 	{
+// 		id: 1,
+// 		startDate: "Sep 2023",
+// 		endDate: "Jan 2024",
+// 		company: "Universitas Negeri Malang",
+// 		position: "Assistant Lecturer",
+// 		type: "Seasonal",
+// 		location: "Malang, Indonesia",
+// 		description:
+// 			"Assisted in teaching and mentoring students in algorithms and data structures, focusing on practical applications and problem-solving techniques. Developed course materials and provided support in lab sessions.",
+// 		skills: ["Python", "C", "Algorithms", "Data Structures", "Mentoring"],
+// 	},
+// 	{
+// 		id: 2,
+// 		startDate: "Jul 2024",
+// 		endDate: "Jan 2025",
+// 		company: "Outlier AI",
+// 		position: "AI Trainer",
+// 		type: "Freelance (Remote)",
+// 		location: "Oakland, California",
+// 		description:
+// 			"Trained LLM models using RLFH, focusing on enhancing their understanding of human language and improving their response accuracy. Collaborated with a team of AI specialists to refine model performance and ensure high-quality outputs.",
+// 		skills: [
+// 			"Generative AI",
+// 			"RLHF",
+// 			"LLM",
+// 			"Prompt Engineering",
+// 			"Teamwork",
+// 		],
+// 	},
+// 	{
+// 		id: 3,
+// 		startDate: "Jun 2023",
+// 		endDate: "Feb 2025",
+// 		company: "PUI-PT DLI",
+// 		position: "Fullstack Developer",
+// 		type: "Freelance",
+// 		location: "Malang, Indonesia",
+// 		description:
+// 			"Crafted and maintained web applications using Laravel, ensuring high performance and responsiveness. Collaborated with designers and other  developers to create seamless user experiences.",
+// 		skills: ["Laravel", "MySQL", "PHP", "JavaScript", "Teamwork"],
+// 	},
+// 	{
+// 		id: 4,
+// 		startDate: "Apr 2025",
+// 		endDate: "Jul 2025",
+// 		company: "Vektorian Labophase",
+// 		position: "Front-end Developer",
+// 		type: "Freelance",
+// 		location: "Malang, Indonesia",
+// 		description:
+// 			"Developed and maintained web applications using Next.js. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality. Collaborated with backend and designers to implement modern UI/UX principles.",
+// 		skills: ["Next.js", "Typescript", "Teamwork"],
+// 	},
+// 	{
+// 		id: 5,
+// 		startDate: "Apr 2023",
+// 		endDate: "Jul 2025",
+// 		company: "Self-Employed",
+// 		position: "Web Developer & AI Consultant",
+// 		type: "Freelance",
+// 		location: "Malang, Indonesia",
+// 		description:
+// 			"Developed 15+ web applications using Next.js, React, and Laravel. Provided AI consulting services, including creating custom LLMs. Focused on delivering high-quality, user-friendly applications and AI solutions.",
+// 		skills: [
+// 			"Next.js",
+// 			"React",
+// 			"Laravel",
+// 			"MySQL",
+// 			"PostgreSQL",
+// 			"MongoDB",
+// 			"JavaScript",
+// 			"TypeScript",
+// 			"Gemini AI",
+// 		],
+// 	},
+// 	{
+// 		id: 6,
+// 		startDate: "Aug 2023",
+// 		endDate: "Feb 2025",
+// 		company: "PT Hafdzamedia Teknologi Aplikasi",
+// 		position: "Fullstack Web Developer",
+// 		type: "Part-time",
+// 		location: "Malang, Indonesia",
+// 		description:
+// 			"Developed and maintained web applications using React, Next.js, and Laravel. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality.",
+// 		skills: [
+// 			"React",
+// 			"Next.js",
+// 			"Laravel",
+// 			"MySQL",
+// 			"JavaScript",
+// 			"TypeScript",
+// 			"Teamwork",
+// 		],
+// 	},
+// 	{
+// 		id: 7,
+// 		startDate: "Feb 2025",
+// 		endDate: "Aug 2025",
+// 		company: "Joki Proyek",
+// 		position: "IT Implementation Specialist",
+// 		type: "Contract (Remote)",
+// 		location: "Malang, Indonesia",
+// 		description:
+// 			"Engineered internal microservices architecture. Refactored legacy monolithic modules and optimized messaging systems using Laravel/Next.js.",
+// 		skills: [
+// 			"Next.js",
+// 			"Laravel",
+// 			"MySQL",
+// 			"PostgreSQL",
+// 			"JavaScript",
+// 			"TypeScript",
+// 			"MongoDB",
+// 			"Docker",
+// 			"Teamwork",
+// 		],
+// 	},
+// 	{
+// 		id: 8,
+// 		startDate: "Jan 2025",
+// 		endDate: "Present",
+// 		company: "Intervyou (Google for Startups)",
+// 		position: "Co-Founder & CTO",
+// 		type: "Part-time",
+// 		location: "Remote",
+// 		description:
+// 			"Bootstrapped an AI-powered SaaS to 3,000+ users. Architected the core AI assessment engine using Next.js and RAG pipelines.",
+// 		skills: [
+// 			"Next.js",
+// 			"Generative AI",
+// 			"RAG",
+// 			"Product Engineering",
+// 		],
+// 	},
+// 	{
+// 		id: 9, 
+// 		startDate: "Aug 2025",
+// 		endDate: "Present",
+// 		company: "MGG Software",
+// 		position: "Software Engineer (Enterprise Solutions)",
+// 		type: "Full-time (Remote)",
+// 		location: "Malang",
+// 		description:
+// 			"Core engineer for a Tier-1 Singaporean Government Agency. Engineered high-availability backend microservices using Java Spring Boot, ensuring 99.9% uptime for nationwide traffic.",
+// 		skills: [
+// 			"Java Spring Boot",
+// 			"Microservices",
+// 			"Docker",
+// 			"PostgreSQL",
+// 			"React.js",
+// 		],
+// 	},
+// ];
 const experiences = [
-	{
-		id: 1,
-		startDate: "Sep 2023",
-		endDate: "Jan 2024",
-		company: "Universitas Negeri Malang",
-		position: "Assistant Lecturer",
-		type: "Seasonal",
-		location: "Malang, Indonesia",
-		description:
-			"Assisted in teaching and mentoring students in algorithms and data structures, focusing on practical applications and problem-solving techniques. Developed course materials and provided support in lab sessions.",
-		skills: ["Python", "C", "Algorithms", "Data Structures", "Mentoring"],
-	},
-	{
-		id: 2,
-		startDate: "Jul 2024",
-		endDate: "Jan 2025",
-		company: "Outlier AI",
-		position: "AI Trainer",
-		type: "Freelance (Remote)",
-		location: "Oakland, California",
-		description:
-			"Trained LLM models using RLFH, focusing on enhancing their understanding of human language and improving their response accuracy. Collaborated with a team of AI specialists to refine model performance and ensure high-quality outputs.",
-		skills: [
-			"Generative AI",
-			"RLHF",
-			"LLM",
-			"Prompt Engineering",
-			"Teamwork",
-		],
-	},
-	{
-		id: 3,
-		startDate: "Jun 2023",
-		endDate: "Feb 2025",
-		company: "PUI-PT DLI",
-		position: "Fullstack Developer",
-		type: "Freelance",
-		location: "Malang, Indonesia",
-		description:
-			"Crafted and maintained web applications using Laravel, ensuring high performance and responsiveness. Collaborated with designers and other  developers to create seamless user experiences.",
-		skills: ["Laravel", "MySQL", "PHP", "JavaScript", "Teamwork"],
-	},
-	{
-		id: 4,
-		startDate: "Apr 2025",
-		endDate: "Jul 2025",
-		company: "Vektorian Labophase",
-		position: "Front-end Developer",
-		type: "Freelance",
-		location: "Malang, Indonesia",
-		description:
-			"Developed and maintained web applications using Next.js. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality. Collaborated with backend and designers to implement modern UI/UX principles.",
-		skills: ["Next.js", "Typescript", "Teamwork"],
-	},
-	{
-		id: 5,
-		startDate: "Apr 2023",
-		endDate: "Jul 2025",
-		company: "Self-Employed",
-		position: "Web Developer & AI Consultant",
-		type: "Freelance",
-		location: "Malang, Indonesia",
-		description:
-			"Developed 15+ web applications using Next.js, React, and Laravel. Provided AI consulting services, including creating custom LLMs. Focused on delivering high-quality, user-friendly applications and AI solutions.",
-		skills: [
-			"Next.js",
-			"React",
-			"Laravel",
-			"MySQL",
-			"PostgreSQL",
-			"MongoDB",
-			"JavaScript",
-			"TypeScript",
-			"Gemini AI",
-		],
-	},
-	{
-		id: 6,
-		startDate: "Aug 2023",
-		endDate: "Feb 2025",
-		company: "PT Hafdzamedia Teknologi Aplikasi",
-		position: "Fullstack Web Developer",
-		type: "Part-time",
-		location: "Malang, Indonesia",
-		description:
-			"Developed and maintained web applications using React, Next.js, and Laravel. Focused on creating responsive and user-friendly interfaces while ensuring backend functionality.",
-		skills: [
-			"React",
-			"Next.js",
-			"Laravel",
-			"MySQL",
-			"JavaScript",
-			"TypeScript",
-			"Teamwork",
-		],
-	},
-	{
-		id: 7,
-		startDate: "Feb 2025",
-		endDate: "Aug 2025",
-		company: "Joki Proyek",
-		position: "IT Implementation Specialist",
-		type: "Contract (Remote)",
-		location: "Malang, Indonesia",
-		description:
-			"Engineered internal microservices architecture. Refactored legacy monolithic modules and optimized messaging systems using Laravel/Next.js.",
-		skills: [
-			"Next.js",
-			"Laravel",
-			"MySQL",
-			"PostgreSQL",
-			"JavaScript",
-			"TypeScript",
-			"MongoDB",
-			"Docker",
-			"Teamwork",
-		],
-	},
-	{
-		id: 8,
-		startDate: "Jan 2025",
-		endDate: "Present",
-		company: "Intervyou (Google for Startups)",
-		position: "Co-Founder & CTO",
-		type: "Part-time",
-		location: "Remote",
-		description:
-			"Bootstrapped an AI-powered SaaS to 3,000+ users. Architected the core AI assessment engine using Next.js and RAG pipelines.",
-		skills: [
-			"Next.js",
-			"Generative AI",
-			"RAG",
-			"Product Engineering",
-		],
-	},
-	{
-		id: 9, 
-		startDate: "Aug 2025",
-		endDate: "Present",
-		company: "MGG Software",
-		position: "Software Engineer (Enterprise Solutions)",
-		type: "Full-time (Remote)",
-		location: "Malang",
-		description:
-			"Core engineer for a Tier-1 Singaporean Government Agency. Engineered high-availability backend microservices using Java Spring Boot, ensuring 99.9% uptime for nationwide traffic.",
-		skills: [
-			"Java Spring Boot",
-			"Microservices",
-			"Docker",
-			"PostgreSQL",
-			"React.js",
-		],
-	},
+  {
+    id: 1,
+    startDate: "Feb 2025",
+    endDate: "Present",
+    company: "HAW Hamburg",
+    position: "Research Assistant",
+    type: "Part-time",
+    location: "Hamburg, Germany",
+    description:
+      "Developing data-driven models for high-dimensional dynamical systems using tensor-train decomposition. Designing and implementing hierarchical and centralized Model Predictive Control (MPC) strategies for real-time applications. Building data acquisition and control pipelines for embedded systems.",
+    skills: [
+      "Model Predictive Control (MPC)",
+      "Tensor Train Decomposition",
+      "MATLAB",
+      "Simulink",
+      "System Identification",
+      "Real-Time Control",
+    ],
+  },
+
+  {
+    id: 2,
+    startDate: "Mar 2024",
+    endDate: "Jan 2025",
+    company: "TUHH – Institut für Laser- und Anlagensystemtechnik (iLAS)",
+    position: "Research Assistant",
+    type: "Part-time",
+    location: "Hamburg, Germany",
+    description:
+      "Worked on DigitAI project focusing on additive manufacturing of aluminum alloys. Applied machine learning models (Regression, MLP, CNN, LSTM) for prediction of temperature and melt pool dynamics. Contributed to ILSC-APP project by automating STEP file processing and developing ML-based CAD complexity classification.",
+    skills: [
+      "Machine Learning",
+      "MLP / CNN / LSTM",
+      "Python",
+      "Data Analysis",
+      "CAD Processing",
+    ],
+    links: [
+      {
+        label: "DigitAI Project",
+        url: "https://www.tuhh.de/ilas/en/research/research-projects/current-research-projects/digital",
+      },
+      {
+        label: "STEP Analysis Repo",
+        url: "https://github.com/Harshithgowdasm/3D_STEP_file_analysis",
+      },
+      {
+        label: "GNN CAD Classification",
+        url: "https://github.com/Harshithgowdasm/3D_STEP_Classification.git",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    startDate: "Oct 2023",
+    endDate: "Feb 2024",
+    company: "Institute of Control Systems, TUHH",
+    position: "Student Tutor",
+    type: "Part-time",
+    location: "Hamburg, Germany",
+    description:
+      "Guided students in control system design including PID and Model Predictive Control concepts. Supported implementation and validation of control algorithms on real hardware systems.",
+    skills: [
+      "Control Systems",
+      "MPC",
+      "PID Control",
+      "MATLAB",
+      "Teaching",
+    ],
+  },
+
+  {
+    id: 4,
+    startDate: "Mar 2023",
+    endDate: "Feb 2024",
+    company: "Hamburg Innovation GmbH",
+    position: "Working Student",
+    type: "Part-time",
+    location: "Hamburg, Germany",
+    description:
+      "Worked on the Green 3D Printing project, contributing to the development of a sustainable paper-based 3D printer. Focused on system design and process optimization for eco-friendly manufacturing.",
+    skills: [
+      "Mechanical Design",
+      "System Development",
+      "Prototyping",
+      "Sustainable Engineering",
+    ],
+    links: [
+      {
+        label: "Green 3D Printing Project",
+        url: "https://intranet.tuhh.de/presse/pressemitteilung_einzeln.php?id=14198&Lang=de",
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    startDate: "Sep 2021",
+    endDate: "Aug 2022",
+    company: "S.L.N Engineering Works",
+    position: "Assistant Mechanical Engineer",
+    type: "Full-time",
+    location: "India",
+    description:
+      "Designed and developed custom tooling solutions using Siemens NX, improving machining efficiency. Optimized production workflows and reduced downtime through process improvements.",
+    skills: [
+      "Siemens NX",
+      "Mechanical Design",
+      "Manufacturing",
+      "Process Optimization",
+    ],
+  },
 ];
 
-experiences.reverse();
+// experiences.reverse();
 
 function Title() {
 	return (
@@ -252,6 +367,21 @@ function ExperienceCard({ experience, index, isEven }) {
 				<p className="text-gray-600 text-justify leading-relaxed mb-4">
 					{experience.description}
 				</p>
+				{experience.links && (
+					<div className="flex flex-wrap gap-3 mb-4">
+						{experience.links.map((link, i) => (
+						<a
+							key={i}
+							href={link.url}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-blue-600 text-sm font-medium underline hover:text-blue-800"
+						>
+							{link.label}
+						</a>
+						))}
+					</div>
+				)}
 
 				{/* Skills */}
 				<div className="flex flex-wrap gap-2">
