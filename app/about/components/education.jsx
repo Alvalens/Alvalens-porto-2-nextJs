@@ -127,17 +127,17 @@ export default function Education() {
 						</div> */}
 						<div className="mt-6">
 							<h2 className="font-semibold text-xl">
-								R.V. College of Engineering (RVCE)
+								Hamburg University of Technology (TUHH)
 							</h2>
 							<h3 className="text-md font-normal mb-2">
-								B.E. Mechanical Engineering
+								M.Sc. Mechatronics | Control Systems & Robotics
 							</h3>
 							<div className="text-sm text-gray-600">
-								2016 – 2020
+								2022 – 2026
 							</div>
 							<div className="flex flex-wrap gap-2 mt-2 text-sm">
 								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-								GPA: 8.36 / 10
+								GPA: 1.8 (German Scale)
 								</div>
 							</div>
 						</div>
