@@ -6,9 +6,9 @@ import Button from "@/components/Button";
 import Image from "next/image";
 
 // images
-import Intervyou1 from "@/public/image/projects/web/intervyou/intervyou-1.png";
-import Intervyou2 from "@/public/image/projects/web/intervyou/intervyou-2.png";
-import Intervyou3 from "@/public/image/projects/web/intervyou/intervyou-3.png";
+import Intervyou3 from "@/public/image/project1.png";
+import Intervyou1 from "@/public/image/project2.png";
+import Intervyou2 from "@/public/image/project3.jpg";
 import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
@@ -92,7 +92,7 @@ export default function Page() {
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
 					<div className="flex justify-center items-start flex-col mb-5 ">
 						<div className="images relative w-full  aspect-square">
-							<div className="absolute top-28 left-10 h-[40%]  aspect-video   transition-all ease duration-300 hover:scale-150 z-10">
+							<div className="absolute top-30 left-0 h-[60%]  aspect-[3/4]  transition-all ease duration-300 hover:scale-150 z-10">
 								<motion.div
 									initial={{ opacity: 0, scale: 0.5, x: 100 }}
 									whileInView={{
@@ -111,7 +111,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute top-10 right-28 h-[30%]  aspect-video   transition-all ease duration-300 hover:scale-150">
+							<div className="absolute top-5 right-30 h-[35%]  aspect-video   transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
@@ -136,7 +136,7 @@ export default function Page() {
 									/>
 								</motion.div>
 							</div>
-							<div className="absolute bottom-10 md:bottom-26 right-20 h-[35%]  aspect-video   transition-all ease duration-300 hover:scale-150">
+							<div className="absolute bottom-10 md:bottom-23 right-28 h-[45%]  aspect-[3/4]   transition-all ease duration-300 hover:scale-150">
 								<motion.div
 									initial={{
 										opacity: 0,
