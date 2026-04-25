@@ -165,7 +165,7 @@ const experiences = [
     endDate: "Present",
     company: "HAW Hamburg",
     position: "Research Assistant",
-    type: "Part-time",
+    type: "Part-time, Full-time (from Mar 2025)",
     location: "Hamburg, Germany",
     description:
       "Developing data-driven models for high-dimensional dynamical systems using tensor-train decomposition. Designing and implementing hierarchical and centralized Model Predictive Control (MPC) strategies for real-time applications. Building data acquisition and control pipelines for embedded systems.",
@@ -177,6 +177,16 @@ const experiences = [
       "System Identification",
       "Real-Time Control",
     ],
+	links: [
+	{
+	label: "MARGE Project",
+	url: "https://marge.jevis.de/",
+	},
+	{
+	label: "MTI Toolbox",
+	url: "https://www.ls.haw-hamburg.de/~prolib/index.php/team/",
+	},
+	],
   },
 
   {
@@ -240,19 +250,24 @@ const experiences = [
     type: "Part-time",
     location: "Hamburg, Germany",
     description:
-      "Worked on the Green 3D Printing project, contributing to the development of a sustainable paper-based 3D printer. Focused on system design and process optimization for eco-friendly manufacturing.",
+		"Worked on the in Image Guided Robotic Needle Placement with ROS2, developing direct and inverse kinematics models for precise robotic needle placement. Implemented advanced path and trajectory planning algorithms to optimize needle insertion path and object avoidance.",
+    //   "Worked on the Green 3D Printing project, contributing to the development of a sustainable paper-based 3D printer. Focused on system design and process optimization for eco-friendly manufacturing.",
     skills: [
-      "Mechanical Design",
-      "System Development",
-      "Prototyping",
-      "Sustainable Engineering",
+		"ROS2",
+		"Medical Robotics",
+		"Path and Trajectory Planning",
+		"Direct and Inverse Kinematics",
+    //   "Mechanical Design",
+    //   "System Development",
+    //   "Prototyping",
+    //   "Sustainable Engineering",
     ],
-    links: [
-      {
-        label: "Green 3D Printing Project",
-        url: "https://intranet.tuhh.de/presse/pressemitteilung_einzeln.php?id=14198&Lang=de",
-      },
-    ],
+    // links: [
+    //   {
+    //     label: "Green 3D Printing Project",
+    //     url: "https://intranet.tuhh.de/presse/pressemitteilung_einzeln.php?id=14198&Lang=de",
+    //   },
+    // ],
   },
 
   {
