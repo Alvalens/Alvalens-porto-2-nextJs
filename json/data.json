@@ -2,6 +2,102 @@
   "Projects": [
     {
       "show": true,
+      "title": "iv-kogen",
+      "desc": [
+        "iv-kogen is a brand-aware AI content studio that turns institution brand guidelines into on-brand Instagram carousels, video scripts, captions, and trend-driven content ideas. Built as an internal tool for the Intervyou marketing operations, it replaces the slow back-and-forth of brief → copy → revise with a single prompt that already understands the brand voice.",
+        "The architecture leans heavily on retrieval-augmented generation: brand documents (executive summaries, product PDFs, style guides) are ingested into a Knowledge Base with sentence-aware chunking and batch Gemini embeddings, then surfaced to the model at generation time alongside an explicit Brand Assets layer (color palette, style references, prior on-brand posts). Every output is grounded in real institution documents rather than improvised by the model.",
+        "Generation modules cover the full social pipeline — Content Ideas (Google Search-augmented trend research), Carousel (multi-turn image editing with version branching), Video Script, and Caption — gated behind invite-code and session-token authentication. Built on Next.js + React with PostgreSQL/Prisma for state and Vercel Blob for asset storage."
+      ],
+      "year": "2026",
+      "preview": "",
+      "code": "",
+      "thumbnail": "/image/projects/ai/iv-kogen/iv-kogen-thumbnail.png",
+      "images": [
+        "/image/projects/ai/iv-kogen/iv-kogen1.png",
+        "/image/projects/ai/iv-kogen/iv-kogen2.png",
+        "/image/projects/ai/iv-kogen/iv-kogen3.png"
+      ],
+      "tech": [
+        "NextJS",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Gemini API",
+        "RAG",
+        "PostgreSQL",
+        "Prisma",
+        "Vercel Blob"
+      ],
+      "slug": "iv-kogen",
+      "category": [2]
+    },
+    {
+      "show": true,
+      "title": "Quanta",
+      "desc": [
+        "Quanta is a self-hosted AI agent for the Indonesian Stock Exchange (IDX) that monitors a personal portfolio, scans macro and Indonesian news five times a day, discovers undervalued stocks, and pushes color-coded alerts to Discord — all running on a private VPS with no auto-trading.",
+        "Under the hood, the agent runs a four-phase pipeline: Phase 0 gathers portfolio, budget, 13 RSS feeds, foreign flow, and macro indicators; Phase 1 uses Gemini 3 Flash to scout 10–15 candidates; Phase 2 fetches PBV, PER, RSI, SMA-200, and OBV; Phase 3 hands off to Gemini 3.1 Pro for deep analysis and DCA-first reasoning across three time horizons.",
+        "The dashboard surfaces a Strategic Intelligence feed with confidence-scored recommendations and full undervalued-stock breakdowns. A built-in chat panel lets the user ask questions like 'Should I DCA BBRI?' with live data fetched via AI tool calling — six tools spanning quotes, technicals, macro, portfolio, and recommendation history. Each recommendation is auto-scored at 7, 14, and 30 days for closed-loop performance feedback."
+      ],
+      "year": "2026",
+      "preview": "https://medium.com/@alvalens/automating-rationality-why-i-built-an-ai-sentinel-for-my-idx-portfolio-5020cc8e4ea4",
+      "code": "",
+      "thumbnail": "/image/projects/web/quanta/quanta-thumbnail.png",
+      "images": [
+        "/image/projects/web/quanta/quanta1.png",
+        "/image/projects/web/quanta/quanta2.png",
+        "/image/projects/web/quanta/quanta3.png",
+        "/image/projects/web/quanta/quanta4.png"
+      ],
+      "tech": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "NodeJS",
+        "Express",
+        "Prisma",
+        "SQLite",
+        "Gemini API",
+        "AI Tool Calling"
+      ],
+      "slug": "quanta",
+      "category": [1, 2]
+    },
+    {
+      "show": true,
+      "title": "ModeSakti",
+      "desc": [
+        "ModeSakti is an educational innovation sharing platform built for Indonesian teachers — a national repository where guru can submit, validate, and discover classroom innovations spanning inclusive education, assistive technology, and adaptive learning materials.",
+        "The platform runs a curated multi-role workflow with RBAC: teachers draft and submit works, validators review and approve, and admins moderate the catalog. A public explorer surfaces published innovations with search, filtering, downloads, ratings, and reviews. Each contributor gets auto-generated certificates and portfolio badges to build a verifiable record of their work.",
+        "Engineered with Laravel 12 and Inertia.js + React 18 (no separate API), the system uses Spatie Permission for role gating, server-side TanStack tables with a reusable HasDataTable trait, and ShadCN/UI in New York style on top of Tailwind CSS. State transitions move works through Draft → Pending → Published (or Rejected/Banned) with audit trails."
+      ],
+      "year": "2026",
+      "preview": "http://modesakti.com",
+      "code": "",
+      "thumbnail": "/image/projects/web/modesakti/modesakti-thumbnail.png",
+      "images": [
+        "/image/projects/web/modesakti/modesakti1.png",
+        "/image/projects/web/modesakti/modesakti2.png",
+        "/image/projects/web/modesakti/modesakti3.png",
+        "/image/projects/web/modesakti/modesakti4.png"
+      ],
+      "tech": [
+        "PHP",
+        "Laravel",
+        "Inertia.js",
+        "React",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "MySQL",
+        "Vite"
+      ],
+      "slug": "modesakti",
+      "category": [1]
+    },
+    {
+      "show": true,
       "title": "Invervyou AI",
       "desc": [
         "Intervyou is an AI-driven SaaS platform designed to bridge the gap between education and employment by providing realistic interview simulations. The platform features a Gen AI engine that analyzes user responses and CVs to provide hyper-personalized feedback and material recommendations.",
@@ -13,10 +109,8 @@
       "thumbnail": "/image/projects/web/intervyou/intervyou-thumbnail.jpg",
       "images": [
         "/image/projects/web/intervyou/intervyou-1.png",
-        "/image/projects/web/intervyou/intervyou-2.png",
-        "/image/projects/web/intervyou/intervyou-3.png",
-        "/image/projects/web/intervyou/intervyou-4.png",
-        "/image/projects/web/intervyou/intervyou-5.png"
+        "/image/projects/web/intervyou/intervyou-2.jpeg",
+        "/image/projects/web/intervyou/intervyou-3.webp"
       ],
       "tech": [
         "NextJS",
@@ -299,7 +393,7 @@
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "React Realtime Chat",
       "desc": [
         "My ambitious project that delves into the world of interactive web development using React. This project is a realtime chat application that allows users to create chat rooms and chat with other users in realtime. The application is built using React, Firebase, and Daisy UI.",
@@ -404,7 +498,7 @@
       "category": [1]
     }, 
     {
-      "show": true,
+      "show": false,
       "title": "NU INO Website",
       "desc": [
         "My first freelance project. This project is a website for a School based on a JALAKAR curriculum. The website is built mainly using Laravel and Bootstrap.", "This website is LMS like system, have a user management, user auth, quiz and material for student and FAQ",  "In this project I learned how to work with a team and how to manage a project. I also learned new library such as livewire and alpine.js."],
