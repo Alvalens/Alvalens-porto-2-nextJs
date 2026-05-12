@@ -25,19 +25,6 @@ module.exports = withBundleAnalyzer({
 	async headers() {
 		return [
 			{
-				source: "/sitemap.xml.gz",
-				headers: [
-					{
-						key: "Content-Type",
-						value: "application/gzip",
-					},
-					{
-						key: "Cache-Control",
-						value: "public, max-age=3600", // Cache for 1 hour
-					},
-				],
-			},
-			{
 				source: "/:path*",
 				headers: [
 					{
