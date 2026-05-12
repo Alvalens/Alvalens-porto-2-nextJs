@@ -166,7 +166,7 @@ export default function Education() {
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}>
 						<div className="font-medium text-lg mb-4">
-							2022 - Present
+							2022 - 2025
 						</div>
 						<div>
 							<h2 className="font-semibold text-xl">
