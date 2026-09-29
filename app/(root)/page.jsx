@@ -423,7 +423,7 @@ const MyPage = () => {
 								/>
 							</motion.a>
 							<motion.a
-								href="https://www.linkedin.com/in/alvalen-shafel-8a081a254/"
+								href="https://www.linkedin.com/in/alvalens/"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="LinkedIn profile"
